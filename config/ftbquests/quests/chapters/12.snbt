@@ -1,0 +1,450 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "12"
+	group: "4F589DC5893A9E7A"
+	icon: "create:andesite_alloy_block"
+	id: "705F15C3B77D96CD"
+	order_index: 1
+	quest_links: [
+		{
+			id: "179EDC6924FA238C"
+			linked_quest: "4F7BF80AF7CAD4AF"
+			shape: "pentagon"
+			size: 1.5d
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			id: "1DC1263DD0750B71"
+			linked_quest: "32E8236E8F01ACAE"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			id: "5A49829F1796D475"
+			linked_quest: "2CE6B7A9A65725D0"
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			id: "04763BDD14858A35"
+			linked_quest: "162FB9BC3CD9D8C3"
+			x: -10.5d
+			y: 4.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["5C254364EA99CB16"]
+			hide_until_deps_complete: true
+			id: "1413838D06EDBC0F"
+			rewards: [{
+				count: 2
+				id: "1D40A5390640310D"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "440F6CFFE7A01184"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1413838D06EDBC0F"
+				"770B677309DC03BD"
+			]
+			hide_until_deps_complete: true
+			id: "448DDD80BC930113"
+			tasks: [{
+				id: "1350962F50A1D51A"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["448DDD80BC930113"]
+			id: "5D95AF64663EBB9A"
+			tasks: [{
+				id: "792E8315B9919784"
+				item: "cmc:basic_smithing_template"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1413838D06EDBC0F"]
+			id: "746612B35D7064F5"
+			tasks: [{
+				id: "4E4F867E8F7725E3"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1413838D06EDBC0F"]
+			id: "3F4BBE15388335F9"
+			tasks: [{
+				id: "2A49D20B1997CC3A"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C254364EA99CB16"]
+			id: "47E278C86B1FC4DE"
+			tasks: [{
+				id: "045F8A79EAD6273B"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1413838D06EDBC0F"]
+			hide_dependent_lines: true
+			id: "0B9B8AA4E1540B72"
+			tasks: [{
+				id: "6248E64C467407FA"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["47E278C86B1FC4DE"]
+			id: "19A7BE3DAF610029"
+			tasks: [{
+				id: "5E5B2D0A37DA05FB"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0B63583975CC0B3F"
+				"746612B35D7064F5"
+			]
+			hide_until_deps_complete: true
+			id: "0FE3B9BF230C6ADB"
+			rewards: [{
+				count: 4
+				id: "1B299B71A9F2AB22"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E0EC147114DC19C"
+				item: "chunkbychunk:worldshard"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5C254364EA99CB16"]
+			id: "4463513F0A227B2B"
+			tasks: [
+				{
+					id: "5AEE200CAB5BF6A3"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "7A2CEC2033142D49"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "风车"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"448DDD80BC930113"
+				"0FE3B9BF230C6ADB"
+			]
+			id: "2AB08E3F1421BCEB"
+			rewards: [{
+				count: 8
+				id: "7D093F4DAA564131"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E7A3204DB252987"
+				item: "chunkbychunk:worldcrystal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19BF1A3A20241562"]
+			id: "2A2B9DF33E338808"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "3E207BC150F084CB"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2A2B9DF33E338808"]
+			id: "0D1CC6E7B0D3710A"
+			tasks: [{
+				id: "0A215D65E413B15B"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2AB08E3F1421BCEB"
+				"0D1CC6E7B0D3710A"
+			]
+			id: "034E74783AB2CCED"
+			tasks: [{
+				id: "110E8CCC033DEC0D"
+				item: "cmc:world_fluid_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"0B63583975CC0B3F"
+				"034E74783AB2CCED"
+			]
+			dependency_requirement: "one_completed"
+			id: "1982EB3183C8616A"
+			min_required_dependencies: 1
+			tasks: [{
+				id: "0E285833199A7BDF"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1982EB3183C8616A"]
+			hide_until_deps_complete: true
+			id: "01369BAB44C85145"
+			tasks: [{
+				id: "08EAA9F995B5B503"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["01369BAB44C85145"]
+			description: [
+				"当你前往&5下界&r时发现依然只有一个区块"
+				"这就意味着&4下界要塞&r结构在区块恢复前不会显露"
+				"但使用&7探险者指南针&r能定位到结构"
+				"你可以先搭方块到&4下界要塞&r再恢复区块"
+				"只需要一根&6烈焰棒&r就可以实现自动化生产烈焰粉"
+			]
+			id: "2335D8F085D3D99F"
+			size: 1.2d
+			subtitle: "&c请查看此任务的描述获取注意事项"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "19B3919A0FAEE8D2"
+				type: "dimension"
+			}]
+			title: "前往下界"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2335D8F085D3D99F"]
+			id: "51D17CDAAFC29534"
+			tasks: [{
+				id: "5DE8BB05CD08C278"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["51D17CDAAFC29534"]
+			id: "6DC190FCD454F752"
+			tasks: [{
+				id: "1BAE5B4AB2C589F1"
+				item: "allthecompressed:netherrack_2x"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D95AF64663EBB9A"
+				"6DC190FCD454F752"
+				"4B751AFDCF3A020E"
+				"50F88E23F2F6B6A0"
+				"0B9B8AA4E1540B72"
+			]
+			id: "5E21486742C7EA84"
+			tasks: [{
+				id: "0D76F22AB33D6121"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A2B9DF33E338808"]
+			id: "6FA6F0981CD13437"
+			tasks: [{
+				id: "584E27C8DB3460BE"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "24F428B5B5C3A6D6"
+			tasks: [{
+				id: "4CF606AD112D7BD8"
+				item: "minecraft:compass"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2335D8F085D3D99F"
+				"24F428B5B5C3A6D6"
+			]
+			hide_until_deps_complete: true
+			id: "7E2C2ACCC0A262BB"
+			rewards: [{
+				count: 4
+				id: "1D5FC3AA3DA7DFB4"
+				item: "chunkbychunk:chunkspawner"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "minecraft:nether_bricks"
+				id: "3B2FD98079BAFC92"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			title: "发现&4下界要塞"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2335D8F085D3D99F"]
+			id: "4B751AFDCF3A020E"
+			tasks: [{
+				id: "1B6DD93BD1A8D788"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7E2C2ACCC0A262BB"
+				"3CD30A703D8065AA"
+			]
+			dependency_requirement: "one_completed"
+			id: "76A728F3FB90DC93"
+			tasks: [{
+				id: "1787EC6E95235E24"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51D17CDAAFC29534"]
+			hide_dependency_lines: true
+			id: "3CD30A703D8065AA"
+			tasks: [{
+				id: "6ACF53238322FF25"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7E2C2ACCC0A262BB"]
+			dependency_requirement: "one_completed"
+			id: "0FBBFF6649867FB8"
+			tasks: [{
+				id: "44E3DED6D7B287E7"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"1413838D06EDBC0F"
+				"770B677309DC03BD"
+			]
+			hide_until_deps_complete: true
+			id: "12D983347012ED91"
+			tasks: [{
+				id: "2E957E7F48578DFE"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2CE6B7A9A65725D0"]
+			id: "2A7E81E45E9143B8"
+			subtitle: "怀念老版本AE2了"
+			tasks: [{
+				id: "689B49C6527D9871"
+				item: "cmc:quartz_seed"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+	]
+	title: "1.2 安山时代"
+}

@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: "44B0CA233BCF73AB"
+	hide_quest_until_deps_visible: true
+	icon: "chunkbychunk:chunkspawner"
+	id: "5AA6558E972BA094"
+	order_index: 1
+	quest_links: [
+		{
+			id: "042AEE39D35C5485"
+			linked_quest: "146390B8A9A5E6C6"
+			shape: "hexagon"
+			size: 2.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4DA418FBAE228E3F"
+			linked_quest: "7E85A005CBBD4348"
+			x: -2.0d
+			y: -2.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["146390B8A9A5E6C6"]
+			id: "7D033C78DF22E884"
+			subtitle: "这个东西可以自动恢复区块"
+			tasks: [{
+				id: "107995054E1E382A"
+				item: "chunkbychunk:worldmender"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["146390B8A9A5E6C6"]
+			id: "72A1AE354E1193D1"
+			optional: true
+			shape: "rsquare"
+			subtitle: "可以扫描世界上某种资源的分布"
+			tasks: [{
+				id: "66DDE641F70AB181"
+				item: "chunkbychunk:worldscanner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["146390B8A9A5E6C6"]
+			id: "7767B6195E6EFE9B"
+			tasks: [{
+				id: "48B50577794EB51F"
+				item: "chunkbychunk:chunkspawner"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["146390B8A9A5E6C6"]
+			id: "4029B52E69D5E459"
+			optional: true
+			shape: "rsquare"
+			subtitle: "随机！"
+			tasks: [{
+				id: "4E67D0E83C9FF540"
+				item: "chunkbychunk:unstablechunkspawner"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["146390B8A9A5E6C6"]
+			id: "2A94CCAE79884B19"
+			tasks: [{
+				id: "17C8EC4C69CED59A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "chunkbychunk:chunkspawners"
+					}
+				}
+				title: "Any #chunkbychunk:chunkspawners"
+				type: "item"
+			}]
+			title: "区块生成器"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A94CCAE79884B19"]
+			id: "5BA8BC3D1FA7CD7F"
+			subtitle: "???"
+			tasks: [{
+				id: "091783268FF8EAF8"
+				item: "cmc:cmc_icon"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5BA8BC3D1FA7CD7F"]
+			id: "59BA8ED3AB456B8F"
+			tasks: [{
+				id: "2EE06A708F64F561"
+				item: "cmc:cmc_icon_black"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+	title: "*.2 世界恢复"
+}

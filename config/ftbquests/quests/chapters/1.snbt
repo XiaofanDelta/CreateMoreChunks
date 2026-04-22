@@ -1,0 +1,513 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: "44B0CA233BCF73AB"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:diamond"
+	id: "0B56C4E0BC9C7B62"
+	images: [
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/cobblestone"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "create:block/copper/copper_roof_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: -1.0d
+			y: 9.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/gold_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/quartz_block_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/quartz_block_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/quartz_block_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/quartz_block_top"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/redstone_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/redstone_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/redstone_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/redstone_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/redstone_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: 3.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4A8FC8D0CD612716"
+				"1982EB3183C8616A"
+			]
+			id: "552CD9883595994A"
+			tasks: [
+				{
+					id: "6F6F143B8C1E022B"
+					item: "cobblefordays:tier_1"
+					type: "item"
+				}
+				{
+					id: "394DCF9E65B18DAC"
+					item: "cobblefordays:tier_2"
+					type: "item"
+				}
+			]
+			title: "圆石制造机 初级"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"552CD9883595994A"
+				"4A8FC8D0CD612716"
+			]
+			id: "53D4BCDC2D11E563"
+			tasks: [{
+				id: "66B040DBC3A629F4"
+				item: "allthecompressed:cobblestone_2x"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["552CD9883595994A"]
+			id: "5EC5700C1EEE9275"
+			tasks: [
+				{
+					id: "3BDA4E16033C8398"
+					item: "cobblefordays:tier_3"
+					type: "item"
+				}
+				{
+					id: "0106DCE9C556D562"
+					item: "cobblefordays:tier_4"
+					type: "item"
+				}
+				{
+					id: "7A248DCC9937CB64"
+					item: "cobblefordays:tier_5"
+					type: "item"
+				}
+			]
+			title: "圆石制造机 高级"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5EC5700C1EEE9275"]
+			id: "00577B0429DB6D1C"
+			tasks: [{
+				id: "468F863445422253"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "4A8FC8D0CD612716"
+			tasks: [{
+				id: "586F8B4ACB174CCF"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53D4BCDC2D11E563"]
+			id: "31C61BF59C2D463C"
+			tasks: [{
+				id: "600024724CA33275"
+				item: "allthecompressed:cobblestone_3x"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "5B434A5DECC423F1"
+			tasks: [{
+				id: "46ED23B70CEF2A7F"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5B434A5DECC423F1"
+				"6665351C3FE38033"
+			]
+			id: "770B677309DC03BD"
+			rewards: [{
+				count: 8
+				id: "169D0B5FE48980A4"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1C94EDBC36ED1203"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "44995EFC6A3455D2"
+			tasks: [{
+				id: "0A9BC1876E0230A9"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44995EFC6A3455D2"]
+			id: "19BF1A3A20241562"
+			rewards: [{
+				count: 4
+				id: "346F08F36AF3AFFC"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E94A948844B33B5"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "5E4B468F1E2BA167"
+			tasks: [{
+				id: "5620B6F292588EEF"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2335D8F085D3D99F"
+				"5E4B468F1E2BA167"
+			]
+			dependency_requirement: "one_completed"
+			id: "32E8236E8F01ACAE"
+			tasks: [{
+				id: "36EA2734B78B8202"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2335D8F085D3D99F"]
+			id: "2CE6B7A9A65725D0"
+			tasks: [{
+				id: "0146F5A20AE5F158"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "5E27AACD31B50642"
+			tasks: [{
+				id: "60BCDBBEB81D2CAF"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+	]
+	title: "*.1 世界资源"
+}

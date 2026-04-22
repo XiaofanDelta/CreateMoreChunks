@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "45A75AF053908A17", title: "0 - 序章" }
+		{ id: "44B0CA233BCF73AB", title: "* - 通用" }
+		{ id: "4F589DC5893A9E7A", title: "1 - 初步探索" }
+	]
+}

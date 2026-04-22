@@ -1,0 +1,203 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "02"
+	group: "45A75AF053908A17"
+	hide_quest_until_deps_complete: true
+	icon: "ftbquests:book"
+	id: "3E3434D5C07879FA"
+	images: [
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 3.0d
+			image: "create:block/belt/blue_scroll"
+			rotation: 90.0d
+			width: 1.5d
+			x: -1.25d
+			y: 0.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 3.0d
+			image: "create:block/belt/blue_scroll"
+			rotation: 90.0d
+			width: 1.5d
+			x: 1.25d
+			y: 0.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 3.0d
+			image: "create:block/belt/red_scroll"
+			rotation: 90.0d
+			width: 1.5d
+			x: -1.25d
+			y: 1.5d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 3.0d
+			image: "create:block/belt/red_scroll"
+			rotation: 90.0d
+			width: 1.5d
+			x: 1.25d
+			y: 1.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "chunkbychunk:worldfragment"
+			id: "413BCD5E50044184"
+			subtitle: "为了通关整合包需要完成的任务"
+			tasks: [{
+				id: "121048F92D03DBEE"
+				title: "普通"
+				type: "checkmark"
+			}]
+			title: "普通任务"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
+			id: "756BB3BBE318742F"
+			shape: "hexagon"
+			subtitle: "一章开头需要完成的任务"
+			tasks: [{
+				id: "51BBC41F6755CFC8"
+				title: "开头"
+				type: "checkmark"
+			}]
+			title: "一章开头"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "ae2:creative_energy_cell"
+			id: "6477294B3D86B3E3"
+			shape: "pentagon"
+			subtitle: "一章结尾和下一章开头需要完成的任务"
+			tasks: [{
+				id: "0D4D5E385A04E0BE"
+				title: "结尾"
+				type: "checkmark"
+			}]
+			title: "一章结尾＆下一章开头"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "ae2:controller"
+			id: "066710B0FC76C5F0"
+			shape: "gear"
+			subtitle: "表示需要自动化的物品或流体任务"
+			tasks: [{
+				id: "16D26EC30DCC8A3E"
+				title: "自动化"
+				type: "checkmark"
+			}]
+			title: "自动化"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "createdeco:gold_coin"
+			id: "447E4CD235A37257"
+			shape: "diamond"
+			subtitle: "用于商店等的任务"
+			tasks: [{
+				id: "04C8F14BF93FBC23"
+				title: "可重复"
+				type: "checkmark"
+			}]
+			title: "可重复任务"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "ftbquests:book"
+			id: "408876085D7BB8D6"
+			rewards: [{
+				id: "72D6A02495C953D5"
+				item: {
+					Count: 1
+					id: "akashictome:tome"
+					tag: {
+						"akashictome:data": {
+							ae2: {
+								Count: 1b
+								id: "ae2:guide"
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.ae2.guide\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.ae2.guide\"}]}"
+									}
+								}
+							}
+							cookingforblockheads: {
+								Count: 1b
+								id: "cookingforblockheads:recipe_book"
+							}
+							cookingforblockheads_0: {
+								Count: 1b
+								id: "cookingforblockheads:crafting_book"
+								tag: {
+									"akashictome:definedMod": "cookingforblockheads_0"
+								}
+							}
+							ftbquests: {
+								Count: 1b
+								id: "ftbquests:book"
+							}
+						}
+						"akashictome:is_morphing": 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "获得指南书"
+			tasks: [{
+				id: "396931C9905D11DD"
+				title: "任务书"
+				type: "checkmark"
+			}]
+			title: "领取指南书"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			hide_until_deps_complete: true
+			icon: "chunkbychunk:unstablechunkspawner"
+			id: "62266BBA2E8F768C"
+			shape: "rsquare"
+			subtitle: "选择制作的物品"
+			tasks: [{
+				id: "2CCBC2C22616B821"
+				title: "可选"
+				type: "checkmark"
+			}]
+			title: "可选任务"
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "0.2 关于任务"
+}

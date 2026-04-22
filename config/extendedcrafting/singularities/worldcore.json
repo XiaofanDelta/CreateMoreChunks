@@ -1,0 +1,10 @@
+{
+  "name": "singularity.extendedcrafting.worldcore",
+  "colors": [
+    "0097ff",
+    "002169"
+  ],
+  "ingredient": {
+    "item": "chunkbychunk:worldcore"
+  }
+}

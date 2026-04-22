@@ -1,0 +1,309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "13"
+	group: "4F589DC5893A9E7A"
+	icon: "create:brass_block"
+	id: "5B0E4985B9757803"
+	order_index: 2
+	quest_links: [
+		{
+			id: "563563D1D6270283"
+			linked_quest: "31C61BF59C2D463C"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "4AF468573811D58C"
+			linked_quest: "76A728F3FB90DC93"
+			x: 3.0d
+			y: -0.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"2AB08E3F1421BCEB"
+				"034E74783AB2CCED"
+				"0FE3B9BF230C6ADB"
+			]
+			id: "4F7BF80AF7CAD4AF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "1774574D1017E1CE"
+				item: "cmc:world_gem"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"31C61BF59C2D463C"
+				"4F7BF80AF7CAD4AF"
+				"7E85A005CBBD4348"
+			]
+			id: "146390B8A9A5E6C6"
+			rewards: [{
+				id: "4F4F780085D9381C"
+				item: "chunkbychunk:worldcore"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A3527CB8A2D0918"
+				item: "chunkbychunk:worldcore"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"76A728F3FB90DC93"
+				"19BF1A3A20241562"
+				"146390B8A9A5E6C6"
+			]
+			id: "5353384721D5F070"
+			rewards: [{
+				count: 4
+				id: "707B48BAE237F65C"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61E671649933A585"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5353384721D5F070"]
+			id: "5880A2C38559CEE5"
+			tasks: [{
+				id: "7C17B065FCEF881B"
+				item: "create:brass_hand"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"76ADEEF1227D76CE"
+				"5880A2C38559CEE5"
+				"1413838D06EDBC0F"
+			]
+			hide_dependent_lines: true
+			id: "50F88E23F2F6B6A0"
+			tasks: [{
+				id: "40652BEC4932B392"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6717A235A0A18DE5"
+				"12D983347012ED91"
+			]
+			id: "76ADEEF1227D76CE"
+			rewards: [{
+				count: 2
+				id: "13183333FEF5C459"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			tasks: [{
+				id: "706A8D8888B3065B"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0E129AE88B55C6D3"]
+			id: "6717A235A0A18DE5"
+			rewards: [{
+				count: 4
+				id: "095ED114A92096CB"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75BD40ED55D44AC0"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"2CE6B7A9A65725D0"
+				"5E27AACD31B50642"
+				"76A728F3FB90DC93"
+				"162FB9BC3CD9D8C3"
+			]
+			hide_until_deps_complete: true
+			id: "0E129AE88B55C6D3"
+			tasks: [{
+				id: "0D079BC173A869DE"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5353384721D5F070"]
+			id: "41D304EBDAD9E51D"
+			tasks: [{
+				id: "76BC2D67E4B33F7A"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"41D304EBDAD9E51D"
+				"76ADEEF1227D76CE"
+			]
+			id: "7C04D4F0B0F9D43E"
+			tasks: [{
+				count: 21L
+				id: "384A3AB6B5CFF10C"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7C04D4F0B0F9D43E"]
+			id: "011DA83073486294"
+			tasks: [{
+				count: 2L
+				id: "05F1DB59DCDF373F"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["011DA83073486294"]
+			id: "2617EF2926038A7F"
+			tasks: [{
+				id: "2A6690B86D465D66"
+				item: "mekanism:dust_coal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["011DA83073486294"]
+			id: "7EA06E237097AEBA"
+			tasks: [{
+				id: "69C4B5C682DBC60F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/iron"
+					}
+				}
+				title: "Any #forge:dusts/iron"
+				type: "item"
+			}]
+			title: "铁粉"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2617EF2926038A7F"
+				"7EA06E237097AEBA"
+			]
+			id: "5B496AA276EBCEBA"
+			tasks: [{
+				id: "2FB1494D70B1497F"
+				item: "mekanism:dust_steel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5B496AA276EBCEBA"]
+			id: "1F8E0EFA98BD37BD"
+			rewards: [{
+				count: 4
+				id: "29E99C06C5DE5398"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DC12A92B347A475"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1F8E0EFA98BD37BD"]
+			id: "4EC229A2EE474B4B"
+			tasks: [{
+				id: "25A004CB5ED3B4FA"
+				item: "mekanism:block_steel"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4EC229A2EE474B4B"
+				"50F88E23F2F6B6A0"
+				"0B9B8AA4E1540B72"
+			]
+			id: "38156708BFFA55E1"
+			rewards: [{
+				count: 2
+				id: "15AD4A1C149501B2"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			tasks: [{
+				id: "06F549132FE6BB5A"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2A7E81E45E9143B8"]
+			id: "162FB9BC3CD9D8C3"
+			tasks: [{
+				id: "37B58805D28951B3"
+				item: "cmc:high_pure_quartz"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+	]
+	title: "1.3 黄铜时代"
+}

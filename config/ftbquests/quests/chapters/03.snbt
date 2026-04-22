@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "03"
+	group: "45A75AF053908A17"
+	icon: "mekanism:basic_control_circuit"
+	id: "26E931AAF4F0AF9C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			icon: "minecraft:iron_block"
+			id: "7A1CF13CD6B2E2EF"
+			shape: "hexagon"
+			tasks: [{
+				id: "2E0677307A14CDA4"
+				title: "1"
+				type: "checkmark"
+			}]
+			title: "初步探索"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A1CF13CD6B2E2EF"]
+			icon: "create:andesite_alloy_block"
+			id: "5331B77DB43C35EC"
+			shape: "hexagon"
+			tasks: [{
+				id: "36B8611200DF2432"
+				title: "1.2"
+				type: "checkmark"
+			}]
+			title: "安山时代"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5331B77DB43C35EC"]
+			icon: "chunkbychunk:chunkspawner"
+			id: "04545E7D6226BD5F"
+			shape: "hexagon"
+			tasks: [{
+				id: "3AC1AA3B2D78A4BC"
+				title: "*.2"
+				type: "checkmark"
+			}]
+			title: "世界恢复"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5331B77DB43C35EC"]
+			icon: "create:brass_block"
+			id: "11B059FC86362DA6"
+			shape: "hexagon"
+			tasks: [{
+				id: "2A06F1641633C03D"
+				title: "1.3"
+				type: "checkmark"
+			}]
+			title: "黄铜时代"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11B059FC86362DA6"]
+			icon: "thermal:machine_frame"
+			id: "1671005083B45549"
+			shape: "hexagon"
+			tasks: [{
+				id: "2C1BB7BB7E749DD4"
+				title: "2"
+				type: "checkmark"
+			}]
+			title: "热力时代"
+			x: -0.5d
+			y: 0.0d
+		}
+	]
+	title: "0.3 科技树"
+}

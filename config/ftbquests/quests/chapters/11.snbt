@@ -1,0 +1,304 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "11"
+	group: "4F589DC5893A9E7A"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:iron_block"
+	id: "03ABBBC427264BD0"
+	order_index: 0
+	quest_links: [
+		{
+			id: "21A7A6838E3AAE73"
+			linked_quest: "0FE3B9BF230C6ADB"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "7D2116BA94ABE045"
+			linked_quest: "1413838D06EDBC0F"
+			shape: "pentagon"
+			size: 1.5d
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			id: "486F960E4BC9BE6F"
+			linked_quest: "2A2B9DF33E338808"
+			shape: "pentagon"
+			size: 1.5d
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "126AFAE74B61DA0B"
+			linked_quest: "552CD9883595994A"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			id: "28F89BC9766B3862"
+			linked_quest: "53D4BCDC2D11E563"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			id: "46A4886710404D33"
+			linked_quest: "4A8FC8D0CD612716"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			id: "2927238380ED4109"
+			linked_quest: "5B434A5DECC423F1"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "106D404F2BE764B7"
+			linked_quest: "770B677309DC03BD"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			id: "2BA10843A1ECEB8F"
+			linked_quest: "44995EFC6A3455D2"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "48A57CAD6EE01F41"
+			linked_quest: "19BF1A3A20241562"
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["0D44313CB54C6DD5"]
+			description: ["..."]
+			hide_until_deps_complete: true
+			icon: "chunkbychunk:chunkspawner"
+			id: "0B63583975CC0B3F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "174EB0C9FAB74710"
+				title: "背景"
+				type: "checkmark"
+			}]
+			title: "背景"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			hide_dependent_lines: true
+			id: "6665351C3FE38033"
+			tasks: [{
+				id: "75FE3EB497978937"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "0278F56B7EE446F5"
+			tasks: [{
+				id: "464F1983448441E9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "木头"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/jei/atlas/gui/icons/info.png"
+				}
+			}
+			id: "3A396755A3380DEE"
+			optional: true
+			rewards: [
+				{
+					id: "753A94EDCE560C7E"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "15BCFA6FD466CF75"
+					item: "minecraft:grass_block"
+					type: "item"
+				}
+				{
+					id: "434653E93FF8933C"
+					item: "minecraft:bone_meal"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "紫砂一次给你个树苗"
+			tasks: [{
+				id: "4B7D18BEAC023CA8"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1
+			}]
+			title: "什么，你没木头？"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			description: ["这个箱子的Y轴坐标在&e-53&r至&a-60&r之间"]
+			id: "7E85A005CBBD4348"
+			subtitle: "在初始区块最底部有一个箱子"
+			tasks: [{
+				id: "24165C857B07F93C"
+				item: "chunkbychunk:worldforge"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E85A005CBBD4348"]
+			description: [
+				"我通过配置文件"
+				"将世界锻造器做一个世界碎片所需材料改为&e256&r个"
+				"1个石头只能提供1点材料值"
+				"(不要看jei，里面的是错的)"
+				"所以请尽快通过&a动力冲压机&r来制作"
+			]
+			id: "2A99214568956498"
+			rewards: [{
+				count: 4
+				id: "3BAC4A90B44D3E05"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
+			size: 1.2d
+			subtitle: "&c请看此任务的描述获取注意事项"
+			tasks: [{
+				id: "4B04E5315E227215"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "7C01270C06610614"
+			tasks: [{
+				id: "5796788689F53B6A"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0B63583975CC0B3F"
+				"2A99214568956498"
+			]
+			id: "5C254364EA99CB16"
+			rewards: [{
+				count: 8
+				id: "33014A9A9F13FE6C"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CCE00B83997CA22"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"53D4BCDC2D11E563"
+				"6665351C3FE38033"
+			]
+			id: "73CA6C40E131EB33"
+			tasks: [{
+				id: "7618DFD22FB63B9F"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/jei/atlas/gui/icons/info.png"
+				}
+			}
+			id: "305791A4B42429CA"
+			optional: true
+			rewards: [{
+				id: "7051A804ACF91D98"
+				item: "chunkbychunk:mountainchunkspawner"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "紫砂一次给你个区块生成器"
+			tasks: [{
+				id: "230CA190DBAEA0EB"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1
+			}]
+			title: "什么，你拿不到石头"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0278F56B7EE446F5"]
+			id: "4A8581636CD772F3"
+			rewards: [{
+				id: "1DDA8258FB570D4D"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0261F8337F03CEB0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			title: "抽屉"
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+	title: "1.1 探索世界"
+}
