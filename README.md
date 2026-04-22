@@ -21,7 +21,6 @@
 ### 整合包打包所需文件
  - **config**
  - **defaultconfigs**
- - **hotai**
  - **kubejs**
 	- **assets**
 	- **client_scripts**
