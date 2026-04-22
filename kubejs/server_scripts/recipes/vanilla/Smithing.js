@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         'thermal:saw_blade'
     )
 
-    */
+    
     //锻造模版预定（）
     event.smithing(
         'create:blaze_burner',
@@ -57,4 +57,5 @@ ServerEvents.recipes(event => {
         'create:empty_blaze_burner',
         'minecraft:blaze_rod'
     ).id("cmc:hyw")
+    */
 })

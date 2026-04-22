@@ -24,4 +24,33 @@ ServerEvents.recipes(event => {
         Fluid.of('cmc:world_fluid',800),
         'chunkbychunk:worldcore'
     ).superheated()
+
+    create.mixing(
+        'chunkbychunk:worldshard',
+        Item.of('chunkbychunk:worldfragment',4)
+    )
+
+    create.compacting(
+        'chunkbychunk:worldcrystal',
+        Item.of('chunkbychunk:worldshard',4)
+    )
+
+    create.compacting(
+        'chunkbychunk:worldfragment',
+        '32x #minecraft:dirt'
+    )
+
+    create.compacting(
+        'chunkbychunk:worldfragment',
+        '64x #forge:stone'
+    )
+
+    create.deploying(
+        "chunkbychunk:worldcore",[
+            "allthecompressed:cobblestone_1x",
+            "chunkbychunk:worldcrystal"
+        ]
+    )
+
+
 })
