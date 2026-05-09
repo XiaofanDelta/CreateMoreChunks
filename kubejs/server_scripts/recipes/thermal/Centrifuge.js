@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
     ],
         "cmc:creative_fiuld_tank"
     ).energy(50000)
+        .id("thermal:machines/centrifuge/creative_fluid_tank")
 
     thermal.centrifuge([
         Fluid.of("minecraft:water", 1000),
@@ -16,7 +17,8 @@ ServerEvents.recipes((event) => {
         Item.of("minecraft:wheat", 2).withChance(0.2)
     ],
         "cmc:m_b9855c_with_water"
-    ).energy(10000)
+    ).energy(1000)
+        .id("thermal:machines/centrifuge/m")
 
     thermal.centrifuge([
         "cmc:c_fdaf40",
@@ -25,7 +27,8 @@ ServerEvents.recipes((event) => {
         Item.of("cmc:symbol_cmi", 2)
     ],
         "cmc:cmi"
-    ).energy(10000)
+    ).energy(1000)
+        .id("thermal:machines/centrifuge/cmi")
 
     thermal.centrifuge([
         "cmc:cmc",
@@ -33,8 +36,9 @@ ServerEvents.recipes((event) => {
         "cmc:sun",
         "cmc:tree"
     ],
-        'cmc:cmc_icon'
-    ).energy(10000)
+        "cmc:cmc_icon"
+    ).energy(1000)
+        .id("cmc:thermal/centrifuge/cmc_icon")
 
     thermal.centrifuge([
         "cmc:c_7cd520",
@@ -43,7 +47,8 @@ ServerEvents.recipes((event) => {
         "cmc:delta"
     ],
         "cmc:cmc"
-    ).energy(10000)
+    ).energy(1000)
+        .id("cmc:thermal/centrifuge/cmc")
 
     thermal.centrifuge([
         "cmc:c_82ff00",
@@ -53,5 +58,6 @@ ServerEvents.recipes((event) => {
         Fluid.of("cmc:impurity", 1000)
     ],
         "cmc:cmc_icon_black"
-    ).energy(10000)
+    ).energy(1000)
+        .id("cmc:thermal/centrifuge/cmc_icon_black")
 })

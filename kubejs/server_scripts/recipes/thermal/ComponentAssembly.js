@@ -11,4 +11,5 @@ ServerEvents.recipes((event) => {
 		"cmc:test"
 	])
     .energy(150000)
+	.id("cmc:thermal_extra/component_assembly/cell_creative_full")
 })

@@ -10,9 +10,6 @@ ClientEvents.lang("en_us", (event) => {
         event.add(`fluid.cmc.flowing_${key}`, `Flowing ${value}`)
 	}
 
-/*
-
-*/
     addItemLang("cmi","Create: Mechanism and Innovation")
     addItemLang("rc","Re_Constrction")
     addItemLang("c5","create0501 (Miku)")

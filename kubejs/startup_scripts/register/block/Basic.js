@@ -1,12 +1,12 @@
-StartupEvents.registry("block",event => {
+StartupEvents.registry("block",(event) => {
     
     event.create("cmc:creative_fiuld_tank","basic")
     .model("cmc:block/creative_fiuld_tank")
     .hardness(5)
     .requiresTool(true)
     .tagBlock("create:wrench_pickup")
-    .tagBlock('minecraft:needs_iron_tool')
-    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock("minecraft:needs_iron_tool")
+    .tagBlock("minecraft:mineable/pickaxe")
     .soundType(SoundType.METAL)
 
     event.create("cmc:me_equipment_casing","basic")
@@ -14,8 +14,8 @@ StartupEvents.registry("block",event => {
     .hardness(5)
     .requiresTool(true)
     .tagBlock("create:wrench_pickup")
-    .tagBlock('minecraft:needs_iron_tool')
-    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock("minecraft:needs_iron_tool")
+    .tagBlock("minecraft:mineable/pickaxe")
     .soundType(SoundType.METAL)
 
     event.create("cmc:me_machine_casing","basic")
@@ -23,7 +23,7 @@ StartupEvents.registry("block",event => {
     .hardness(5)
     .requiresTool(true)
     .tagBlock("create:wrench_pickup")
-    .tagBlock('minecraft:needs_iron_tool')
-    .tagBlock('minecraft:mineable/pickaxe')
+    .tagBlock("minecraft:needs_iron_tool")
+    .tagBlock("minecraft:mineable/pickaxe")
     .soundType(SoundType.METAL)
 })

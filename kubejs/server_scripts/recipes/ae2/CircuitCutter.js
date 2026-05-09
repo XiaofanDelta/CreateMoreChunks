@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     event.custom({
         "type": "expatternprovider:circuit_cutter",
         "fluid_input": {
@@ -16,7 +16,8 @@ ServerEvents.recipes(event => {
         "output": {
             "count": 9,
             "item": "appliedcreate:stress_circuit_board"
-        }
+        },
+        "id": "appliedcreate:expatternprovider/circuit_cutter/stress_circuit_board"
     })
 
     event.custom({
@@ -36,6 +37,7 @@ ServerEvents.recipes(event => {
         "output": {
             "count": 9,
             "item": "appliedcreate:advanced_stress_circuit_board"
-        }
+        },
+        "id": "appliedcreate:expatternprovider/circuit_cutter/advanced_stress_circuit_board"
     })
 })

@@ -1,4 +1,4 @@
-StartupEvents.registry("item", event => {
+StartupEvents.registry("item", (event) => {
 
     let example = [
         "delta",
@@ -31,7 +31,7 @@ StartupEvents.registry("item", event => {
     example.forEach((examples) => {
         event.create(`cmc:${examples}`)
             .texture(`cmc:item/test/${examples}`)
-            .tag("cmc:example")
+            .tag("cmc:examples")
     })
 
 })

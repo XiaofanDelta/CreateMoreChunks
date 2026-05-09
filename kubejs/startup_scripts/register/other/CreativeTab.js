@@ -1,56 +1,78 @@
-StartupEvents.registry('creative_mode_tab', event => {
-    event.create('cmc:cmc_ae_items')
-        .icon(() => 'cmc:cell_creative_full')
+StartupEvents.registry("creative_mode_tab", (event) => {
+
+    //ae物品
+    event.create("cmc:cmc_ae_items")
+        .icon(() => "cmc:cell_creative_full")
         .content(() => [
-            'cmc:cell_creative_basic',
-            'cmc:cell_creative',
-            'cmc:cell_creative_basic_full',
-            'cmc:cell_creative_full',
-            'cmc:infinity_lava_cell',
-            'cmc:drive_part'
+            "cmc:cell_creative_basic",
+            "cmc:cell_creative",
+            "cmc:cell_creative_basic_full",
+            "cmc:cell_creative_full",
+            "cmc:infinity_lava_cell",
+            "cmc:drive_part"
         ])
 
-    event.create('cmc:cmc_normal_items')
-        .icon(() => 'cmc:basic_smithing_template')
+    //普通物品
+    event.create("cmc:cmc_normal_items")
+        .icon(() => "cmc:basic_smithing_template")
         .content(() => [
-            'cmc:basic_smithing_template',
-            'cmc:world_gem',
+            "cmc:basic_smithing_template",
+            "cmc:world_gem",
             "cmc:quartz_seed",
-            "cmc:high_pure_quartz"
+            "cmc:high_pure_quartz",
+            "cmc:world_matter_ingot",
+            "cmc:world_matter_nugget",
+            "cmc:world_matter_plate",
+            "cmc:world_matter_dust",
+            "cmc:crushed_world_matter",
+            "cmc:mechanism_part",
+            "cmc:ringo_mechanism",
+            "cmc:wooden_mechanism",
+            "cmc:precision_mechanism_base",
+            "cmc:brass_gear"
         ])
 
-    event.create('cmc:cmc_tools')
-        .icon(() => 'cmc:unbreakable_sandpaper')
+    //工具
+    event.create("cmc:cmc_tools")
+        .icon(() => "cmc:unbreakable_sandpaper")
         .content(() => [
-            "cmc:unbreakable_sandpapar"
+            "cmc:unbreakable_sandpaper",
+            "cmc:test",
+            "cmc:creative_physics_staff"
         ])
 
-    event.create('cmc:cmc_fluid')
-        .icon(() => 'cmc:impurity_bucket')
+    //流体
+    event.create("cmc:cmc_fluid")
+        .icon(() => "cmc:impurity_bucket")
         .content(() => [
-            'cmc:impurity_bucket',
-            'cmc:world_fluid_bucket'
+            "cmc:impurity_bucket",
+            "cmc:world_fluid_bucket",
+            "cmc:glue_bucket"
         ])
 
-    event.create('cmc:cmc_normal_blocks')
-        .icon(() => 'cmc:me_equipment_casing')
+    //普通方块
+    event.create("cmc:cmc_normal_blocks")
+        .icon(() => "cmc:me_equipment_casing")
         .content(() => [
-            'cmc:creative_fiuld_tank',
+            "cmc:creative_fiuld_tank",
             "cmc:me_equipment_casing",
             "cmc:me_machine_casing"
         ])
 
-    event.create('cmc:cmc_incomplete_items')
-        .icon(() => 'cmc:incomplete_netherite_upgrade_smithing_template')
+    //未完成物品
+    event.create("cmc:cmc_incomplete_items")
+        .icon(() => "cmc:incomplete_netherite_upgrade_smithing_template")
         .content(() => [
-            'cmc:incomplete_netherite_upgrade_smithing_template',
+            "cmc:incomplete_netherite_upgrade_smithing_template",
             "cmc:incomplete_black_iron_ingot",
             "cmc:incomplete_machine_frame",
             "cmc:incomplete_diamond",
             "cmc:incomplete_drive_part",
-            "cmc:incomplete_high_pure_quartz"
+            "cmc:incomplete_high_pure_quartz",
+            "cmc:incomplete_thermal_machine"
         ])
 
+    //彩蛋
     event.create("cmc:cmc_easter_eggs")
         .icon(() => "cmc:delta")
         .content(() => [
@@ -82,30 +104,47 @@ StartupEvents.registry('creative_mode_tab', event => {
         ])
 })
 
-StartupEvents.registry('creative_mode_tab', event => {
-    event.create('cmc:chunk_by_chunk')
-        .icon(() => 'chunkbychunk:chunkspawner')
+StartupEvents.registry("creative_mode_tab", (event) => {
+
+    //chunk by chunk
+    event.create("cmc:chunk_by_chunk")
+        .icon(() => "chunkbychunk:chunkspawner")
         .content(() => [
-            'chunkbychunk:worldfragment',
-            'chunkbychunk:worldshard',
-            'chunkbychunk:worldcrystal',
-            'cmc:world_gem',
-            'chunkbychunk:worldcore',
-            'chunkbychunk:worldforge',
-            'chunkbychunk:worldscanner',
-            'chunkbychunk:worldmender',
-            'chunkbychunk:chunkspawner',
-            'chunkbychunk:unstablechunkspawner',
-            'chunkbychunk:plainschunkspawner',
-            'chunkbychunk:snowchunkspawner',
-            'chunkbychunk:desertchunkspawner',
-            'chunkbychunk:swampchunkspawner',
-            'chunkbychunk:badlandschunkspawner',
-            'chunkbychunk:forestchunkspawner',
-            'chunkbychunk:savannachunkspawner',
-            'chunkbychunk:rockychunkspawner',
-            'chunkbychunk:junglechunkspawner',
-            'chunkbychunk:mushroomchunkspawner',
-            'chunkbychunk:mountainchunkspawner'
+            "chunkbychunk:worldfragment",
+            "chunkbychunk:worldshard",
+            "chunkbychunk:worldcrystal",
+            "cmc:world_gem",
+            "chunkbychunk:worldcore",
+            "chunkbychunk:worldforge",
+            "chunkbychunk:worldscanner",
+            "chunkbychunk:worldmender",
+            "chunkbychunk:chunkspawner",
+            "chunkbychunk:unstablechunkspawner",
+            "chunkbychunk:plainschunkspawner",
+            "chunkbychunk:snowchunkspawner",
+            "chunkbychunk:desertchunkspawner",
+            "chunkbychunk:swampchunkspawner",
+            "chunkbychunk:badlandschunkspawner",
+            "chunkbychunk:forestchunkspawner",
+            "chunkbychunk:savannachunkspawner",
+            "chunkbychunk:rockychunkspawner",
+            "chunkbychunk:junglechunkspawner",
+            "chunkbychunk:mushroomchunkspawner",
+            "chunkbychunk:mountainchunkspawner"
+        ])
+
+    //ae things
+    event.create("cmc:ae_things")
+        .icon(() => "aeinfinitybooster:infinity_card")
+        .content(() => [
+            "aeinfinitybooster:infinity_card",
+            "aeinfinitybooster:dimension_card",
+            "ae2insertexportcard:insert_card",
+            "ae2insertexportcard:export_card",
+            "ae2wtlib:quantum_bridge_card",
+            "ae2wtlib:magnet_card",
+            "ae2wtlib:wireless_pattern_encoding_terminal",
+            "ae2wtlib:wireless_pattern_access_terminal",
+            "ae2wtlib:wireless_universal_terminal"
         ])
 })

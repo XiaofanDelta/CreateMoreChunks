@@ -15,58 +15,37 @@ StartupEvents.modifyCreativeTab("thermal_extra:resources", (event) => {
 })
 
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
-	
 	event.remove([
-		"cmc:cell_creative_basic",
-		"cmc:cell_creative",
-		"cmc:cell_creative_basic_full",
-		"cmc:cell_creative_full",
 		"cmc:infinity_lava_cell",
-		"cmc:incomplete_netherite_upgrade_smithing_template",
 		"cmc:basic_smithing_template",
 		"cmc:world_gem",
 		"cmc:drive_part",
 		"cmc:andesite_upgrade_smithing_template",
 		"cmc:test",
 		"cmc:impurity_bucket",
-		"cmc:sky_stone_casing",
-		'cmc:computing_casing',
-		'cmc:creative_fiuld_tank',
-		'cmc:world_fluid_bucket',
+		"cmc:creative_fiuld_tank",
+		"cmc:world_fluid_bucket",
 		"cmc:me_equipment_casing",
 		"cmc:me_machine_casing",
-		"cmc:incomplete_black_iron_ingot",
-		"cmc:delta",
-		"cmc:rc",
-		"cmc:c5",
-		"cmc:nopai",
-		"cmc:cmi",
-		"cmc:ticks",
-		"cmc:cmc",
-        "cmc:cmc_icon",
-        "cmc:c_7cd520",
-        "cmc:c_8f8f8f_with_ore",
-        "cmc:c_8f8f8f",
-        "cmc:c_82ff00",
-        "cmc:c_d2d2d2",
-        "cmc:c_fdaf40",
-        "cmc:fallen_steve",
-        "cmc:i_5be9b7",
-        "cmc:m_b9855c_with_water",
-        "cmc:m_b9855c",
-        "cmc:m_ff81fa",
-        "cmc:m_ffb13d",
-        "cmc:sun",
-        "cmc:symbol_cmi",
-        "cmc:tree",
-		"cmc:cmc_icon_black",
-		"cmc:incomplete_machine_frame",
-		"cmc:incomplete_diamond",
-		"cmc:deleta",
-		"cmc:incomplete_drive_part",
 		"cmc:high_pure_quartz",
-		"cmc:incomplete_high_pure_quartz",
 		"cmc:quartz_seed",
-		"cmc:unbreakable_sandpaper"
+		"cmc:unbreakable_sandpaper",
+		"cmc:world_matter_ingot",
+		"cmc:world_matter_nugget",
+		"cmc:world_matter_plate",
+		"cmc:world_matter_dust",
+		"cmc:crushed_world_matter",
+		"cmc:creative_physics_staff",
+		"cmc:ringo_mechanism",
+		"cmc:wooden_mechanism",
+		"cmc:mechanism_part",
+		"cmc:precision_mechanism_base",
+		"cmc:brass_gear",
+		"cmc:glue_bucket"
 	])
+
+	event.remove("#cmc:examples")
+	event.remove("#cmc:incomplete_items")
+	event.remove("#cmc:cells")
+
 })
