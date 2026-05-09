@@ -5,5 +5,7 @@
     "creative_mode_tab.cmc.cmc_normal_blocks": "Create More Chunks | 普通方块",
     "creative_mode_tab.cmc.cmc_incomplete_items": "Create More Chunks | 半成品",
     "creative_mode_tab.cmc.cmc_easter_eggs": "Create More Chunks | 彩蛋",
-    "creative_mode_tab.cmc.cmc_tools": "Create More Chunks | 工具"
+    "creative_mode_tab.cmc.cmc_tools": "Create More Chunks | 工具",
+    "creative_mode_tab.cmc.ae_things": "一些 AE2 物品",
+    "message.cmc.creative_physics_staff": "对，我确实把 神秘吊塔: 航空学 迁移到了 1.20.1 Forge"
 }
