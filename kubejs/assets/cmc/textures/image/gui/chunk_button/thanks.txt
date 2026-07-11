@@ -1,5 +1,0 @@
-../old/normal.png  &  ../old/selected.png  &  ../all_old.png
-    --by  Re_Constrction
-
-../all.png
-    --by  auc
