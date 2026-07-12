@@ -1,0 +1,55 @@
+{	
+	"itemGroup.cmc.resources": "Create More Chunks | Resources",
+	"itemGroup.cmc.special_items": "Create More Chunks | Special Items",
+	"itemGroup.cmc.tools": "Create More Chunks | Tools",
+	"itemGroup.cmc.fluid_buckets": "Create More Chunks | Fluid Buckets",
+	"itemGroup.cmc.blocks": "Create More Chunks | Blocks",
+	"itemGroup.cmc.incomplete_items": "Create More Chunks | Incomplete Items",
+	"itemGroup.cmc.easter_eggs": "Create More Chunks | Easter Eggs",
+	"itemGroup.cmc.empties": "Create More Chunks | §kNull§r",
+	"itemGroup.cmc.chunk_by_chunk": "Chunk By Chunk",
+	"itemGroup.cmc.all": "CMC | CMC",
+
+	"message.cmc.creative_physics_staff": "Yeah, I moved Deleta: Aeronautics to 1.20.1 Forge truely",
+
+	"item.cmc.cmc": "Create: More Chunks",
+    "item.cmc.cmc_icon": "Icon of Create: More Chunks",
+    "item.cmc.rc": "Re_Construction",
+    "item.cmc.c5": "create0501",
+    "item.cmc.cmi": "Create: Mechanism and Innovation",
+    "item.cmc.cmc_icon_black": "Icon with Black Background of Create: More Chunk",
+	"item.cmc.symbol_cmi": "Symbol in CMI Icon",
+	"item.cmc.sun_cmc": "Sun",
+
+	"item.cmc.sun_oneshot_item": "Sun",
+	"item.cmc.small_rf_coil": "Small Redstone Flux Coil",
+
+	"item.cmc.c_8f8f8f_with_ore": "Letter C Colored #8f8f8f (With Ore)",
+	"item.cmc.m_b9855c_with_water": "Letter M Colored #b9855c (With Water)",
+	"item.cmc.c_7cd520": "Letter C Colored #7cd520",
+	"item.cmc.c_8f8f8f": "Letter C Colored #8f8f8f",
+	"item.cmc.c_82ff00": "Letter C Colored #82ff00",
+	"item.cmc.c_d2d2d2": "Letter C Colored #d2d2d2",
+	"item.cmc.c_fdaf40": "Letter C Colored #fdaf40",
+	"item.cmc.i_5be9b7": "Letter I Colored #5be9b7",
+	"item.cmc.m_b9855c": "Letter M Colored #b9855c",
+	"item.cmc.m_ff81fa": "Letter M Colored #ff81fa",
+	"item.cmc.m_ffb13d": "Letter M Colored #ffb13d",
+
+	"item.cmc.null": "%s",
+	"item.cmc.smithing_template": "%s Smithing Template",
+	"item.cmc.mechanism": "%s Mechanism",
+	"item.cmc.empty": " ",
+	
+	"block.cmc.null_block": "%s",
+	"block.cmc.chunk_spawner": "%s Chunk Spawner",
+	"block.cmc.grass_block": "§m§oGrass Block",
+	"block.cmc.dirt": "§m§oDirt",
+	"block.cmc.stone": "§m§oStone",
+	"block.cmc.bedrock": "§m§oBedrock",
+
+	"block.cmc.sun_oneshot": "Sun",
+	
+	"block.thermal_extra.abyssal": "Molten Abyssal"
+
+}

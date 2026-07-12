@@ -1,0 +1,20 @@
+{
+	"itemGroup.cmc.resources": "CMC | 资源",
+	"itemGroup.cmc.special_items": "CMC | 特殊物品",
+	"itemGroup.cmc.tools": "CMC | 工具",
+	"itemGroup.cmc.fluid_buckets": "CMC | 流体桶",
+	"itemGroup.cmc.blocks": "CMC | 方块",
+	"itemGroup.cmc.incomplete_items": "CMC | 未完成物品",
+	"itemGroup.cmc.easter_eggs": "CMC | 彩蛋",
+
+	"message.cmc.creative_physics_staff": "对，我确实把 神秘吊塔: 航空学 迁移到了 1.20.1 Forge",
+
+	"display.cmc.chunk_spawner.dim": "似乎除了主世界的其他维度无法正常启动它……",
+	"display.cmc.chunk_spawner.item": "它对这个物品没有反应……尝试一下其他物品？",
+
+	"recipe.jei.recipeType.cmc.test": "测试！",
+
+	"item.cmc.smithing_template.andesite.applies_to": "1",
+
+	"block.thermal_extra.abyssal": "熔融深渊"
+}

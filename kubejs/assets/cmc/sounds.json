@@ -1,0 +1,17 @@
+{
+	"creative_physics_staff": {
+		"sounds": [
+			{
+				"name": "cmc:creative_physics_staff",
+				"stream": true
+			}
+		]
+	},
+	"chunk_spawn": {
+		"sounds": [
+			{
+				"name": "chunkbychunk:radar1"
+			}
+		]
+	}
+}
