@@ -1,0 +1,5 @@
+../old/normal.png  &  ../old/selected.png  &  ../all_old.png
+    --by  Re_Construction
+
+../all.png
+    --by  auc
