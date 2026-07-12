@@ -21,6 +21,7 @@
 ### 整合包打包所需文件
  - **config**
  - **defaultconfigs**
+ - **hotai**
  - **kubejs**
 	- **assets**
 	- **client_scripts**
@@ -28,8 +29,10 @@
 	- **data**
 	- **server_scripts**
 	- **startup_scripts**
+ - **ldlib**
  - **mods**
  - **resourcepacks**
+ - **schematics**
  - **icon.png**
  - **LICENSE.md**
  - **README.md**
