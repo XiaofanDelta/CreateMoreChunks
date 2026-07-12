@@ -1,0 +1,14 @@
+{
+    "quests.all.attention": "§c请看此任务的描述获取注意事项",
+    
+    "quests.ch0.title": "0 - 序章",
+    "quests.ch_.title": "* - 通用",
+    "quests.ch1.title": "1 - 初步探索",
+    "quests.ch2.title": "2 - 工业革命",
+    "quests.ch3.title": "3 - 近在咫尺",
+    "quests.ch4.title": "4 - 创造!!",
+    
+    
+    
+    "quests.ch3p2.spawn_chunk.title": "生成§k??§r区块"
+}
