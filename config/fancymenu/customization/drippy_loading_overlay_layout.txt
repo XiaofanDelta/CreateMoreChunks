@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:location]cmc:textures/picture/gui/chunk.png
+  image_path = [source:location]cmc:textures/image/gui/chunk.png
   slide = false
   repeat_texture = false
   parallax = false

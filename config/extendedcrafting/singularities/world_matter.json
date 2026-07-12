@@ -1,0 +1,11 @@
+{
+	"name": "singularity.extendedcrafting.world_matter",
+	"colors": [
+		"0097ff",
+		"002169"
+	],
+	"ingredient": {
+		"item": "cmc:world_matter_ingot"
+	},
+	"materialCount": 200
+}

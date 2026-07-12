@@ -1,0 +1,29 @@
+{
+    "ModSettings": {
+        "highlight_foused_items_color": "#0A780A19",
+        "highlight_foused_items_bg_color": "#14C81480",
+        "first_run": false
+    },
+    "GuiSettings": {
+        "enable_inventory_buttons": {
+            "value": false
+        }
+    },
+    "Hotkeys": {
+        "sort_inventory": {
+            "main": {
+                "keys": "Z"
+            }
+        },
+        "move_all_items": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "throw_all_items": {
+            "main": {
+                "keys": ""
+            }
+        }
+    }
+}

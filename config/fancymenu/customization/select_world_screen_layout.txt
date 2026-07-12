@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:location]cmc:textures/picture/gui/sky.png
+  image_path = [source:location]cmc:textures/image/gui/sky.png
   slide = false
   repeat_texture = false
   parallax = false

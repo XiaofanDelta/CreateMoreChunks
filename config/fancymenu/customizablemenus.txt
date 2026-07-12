@@ -24,6 +24,3 @@ net.minecraft.client.gui.screens.ConnectScreen {
 net.minecraft.client.gui.screens.ReceivingLevelScreen {
 }
 
-net.minecraftforge.client.gui.ModListScreen {
-}
-
