@@ -1,0 +1,12 @@
+JEIEvents.addItems((event) => {
+    function addItemToJEI(item) {
+        event.add(item)
+    }
+
+    addItemToJEI("create:chromatic_compound")
+    addItemToJEI("create:shadow_steel")
+    addItemToJEI("create:shadow_steel_casing")
+    addItemToJEI("create:refined_radiance")
+    addItemToJEI("create:refined_radiance_casing")
+    addItemToJEI("thermal:rf_coil")
+})
