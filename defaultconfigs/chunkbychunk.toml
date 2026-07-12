@@ -7,17 +7,17 @@
 	#Should the nether start empty with chunks spawning in response to overworld spawns
 	synch_nether_chunk_spawn = true
 	#Should chunks include a chest with materials for generating further chunks?
-	spawn_new_chunk_chest = false
+	spawn_new_chunk_chest = true
 	#Should the chest spawn in the initial chunk only?
-	spawn_chest_in_initial_chunk_only = false
+	spawn_chest_in_initial_chunk_only = true
 	#Should the generated chest be a bedrock chest
 	use_bedrock_chest = false
 	#The type of items the bedrock chest provides
 	#Allowed Values: ChunkSpawner, Random, WorldCore, WorldCrystal, WorldFragment, WorldForge, UnstableChunkSpawner
-	chest_contents = "Random"
+	chest_contents = "WorldForge"
 	#The number of items the bedrock chest provides
 	#Range: 1 ~ 64
-	chest_quantity = 1
+	chest_quantity = 16
 	#The minimum depth at which the chunk spawner chest can spawn
 	#Range: -64 ~ 128
 	min_chest_spawn_depth = -60
@@ -38,7 +38,7 @@
 	block_placement_allowed_outside_spawned_chunks = true
 	#What restriction to place on starting location
 	#Allowed Values: Biome, None, Village
-	start_restriction = "Village"
+	start_restriction = "None"
 	#The tag or name of the biome the starting spawn should be in (if not a village, blank for any
 	starting_biome = #minecraft:is_forest
 	#Prevent leaves spawned by the chunk spawners from decaying
@@ -47,7 +47,7 @@
 [WorldForge]
 	#The rate at which the world forge processes consumed blocks, in fuel per tick
 	#Range: 1 ~ 256
-	production_rate = 64
+	production_rate = 1
 	#The value of fuel provided by soils (dirt, sand, gravel, etc). 0 to disallow use as fuel
 	#Range: 0 ~ 256
 	soil_fuel_value = 2
@@ -80,4 +80,4 @@
 [BedrockChest]
 	#The number of blocks within the chunk above the bedrock chest allowed to remain before it will open
 	#Range: 0 ~ 65534
-	bedrock_chest_unlock_at_blocks_remaining = 16
+	bedrock_chest_unlock_at_blocks_remaining = 11451
