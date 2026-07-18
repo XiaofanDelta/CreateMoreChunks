@@ -1,0 +1,30 @@
+{
+	"variants": {
+		"facing=north": {
+			"model": "cmc:block/dynamo_base",
+			"x": 90
+		},
+		"facing=east": {
+			"model": "cmc:block/dynamo_base",
+			"x": 90,
+			"y": 90
+		},
+		"facing=south": {
+			"model": "cmc:block/dynamo_base",
+			"x": 90,
+			"y": 180
+		},
+		"facing=west": {
+			"model": "cmc:block/dynamo_base",
+			"x": 90,
+			"y": 270
+		},
+		"facing=up": {
+			"model": "cmc:block/dynamo_base"
+		},
+		"facing=down": {
+			"model": "cmc:block/dynamo_base",
+			"x": 180
+		}
+	}
+}

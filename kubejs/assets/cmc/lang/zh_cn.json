@@ -6,6 +6,7 @@
 	"itemGroup.cmc.blocks": "CMC | 方块",
 	"itemGroup.cmc.incomplete_items": "CMC | 未完成物品",
 	"itemGroup.cmc.easter_eggs": "CMC | 彩蛋",
+	"itemGroup.cmc.planets": "CMC | 星球",
 
 	"message.cmc.creative_physics_staff": "对，我确实把 神秘吊塔: 航空学 迁移到了 1.20.1 Forge",
 
@@ -15,6 +16,12 @@
 	"recipe.jei.recipeType.cmc.test": "测试！",
 
 	"item.cmc.smithing_template.andesite.applies_to": "1",
+	
+	"cmc.advanced_component_assemble": "高级部件装配",
+
+	"info.cmc.information": "信息",
+	"info.cmc.aca": "用一些液体和物品制作高级物品。\n \n一些配方可能留下需要处理的废液。\n \n不是高级(AE)反应仓。",
+	"info.cmc.db": "能源炉但不能输入任何东西。\n \n只能存储能量的基础能源炉。\n \n能量会自动输入输出。",
 
 	"block.thermal_extra.abyssal": "熔融深渊"
 }

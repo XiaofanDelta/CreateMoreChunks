@@ -9,6 +9,7 @@
 	"itemGroup.cmc.empties": "Create More Chunks | §kNull§r",
 	"itemGroup.cmc.chunk_by_chunk": "Chunk By Chunk",
 	"itemGroup.cmc.all": "CMC | CMC",
+	"itemGroup.cmc.planets": "CMC | Planet",
 
 	"message.cmc.creative_physics_staff": "Yeah, I moved Deleta: Aeronautics to 1.20.1 Forge truely",
 
@@ -49,7 +50,15 @@
 	"block.cmc.bedrock": "§m§oBedrock",
 
 	"block.cmc.sun_oneshot": "Sun",
+	"block.cmc.advanced_component_assembly": "Advanced Component Assembly",
+	"block.cmc.dynamo_base": "Dynamo Base",
 	
+	"cmc.advanced_component_assemble": "Advanced Component Assemble",
+
+	"info.cmc.information": "Information",
+	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
+	"info.cmc.db": "Dynamo but nothing can input.\n \nThe basic dynamo that can only store energy.\n \nEnergy will be auto IO.",
+
 	"block.thermal_extra.abyssal": "Molten Abyssal"
 
 }
