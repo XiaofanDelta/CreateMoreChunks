@@ -7,13 +7,13 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("creative_create", "创造版条箱")
 	addBlockLang("chunk_machine_base", "区块机器基底")
 	addBlockLang("creative_casing", "创造机壳")
-	addBlockLang("dynamo_base", "能源炉基底")
 
 	// 太阳
 	addBlockLang("sun_oneshot", "太阳")
 
 	// 机器
 	addBlockLang("advanced_component_assembly", "高级部件装配机")
+	addBlockLang("dynamo_base", "能源炉基底")
 
 	// %null%
 	addBlockLang("chunk_spawner", "%s 区块生成器")

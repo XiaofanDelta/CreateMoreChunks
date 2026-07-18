@@ -2,6 +2,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
     addMaterialLang("world_matter", "世界物质")
     addMaterialLang("advanced_alloy", "高级合金")
+    addMaterialLang("refined_redstone", "精炼红石")
 
     /**
 	 * 
@@ -35,7 +36,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		event.add(`block.cmc.raw_${key}_block`, `粗${value}块`)
 		event.add(`item.cmc.crushed_raw_${key}`, `粉碎${value}矿石`)
         event.add(`item.cmc.crushed_${key}`, `粉碎${value}`)
-        
+
 		event.add(`block.cmc.${key}_ore`, `${value}矿石`)
 		event.add(`block.cmc.deepslate_${key}_ore`, `深层${value}矿石`)
 	}
