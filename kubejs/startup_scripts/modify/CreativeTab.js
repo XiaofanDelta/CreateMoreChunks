@@ -16,78 +16,28 @@ StartupEvents.modifyCreativeTab("thermal_extra:resources", (event) => {
 
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translatable("itemGroup.cmc.all"))
-	
-	/*
+})
+
+StartupEvents.modifyCreativeTab("meinfinitycell:mic_tab", (event) => {
 	event.remove([
-		"cmc:infinity_lava_cell",
-		"cmc:basic_smithing_template",
-		"cmc:world_gem",
-		"cmc:drive_part",
-		"cmc:andesite_upgrade_smithing_template",
-		"cmc:test",
-		"cmc:impurity_bucket",
-		"cmc:creative_fiuld_tank",
-		"cmc:world_fluid_bucket",
-		"cmc:me_device_casing",
-		"cmc:me_machine_casing",
-		"cmc:high_pure_quartz",
-		"cmc:quartz_seed",
-		"cmc:unbreakable_sandpaper",
-		"cmc:world_matter_ingot",
-		"cmc:world_matter_nugget",
-		"cmc:world_matter_plate",
-		"cmc:world_matter_dust",
-		"cmc:crushed_world_matter",
-		"cmc:creative_physics_staff",
-		"cmc:ringo_mechanism",
-		"cmc:wooden_mechanism",
-		"cmc:mechanism_part",
-		"cmc:precision_mechanism_base",
-		"cmc:brass_gear",
-		"cmc:glue_bucket",
-		"cmc:null",
-		"cmc:null_block",
-		"cmc:null_mechanism",
-		"cmc:null_smithing_template",
-		"cmc:chunk_spawner",
-		"cmc:grass_block",
-		"cmc:dirt",
-		"cmc:stone",
-		"cmc:bedrock",
-		"cmc:steel_casing_part",
-		"cmc:refined_redstone_ingot",
-		"cmc:small_rf_coil",
-		"cmc:sun_oneshot",
-		"cmc:sun_oneshot_item",
-		"cmc:globe_frame",
-		"cmc:unbreakable_soap",
-		"cmc:empty",
-		"cmc:bronze_bucket",
-		"cmc:invar_bucket",
-		"cmc:unstable_singularity",
-		"cmc:drawer_upgrade_base",
-		"cmc:configuration_tool_base",
-		"cmc:linking_tool_base",
-		"cmc:augment_base",
-		"cmc:creative_augment_base",
-		"cmc:filter_augment_base",
-		"cmc:precision_core",
-		"cmc:empty_schematic",
-		"cmc:mek_upgrade_base",
-		"cmc:circuit_component",
-		"cmc:iron_chunk",
-		"cmc:coal_chunk",
-		"cmc:advanced_compound_bucket",
-		"cmc:chunk_machine_base",
-		"cmc:ultimate_card",
-		"cmc:creative_create"
+		"meinfinitycell:infinity_cobblestone_cell",
+		"meinfinitycell:infinity_water_cell"
 	])
+	event.add(Ingredient.of("#cmc:planets").itemIds)
+	event.setDisplayName(Component.translatable("itemGroup.cmc.planets"))
+	event.setIcon(() => Item.of("cmc:earth"))
+})
 
-	event.remove("#cmc:examples")
-	event.remove("#cmc:incomplete_items")
-	event.remove("#cmc:cells")
-	event.remove("#cmc:planets")
-	event.remove("#cmc:infinity_source")
-	*/
+StartupEvents.modifyCreativeTab("thermal:thermal.items", (event) => {
+	event.add([
+		"thermal_parallel:argument_parallel_2",
+		"thermal_parallel:argument_parallel_3"
+	])
+})
 
+StartupEvents.modifyCreativeTab("thermal_extra:machines", (event) => {
+	event.add([
+		"cmc:advanced_component_assembly",
+		"cmc:dynamo_base"
+	])
 })

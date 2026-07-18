@@ -1,13 +1,40 @@
-new Material("advanced_alloy", "iron")
-	.color(0x333333, 0x444444)
+// 高级合金
+new Material("advanced_alloy", "diamond")
+	.color(0x363636, 0x444444)
+	.isMetal()
+	.ingot(false)
+	.plate(false)
+	.nugget(false)
+	.dust()
+	.rod(false)
+	.block()
+	.gear(false)
+
+// 精炼红石
+new Material("refined_redstone", "iron")
+	.color(0xB80000, 0x9A0000)
 	.isMetal()
 	.ingot()
 	.plate()
 	.nugget()
-	.dust()
-	.rod()
-	.block()
-	.gear()
+	.prism()
+
+// 安山合金
+new Material("andesite_alloy", "wooden")
+	.color(0xC7C8B8, 0x809587)
+	.isMetal()
+	.nugget()
+
+// 光辉石
+new Material("refined_radiance", "diamond")
+	.color(0xFFFFFF, 0xDBDDDE)
+	.isMetal()
+	.nugget()
+
+// 磨制石英
+new Material("polished_quartz", "wooden")
+	.color(0xAE9E7F, 0xFFFFFF)
+	.prism()
 
 /* 我屈服了，还是用cmi的轮子吧😭😭😭
 let example = [[

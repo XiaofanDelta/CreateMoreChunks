@@ -24,9 +24,9 @@ StartupEvents.registry("fluid",(event) => {
 		return builder
 	}
 
-	addAloneFluid("world_fluid", 0x0097ff)
-	addAloneFluid("impurity", 0x0f0f0f)
-	addAloneFluid("glue", 0x76be6d).noBlock()
+	addAloneFluid("world_fluid", 0x0097FF)
+	addAloneFluid("impurity", 0x0F0F0F)
+	addAloneFluid("glue", 0x76BE6D).noBlock()
 	addAloneFluid("advanced_compound", 0x444444)
 	
 
@@ -56,7 +56,7 @@ StartupEvents.registry("fluid",(event) => {
 		return builder
 	}
 
-	addColorFluid("bronze", 0xf5920b)
-	addColorFluid("invar", 0xa0b4b4)
+	addColorFluid("bronze", 0xF5920B)
+	addColorFluid("invar", 0xA0B4B4)
 
 })

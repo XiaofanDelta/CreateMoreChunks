@@ -105,6 +105,8 @@ ServerEvents.recipes((event) => {
 		.input("thermal:machine_crucible", 8)
 		.input("megacells:mega_fluid_cell_housing", 1)
 		.build("cmc:advanced_ae/reaction/infinity_lava_cell")
+
+
 	
 })
 // Item.of("expatternprovider:infinity_cell", "{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}")

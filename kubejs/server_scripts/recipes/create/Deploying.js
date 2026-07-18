@@ -51,10 +51,10 @@ ServerEvents.recipes((event) => {
 	]).keepHeldItem()
 		.id("cmc:create/deploying/empty_planet")
 
-	// 斯特林能源炉
-	create.deploying("thermal:dynamo_stirling", [
-		"cmc:dynamo_base",
-		"#forge:gears/stone"
-	]).id("thermal:create/deploying/dynamo_stirling")
+	// 矿典转换器
+	create.deploying("mekanism:oredictionificator", [
+		"thermal:machine_frame",
+		"mekanism:dictionary"
+	]).id("mekanism:create/deploying/oredictionificator")
 
 })

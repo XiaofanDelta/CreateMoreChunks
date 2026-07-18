@@ -49,7 +49,7 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 
 	// ME 设备外壳
-	addBlock("me_device_casing", "basic")
+	addBlock("me_device_casing", "cardinal")
 		.model("cmc:block/me_device_casing")
 		.hardness(5)
 		.requiresTool(true)
@@ -83,8 +83,16 @@ StartupEvents.registry("block", (event) => {
 		.renderType("cutout")
 		.opaque(false)
 		.waterlogged()
-		.noItem()
 		.notSolid()
+		.item((item) => {
+			item.unstackable()
+			item.parentModel({
+				"parent": "item/generated",
+				"textures": {
+					"layer0": "cmc:item/sun_oneshot"
+				}
+			})
+		})
 
 	// %null%
 	addBlock("chunk_spawner")
@@ -139,19 +147,4 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock(global.ToolType["pickaxe"])
 	
-	// 能源炉基底
-	addBlock("dynamo_base", "cardinal")
-		.model("cmc:block/dynamo_base")
-		.soundType(SoundType.METAL)
-		.hardness(2)
-		.requiresTool(true)
-		.tagBlock(global.MiningLevel["stone"])
-		.tagBlock(global.ToolType["pickaxe"])
-		.box(0, 0, 0, 16, 10, 16)
-		.box(4, 10, 4, 12, 16, 12)
-		.fullBlock(false)
-		.opaque(false)
-		.renderType("cutout")
-		.notSolid()
-
 })

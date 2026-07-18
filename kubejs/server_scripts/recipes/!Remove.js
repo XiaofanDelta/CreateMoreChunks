@@ -59,6 +59,9 @@ ServerEvents.recipes((event) => {
 		"#mekanism:upgrades",
 		"#mekanism:tier_installers",
 		"#thermal:dynamos",
+		"tiab:time_in_a_bottle",
+		"mekanism:oredictionificator",
+		"mekanism:dictionary",
 		//"#thermal:machines"
 	]
 
@@ -95,5 +98,17 @@ ServerEvents.recipes((event) => {
 	remove_id_list.forEach((remove_id) => {
 		event.remove({ id: remove_id })
 	})
+
+	/*
+	一些技巧：
+	event.remove([{id: "114"}, {id:"514"}])
+	移除id为114或id为514的
+	event.remove({id:"114", output:"te:st"})
+	移除id为114且输出为te:st的
+	event.remove({not: {id:"114"}})
+	移除id不为114的
+	event.remove({{not: {id: "114"}},output: "te:st"})
+	套娃
+	*/
 
 })

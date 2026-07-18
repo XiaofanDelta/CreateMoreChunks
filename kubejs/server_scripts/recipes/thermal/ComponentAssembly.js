@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 		"extendedcrafting:luminessence",
 		"thermal:iron_gear"
 	]).energy(80000).id("extendedcrafting:thermal_extra/component_assembly/basic_component")
-	
+
 	thermal_extra.component_assembly("extendedcrafting:pedestal", [
 		Fluid.of("cmc:advanced_compound", 100),
 		"extendedcrafting:black_iron_block",
@@ -35,14 +35,14 @@ ServerEvents.recipes((event) => {
 		"create:refined_radiance",
 		"minecraft:torchflower",
 		"#ae2:lumen_paint_balls"
-	]).energy(80000).id("extendedcrafting:thermal_extra/component_assembly/luminessence")
+	]).energy(global.EnergyStage[4]).id("extendedcrafting:thermal_extra/component_assembly/luminessence")
 
 	thermal_extra.component_assembly("cmc:mek_upgrade_base", [
 		Fluid.of("cmc:advanced_compound", 10),
 		"#forge:plates/steel",
 		"#forge:wires/copper",
 		"#forge:glass"
-	]).energy(80000).id("cmc:thermal_extra/component_assembly/mek_upgrade_base")
+	]).energy(global.EnergyStage[4]).id("cmc:thermal_extra/component_assembly/mek_upgrade_base")
 
 	thermal_extra.component_assembly("cmc:tier_installer_base", [
 		Fluid.of("cmc:advanced_compound", 10),
@@ -58,5 +58,13 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/abyssal",
 		"thermal:blizz_rod"
 	]).energy(global.EnergyStage[4]).id("thermal_extra:component_assembly/dynamo_frost")
+	
+	thermal_extra.component_assembly("tiab:time_in_a_bottle", [
+		Fluid.of("cmc:world_fluid", 5000),
+		"minecraft:glass_bottle",
+		"minecraft:clock",
+		"#forge:gears/enderium",
+		"#forge:gears/abyssal"
+	]).energy(global.EnergyStage[4]).id("tiab:component_assembly/time_in_a_bottle")
 
 })

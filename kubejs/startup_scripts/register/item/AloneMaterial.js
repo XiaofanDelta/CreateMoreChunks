@@ -1,7 +1,6 @@
 StartupEvents.registry("item", (event) => {
 
 	addMaterial("brass_gear") // 黄铜齿轮
-	addMaterial("refined_redstone_ingot") // 精炼红石锭
 	addMaterial("wooden_gear") // 木齿轮
 	addMaterial("stone_gear") // 石齿轮
 	addMaterial("quartz_seed") // 石英种子

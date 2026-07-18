@@ -15,7 +15,7 @@ StartupEvents.registry("item", (event) => {
 	console.log(Component.translatable("item.cmc.smithing_template.andesite.applies_to").getString())
 
 	// 太阳
-	addItem("sun_oneshot").texture("cmc:item/sun_oneshot")
+	// addItem("sun_oneshot").texture("cmc:item/sun_oneshot")
 
 	// %null%
 	addItem("null", "basic").texture("cmc:item/missing/missingno")

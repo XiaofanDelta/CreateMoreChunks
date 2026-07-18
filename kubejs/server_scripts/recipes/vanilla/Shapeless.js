@@ -65,4 +65,10 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("cmc:empty_schematic", "create:empty_schematic").id("cmc:empty_schematic")
 	kubejs.shapeless("create:empty_schematic", "cmc:empty_schematic").id("create:empty_schematic")
 
+	// 辞典
+	kubejs.shapeless("mekanism:dictionary", [
+		"minecraft:book",
+		"#forge:ingot"
+	]).id("mekanism:dictionary")
+
 })

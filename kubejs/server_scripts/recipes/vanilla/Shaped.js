@@ -431,4 +431,22 @@ ServerEvents.recipes((event) => {
 		D: "#forge:dusts/redstone"
 	}).id("cmc:dynamo_base")
 
+	// 木质齿轮
+	kubejs.shaped("cmc:wooden_gear", [
+		" A ",
+		"A A",
+		" A "
+	], {
+		A: "#minecraft:planks"
+	}).id("cmc:wooden_gear")
+
+	// 石质齿轮
+	kubejs.shaped("cmc:stone_gear", [
+		" A ",
+		"A A",
+		" A "
+	], {
+		A: "#forge:stone"
+	}).id("cmc:stone_gear")
+
 })

@@ -61,7 +61,6 @@ ServerEvents.tags("item", (event) => {
 		.add([
 			"createdeco:industrial_iron_ingot",
 			"megacells:sky_steel_ingot",
-			"cmc:refined_redstone_ingot"
 	]).remove(["extendedcrafting:the_ultimate_ingot"])
 
 	event.get("forge:nuggets")
@@ -145,7 +144,6 @@ ServerEvents.tags("item", (event) => {
 	addAloneItemTag("forge:plates/black_iron", "extendedcrafting:black_iron_slate")
 	addAloneItemTag("thermal:dynamos", "thermal_extra:dynamo_frost")
 	addAloneItemTag("forge:gears/brass", "cmc:brass_gear")
-	addAloneItemTag("forge:ingots/redstone", "cmc:refined_redstone_ingot")
 	addAloneItemTag("forge:gears/stone", "cmc:stone_gear")
 	addAloneItemTag("forge:gears/wooden", "cmc:wooden_gear")
 

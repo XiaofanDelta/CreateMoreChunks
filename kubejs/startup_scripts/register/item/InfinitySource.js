@@ -22,17 +22,17 @@ StartupEvents.registry("item", (event) => {
 		return builder
 	}
 
-	addInfinitySource("empty", 0xffffff)
-	addInfinitySource("redstone", 0xaa0f01)
-	addInfinitySource("gold", 0xfad64a)
-	addInfinitySource("iron", 0xa8a8a8)
-	addInfinitySource("diamond", 0x4aedd9)
-	addInfinitySource("copper", 0xc15a36)
-	addInfinitySource("emerald", 0x41f384)
-	addInfinitySource("coal", 0x2e2e2e)
-	addInfinitySource("lapis_lazuli", 0x345ec3)
+	addInfinitySource("empty", 0xFFFFFF)
+	addInfinitySource("redstone", 0xAA0F01)
+	addInfinitySource("gold", 0xFAD64A)
+	addInfinitySource("iron", 0xA8A8A8)
+	addInfinitySource("diamond", 0x4AEDD9)
+	addInfinitySource("copper", 0xC15A36)
+	addInfinitySource("emerald", 0x41F384)
+	addInfinitySource("coal", 0x2E2E2E)
+	addInfinitySource("lapis_lazuli", 0x345EC3)
 	addInfinitySource("lead", 0x323562)
-	addInfinitySource("glow_stone", 0xffd38f)
+	addInfinitySource("glow_stone", 0xffD38F)
 
 	"#ffd38f"
 })
