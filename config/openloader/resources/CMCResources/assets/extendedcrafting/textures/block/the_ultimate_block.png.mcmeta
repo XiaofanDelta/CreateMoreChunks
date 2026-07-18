@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "extendedcrafting:block/the_ultimate_block_ctm"
+        ]
+    }
+}
