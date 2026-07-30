@@ -10,14 +10,22 @@
 		{
 			id: "563563D1D6270283"
 			linked_quest: "31C61BF59C2D463C"
-			x: -1.5d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
 			id: "4AF468573811D58C"
 			linked_quest: "76A728F3FB90DC93"
-			x: 3.0d
-			y: -0.5d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "547C7ED18A9E26A8"
+			linked_quest: "38156708BFFA55E1"
+			shape: "pentagon"
+			size: 1.5d
+			x: -4.0d
+			y: -10.0d
 		}
 	]
 	quests: [
@@ -28,6 +36,12 @@
 				"0FE3B9BF230C6ADB"
 			]
 			id: "4F7BF80AF7CAD4AF"
+			rewards: [{
+				count: 16
+				id: "0441556690D37916"
+				item: "chunkbychunk:worldfragment"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
@@ -76,7 +90,7 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -87,7 +101,7 @@
 				item: "create:brass_hand"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 4.0d
 			y: -2.0d
 		}
 		{
@@ -103,8 +117,8 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.5d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -123,8 +137,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -5.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0E129AE88B55C6D3"]
@@ -140,8 +154,8 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.5d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -157,7 +171,7 @@
 				item: "create:rose_quartz"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -168,8 +182,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -183,8 +197,8 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7C04D4F0B0F9D43E"]
@@ -195,52 +209,46 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["011DA83073486294"]
-			id: "2617EF2926038A7F"
-			tasks: [{
-				id: "2A6690B86D465D66"
-				item: "mekanism:dust_coal"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -5.0d
+			x: 4.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["011DA83073486294"]
 			id: "7EA06E237097AEBA"
+			tasks: [
+				{
+					id: "69C4B5C682DBC60F"
+					item: "cmc:iron_chunk"
+					type: "item"
+				}
+				{
+					id: "13413BE83735D106"
+					item: "cmc:coal_chunk"
+					type: "item"
+				}
+			]
+			title: "碎块"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7EA06E237097AEBA"]
+			id: "5B496AA276EBCEBA"
 			tasks: [{
-				id: "69C4B5C682DBC60F"
+				id: "2FB1494D70B1497F"
 				item: {
 					Count: 1
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:dusts/iron"
+						value: "forge:dusts/steel"
 					}
 				}
-				title: "Any #forge:dusts/iron"
+				title: "Any #forge:dusts/steel"
 				type: "item"
 			}]
-			title: "铁粉"
-			x: -1.5d
-			y: -6.5d
-		}
-		{
-			dependencies: [
-				"2617EF2926038A7F"
-				"7EA06E237097AEBA"
-			]
-			id: "5B496AA276EBCEBA"
-			tasks: [{
-				id: "2FB1494D70B1497F"
-				item: "mekanism:dust_steel"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -5.0d
+			title: "钢粉"
+			x: 0.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5B496AA276EBCEBA"]
@@ -253,44 +261,37 @@
 			}]
 			tasks: [{
 				id: "0DC12A92B347A475"
-				item: "mekanism:ingot_steel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "Any #forge:ingots/steel"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.0d
+			title: "钢锭"
+			x: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1F8E0EFA98BD37BD"]
 			id: "4EC229A2EE474B4B"
 			tasks: [{
 				id: "25A004CB5ED3B4FA"
-				item: "mekanism:block_steel"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:storage_blocks/steel"
+					}
+				}
+				title: "Any #forge:storage_blocks/steel"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -6.5d
-		}
-		{
-			dependencies: [
-				"4EC229A2EE474B4B"
-				"50F88E23F2F6B6A0"
-				"0B9B8AA4E1540B72"
-			]
-			id: "38156708BFFA55E1"
-			rewards: [{
-				count: 2
-				id: "15AD4A1C149501B2"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			shape: "pentagon"
-			size: 1.5d
-			tasks: [{
-				id: "06F549132FE6BB5A"
-				item: "thermal:machine_frame"
-				type: "item"
-			}]
-			x: -4.5d
+			title: "钢块"
+			x: -4.0d
 			y: -8.0d
 		}
 		{
@@ -301,8 +302,25 @@
 				item: "cmc:high_pure_quartz"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -0.5d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50F88E23F2F6B6A0"]
+			id: "349AE463201EDF64"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "相信你能完成"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "1193761CE728A660"
+				item: { Count: 64, id: "chunkbychunk:worldcore" }
+				type: "item"
+			}]
+			title: "自动化世界核心"
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "1.3 黄铜时代"

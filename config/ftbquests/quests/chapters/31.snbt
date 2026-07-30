@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "31"
+	group: "0848FE2BFE81296A"
+	icon: "extendedcrafting:frame"
+	id: "5ACD72B87EA6CCCA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "26991CBEBAE3D829"
+		tasks: [{
+			id: "009767689C4A5C8B"
+			item: "extendedcrafting:black_iron_slate"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "3.1 更大的工作台"
+}

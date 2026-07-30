@@ -1,0 +1,279 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "32_knull"
+	group: "0848FE2BFE81296A"
+	icon: "cmc:null_block"
+	id: "368C6847BFC2C9E1"
+	order_index: 1
+	quest_links: [
+		{
+			id: "4213BDF6B658C0CF"
+			linked_quest: "7767B6195E6EFE9B"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "2D5375AAE2CD30F3"
+			linked_quest: "4029B52E69D5E459"
+			x: 1.0d
+			y: -2.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"4029B52E69D5E459"
+				"7767B6195E6EFE9B"
+			]
+			description: ["用&1不稳奇点&r右键生成区块"]
+			id: "4F4B3F80A4006428"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "2D1B1E9FA2039C22"
+				item: "cmc:chunk_spawner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "245F5D1511066BFA"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7237D4584C279736"
+				item: "cmc:unstable_singularity"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4518B6D6E35F6E57"]
+			hide_dependent_lines: true
+			id: "1A6F2814EE34BF5A"
+			tasks: [{
+				id: "6B54A1F127E0D171"
+				item: "cmc:grass_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4518B6D6E35F6E57"]
+			hide_dependent_lines: true
+			id: "66D5F150A598A759"
+			tasks: [{
+				id: "747AF751DD7906AB"
+				item: "cmc:dirt"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4518B6D6E35F6E57"]
+			hide_dependent_lines: true
+			id: "05DD28CBF3A8A86C"
+			tasks: [{
+				id: "2E9DD21F777CCE1A"
+				item: "cmc:stone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4518B6D6E35F6E57"]
+			hide_dependent_lines: true
+			id: "25A5966A2D2F0E74"
+			tasks: [{
+				id: "3C76682F38089EB5"
+				item: "cmc:bedrock"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4F4B3F80A4006428"
+				"245F5D1511066BFA"
+			]
+			description: [
+				"由于&d随机区块生成器&r与&9区块生成器&r强行嵌在一起"
+				"导致此区块生成器&c出错&r，无法生成正常的东西"
+				"目前已知的消息："
+				"生成的区块不是常规世界，变为超平坦地形"
+				"超平坦会生成在Y=-57~-64的地方"
+				"超平坦组成的方块均为错误化方块"
+				"生成会直接替换方块，适合在空区块内生成"
+			]
+			icon: "cmc:chunk_spawner"
+			id: "4518B6D6E35F6E57"
+			subtitle: "{quests.all.attention}"
+			tasks: [{
+				id: "24FEE254B28D9C44"
+				title: "{quests.ch3p2.spawn_chunk.title}"
+				type: "checkmark"
+			}]
+			title: "{quests.ch3p2.spawn_chunk.title}"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"05DD28CBF3A8A86C"
+				"25A5966A2D2F0E74"
+				"66D5F150A598A759"
+				"1A6F2814EE34BF5A"
+				"48012AEA4BC3ACAE"
+				"4518B6D6E35F6E57"
+			]
+			id: "4FFFEBB9B02E51D0"
+			tasks: [{
+				id: "47F10CD79AE5697E"
+				item: "cmc:null"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"05DD28CBF3A8A86C"
+				"25A5966A2D2F0E74"
+				"66D5F150A598A759"
+				"1A6F2814EE34BF5A"
+				"4518B6D6E35F6E57"
+			]
+			id: "414C3530B4C32C34"
+			subtitle: "这并不是bug"
+			tasks: [{
+				id: "167417D2434214BD"
+				item: "ftbquests:missing_item"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"05DD28CBF3A8A86C"
+				"25A5966A2D2F0E74"
+				"66D5F150A598A759"
+				"1A6F2814EE34BF5A"
+				"4518B6D6E35F6E57"
+			]
+			id: "48012AEA4BC3ACAE"
+			tasks: [{
+				id: "3E14E088BBD3F2E9"
+				item: "cmc:null_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["25A5966A2D2F0E74"]
+			id: "14FE750F41D1DF27"
+			subtitle: "嗯对，现在这个不是创造专属了"
+			tasks: [{
+				id: "1DA0B4F8318E11A2"
+				item: "minecraft:bedrock"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["14FE750F41D1DF27"]
+			id: "1415A005B4E69026"
+			subtitle: "也许有用呢"
+			tasks: [{
+				id: "0ECF133CDCB44EE8"
+				item: "chunkbychunk:bedrockchest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4FFFEBB9B02E51D0"
+				"414C3530B4C32C34"
+			]
+			id: "79AEB4BEBAA4BCD6"
+			rewards: [
+				{
+					count: 12
+					id: "089005D72DD21281"
+					item: "cmc:empty"
+					type: "item"
+				}
+				{
+					count: 25
+					id: "0F5C8F90B8D03E21"
+					item: "cmc:empty"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "滚木"
+			tasks: [{
+				id: "538C0E7D3350FCB2"
+				item: "cmc:empty"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5D95AF64663EBB9A"
+				"4FFFEBB9B02E51D0"
+				"414C3530B4C32C34"
+			]
+			id: "0F06AA1AF3A535B1"
+			tasks: [{
+				id: "2976E09B5F1C1194"
+				item: "cmc:null_smithing_template"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"79AEB4BEBAA4BCD6"
+				"68246F1DFB5DA6A6"
+				"0F06AA1AF3A535B1"
+			]
+			id: "1C85731C618FC184"
+			tasks: [{
+				id: "61A7F262E3144655"
+				item: "cmc:null_mechanism"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1C85731C618FC184"]
+			id: "31790FC89BC6279A"
+			tasks: [{
+				id: "61CEE7C03268662A"
+				item: "cmc:ticks"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+	]
+	subtitle: ["&kWhat the hell?"]
+	title: "3.2 &kERROR"
+}

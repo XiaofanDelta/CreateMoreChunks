@@ -1,0 +1,114 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "23"
+	group: "23BC4DDC85A76AE3"
+	icon: "mekanism:steel_casing"
+	id: "7D0D6289A85D7446"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4813A4E68135A2A1"
+			tasks: [{
+				id: "690310A9FFC81D91"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4493F9F3BC0BB0DD"
+			tasks: [{
+				id: "3FF991EEC9D0B018"
+				item: "create_connected:control_chip"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4493F9F3BC0BB0DD"]
+			id: "66EE740713D98988"
+			tasks: [{
+				id: "61CFFD8B80EDAECF"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4493F9F3BC0BB0DD"]
+			id: "7245E46CD31EFC20"
+			tasks: [{
+				id: "1E4C819B20460D4B"
+				item: "thermal_extra:fluid_mixer"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4493F9F3BC0BB0DD"]
+			id: "7264E8B0EAED21A2"
+			tasks: [{
+				id: "6F1A7FA28C2E366D"
+				item: "thermal_extra:nitratic_igniter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4493F9F3BC0BB0DD"]
+			id: "501181C6742F7ABD"
+			tasks: [{
+				id: "35C065048E12DD56"
+				item: "thermal_extra:endothermic_dehydrator"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4493F9F3BC0BB0DD"]
+			id: "44DD31DEBE6C66E4"
+			tasks: [{
+				id: "48F294F75ACB666B"
+				title: "4 级设备"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"44DD31DEBE6C66E4"
+				"38ED0589BB02ABE4"
+			]
+			id: "78675AD3F6044992"
+			subtitle: "窝趣，冰！"
+			tasks: [{
+				id: "35A14CD9F505DB0D"
+				item: "thermal_extra:dynamo_frost"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44DD31DEBE6C66E4"]
+			id: "26F1149403A8247A"
+			tasks: [{
+				id: "1AE641ECC65338B2"
+				item: "thermal_extra:device_lava_gen"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+	]
+	title: "2.3 更进一步"
+}

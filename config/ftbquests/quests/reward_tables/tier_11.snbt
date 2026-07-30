@@ -1,0 +1,18 @@
+{
+	icon: "minecraft:iron_block"
+	id: "256FA54E4EAFB035"
+	loot_size: 3
+	order_index: 0
+	rewards: [
+		{ item: "minecraft:iron_block" }
+		{ count: 4, item: "minecraft:iron_ingot", weight: 3.0f }
+		{ count: 2, item: "minecraft:iron_ingot", weight: 4.0f }
+		{ count: 5, item: "minecraft:raw_iron", weight: 2.0f }
+		{ count: 2, item: "minecraft:copper_ingot", weight: 3.0f }
+		{ item: "compressium:cobblestone_9", weight: 2.0f }
+		{ item: "minecraft:copper_block" }
+		{ count: 5, item: "minecraft:raw_copper", weight: 2.0f }
+		{ count: 4, item: "create:andesite_alloy", weight: 3.0f }
+	]
+	title: "Tier 1.1"
+}

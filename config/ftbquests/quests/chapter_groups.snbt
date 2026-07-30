@@ -1,7 +1,10 @@
 {
 	chapter_groups: [
-		{ id: "45A75AF053908A17", title: "0 - 序章" }
-		{ id: "44B0CA233BCF73AB", title: "* - 通用" }
-		{ id: "4F589DC5893A9E7A", title: "1 - 初步探索" }
+		{ id: "45A75AF053908A17", title: "{quests.ch0.title}" }
+		{ id: "44B0CA233BCF73AB", title: "{quests.ch_.title}" }
+		{ id: "4F589DC5893A9E7A", title: "{quests.ch1.title}" }
+		{ id: "23BC4DDC85A76AE3", title: "{quests.ch2.title}" }
+		{ id: "0848FE2BFE81296A", title: "{quests.ch3.title}" }
+		{ id: "025E23522FC64C26", title: "{quests.ch4.title}" }
 	]
 }

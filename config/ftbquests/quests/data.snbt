@@ -12,22 +12,16 @@
 	emergency_items_cooldown: 500
 	grid_scale: 0.5d
 	hide_excluded_quests: false
-	icon: {
-		Count: 1
-		id: "ftbquests:custom_icon"
-		tag: {
-			Icon: "cmc:textures/picture/cmc_icon_16.png"
-		}
-	}
+	icon: "cmc:cmc_icon"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
 		monster: 600
 		passive: 4000
 	}
-	pause_game: false
+	pause_game: true
 	progression_mode: "flexible"
 	show_lock_icons: false
-	title: "Create More Chunks"
+	title: "Create: More Chunks"
 	version: 13
 }

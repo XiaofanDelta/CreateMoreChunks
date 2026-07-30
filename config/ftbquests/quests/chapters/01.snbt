@@ -11,15 +11,52 @@
 		}
 	}
 	id: "2D2FD67CB22CEC8E"
-	images: [{
-		height: 3.0d
-		hover: ["Create: More Chunks"]
-		image: "cmc:textures/picture/cmc_icon_big.png"
-		rotation: 0.0d
-		width: 3.0d
-		x: 0.0d
-		y: -2.5d
-	}]
+	images: [
+		{
+			height: 3.0d
+			hover: ["Create: More Chunks"]
+			image: "cmc:textures/image/cmc_icon_big.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependency: "638AB088C00F8E2F"
+			height: 2.0d
+			image: "cmc:textures/image/ftb/oui.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependency: "638AB088C00F8E2F"
+			height: 2.0d
+			image: "cmc:textures/image/ftb/ouid.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependency: "638AB088C00F8E2F"
+			height: 2.0d
+			image: "cmc:textures/image/ftb/bcc.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			height: 1.0d
+			image: "cmc:textures/gui/empty_slot_casing.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: -1.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -35,7 +72,7 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "cmc:textures/picture/cmc_icon_16.png"
+					Icon: "cmc:textures/image/cmc_icon_16.png"
 				}
 			}
 			id: "0D44313CB54C6DD5"
@@ -124,7 +161,7 @@
 			dependencies: ["0D44313CB54C6DD5"]
 			description: ["这应该是个爽包...吧"]
 			hide_until_deps_complete: true
-			icon: "cmc:cell_creative_full"
+			icon: "cmc:creative_cell"
 			id: "7E52074C9A28647F"
 			tasks: [{
 				id: "70C78032AAEECD40"
@@ -137,20 +174,7 @@
 		}
 		{
 			dependencies: ["0D44313CB54C6DD5"]
-			description: [
-				"CMC 的游戏阶段介绍 (C表示Chapter，章节)"
-				"{@pagebreak}"
-				"&aC1 - 初步探索"
-				"模组: &2原版Minecraft , Chunk by Chunk , Create"
-				"介绍: 最终大目标是做出&9世界核心"
-				"你需要通过&1世界锻造器&r制作&b世界碎片/段片/水晶"
-				"然后开启机械动力后制作&3世界宝石"
-				"对着&73x压缩圆石使用"
-				"(注 : 本整合包有&8圆石制造机&r）"
-				"即可做出世界核心"
-				"{@pagebreak}"
-				"&7C2 - 热力时代"
-			]
+			description: [""]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -162,10 +186,10 @@
 			id: "638AB088C00F8E2F"
 			tasks: [{
 				id: "157ECFC59B2BC9CF"
-				title: "游戏阶段"
+				title: "材质包"
 				type: "checkmark"
 			}]
-			title: "关于游戏阶段"
+			title: "关于材质包"
 			x: -1.5d
 			y: 1.5d
 		}

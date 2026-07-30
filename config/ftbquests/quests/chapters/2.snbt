@@ -6,6 +6,15 @@
 	hide_quest_until_deps_visible: true
 	icon: "chunkbychunk:chunkspawner"
 	id: "5AA6558E972BA094"
+	images: [{
+		dependency: "146390B8A9A5E6C6"
+		height: 13.0d
+		image: "cmc:item/planet/solar_system"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.0d
+		y: 0.0d
+	}]
 	order_index: 1
 	quest_links: [
 		{
@@ -13,19 +22,22 @@
 			linked_quest: "146390B8A9A5E6C6"
 			shape: "hexagon"
 			size: 2.0d
-			x: 0.0d
-			y: 0.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			id: "4DA418FBAE228E3F"
 			linked_quest: "7E85A005CBBD4348"
 			x: -2.0d
-			y: -2.0d
+			y: 2.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["146390B8A9A5E6C6"]
+			dependencies: [
+				"146390B8A9A5E6C6"
+				"4AB1CF1639DF14EC"
+			]
 			id: "7D033C78DF22E884"
 			subtitle: "这个东西可以自动恢复区块"
 			tasks: [{
@@ -33,47 +45,52 @@
 				item: "chunkbychunk:worldmender"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["146390B8A9A5E6C6"]
+			dependencies: [
+				"146390B8A9A5E6C6"
+				"4AB1CF1639DF14EC"
+			]
 			id: "72A1AE354E1193D1"
 			optional: true
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "可以扫描世界上某种资源的分布"
 			tasks: [{
 				id: "66DDE641F70AB181"
 				item: "chunkbychunk:worldscanner"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["146390B8A9A5E6C6"]
+			dependencies: [
+				"146390B8A9A5E6C6"
+				"24642D26C90F0FCB"
+			]
 			id: "7767B6195E6EFE9B"
 			tasks: [{
 				id: "48B50577794EB51F"
 				item: "chunkbychunk:chunkspawner"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["146390B8A9A5E6C6"]
 			id: "4029B52E69D5E459"
 			optional: true
-			shape: "rsquare"
 			subtitle: "随机！"
 			tasks: [{
 				id: "4E67D0E83C9FF540"
 				item: "chunkbychunk:unstablechunkspawner"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["146390B8A9A5E6C6"]
@@ -91,8 +108,8 @@
 				type: "item"
 			}]
 			title: "区块生成器"
-			x: 0.0d
-			y: 3.0d
+			x: -6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2A94CCAE79884B19"]
@@ -103,8 +120,8 @@
 				item: "cmc:cmc_icon"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.0d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5BA8BC3D1FA7CD7F"]
@@ -114,8 +131,236 @@
 				item: "cmc:cmc_icon_black"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["14E91554F8FBD71C"]
+			hide_dependent_lines: true
+			id: "4F529BB21C83A3C5"
+			shape: "none"
+			tasks: [{
+				id: "2D81ED4A14E3E3F6"
+				item: "cmc:empty_planet"
+				type: "item"
+			}]
+			x: 6.1d
+			y: 3.6d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "14E91554F8FBD71C"
+			tasks: [{
+				id: "783FE729835CEDB1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:glass"
+					}
+				}
+				title: "Any #forge:glass"
+				type: "item"
+			}]
+			title: "玻璃"
+			x: 6.1d
+			y: 4.6d
+		}
+		{
+			dependencies: [
+				"4F529BB21C83A3C5"
+				"41E3409361E8873A"
+				"7528728B4FABF661"
+				"5081DCF397B87880"
+				"08A172132C948D9B"
+				"175298DCA8CA0779"
+				"5C0DAD09BA3D1A44"
+				"52743A9F394B28CF"
+				"321074940D222D09"
+			]
+			id: "24642D26C90F0FCB"
+			shape: "none"
+			tasks: [{
+				id: "4D36FD7C8FC716E4"
+				item: "cmc:earth"
+				type: "item"
+			}]
+			x: 3.25d
+			y: 1.45d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "52743A9F394B28CF"
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "293E1DAE91937E90"
+				item: "cmc:sun"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "175298DCA8CA0779"
+			shape: "none"
+			tasks: [{
+				id: "33FF2F247ECB4A74"
+				item: "cmc:venus"
+				type: "item"
+			}]
+			x: 1.9d
+			y: 1.8d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "5C0DAD09BA3D1A44"
+			shape: "none"
+			tasks: [{
+				id: "0763B57D0FBDFF60"
+				item: "cmc:mercury"
+				type: "item"
+			}]
+			x: 2.1d
+			y: 0.9d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "321074940D222D09"
+			shape: "none"
+			tasks: [{
+				id: "5D0C2078A2D24352"
+				item: "cmc:mars"
+				type: "item"
+			}]
+			x: 4.1d
+			y: 1.2d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "7528728B4FABF661"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "46E5EF69243E5A72"
+				item: "cmc:jupiter"
+				type: "item"
+			}]
+			x: 4.1d
+			y: 2.4d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "41E3409361E8873A"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "03710608E7B59C32"
+				item: "cmc:saturn"
+				type: "item"
+			}]
+			x: 5.6d
+			y: 1.6d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "08A172132C948D9B"
+			shape: "none"
+			tasks: [{
+				id: "49A2787977A8993C"
+				item: "cmc:uranus"
+				type: "item"
+			}]
+			x: 5.4d
+			y: 2.8d
+		}
+		{
+			dependencies: ["4F529BB21C83A3C5"]
+			id: "5081DCF397B87880"
+			shape: "none"
+			tasks: [{
+				id: "1E5C5789A1FCAF9A"
+				item: "cmc:neptune"
+				type: "item"
+			}]
+			x: 6.4d
+			y: 2.7d
+		}
+		{
+			dependencies: ["32E8236E8F01ACAE"]
+			id: "7C1397EFC2E8BA36"
+			tasks: [{
+				id: "6BA67918B9A20009"
+				item: "cmc:globe_frame"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7C1397EFC2E8BA36"
+				"24642D26C90F0FCB"
+			]
+			id: "108F7B7B7C7014D2"
+			tasks: [{
+				id: "735752391B7B4E43"
+				item: "supplementaries:globe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["108F7B7B7C7014D2"]
+			id: "73AA095BDDDD217A"
+			subtitle: "用空星球右键放置在世界上的地球仪"
+			tasks: [{
+				id: "35FF6F4C3F0AA255"
+				item: "supplementaries:globe_sepia"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"65B384ED48D72F3C"
+				"034E74783AB2CCED"
+			]
+			id: "6918D58EB89014B2"
+			subtitle: "不消耗肥皂！"
+			tasks: [{
+				id: "0E796E36995BA1F9"
+				item: "cmc:unbreakable_soap"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "65B384ED48D72F3C"
+			subtitle: "直接右键墨绘地球仪，消耗肥皂恢复成地球仪"
+			tasks: [{
+				id: "19E13D19CA55B45B"
+				item: "supplementaries:soap"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A8FC8D0CD612716"]
+			id: "4AB1CF1639DF14EC"
+			tasks: [{
+				id: "57CDB780C9D435ED"
+				item: "cmc:chunk_machine_base"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
 		}
 	]
 	title: "*.2 世界恢复"

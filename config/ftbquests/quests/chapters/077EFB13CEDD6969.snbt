@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "077EFB13CEDD6969"
+	group: "0848FE2BFE81296A"
+	icon: "cmc:empty_infinity_source"
+	id: "077EFB13CEDD6969"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["79AEB4BEBAA4BCD6"]
+		id: "15B45B4F57EA2915"
+		tasks: [{
+			id: "066337A0220CCE9E"
+			item: "cmc:empty_infinity_source"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["&0!&1I&2n&3f&4i&5n&6i&7t&8y&9 S&ao&bu&cr&dc&ee&f!"]
+	title: "3.3 &c无&e限&b！"
+}

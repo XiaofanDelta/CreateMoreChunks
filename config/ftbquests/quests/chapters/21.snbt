@@ -1,0 +1,761 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21"
+	group: "23BC4DDC85A76AE3"
+	icon: "thermal:machine_frame"
+	id: "0D759A9D5329C6A3"
+	order_index: 0
+	quest_links: [{
+		id: "759A4E63054329D5"
+		linked_quest: "332C22B637F66320"
+		shape: "pentagon"
+		size: 1.5d
+		x: 2.0d
+		y: 6.0d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"4EC229A2EE474B4B"
+				"50F88E23F2F6B6A0"
+				"0B9B8AA4E1540B72"
+			]
+			hide_dependent_lines: true
+			id: "38156708BFFA55E1"
+			rewards: [{
+				count: 2
+				id: "15AD4A1C149501B2"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "06F549132FE6BB5A"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"7716738E4DA487BB"
+			]
+			id: "5036C15F5CD6581E"
+			tasks: [{
+				id: "6798D78C8A670D4D"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"7716738E4DA487BB"
+			]
+			hide_dependent_lines: true
+			id: "5184A66FFC8B7E5A"
+			tasks: [{
+				id: "4F18BA166C1E589F"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"7716738E4DA487BB"
+			]
+			id: "68B297B099597831"
+			tasks: [{
+				id: "41A21088651F827A"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"7716738E4DA487BB"
+			]
+			id: "6BC6A73BA3421C2A"
+			tasks: [{
+				id: "7EEA7C3F453D0CCD"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"32E8236E8F01ACAE"
+				"5E27AACD31B50642"
+			]
+			id: "58C105034DDE90B6"
+			tasks: [{
+				id: "5B523F4E53ACAB4E"
+				item: "cmc:small_rf_coil"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5036C15F5CD6581E"]
+			id: "08361488BEDB1E77"
+			tasks: [{
+				id: "1469E0CFDCBC0F2D"
+				item: "thermal_extra:raw_tin_bucket"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5036C15F5CD6581E"]
+			id: "68F5DED62BBF7597"
+			tasks: [{
+				id: "1556300BF6CC2900"
+				item: "thermal_extra:raw_copper_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"08361488BEDB1E77"
+				"68F5DED62BBF7597"
+			]
+			id: "605770B4B9E85B48"
+			subtitle: "这个包里面其实没有匠魂的，你说对吧"
+			tasks: [{
+				id: "2B331CC88CF16D83"
+				item: "cmc:bronze_bucket"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"605770B4B9E85B48"
+				"5184A66FFC8B7E5A"
+			]
+			id: "5EA9C5252ED9F66B"
+			tasks: [{
+				id: "134FD793A6AAA32D"
+				item: "thermal:chiller_ingot_cast"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"605770B4B9E85B48"
+				"5184A66FFC8B7E5A"
+			]
+			id: "1AE07911E80AFD32"
+			tasks: [{
+				id: "4D49B22401A964E1"
+				item: "thermal:chiller_rod_cast"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"605770B4B9E85B48"
+				"5184A66FFC8B7E5A"
+			]
+			id: "6A72CA8F4A9CABA7"
+			tasks: [{
+				id: "54AF0DEE5E3B3C02"
+				item: "thermal_extra:chiller_plate_cast"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"5184A66FFC8B7E5A"
+				"5EA9C5252ED9F66B"
+			]
+			hide_dependent_lines: true
+			id: "17BBC701BFC7436C"
+			tasks: [{
+				id: "0D3E9357D8487F25"
+				item: "extendedcrafting:redstone_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5184A66FFC8B7E5A"
+				"5EA9C5252ED9F66B"
+			]
+			hide_dependent_lines: true
+			id: "2AAEF969AAD5392A"
+			tasks: [{
+				id: "0E7DC9749B62A638"
+				item: "cmc:world_matter_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["17BBC701BFC7436C"]
+			id: "7E9845260639A6A8"
+			tasks: [{
+				id: "36A736D83803E077"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"68B297B099597831"
+				"716B5A7736BBC8D5"
+			]
+			id: "26C68B191DBDBAB1"
+			tasks: [{
+				id: "43A3A3BFD4E3A5EA"
+				item: {
+					Count: 1
+					id: "cmc:unbreakable_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02E1D3D02143B49C"]
+			id: "716B5A7736BBC8D5"
+			tasks: [{
+				id: "54139A931CC5C4CE"
+				item: {
+					Count: 1
+					id: "createaddition:diamond_grit_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "77B9574FBB31552D"
+			subtitle: "更方便的机器框架制造"
+			tasks: [{
+				id: "3E8EC88D73EBD296"
+				item: "thermal:machine_press"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "1DA95A2DB03C39D8"
+			tasks: [{
+				id: "4D3850F3013D2910"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "06B89A06A76BC36A"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "3188E4E0400FBE59"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "0E035F10338DBE92"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "7FFF072E717210B2"
+				item: "thermal:machine_brewer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "7996FA5D54E6D64C"
+			tasks: [{
+				id: "7505AC3C8160CBF4"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "2AFF4A275A044BC0"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "7DAF1650C3F54007"
+				item: "thermal:machine_sawmill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7E9845260639A6A8"
+				"38156708BFFA55E1"
+			]
+			id: "4C144867F1632AED"
+			tasks: [{
+				id: "71328C67EDA89861"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7716738E4DA487BB"]
+			id: "7A19E856B04B3E49"
+			tasks: [{
+				id: "2F4A5C6ECB78F3F2"
+				title: "1 级设备"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7E9845260639A6A8"]
+			id: "23B2A6C08B6756AF"
+			tasks: [{
+				id: "73A2D2C43B333EEF"
+				title: "2 级设备"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A19E856B04B3E49"]
+			id: "2CB4A3F0BE2BA214"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "3F60051ECECBDAB2"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7A19E856B04B3E49"
+				"7C54A0620558769B"
+			]
+			id: "034FBF21F278276E"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "658B83100C32DC41"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A19E856B04B3E49"]
+			id: "0BA5AD6307A41815"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "6B8FFAC16C7A9365"
+				item: "thermal:charge_bench"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["23B2A6C08B6756AF"]
+			id: "58D8355B6FC0D2A2"
+			tasks: [{
+				id: "74F2623763C2467B"
+				item: "thermal:device_water_gen"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23B2A6C08B6756AF"]
+			id: "65B32F10EC40BEDD"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "0A90FE92DFA46186"
+				item: "thermal:device_collector"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["23B2A6C08B6756AF"]
+			id: "000D81DA008BA877"
+			tasks: [{
+				id: "325B027FCD422014"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["58D8355B6FC0D2A2"]
+			description: [
+				"&o它不是水槽，是文明最后的仁慈。"
+				""
+				"&o我第一次把它从“懒人厨房”的合成格里取出来时，就明白了这一点。它通体铸铁的灰色，边缘圆钝，毫无装饰，像一个被时代遗忘的沉默符号。把它放在墙边，与闪亮的自动料理机、嘶鸣的蒸汽导管为伍，显得那么朴素，那么……不合时宜。"
+				"{@pagebreak}"
+				"&o直到我将第一根流体管道接入它背面的接口。"
+				""
+				"&o那一瞬间，整个世界的水文循环都成了笑话。雪山消融，河流奔涌，海洋无垠的潮汐——在它面前都成了局促的、有限的挣扎。它的内部，那串程序员玩笑般写下的数字 2147483647 mB 级水量，不是容量，而是一个宣言：这里是世界的终点，也是起点。 水在这里不再遵循物理，它成为了逻辑，成为了公理，成为了一个“如果-那么”语句中永远为真的前提。"
+				""
+				"&o在模组宇宙那令人窒息的科技树里，在为了自动化一点点电力、一滴燃油、一粒粉尘而搭建的、布满齿轮与线路的精密地狱中，水槽是唯一的神迹。它拒绝被解构。你无法分析它为何能源源不绝，正如你无法质疑光速。它只是存在，并将“无限”这个奢侈的概念，具象为一道沉稳的、永不枯竭的涓流。"
+				"{@pagebreak}"
+				"&omek 热力塔和锅炉需要你，ae2 物质聚合器需要你，热力膨胀种子种植站需要你...."
+				""
+				"&o而水槽只是给予。平静地，毫不费力地。"
+				""
+				"&o它将“水”从“需要管理的资源”列表中，永久地划去了。它把我们从汲水、运水、保水的古老劳役中，彻底赦免。"
+				""
+				"&o它不发光，不发声，没有进度条，不需要  RF/FE/EU。它只是在那里，一个绝对的基准点。在由无数个“不够”、“急需”、“耗尽”组成的模组生存史诗里，它是唯一一句从容的：“应有，尽有。”"
+				"{@pagebreak}"
+				"&o伟大，确实无须多言。它只是一口沉默的水槽，以及它给予我们的、近乎亵渎神明的从容。"
+				""
+				"&o----《札记 · 科技第九十七 · 天》"
+				""
+				"&7&o&m节选自某水槽的百科的评论区"
+			]
+			id: "423DD9B2991DEB09"
+			rewards: [{
+				id: "07034E93162263F7"
+				item: "cookingforblockheads:counter"
+				type: "item"
+			}]
+			subtitle: "知名科技模组懒人厨房，传奇无限水方块水槽"
+			tasks: [{
+				id: "5C7C1509EB51F241"
+				item: "cookingforblockheads:sink"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"23B2A6C08B6756AF"
+				"38ED0589BB02ABE4"
+			]
+			id: "3ADBB5DE72513ACF"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "699A8D4B1C968552"
+				item: "thermal:dynamo_gourmand"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"23B2A6C08B6756AF"
+				"38ED0589BB02ABE4"
+			]
+			id: "0D13AB3DBE062589"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "3F9A70FF6C4E0062"
+				item: "thermal:dynamo_lapidary"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7A19E856B04B3E49"
+				"38ED0589BB02ABE4"
+			]
+			id: "34E277F4038C4809"
+			subtitle: "前期能量来源"
+			tasks: [{
+				id: "3B55FC1E12B7B6B5"
+				item: "thermal:dynamo_stirling"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["77B9574FBB31552D"]
+			id: "07277685E58040F8"
+			subtitle: "黄金盘子？！"
+			tasks: [{
+				id: "213E958A605AB507"
+				item: "cmc:precision_mechanism_base"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["77B9574FBB31552D"]
+			id: "3A6AD9860E3DFCC6"
+			tasks: [{
+				id: "09DB75FD52EB10E4"
+				item: "cmc:brass_gear"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5036C15F5CD6581E"]
+			hide_dependent_lines: true
+			id: "2DA1A19A1314CA51"
+			tasks: [{
+				id: "3DFC8911A4AB5FBF"
+				item: "cmc:glue_bucket"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E902F89B6B38DEF"]
+			id: "1077A5253DDB418B"
+			subtitle: "你回忆起了……"
+			tasks: [{
+				id: "5FD4D66B74225F44"
+				item: "cmc:mechanism_part"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1077A5253DDB418B"]
+			id: "68246F1DFB5DA6A6"
+			invisible: true
+			subtitle: "主包主包你这构件看上去好熟悉啊"
+			tasks: [{
+				id: "57E61CE8CC40FEE7"
+				item: "cmc:wooden_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["68246F1DFB5DA6A6"]
+			id: "0640AD579E15FB97"
+			invisible: true
+			subtitle: "！？苹果苹？！"
+			tasks: [{
+				id: "60A05C93AA617DF4"
+				item: "cmc:ringo_mechanism"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"23B2A6C08B6756AF"
+				"38ED0589BB02ABE4"
+			]
+			id: "2920FAC6BE4A6825"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "21854CDA3FCC45A4"
+				item: "thermal:dynamo_disenchantment"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"23B2A6C08B6756AF"
+				"38ED0589BB02ABE4"
+			]
+			id: "4DDB58F8D56BAB4C"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "31F0559A6EF6472A"
+				item: "thermal:dynamo_numismatic"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1077A5253DDB418B"
+				"3A6AD9860E3DFCC6"
+				"07277685E58040F8"
+				"2DA1A19A1314CA51"
+			]
+			id: "6837E1A631805970"
+			size: 1.2d
+			subtitle: "这里面有两个齿轮，那用两个齿轮合成很合理吧"
+			tasks: [{
+				id: "405CECD3D1039F0D"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A19E856B04B3E49"]
+			id: "6037A08C1005B85E"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "0C62E90BED91E063"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["58C105034DDE90B6"]
+			id: "7716738E4DA487BB"
+			tasks: [{
+				id: "781FBCD6AE049CE8"
+				item: "createaddition:capacitor"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38156708BFFA55E1"]
+			id: "6C6267AB4FBCBFC7"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "7251FD58703C1FA1"
+				item: "mekanism:oredictionificator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"7716738E4DA487BB"
+			]
+			description: [
+				"这个方块可以存储 &c100000RF&r"
+				"并且能往上方（红色线圈对着的地方）自动输出能量"
+				"其他五个面则能够自动从里面输入能量"
+			]
+			hide_dependent_lines: true
+			id: "38ED0589BB02ABE4"
+			subtitle: "不错的能源存储方块"
+			tasks: [{
+				id: "77CB52700614F956"
+				item: "cmc:dynamo_base"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"770B677309DC03BD"
+				"5E27AACD31B50642"
+			]
+			hide_dependent_lines: true
+			id: "7C54A0620558769B"
+			tasks: [{
+				id: "1003B22D3C725711"
+				item: "thermal:redstone_servo"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "2.1 热力时代"
+}

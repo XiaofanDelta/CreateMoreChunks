@@ -298,11 +298,83 @@
 		{
 			dependency: "0D44313CB54C6DD5"
 			height: 2.33d
-			image: "minecraft:block/redstone_block"
+			image: "minecraft:block/diamond_block"
 			rotation: 0.0d
 			width: 2.33d
 			x: 5.0d
 			y: 3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/diamond_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/diamond_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/diamond_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/emerald_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/emerald_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/emerald_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/emerald_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 7.0d
+			y: 9.0d
+		}
+		{
+			dependency: "0D44313CB54C6DD5"
+			height: 2.33d
+			image: "minecraft:block/emerald_block"
+			rotation: 0.0d
+			width: 2.33d
+			x: 9.0d
+			y: 9.0d
 		}
 	]
 	order_index: 0
@@ -338,7 +410,7 @@
 			id: "53D4BCDC2D11E563"
 			tasks: [{
 				id: "66B040DBC3A629F4"
-				item: "allthecompressed:cobblestone_2x"
+				item: "compressium:cobblestone_2"
 				type: "item"
 			}]
 			x: 1.0d
@@ -395,7 +467,7 @@
 			id: "31C61BF59C2D463C"
 			tasks: [{
 				id: "600024724CA33275"
-				item: "allthecompressed:cobblestone_3x"
+				item: "compressium:cobblestone_3"
 				type: "item"
 			}]
 			x: 3.0d
@@ -508,6 +580,28 @@
 			x: 5.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "02E1D3D02143B49C"
+			tasks: [{
+				id: "6C50C452E8CDCDB0"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "2357A7BAB5098039"
+			tasks: [{
+				id: "490FFD6B4CCAD622"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
 	]
-	title: "*.1 世界资源"
+	title: "*.1 资源"
 }

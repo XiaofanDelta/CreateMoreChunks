@@ -1,0 +1,142 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "22"
+	group: "23BC4DDC85A76AE3"
+	icon: "ae2:controller"
+	id: "052B95E84F70C5D9"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"332C22B637F66320"
+			]
+			id: "51BF5179445ED696"
+			tasks: [{
+				id: "6AA1FF372CF8C7F9"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"332C22B637F66320"
+			]
+			id: "31361B70C0B352D3"
+			tasks: [{
+				id: "5FACE095006EC816"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"332C22B637F66320"
+			]
+			id: "3ED718C328AE55A1"
+			tasks: [{
+				id: "0474CBEADF22DF8A"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["332C22B637F66320"]
+			id: "1CCDCE9459B06C80"
+			tasks: [{
+				id: "29192857DCC4273B"
+				title: "3 级设备"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1CCDCE9459B06C80"
+				"38ED0589BB02ABE4"
+			]
+			id: "717027AAA1B41550"
+			subtitle: "岩浆和熔岩不一样！"
+			tasks: [{
+				id: "149F5515B787AA52"
+				item: "thermal:dynamo_magmatic"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1CCDCE9459B06C80"]
+			id: "125AD91D4D13133E"
+			tasks: [{
+				id: "54A6AB6679710F64"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1CCDCE9459B06C80"
+				"38ED0589BB02ABE4"
+			]
+			id: "1C542A7564EBD6EF"
+			optional: true
+			shape: "square"
+			tasks: [{
+				id: "5F9823B6BAFF14A2"
+				item: "thermal:dynamo_compression"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6E902F89B6B38DEF"
+				"6837E1A631805970"
+			]
+			id: "332C22B637F66320"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2ED464DDBDB07F19"
+				item: "cmc:precision_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38156708BFFA55E1"
+				"332C22B637F66320"
+			]
+			id: "371AF52CA9A876F7"
+			tasks: [{
+				id: "0C3505DC6FB9B176"
+				item: "thermal_extra:component_assembly"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+	]
+	subtitle: [
+		"&m人工智能"
+		"&e能工智人"
+	]
+	title: "2.2 更大的箱子"
+}

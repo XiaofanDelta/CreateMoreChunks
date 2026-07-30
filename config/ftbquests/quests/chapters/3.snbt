@@ -1,0 +1,229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3"
+	group: "44B0CA233BCF73AB"
+	icon: {
+		Count: 1
+		id: "functionalstorage:linking_tool"
+		tag: { }
+	}
+	id: "14867A4925F6B651"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"32E8236E8F01ACAE"
+				"02E1D3D02143B49C"
+			]
+			id: "188B60C87EB5C6FB"
+			tasks: [{
+				id: "166E962D7144027A"
+				item: "cmc:linking_tool_base"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["188B60C87EB5C6FB"]
+			id: "4B35A5FA5B58B6C1"
+			tasks: [{
+				id: "64105B6BFAF4F070"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "2679127889C23320"
+			tasks: [{
+				id: "12E0B1CFC2C45217"
+				item: "pipez:basic_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2679127889C23320"]
+			id: "50FF71062D4BCDE7"
+			tasks: [{
+				id: "76B20427B82A2424"
+				item: "pipez:improved_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["50FF71062D4BCDE7"]
+			id: "03AD8093F23C6D8C"
+			tasks: [{
+				id: "510B0C81A3FDC0E4"
+				item: "pipez:advanced_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03AD8093F23C6D8C"]
+			id: "5314A4C94002CA3B"
+			tasks: [{
+				id: "166E171B3F9407EA"
+				item: "pipez:ultimate_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "091B584BBD4335F8"
+			tasks: [{
+				id: "79D7AE17B8A3DE57"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "219F8A314B6A7621"
+			tasks: [{
+				id: "3503A7BB57C8D10E"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "6DCEF01BE99F5646"
+			tasks: [{
+				id: "183ED96C1C1EFB63"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "4623364BD9696C68"
+			tasks: [{
+				id: "31FBD9B65751C352"
+				item: "pipez:gas_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"219F8A314B6A7621"
+				"4623364BD9696C68"
+				"091B584BBD4335F8"
+				"6DCEF01BE99F5646"
+			]
+			id: "357C8D64E12236CB"
+			tasks: [{
+				id: "58036F6522C4993D"
+				item: "pipez:universal_pipe"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["770B677309DC03BD"]
+			id: "6BAD66B52387CFEC"
+			tasks: [{
+				id: "3E434E7104702307"
+				item: "supplementaries:faucet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"32E8236E8F01ACAE"
+				"2357A7BAB5098039"
+			]
+			id: "3641C56AF5269461"
+			tasks: [{
+				id: "1F7A332D53AF9F6E"
+				item: "cmc:configuration_tool_base"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3641C56AF5269461"]
+			id: "55CDAC9824A738FF"
+			tasks: [{
+				id: "08A997AB93D4AC6C"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"4A8FC8D0CD612716"
+				"448DDD80BC930113"
+			]
+			id: "38B0D809007621C1"
+			tasks: [{
+				id: "5E458FF3C04DD491"
+				item: "cmc:drawer_upgrade_base"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0278F56B7EE446F5"]
+			id: "7CFF9EE68DC3053C"
+			tasks: [{
+				id: "5A9FA14BF522A79F"
+				item: "extendedcrafting:handheld_table"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19BF1A3A20241562"]
+			id: "31789356CDB43447"
+			subtitle: "只用于旋转方块的小玩意（适配于所有有方向的方块）"
+			tasks: [{
+				id: "50D0B253C018DCB1"
+				item: {
+					Count: 1
+					id: "supplementaries:wrench"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+	]
+	title: "*.3 实用工具"
+}

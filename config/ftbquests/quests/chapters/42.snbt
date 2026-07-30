@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "42"
+	group: "025E23522FC64C26"
+	icon: "create:creative_crate"
+	id: "3CAB457155B7B0DE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "649AE77C2CC42F35"
+		tasks: [{
+			id: "5D77E83BF84CB192"
+			item: "create:creative_crate"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "4.2 - 完结!!"
+}

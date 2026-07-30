@@ -1,0 +1,51 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "24"
+	group: "23BC4DDC85A76AE3"
+	icon: "advanced_ae:quantum_alloy_block"
+	id: "643B25F8B15DDA85"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4CBA24706B4143B0"
+			tasks: [{
+				id: "41CE175FD06BDBF7"
+				item: "cmc:circuit_component"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4CBA24706B4143B0"
+				"38156708BFFA55E1"
+			]
+			id: "5AB259134EDB0531"
+			tasks: [{
+				id: "01CC9B785A76EDA1"
+				item: "thermal_extra:advanced_refinery"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4CBA24706B4143B0"
+				"38156708BFFA55E1"
+			]
+			id: "4E1ECD536DCB7545"
+			tasks: [{
+				id: "1AAB6DA835267D0A"
+				item: "cmc:advanced_component_assembly"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+	]
+	title: "2.4 高新技术"
+}
