@@ -2,6 +2,8 @@
 
 # `Create: More Chunks` 更新日志
 
+Alpha / Beta / R + b.m.s (完成日期)
+
 </div>
 
 ---
@@ -253,7 +255,7 @@ Mod:
 
 ---
 
-## Alpha 1.5.0 (`26/06/__`)
+## Alpha 1.5.0 (`26/07/__`)
 
 ### 添加内容
 
@@ -270,6 +272,7 @@ Mod:
  - 一些纹理的 ctm
  - cmi 的几个轮子
  - 高级组件装配机
+ - 锤子及其配方
 
 Mod:
 
@@ -277,6 +280,7 @@ Mod:
  - +v fire 8
  - one enough 系列
  - LDLib & MBD2
+ - Create: Interlocked
 
 ### 更改内容
  - 区块生成器改用工业平台的逻辑 (`$IPLogic`)
@@ -285,6 +289,8 @@ Mod:
  - 未完成的机器框架的模型
  - 创造模式标签页名称
  - 部分物品的id
+ - 世界物质材质
+ - 合成拓展材质
 
 ### 删除内容
  - `meinfinitycell`的创造模式标签页

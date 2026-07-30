@@ -23,19 +23,21 @@
  - **defaultconfigs**
  - **hotai**
  - **kubejs**
-	- **assets**
-	- **client_scripts**
-	- **config**
-	- **data**
-	- **server_scripts**
-	- **startup_scripts**
+	 - **assets**
+	 - **client_scripts**
+	 - **config**
+	 - **data**
+	 - **server_scripts**
+	 - **startup_scripts**
  - **ldlib**
+    - **assets**
+       - **mbd2**
  - **mods**
  - **resourcepacks**
  - **schematics**
  - **icon.png**
- - **LICENSE.md**
- - **README.md**
- - **UpdateLogs.md**
+ - [**LICENSE.md**](LICENSE.md)
+ - [**README.md**](README.md)
+ - [**UpdateLogs.md**](UpdateLogs.md)
 
 ---
