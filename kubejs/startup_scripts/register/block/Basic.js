@@ -2,8 +2,8 @@ StartupEvents.registry("block", (event) => {
 
 	/**
 	 * 
-	 * @param {String} name 注册id
-	 * @param {String} [type] 类型
+	 * @param {string} name 注册id
+	 * @param {string} [type] 类型
 	 * @returns
 	 */
 	function addBlock(name, type) {
@@ -39,7 +39,7 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 	
 	// 创造机壳
-	addBlock("creative_casing", "basic")
+	addBlock("creative_casing")
 		.textureAll("cmc:block/casing/creative/side")
 		.hardness(5)
 		.requiresTool(true)
@@ -86,10 +86,10 @@ StartupEvents.registry("block", (event) => {
 		.notSolid()
 		.item((item) => {
 			item.unstackable()
-			item.parentModel({
+			item.modelJson({
 				"parent": "item/generated",
 				"textures": {
-					"layer0": "cmc:item/sun_oneshot"
+					"layer0": "cmc:item/tool/sun"
 				}
 			})
 		})

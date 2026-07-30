@@ -4,38 +4,34 @@ ServerEvents.recipes((event) => {
 	// 世界宝石 => 世界核心
 	lychee.block_interacting(
 		"cmc:world_gem",
-		"compressium:cobblestone_3")
-		.post([
-			Post.place("chunkbychunk:worldcore")
-		])
-		.id("chunkbychunk:lychee/worldcore")
+		"compressium:cobblestone_3"
+	).post([
+		Post.place("chunkbychunk:worldcore")
+	]).id("chunkbychunk:lychee/worldcore")
 
 	// 岩浆桶
 	lychee.item_inside(
 		"minecraft:water_bucket",
-		"cmc:world_fluid")
-		.post([
-			Post.drop_item("minecraft:lava_bucket")
-		])
-		.id("lychee:lava_bucket")
+		"cmc:world_fluid"
+	).post([
+		Post.drop_item("minecraft:lava_bucket")
+	]).id("lychee:lava_bucket")
 
 	// 岩浆桶
 	lychee.block_interacting(
 		"cmc:sun_cmc",
-		"#forge:storage_blocks/lumium")
-		.post([
-			Post.place("cmc:sun_oneshot")
-		])
-		.id("cmc:lychee/sun_oneshot")
+		"#forge:storage_blocks/lumium"
+	).post([
+		Post.place("cmc:sun_oneshot")
+	]).id("cmc:lychee/sun_oneshot")
 
 	// 熔炉
 	lychee.block_interacting(
 		"minecraft:campfire",
-		"compressium:cobblestone_2")
-		.post([
-			Post.place("minecraft:furnace")
-		])
-		.id("lychee:furnace")
+		"compressium:cobblestone_2"
+	).post([
+		Post.place("minecraft:furnace")
+	]).id("lychee:furnace")
 	
 	// 创造流休储罐
 	lychee.block_interacting(

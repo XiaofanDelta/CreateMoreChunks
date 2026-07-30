@@ -2,12 +2,14 @@ ClientEvents.lang("zh_cn", (event) => {
 
     addMaterialLang("world_matter", "世界物质")
     addMaterialLang("advanced_alloy", "高级合金")
-    addMaterialLang("refined_redstone", "精炼红石")
+    addMaterialLang("polished_quartz", "磨制石英")
+	addMaterialLang("refined_radiance", "光辉石")
+	addMaterialLang("andesite_alloy", "安山合金")
 
     /**
 	 * 
-	 * @param {String} key id
-	 * @param {String} value 本地化
+	 * @param {string} key id
+	 * @param {string} value 本地化
 	 */
 	function addMaterialLang(key, value) {
 		event.add(`item.cmc.${key}_ingot`, `${value}锭`)

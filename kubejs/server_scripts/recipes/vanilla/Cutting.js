@@ -2,18 +2,6 @@ ServerEvents.recipes((event) => {
 	
 	let { minecraft } = event.recipes
 
-	// 太阳的物品和方块相互转换
-	/*
-	minecraft.stonecutting(
-		"cmc:sun_oneshot_item",
-		"cmc:sun_oneshot"
-	).id("cmc:sun_oneshot_item")
-	minecraft.stonecutting(
-		"cmc:sun_oneshot",
-		"cmc:sun_oneshot_item"
-	).id("cmc:sun_oneshot")
-	*/
-
 	// 配置工具
 	minecraft.stonecutting(
 		"functionalstorage:configuration_tool",
@@ -30,6 +18,10 @@ ServerEvents.recipes((event) => {
 	minecraft.stonecutting(
 		"cmc:chunk_machine_base",
 		"compressium:stone_1"
+	).id("cmc:chunk_machine_base_from_stone")
+	minecraft.stonecutting(
+		"cmc:chunk_machine_base",
+		"compressium:cobblestone_1"
 	).id("cmc:chunk_machine_base")
 
 })

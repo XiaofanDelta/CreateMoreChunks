@@ -183,7 +183,7 @@ ServerEvents.recipes((event) => {
 			]),
 			create.deploying(incomplete_precision_mechanism,[
 				incomplete_precision_mechanism,
-				"cmc:brass_gear"
+				"#forge:gears/brass"
 			]),
 			create.deploying(incomplete_precision_mechanism,[
 				incomplete_precision_mechanism,

@@ -62,6 +62,10 @@ ServerEvents.recipes((event) => {
 		"tiab:time_in_a_bottle",
 		"mekanism:oredictionificator",
 		"mekanism:dictionary",
+		"thermal:device_nullifier",
+		"thermal:charge_bench",
+		"thermal:tinker_bench",
+		"#forge:tools/hammer",
 		//"#thermal:machines"
 	]
 

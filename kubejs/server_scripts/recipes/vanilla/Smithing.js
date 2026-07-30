@@ -72,4 +72,12 @@ ServerEvents.recipes((event) => {
 		"minecraft:dispenser"
 	).id("chunkbychunk:worldmender")
 
+	// 下界合金锤
+	minecraft.smithing_transform(
+		"cmc:netherite_hammer",
+		"minecraft:netherite_upgrade_smithing_template",
+		"cmc:diamond_hammer",
+		"#forge:gears/netherite"
+	).id("cmc:netherite_hammer")
+
 })

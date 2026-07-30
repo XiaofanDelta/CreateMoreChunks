@@ -68,7 +68,18 @@ ServerEvents.recipes((event) => {
 	// 辞典
 	kubejs.shapeless("mekanism:dictionary", [
 		"minecraft:book",
-		"#forge:ingot"
+		"#forge:ingots"
 	]).id("mekanism:dictionary")
+
+	// 安山合金粒
+	kubejs.shapeless("9x cmc:andesite_alloy_nugget", "create:andesite_alloy").id("cmc:andesite_alloy_nugget")
+	kubejs.shapeless("create:andesite_alloy", "9x cmc:andesite_alloy_nugget").id("create:andesite_alloy_from_nuggets")
+
+	// 高级合金
+	kubejs.shapeless("cmc:advanced_alloy_ingot", "9x cmc:advanced_alloy_nugget").id("cmc:advanced_alloy_ingot_from_nuggets")
+	kubejs.shapeless("9x cmc:advanced_alloy_nugget", "cmc:advanced_alloy_ingot").id("cmc:advanced_alloy_nugget")
+	kubejs.shapeless("cmc:advanced_alloy_block", "9x cmc:advanced_alloy_ingot").id("cmc:advanced_alloy_block")
+	kubejs.shapeless("9x cmc:advanced_alloy_ingot", "cmc:advanced_alloy_block").id("cmc:advanced_alloy_ingot_from_block")
+	
 
 })

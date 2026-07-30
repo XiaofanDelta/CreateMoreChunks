@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
 	let { thermal_extra } = event.recipes
 
-	// 114514 cmc:ui.machine.aca.title
+	// test
 	thermal_extra.component_assembly("cmc:creative_cell", [
 		Fluid.of("cmc:impurity", 8000),
 		"megacells:cell_component_256m",
@@ -37,6 +37,7 @@ ServerEvents.recipes((event) => {
 		"#ae2:lumen_paint_balls"
 	]).energy(global.EnergyStage[4]).id("extendedcrafting:thermal_extra/component_assembly/luminessence")
 
+	// mek 升级基板
 	thermal_extra.component_assembly("cmc:mek_upgrade_base", [
 		Fluid.of("cmc:advanced_compound", 10),
 		"#forge:plates/steel",
@@ -44,6 +45,7 @@ ServerEvents.recipes((event) => {
 		"#forge:glass"
 	]).energy(global.EnergyStage[4]).id("cmc:thermal_extra/component_assembly/mek_upgrade_base")
 
+	// 工厂升级器基板
 	thermal_extra.component_assembly("cmc:tier_installer_base", [
 		Fluid.of("cmc:advanced_compound", 10),
 		"mekanism:hdpe_sheet",
@@ -59,6 +61,7 @@ ServerEvents.recipes((event) => {
 		"thermal:blizz_rod"
 	]).energy(global.EnergyStage[4]).id("thermal_extra:component_assembly/dynamo_frost")
 	
+	// 时间之瓶
 	thermal_extra.component_assembly("tiab:time_in_a_bottle", [
 		Fluid.of("cmc:world_fluid", 5000),
 		"minecraft:glass_bottle",

@@ -19,8 +19,7 @@ global.NowDate = {
  * @type {{ [key: boolean]: ResourceLocation_ }}
  */
 global.Dev = {
-	testing41: false,
-	testingChunkSpawner: "不是你快点给我加上功能啊",
+	testing41: true,
 	recipesMaking: true,
 	logRegisters: true
 }
@@ -33,7 +32,7 @@ global.Dev = {
  * @property {number} 4 
  * @property {number} 5 
  * @property {number} 6 
- * @property {function(number): number} getRandomScore - 生成 0~max 的随机整数
+ * @property {function(number): number} getRandomEnergy - 生成 0~max 的随机整数
  */
 global.EnergyStage = {
 	1: 3000,

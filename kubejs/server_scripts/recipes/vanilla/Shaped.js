@@ -1,7 +1,7 @@
 // priority: 222
 
 ServerEvents.recipes((event) => {
-	
+
 	let { kubejs } = event.recipes
 
 	// 安山合金
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
 		A: "#forge:gems/sapphire",
 		B: "#forge:nuggets/iron"
 	}).id("thermal:sapphire_gear")
-	
+
 	// 红宝石齿轮
 	kubejs.shaped("thermal:ruby_gear", [
 		" A ",
@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 	}).id("thermal:ruby_gear")
 
 	// 地球仪框架
-	kubejs.shaped("cmc:globe_frame",[
+	kubejs.shaped("cmc:globe_frame", [
 		" AA",
 		"A A",
 		" B "
@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
 	}).id("cmc:globe_frame")
 
 	// 区块生成器
-	kubejs.shaped("chunkbychunk:chunkspawner",[
+	kubejs.shaped("chunkbychunk:chunkspawner", [
 		"ABA",
 		"BCB",
 		"ABA"
@@ -83,7 +83,7 @@ ServerEvents.recipes((event) => {
 	).id("chunkbychunk:chunkspawner")
 
 	// 空
-	kubejs.shaped("4x cmc:empty",[
+	kubejs.shaped("4x cmc:empty", [
 		"AB",
 		"BA"
 	], {
@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
 	}).id("cmc:empty")
 
 	// 小型红石通量线圈
-	kubejs.shaped("2x cmc:small_rf_coil",[
+	kubejs.shaped("2x cmc:small_rf_coil", [
 		"ABC",
 		"B B",
 		"CBA"
@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
 	}).id("cmc:small_rf_coil")
 
 	// 红石通量线圈
-	kubejs.shaped("thermal:rf_coil",[
+	kubejs.shaped("thermal:rf_coil", [
 		"  A",
 		" B ",
 		"A  "
@@ -382,7 +382,7 @@ ServerEvents.recipes((event) => {
 		"PR ",
 		"  R"
 	], {
-		P: ["#forge:plates/iron","#forge:plates/andesite_alloy"],
+		P: ["#forge:plates/iron", "#forge:plates/andesite_alloy"],
 		R: "#forge:rods/iron"
 	}).id("thermal:drill_head")
 
@@ -392,7 +392,7 @@ ServerEvents.recipes((event) => {
 		"P P",
 		"PPP"
 	], {
-		P: ["#forge:plates/iron","#forge:plates/andesite_alloy"]
+		P: ["#forge:plates/iron", "#forge:plates/andesite_alloy"]
 	}).id("thermal:saw_blade")
 
 	if (global.NowDate["is41"] === false) {
@@ -418,7 +418,7 @@ ServerEvents.recipes((event) => {
 			C: "thermal:drill_head"
 		}).id("create:mechanical_drill")
 	}
-	
+
 	// 能源炉基底
 	kubejs.shaped("2x cmc:dynamo_base", [
 		" A ",
@@ -448,5 +448,101 @@ ServerEvents.recipes((event) => {
 	], {
 		A: "#forge:stone"
 	}).id("cmc:stone_gear")
+
+	// 高级合金齿轮
+	kubejs.shaped("cmc:advanced_alloy_gear", [
+		" A ",
+		"ABA",
+		" A "
+	], {
+		A: "#forge:ingots/advanced_alloy",
+		B: "#forge:nuggets/iron"
+	}).id("cmc:advanced_alloy_gear")
+
+	// 销毁器
+	kubejs.shaped("thermal:device_nullifier", [
+		"LLL",
+		"GAG",
+		"IRI"
+	], {
+		I: "#forge:plates/invar",
+		L: "#forge:plates/lead",
+		R: "thermal:redstone_servo",
+		A: ["minecraft:cactus", "minecraft:lava_bucket"],
+		G: "#forge:glass"
+	}).id("thermal:device_nullifier")
+
+	// 充能台
+	kubejs.shaped("thermal:charge_bench", [
+		"EEE",
+		"CRC",
+		"LCL"
+	], {
+		C: ["createaddition:capacitor", "thermal:rf_coil"],
+		E: "#forge:gears/electrum",
+		L: "#forge:plates/lead",
+		R: "#forge:storage_blocks/redstone"
+	}).id("thermal:charge_bench")
+
+	// 工匠台
+	kubejs.shaped("thermal:tinker_bench", [
+		"III",
+		"GTG",
+		"PCP"
+	], {
+		C: ["createaddition:capacitor", "thermal:rf_coil"],
+		T: "minecraft:crafting_table",
+		P: "#minecraft:planks",
+		G: "#forge:glass",
+		I: "#forge:plates/iron"
+	}).id("thermal:tinker_bench")
+
+	// 锤子
+	let hammerList = ["copper", "iron", "invar", "bronze", "steel"]
+	let hammerList2 = ["signalum", "lumium", "enderium", "soul_infused", "shellite", "twinite", "dragonsteel", "abyssal"]
+	hammerList.forEach((hammerType) => {
+		kubejs.shaped(`cmc:${hammerType}_hammer`, [
+			" IG",
+			" SI",
+			"R  "
+		], {
+			S: "#forge:rods/wooden",
+			R: `#forge:rods/${hammerType}`,
+			I: `#forge:ingots/${hammerType}`,
+			G: `#forge:gears/${hammerType}`
+		}).id(`cmc:${hammerType}_hammer`)
+	})
+	hammerList2.forEach((hammerType) => {
+		kubejs.shaped(`thermal_extra:${hammerType}_hammer`, [
+			" IG",
+			" RI",
+			"R  "
+		], {
+			R: `#forge:rods/${hammerType}`,
+			I: `#forge:ingots/${hammerType}`,
+			G: `#forge:gears/${hammerType}`
+		}).id(`thermal_extra:${hammerType}_hammer`)
+	})
+	kubejs.shaped("cmc:golden_hammer", [
+		" IG",
+		" SI",
+		"R  "
+	], {
+		S: "#forge:rods/wooden",
+		R: "#forge:rods/gold",
+		I: "#forge:ingots/gold",
+		G: "#forge:gears/gold"
+	}).id("cmc:golden_hammer")
+	kubejs.shaped("cmc:diamond_hammer", [
+		" DG",
+		" SD",
+		"R  "
+	], {
+		S: "#forge:rods/wooden",
+		R: "#forge:rods/diamond",
+		D: "#forge:gems/diamond",
+		G: "#forge:gears/diamond"
+	}).id("cmc:diamond_hammer")
+
 
 })

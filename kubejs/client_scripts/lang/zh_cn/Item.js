@@ -15,7 +15,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("precision_mechanism_base", "精密构件基底")
 	addItemLang("brass_gear", "黄铜齿轮")
 	addItemLang("steel_casing_part", "钢质机壳部件")
-	addItemLang("refined_redstone_ingot", "精炼红石锭")
 	addItemLang("small_rf_coil", "小型红石通量线圈")
 	addItemLang("globe_frame", "地球仪框架")
 	addItemLang("unstable_singularity", "不稳奇点")
@@ -47,6 +46,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("unbreakable_soap", "不毁肥皂")
 	addItemLang("infinity_lava_cell", "无限熔岩元件")
 
+	// 锤子
+	addHammerLang("copper", "铜")
+	addHammerLang("iron", "铁")
+	addHammerLang("golden", "金")
+	addHammerLang("diamond", "钻石")
+	addHammerLang("netherite", "下界合金")
+	addHammerLang("invar", "殷钢")
+	addHammerLang("bronze", "青铜")
+	addHammerLang("steel", "钢")
+
 	// 星球
 	addItemLang("empty_planet","空星球外壳")
 	addItemLang("sun", "太阳")
@@ -72,9 +81,24 @@ ClientEvents.lang("zh_cn", (event) => {
 	addInfinitySourceLang("lead", "铅")
 
 	// 锻造模板
-	addSmithingTemplateLang("basic", "基础", "材料", "基础材料")
-	addSmithingTemplateLang("andesite_upgrade", "安山", "安山机壳", "安山机器")
-	addSmithingTemplateLang("null", "%s", " ", "%s")
+	addSmithingTemplateLang("basic", 
+		"基础", 
+		"模板升级材料2", 
+		"模板升级材料1",
+		"放入模版升级材料2",
+		"放入模版升级材料1")
+	addSmithingTemplateLang("andesite", 
+		"安山", 
+		"安山机器原料", 
+		"安山机壳",
+		"放入安山机器所需原料",
+		"放入安山机壳")
+	addSmithingTemplateLang("null", 
+		"%s", 
+		" ", 
+		"???",
+		"放入 ",
+		"放入物品")
 
 	// 未完成的物品
 	addIncompleteItemLang("black_iron_ingot", "黑铁锭")
@@ -122,6 +146,15 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	/**
 	 * 
+	 * @param {string} key 
+	 * @param {string} value 
+	 */
+	function addHammerLang(key, value) {
+		event.add(`item.cmc.${key}_hammer`, `${value}锤`)
+	}
+
+	/**
+	 * 
 	 * @param {string} key 未完成物品id
 	 * @param {string} value 本地化，无需加上“半成品”“未完成”等字样
 	 */
@@ -135,11 +168,16 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {string} value 本地化
 	 * @param {string} ingredients 原材料
 	 * @param {string} applies_to 应用于
+	 * @param {string} ingredients_slot 原材料格描述
+	 * @param {string} applies_to_slot 应用格描述
 	 */
-	function addSmithingTemplateLang(key, value, ingredients, applies_to) {
+	function addSmithingTemplateLang(key, value, ingredients, applies_to, ingredients_slot, applies_to_slot) {
 		event.add(`item.cmc.${key}_smithing_template`, `${value}锻造模版`)
+		event.add(`item.cmc.${key}_upgrade_smithing_template`, `${value}锻造模版`)
 		event.add(`item.cmc.smithing_template.${key}.applies_to`, applies_to)
 		event.add(`item.cmc.smithing_template.${key}.ingredients`, ingredients)
+		event.add(`item.cmc.smithing_template.${key}.applies_to_slot`, applies_to_slot)
+		event.add(`item.cmc.smithing_template.${key}.ingredients_slot`, ingredients_slot)
 	}
 
 	/**

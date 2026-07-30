@@ -3,14 +3,14 @@ StartupEvents.registry("item", (event) => {
 	/**
 	 * 
 	 * @param {string} material 无限源质对应的材料
-	 * @param {Color_} [color] 无限源质的着色
+	 * @param {Color_} color 无限源质的着色
 	 * @returns 
 	 */
 	function addInfinitySource(material, color) {
 		
 		let builder = event.create(`cmc:${material}_infinity_source`, "basic")
 		
-		builder.texture("cmc:item/empty_infinity_source")
+		builder.texture("cmc:item/material/infinity_source")
 		builder.tag("cmc:infinity_source")
 		builder.tag(`cmc:infinity_source/${material}`)
 		builder.color(color)
@@ -32,7 +32,7 @@ StartupEvents.registry("item", (event) => {
 	addInfinitySource("coal", 0x2E2E2E)
 	addInfinitySource("lapis_lazuli", 0x345EC3)
 	addInfinitySource("lead", 0x323562)
-	addInfinitySource("glow_stone", 0xffD38F)
+	addInfinitySource("glow_stone", 0xFFD38F)
 
 	"#ffd38f"
 })

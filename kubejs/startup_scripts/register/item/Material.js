@@ -1,6 +1,6 @@
 // 高级合金
 new Material("advanced_alloy", "diamond")
-	.color(0x363636, 0x444444)
+	.color(0x444444, 0x555555)
 	.isMetal()
 	.ingot(false)
 	.plate(false)
@@ -9,15 +9,6 @@ new Material("advanced_alloy", "diamond")
 	.rod(false)
 	.block()
 	.gear(false)
-
-// 精炼红石
-new Material("refined_redstone", "iron")
-	.color(0xB80000, 0x9A0000)
-	.isMetal()
-	.ingot()
-	.plate()
-	.nugget()
-	.prism()
 
 // 安山合金
 new Material("andesite_alloy", "wooden")

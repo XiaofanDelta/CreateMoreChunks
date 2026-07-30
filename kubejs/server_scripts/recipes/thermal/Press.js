@@ -26,6 +26,14 @@ ServerEvents.recipes((event) => {
 		.keepIngredient("thermal:press_gear_die")
 		.id("cmc:thermal/press/brass_gear")
 	
+	// 高级合金齿轮
+	thermal.press("cmc:advanced_alloy_gear",[
+		"4x cmc:advanced_alloy_ingot",
+		"thermal:press_gear_die"
+	]).energy(5000)
+		.keepIngredient("thermal:press_gear_die")
+		.id("cmc:thermal/press/advanced_alloy_gear")
+	
 	// 红石通量线圈转化
 	thermal.press("thermal:rf_coil",
 		"2x cmc:small_rf_coil"

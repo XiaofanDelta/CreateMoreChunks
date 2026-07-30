@@ -39,12 +39,12 @@ ServerEvents.recipes((event) => {
 	
 	// 精炼红石锭
 	thermal.chiller(
-		"cmc:refined_redstone_ingot",[
+		"extendedcrafting:redstone_ingot",[
 			Fluid.of("thermal:redstone", 90),
 			"thermal:chiller_ingot_cast"
 	]).energy(global.EnergyStage[1])
 		.keepIngredient("thermal:chiller_ingot_cast")
-		.id("cmc:thermal/chiller/refined_redstone_ingot")
+		.id("extendedcrafting:thermal/chiller/redstone_ingot")
 	
 	// 板铸模
 	thermal.chiller(

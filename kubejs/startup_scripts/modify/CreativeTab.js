@@ -28,13 +28,6 @@ StartupEvents.modifyCreativeTab("meinfinitycell:mic_tab", (event) => {
 	event.setIcon(() => Item.of("cmc:earth"))
 })
 
-StartupEvents.modifyCreativeTab("thermal:thermal.items", (event) => {
-	event.add([
-		"thermal_parallel:argument_parallel_2",
-		"thermal_parallel:argument_parallel_3"
-	])
-})
-
 StartupEvents.modifyCreativeTab("thermal_extra:machines", (event) => {
 	event.add([
 		"cmc:advanced_component_assembly",

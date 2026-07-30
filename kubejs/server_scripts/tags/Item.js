@@ -47,7 +47,8 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:netherite_sheet",
 			"createdeco:industrial_iron_sheet",
 			"mekanism:hdpe_sheet",
-			"thermal_extra:polyolefin_plate"
+			"thermal_extra:polyolefin_plate",
+			"cmc:world_matter_plate"
 	])
 
 	event.get("forge:gears")
@@ -61,12 +62,14 @@ ServerEvents.tags("item", (event) => {
 		.add([
 			"createdeco:industrial_iron_ingot",
 			"megacells:sky_steel_ingot",
-	]).remove(["extendedcrafting:the_ultimate_ingot"])
+			"cmc:world_matter_ingot"
+	])
 
 	event.get("forge:nuggets")
 		.add([
 			"createdeco:industrial_iron_nugget",
-			"createdeco:netherite_nugget"
+			"createdeco:netherite_nugget",
+			"cmc:world_matter_nugget"
 	])
 
 	event.get("forge:gems")
@@ -78,7 +81,9 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("forge:dusts")
 		.add([
-			"thermal_extra:soul_sand_dust"
+			"thermal_extra:soul_sand_dust",
+			"cmc:world_matter_dust",
+			"fluxnetworks:flux_dust"
 	])
 
 	event.get("mekanism:upgrades")
@@ -111,6 +116,10 @@ ServerEvents.tags("item", (event) => {
 			"#forge:ingots"
 	])
 
+	event.get("cmc:ultimate_ingot_ingredients").remove([
+		"extendedcrafting:the_ultimate_ingot"
+	])
+
 	event.get("chunkbychunk:chunk_machines")
 		.add([
 			"chunkbychunk:worldmender",
@@ -126,6 +135,36 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:brass_coin",
 			"createdeco:iron_coin",
 			"createdeco:gold_coin"
+	])
+
+	event.get("thermal:machines")
+		.add([
+			"thermal_extra:nitratic_igniter",
+			"thermal_extra:fluid_mixer",
+			"thermal_extra:endothermic_dehydrator",
+			"thermal_extra:component_assembly",
+			"thermal_extra:advanced_refinery",
+			"cmc:advanced_component_assembly"
+	])
+
+	addAloneItemTag("cmc:hammer_tier1", "#cmc:hammer_tier2")
+	addAloneItemTag("cmc:hammer_tier2", "#cmc:hammer_tier3")
+
+	event.get("cmc:hammer_tier3")
+		.add([
+			"thermal_extra:signalum_hammer",
+			"thermal_extra:lumium_hammer",
+			"thermal_extra:enderium_hammer",
+			"thermal_extra:soul_infused_hammer",
+			"#cmc:hammer_tier4"
+	])
+
+	event.get("cmc:hammer_tier4")
+		.add([
+			"thermal_extra:dragonsteel_hammer",
+			"thermal_extra:abyssal_hammer",
+			"thermal_extra:twinite_hammer",
+			"thermal_extra:shellite_hammer",
 	])
 
 	addAloneItemTag("forge:plates/andesite_alloy", "createdeco:andesite_sheet")
@@ -146,6 +185,16 @@ ServerEvents.tags("item", (event) => {
 	addAloneItemTag("forge:gears/brass", "cmc:brass_gear")
 	addAloneItemTag("forge:gears/stone", "cmc:stone_gear")
 	addAloneItemTag("forge:gears/wooden", "cmc:wooden_gear")
+	addAloneItemTag("forge:ingots/world_matter", "cmc:world_matter_ingot")
+	addAloneItemTag("forge:plates/world_matter", "cmc:world_matter_plate")
+	addAloneItemTag("forge:dusts/world_matter", "cmc:world_matter_dust")
+	addAloneItemTag("forge:nuggets/world_matter", "cmc:world_matter_nugget")
+	addAloneItemTag("create:crushed_raw_materials", "cmc:crushed_world_matter")
+	addAloneItemTag("forge:ingots/redstone", "extendedcrafting:redstone_ingot")
+	addAloneItemTag("forge:storage_blocks/redstone", "extendedcrafting:redstone_ingot_block")
+	addAloneItemTag("forge:nuggets/redstone", "extendedcrafting:redstone_nugget")
+	addAloneItemTag("thermal:dynamos", "cmc:dynamo_base")
+	addAloneItemTag("forge:dusts/flux", "fluxnetworks:flux_dust")
 
 	global.dyeColorGroup.forEach((color) => {
 		addAloneItemTag("ae2:lumen_paint_balls", `ae2:${color}_lumen_paint_ball`)

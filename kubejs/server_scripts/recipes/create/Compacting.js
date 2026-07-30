@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
 	).id("cmc:create/compacting/null_block")
 
 	// 斯特林能源炉
-	create.deploying("thermal:dynamo_stirling", [
+	create.compacting("thermal:dynamo_stirling", [
 		"cmc:dynamo_base",
 		"2x #forge:gears/stone",
 		"2x #forge:gears/wooden"
