@@ -54,6 +54,7 @@
 	"block.cmc.dynamo_base": "Dynamo Base",
 	
 	"cmc.advanced_component_assemble": "Advanced Component Assemble",
+	"cmc.hammer_crush": "Hammer Crushing",
 
 	"info.cmc.information": "Information",
 	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
