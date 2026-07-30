@@ -6,7 +6,6 @@ declare class global {
 	};
 	"dev": {
 		testing41: boolean,
-		testingChunkSpawner: boolean,
 		recipesMaking: boolean,
 		logRegisters: boolean
 	};
@@ -22,54 +21,9 @@ declare class global {
 	"modPackMainVersion": string;
 	"BUCKET_CAPACITY": number;
 	"WRENCH_PICKUP": string;
-	"MiningLevel": {
-		wooden: "minecraft:needs_wooden_tool",
-		stone: "minecraft:needs_stone_tool",
-		iron: "minecraft:needs_iron_tool",
-		gold: "forge:needs_gold_tool",
-		diamond: "minecraft:needs_diamond_tool",
-		nether: "forge:needs_netherite_tool"
-	};
-	"ToolType": {
-		sword: "forge:mineable/sword",
-		pickaxe: "minecraft:mineable/pickaxe",
-		axe: "minecraft:mineable/axe",
-		shovel: "minecraft:mineable/shovel",
-		hoe: "minecraft:mineable/hoe"
-	};
-	"dyeColorGroup": [
-		"black",
-		"blue",
-		"brown",
-		"cyan",
-		"gray",
-		"green",
-		"light_blue",
-		"light_gray",
-		"lime",
-		"magenta",
-		"orange",
-		"pink",
-		"purple",
-		"red",
-		"white",
-		"yellow"
-	];
-	"planetList": [
-		"sun",
-		"mercury",
-		"venus",
-		"earth",
-		"mars",
-		"jupiter",
-		"saturn",
-		"uranus",
-		"neptune",
-	];
-	"mekTiers": [
-		"basic",
-		"advanced",
-		"elite",
-		"ultimate"
-	]
+	"MiningLevel": { key: ResourceLocation_ };
+	"ToolType": { key: ResourceLocation_ };
+	"dyeColorGroup": string[];
+	"planetList": string[];
+	"mekTiers": string[]
 }
