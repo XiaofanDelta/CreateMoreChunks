@@ -81,5 +81,10 @@ ServerEvents.recipes((event) => {
 	kubejs.shapeless("cmc:advanced_alloy_block", "9x cmc:advanced_alloy_ingot").id("cmc:advanced_alloy_block")
 	kubejs.shapeless("9x cmc:advanced_alloy_ingot", "cmc:advanced_alloy_block").id("cmc:advanced_alloy_ingot_from_block")
 	
+	// 齿轮
+	kubejs.shapeless("create:cogwheel", [
+		"create:shaft",
+		"#forge:gears/wooden"
+	]).id("create:cogwheel")
 
 })

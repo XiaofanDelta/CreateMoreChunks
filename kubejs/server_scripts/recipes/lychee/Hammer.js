@@ -8,21 +8,33 @@ ServerEvents.recipes((event) => {
 	 */
 	function HammerCrushRecipe(block, hTier) {
 
+		/**
+		 * @type {Post_[]}
+		 */
 		this.defaultPost = [
 			Post.place("minecraft:air"),
 			Post.delay(0.1)
 		]
 
+		/**
+		 * @type {Internal.Item[]}
+		 */
 		this.outputItems = []
 
+		/**
+		 * @type {Internal.Block} 锤子砸的方块
+		 */
 		this.inputBlock = block
 
+		/**
+		 * @type {Internal.Ingredient} 锤子的等级 tag
+		 */
 		this.hammerTag = `#cmc:hammer_tier${hTier}`
-		
-		this.recipe = lychee.block_clicking(
-			this.hammerTag,
-			block
-		)
+
+		/**
+		 * @type {Special.Recipes.BlockClickingLychee} Lychee 配方本体
+		 */
+		this.recipe = lychee.block_clicking(this.hammerTag, this.inputBlock)
 
 	}
 
@@ -32,7 +44,7 @@ ServerEvents.recipes((event) => {
 	 * 生成 Post
 	 */
 	HammerCrushRecipe.prototype.addHammerDamage = function (damage) {
-		this.defaultPost.unshift(Post.damage_item(damage || 1))
+		this.defaultPost.unshift(Post.damage_item(damage ?? 1))
 
 		return this
 	}
@@ -40,30 +52,35 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Internal.ItemStack} itemStack 
-	 * @param {number_} [number] 1~64
+	 * @param {number_} [count] 1~64
 	 * @param {number_} [chance] >0 && <=1 
 	 * @returns
 	 */
 	HammerCrushRecipe.prototype.addDropItemPost = function (itemStack, count, chance) {
 		this.defaultPost.push(
-			Post.drop_item(Item.of(itemStack, count || 1))
-				.contextual([Contextual.chance(chance || 1)]))
+			Post.drop_item(Item.of(itemStack, count ?? 1))
+				.contextual([Contextual.chance(chance ?? 1)]))
 
-		this.outputItems.push(Item.of(itemStack, count || 1))
+		this.outputItems.push(Item.of(itemStack, count ?? 1).withChance(chance ?? 1))
 
 		return this
 	}
 
 	/**
 	 * 
-	 * @param {ResourceLocation_} id 配方id
+	 * @param {ResourceLocation_} [id] 配方id
+	 * @param {boolean} [hideJEI] 是否在 JEI 中隐藏，默认 true
 	 * @returns 
 	 */
-	HammerCrushRecipe.prototype.build = function (id) {
-		this.recipe.post(this.defaultPost)
+	HammerCrushRecipe.prototype.build = function (id, hideJEI) {
+		this.recipe.post(this.defaultPost).hide_in_viewer(hideJEI ?? true)
 
 		if (id) {
 			this.recipe.id(id)
+
+			/**
+			 * @type {ResourceLocation_} Lychee 配方 id
+			 */
 			this.recipeID = id
 		}
 
@@ -75,19 +92,22 @@ ServerEvents.recipes((event) => {
 	 * @param {ResourceLocation_} id
 	 */
 	HammerCrushRecipe.prototype.jeiBuild = function (id) {
-		
+
+		/**
+		 * @type {Special.Recipes.CMc}
+		 */
 		this.jeiRecipe = cmc.hammer_crush()
 			.inputItems(this.inputBlock)
 			.inputItemsDurability(this.hammerTag)
 			.outputItems(this.outputItems)
-		
+
 		if (this.recipeID) {
-			this.jeiId = id || this.recipeID + "_jei"
+			this.jeiId = id ?? this.recipeID + "_jei"
 			this.jeiRecipe.id(this.jeiId)
 		}
-		
+
 		return this
-		
+
 	}
 
 	new HammerCrushRecipe("minecraft:cobblestone", 2)
@@ -126,5 +146,30 @@ ServerEvents.recipes((event) => {
 		.addDropItemPost("thermal:sawdust", 2, 0.5)
 		.build("thermal:hammer/sawdust")
 		.jeiBuild()
+
+	new HammerCrushRecipe("extendedcrafting:redstone_ingot_block", 3)
+		.addHammerDamage(4)
+		.addDropItemPost("minecraft:redstone", 9)
+		.build("minecraft:hammer/redstone")
+		.jeiBuild()
+
+	new HammerCrushRecipe("#forge:stone", 1)
+		.addHammerDamage()
+		.addDropItemPost("minecraft:cobblestone")
+		.build("minecraft:hammer/stone")
+		.jeiBuild()
+
+	let compressBlockHammerCrushRecipeList = [["stone", "cobblestone"], ["cobblestone", "gravel"], ["gravel", "sand"]]
+
+	compressBlockHammerCrushRecipeList.forEach(([block, result]) => {
+		for (let i = 1; i <= 3; i++) {
+			new HammerCrushRecipe(`compressium:${block}_${i}`, i + 1)
+			.addHammerDamage(9 ** i)
+			.addDropItemPost(`minecraft:${result}`, 9 ** i)
+			.build(`minecraft:hammer/compressium_${block}_${i}`)
+			.jeiBuild()
+			.recipe.block_in(Block.getBlock(`compressium:${block}_${i}`))			
+		}
+	})		
 
 })

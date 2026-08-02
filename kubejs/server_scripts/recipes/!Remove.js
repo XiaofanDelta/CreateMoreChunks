@@ -66,6 +66,10 @@ ServerEvents.recipes((event) => {
 		"thermal:charge_bench",
 		"thermal:tinker_bench",
 		"#forge:tools/hammer",
+		"#functionalstorage:upgrades",
+		"thermal:wrench",
+		"minecraft:stonecutter",
+		"create:cogwheel",
 		//"#thermal:machines"
 	]
 

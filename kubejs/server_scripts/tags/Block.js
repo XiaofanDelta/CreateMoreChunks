@@ -10,6 +10,11 @@ ServerEvents.tags("block", (event) => {
 			"cmc:advanced_component_assembly"
 	])
 
+	event.get("create:wrench_pickup")
+		.add([
+			"thermal:dynamos"
+	])
+
 	addAloneBlockTag("thermal:dynamos", "thermal_extra:dynamo_frost")
 	addAloneBlockTag("thermal:dynamos", "cmc:dynamo_base")
 

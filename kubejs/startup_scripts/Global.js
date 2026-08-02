@@ -16,12 +16,12 @@ global.NowDate = {
 /**
  * DEV
  * 
- * @type {{ [key: boolean]: ResourceLocation_ }}
+ * @type {{ key: boolean }}
  */
 global.Dev = {
-	testing41: true,
-	recipesMaking: true,
-	logRegisters: true
+	testing41: false,
+	recipesMaking: false,
+	logRegisters: false
 }
 
 /**

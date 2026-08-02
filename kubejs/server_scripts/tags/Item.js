@@ -167,6 +167,22 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:shellite_hammer",
 	])
 
+	event.get("functionalstorage:upgrades")
+		.add([
+			"functionalstorage:copper_upgrade", 
+			"functionalstorage:gold_upgrade", 
+			"functionalstorage:diamond_upgrade", 
+			"functionalstorage:netherite_upgrade", 
+			"functionalstorage:iron_downgrade", 
+			"functionalstorage:pusher_upgrade", 
+			"functionalstorage:max_storage_upgrade", 
+			"functionalstorage:collector_upgrade", 
+			"functionalstorage:puller_upgrade",
+			"functionalstorage:void_upgrade",
+			"functionalstorage:redstone_upgrade",
+			"functionalstorage:creative_vending_upgrade"
+	])
+
 	addAloneItemTag("forge:plates/andesite_alloy", "createdeco:andesite_sheet")
 	addAloneItemTag("forge:plates/zinc", "createdeco:zinc_sheet")
 	addAloneItemTag("forge:plates/netherite", "createdeco:netherite_sheet")

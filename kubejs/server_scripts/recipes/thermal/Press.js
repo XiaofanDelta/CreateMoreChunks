@@ -121,4 +121,10 @@ ServerEvents.recipes((event) => {
 		"cmc:dynamo_base"
 	]).energy(global.EnergyStage[2]).id("thermal:press/dynamo_gourmand")
 
+	// 铁升级
+	thermal.press("functionalstorage:gold_upgrade", [
+		"4x #forge:storage_blocks/gold",
+		"functionalstorage:copper_upgrade"
+	]).id("functionalstorage:thermal/press/gold_upgrade")
+
 })

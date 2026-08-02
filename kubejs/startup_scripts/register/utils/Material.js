@@ -30,7 +30,7 @@ function defineModels(type, overlay) {
 /**
  * @constructor
  * @param {string} name
- * @param {MiningLevel} level
+ * @param {string} level
  */
 function Material(name, level) {
 	this.name = name
@@ -45,8 +45,8 @@ function Material(name, level) {
 }
 /**
  * 
- * @param {MaterialColor} color1 
- * @param {MaterialColor} color2 
+ * @param {Color_} color1 
+ * @param {Color_} color2 
  * @returns 
  */
 Material.prototype.color = function (color1, color2) {
@@ -155,7 +155,7 @@ Material.prototype.molten = function () {
 }
 /**
  * 
- * @param {SoundType} sound 
+ * @param {SoundType_} sound 
  * @returns 
  */
 Material.prototype.sound = function (sound) {

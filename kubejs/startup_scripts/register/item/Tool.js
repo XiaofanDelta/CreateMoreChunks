@@ -58,7 +58,7 @@ StartupEvents.registry("item", (event) => {
 	 * 
 	 * @param {string} id 
 	 * @param {string} type 
-	 * @param {Internal.Item | Internal.Fluid} inf 
+	 * @param {Internal.Item_ | Internal.Fluid_} inf 
 	 * @returns 
 	 */
 	function addMEInfinityCell(id, type, inf) {

@@ -32,11 +32,11 @@ ServerEvents.recipes((event) => {
 		"6x cmc:null"
 	).id("cmc:create/compacting/null_block")
 
-	// 斯特林能源炉
-	create.compacting("thermal:dynamo_stirling", [
-		"cmc:dynamo_base",
-		"2x #forge:gears/stone",
-		"2x #forge:gears/wooden"
-	]).id("thermal:create/compacting/dynamo_stirling")
+	// 铜升级
+	create.compacting("functionalstorage:copper_upgrade", [
+		"cmc:drawer_upgrade_base",
+		"4x #forge:storage_blocks/copper",
+		"4x #forge:chests"
+	]).id("functionalstorage:copper_upgrade")
 
 })

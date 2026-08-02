@@ -4,6 +4,13 @@ ServerEvents.recipes((event) => {
 
 	let { kubejs } = event.recipes
 
+	let H = {
+		1: "#cmc:hammer_tier1",
+		2: "#cmc:hammer_tier2",
+		3: "#cmc:hammer_tier3",
+		4: "#cmc:hammer_tier4"
+	}
+
 	// 安山合金
 	kubejs.shaped(
 		"create:andesite_alloy", [
@@ -19,24 +26,26 @@ ServerEvents.recipes((event) => {
 		"create:brass_hand", [
 		" A ",
 		"BCB",
-		" B "
+		" BH"
 	], {
-		A: "createdeco:andesite_sheet",
-		B: "create:brass_sheet",
-		C: "create:shaft"
-	}).id("create:brass_hand")
+		A: "#forge:plates/andesite_alloy",
+		B: "#forge:plates/brass",
+		C: "create:shaft",
+		H: H[2]
+	}).id("create:brass_hand").damageIngredient(H[2])
 
 	// 电子管
 	kubejs.shaped(
 		"create:electron_tube", [
-		"A",
-		"B",
-		"C"
+		"AH",
+		"B ",
+		"C "
 	], {
 		A: "create:polished_rose_quartz",
 		B: "#forge:wires/copper",
-		C: "#forge:plates/iron"
-	}).id("create:electron_tube")
+		C: "#forge:plates/iron",
+		H: H[2]
+	}).id("create:electron_tube").damageIngredient(H[2])
 
 	// 蓝宝石齿轮
 	kubejs.shaped("thermal:sapphire_gear", [
@@ -62,11 +71,12 @@ ServerEvents.recipes((event) => {
 	kubejs.shaped("cmc:globe_frame", [
 		" AA",
 		"A A",
-		" B "
+		" BH"
 	], {
 		A: "#forge:rods/gold",
-		B: "#forge:plates/gold"
-	}).id("cmc:globe_frame")
+		B: "#forge:plates/gold",
+		H: H[1]
+	}).id("cmc:globe_frame").damageIngredient(H[1])
 
 	// 区块生成器
 	kubejs.shaped("chunkbychunk:chunkspawner", [
@@ -320,14 +330,15 @@ ServerEvents.recipes((event) => {
 
 	// 电容
 	kubejs.shaped("createaddition:capacitor", [
-		"A",
-		"B",
-		"C"
+		"AH",
+		"B ",
+		"C "
 	], {
 		A: "#forge:plates/zinc",
 		B: "#forge:plates/copper",
-		C: "cmc:small_rf_coil"
-	}).id("createaddition:capacitor")
+		C: "cmc:small_rf_coil",
+		H: H[2]
+	}).id("createaddition:capacitor").damageIngredient(H[2])
 
 	// 流体单元
 	kubejs.shaped("thermal:fluid_cell", [
@@ -421,15 +432,16 @@ ServerEvents.recipes((event) => {
 
 	// 能源炉基底
 	kubejs.shaped("2x cmc:dynamo_base", [
-		" A ",
+		" AH",
 		"DAD",
 		"BCB"
 	], {
 		A: "createaddition:capacitor",
 		B: "#forge:gears/iron",
 		C: "thermal:machine_frame",
-		D: "#forge:dusts/redstone"
-	}).id("cmc:dynamo_base")
+		D: "#forge:dusts/redstone",
+		H: H[2]
+	}).id("cmc:dynamo_base").damageIngredient(H[2])
 
 	// 木质齿轮
 	kubejs.shaped("cmc:wooden_gear", [
@@ -544,5 +556,84 @@ ServerEvents.recipes((event) => {
 		G: "#forge:gears/diamond"
 	}).id("cmc:diamond_hammer")
 
+	// 抽屉升级
+	let DUB = "cmc:drawer_upgrade_base"
+	kubejs.shaped("functionalstorage:void_upgrade", [
+		"OOO",
+		"OBO",
+		"OOO"
+	], {
+		B: DUB,
+		O: "minecraft:obsidian"
+	}).id("functionalstorage:void_upgrade")
+	kubejs.shaped("functionalstorage:redstone_upgrade", [
+		"RCR",
+		"DBD",
+		"RCR"
+	], {
+		B: DUB,
+		D: "#forge:dusts/redstone",
+		R: "#forge:storage_blocks/redstone",
+		C: "minecraft:comparator"
+	}).id("functionalstorage:redstone_upgrade")
+	let BHRObject = {
+		B: DUB,
+		H: "minecraft:hopper",
+		R: "#forge:dusts/redstone"
+	}
+	kubejs.shaped("functionalstorage:collector_upgrade", [
+		"RHR",
+		" B ",
+		"RHR"
+	], BHRObject).id("functionalstorage:collector_upgrade")
+	kubejs.shaped("functionalstorage:puller_upgrade", [
+		"H",
+		"B",
+		"R"
+	], BHRObject).id("functionalstorage:puller_upgrade")
+	kubejs.shaped("functionalstorage:pusher_upgrade", [
+		"R",
+		"B",
+		"H"
+	], BHRObject).id("functionalstorage:pusher_upgrade")
+	kubejs.shaped("functionalstorage:iron_downgrade", [
+		"I I",
+		"IBI",
+		" I "
+	], {
+		B: DUB,
+		I: "#forge:ingots/iron"
+	}).id("functionalstorage:iron_downgrade")
+
+	// 斯特林能源炉
+	kubejs.shaped("thermal:dynamo_stirling", [
+		" CH",
+		"CAC",
+		"BBB"
+	], {
+		A: "cmc:dynamo_base",
+		B: "#forge:gears/stone",
+		C: "#forge:gears/wooden",
+		H: H[2]
+	}).id("thermal:dynamo_stirling").damageIngredient(H[2])
+
+	// 新月锤
+	kubejs.shaped("thermal:wrench", [
+		"  A",
+		" B ",
+		"B  "
+	], {
+		A: "#forge:gears/iron",
+		B: "#forge:rods"
+	}).id("thermal:wrench")
+
+	// 切石机
+	kubejs.shaped("minecraft:stonecutter", [
+		"A",
+		"B"
+	], {
+		A: "thermal:saw_blade",
+		B: "#forge:stone"
+	}).id("minecraft:stonecutter")
 
 })

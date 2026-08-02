@@ -1,15 +1,14 @@
 StartupEvents.registry("item", (event) => {
 
 	addSmithingTemplate("basic", false)
-		.addAppliesToSlotIcon("cmc:textures/gui/empty_slot_casing")
+		.ingotIcon()
 		.texture("cmc:item/material/basic_smithing_template")
 	
 	addSmithingTemplate("andesite", true)
-		.addAppliesToSlotIcon(new ResourceLocation("cmc:gui/empty_slot_casing"))
+		.addAppliesToSlotIcon("cmc:item/empty_slot_casing")
 		.texture("cmc:item/material/andesite_upgrade_smithing_template")
 
 	addSmithingTemplate("null", false)
-		.addAppliesToSlotIcon(new ResourceLocation("cmc:item/empty_slot_casing"))
 		.texture("cmc:item/missing/smithing_template")
 
 

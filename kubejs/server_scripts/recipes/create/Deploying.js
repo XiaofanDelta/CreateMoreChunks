@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
 		[
 			"createdeco:industrial_iron_nugget",
 			"ae2:black_lumen_paint_ball"
-	]).id("extendedcrafting:create/deploying/black_iron_nugget")
+		]).id("extendedcrafting:create/deploying/black_iron_nugget")
 
 	// 世界核心
 	create.deploying(
@@ -36,16 +36,16 @@ ServerEvents.recipes((event) => {
 		[
 			"cmc:basic_smithing_template",
 			"ae2:fluix_crystal"
-	]).id("ae2:create/deploying/fluix_upgrade_smithing_template")
+		]).id("ae2:create/deploying/fluix_upgrade_smithing_template")
 
 	// 苹果构件
-	create.deploying("cmc:ringo_mechanism",[
+	create.deploying("cmc:ringo_mechanism", [
 		"cmc:wooden_mechanism",
 		"minecraft:apple"
 	]).id("cmc:create/deploying/ringo_mechanism")
 
 	// 空星球
-	create.deploying("cmc:empty_planet",[
+	create.deploying("cmc:empty_planet", [
 		"#forge:glass",
 		"thermal:chiller_ball_cast"
 	]).keepHeldItem()
@@ -56,5 +56,17 @@ ServerEvents.recipes((event) => {
 		"thermal:machine_frame",
 		"mekanism:dictionary"
 	]).id("mekanism:create/deploying/oredictionificator")
+
+	// 辅助仙人掌
+	create.deploying("thermal:machine_null_augment", [
+		"cmc:augment_base",
+		"minecraft:cactus"
+	]).id("thermal:create/deploying/machine_null_augment")
+
+	// 齿轮
+	create.deploying("create:cogwheel", [
+		"#forge:gears/wooden",
+		"create:shaft"
+	]).id("create:deploying/cogwheel")
 
 })

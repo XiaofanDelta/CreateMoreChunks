@@ -80,4 +80,12 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/netherite"
 	).id("cmc:netherite_hammer")
 
+	// 下界合金升级
+	minecraft.smithing_transform(
+		"functionalstorage:netherite_upgrade",
+		"minecraft:netherite_upgrade_smithing_template",
+		"functionalstorage:diamond_upgrade",
+		"#forge:gears/netherite"
+	).id("functionalstorage:netherite_upgrade")
+
 })

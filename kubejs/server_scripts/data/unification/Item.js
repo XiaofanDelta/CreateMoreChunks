@@ -6,16 +6,10 @@ ServerEvents.highPriorityData((event) => {
 		"farmersdelight:wheat_dough"
 	))
 
-	addJsonFile("sawdust", addUnification(
-		"#forge:sawdust",
-		"thermal:sawdust"
-	))
-
-
     /**
 	 * @example addJsonFile("coal_coke", addUnification("#forge:coal_coke", "thermal:coal_coke"))
-	 * @param {Internal.Item | Internal.Ingredient} match 
-	 * @param {Internal.Item | Internal.Ingredient} item 
+	 * @param {Internal.Item_ | Internal.Ingredient_} match 
+	 * @param {Internal.Item_ | Internal.Ingredient_} item 
 	 * @returns 
 	 */
 	function addUnification(match, item) {

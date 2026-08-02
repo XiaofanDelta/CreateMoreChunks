@@ -68,6 +68,16 @@ ServerEvents.recipes((event) => {
 		"minecraft:clock",
 		"#forge:gears/enderium",
 		"#forge:gears/abyssal"
-	]).energy(global.EnergyStage[4]).id("tiab:component_assembly/time_in_a_bottle")
+	]).energy(global.EnergyStage[4]).id("tiab:thermal_extra/component_assembly/time_in_a_bottle")
+
+	// 钻石升级
+	thermal_extra.component_assembly("functionalstorage:diamond_upgrade", [
+		Fluid.of("cmc:advanced_compound", 20),
+		"functionalstorage:gold_upgrade",
+		"#forge:gears/diamond",
+		"#forge:gears/diamond",
+		"#forge:gears/diamond",
+		"#forge:gears/diamond"
+	]).id("functionalstorage:thermal_extra/component_assembly/diamond_upgrade")
 
 })
