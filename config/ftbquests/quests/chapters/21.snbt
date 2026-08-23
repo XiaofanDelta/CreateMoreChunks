@@ -708,7 +708,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["38156708BFFA55E1"]
+			dependencies: [
+				"38156708BFFA55E1"
+				"765A66F4EF414524"
+			]
 			id: "6C6267AB4FBCBFC7"
 			optional: true
 			shape: "square"
@@ -755,6 +758,18 @@
 			}]
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0B63583975CC0B3F"]
+			id: "765A66F4EF414524"
+			shape: "square"
+			tasks: [{
+				id: "1AAB5E262A28574B"
+				item: "mekanism:dictionary"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
 		}
 	]
 	title: "2.1 热力时代"

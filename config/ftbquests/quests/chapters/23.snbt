@@ -22,7 +22,7 @@
 			id: "4493F9F3BC0BB0DD"
 			tasks: [{
 				id: "3FF991EEC9D0B018"
-				item: "create_connected:control_chip"
+				item: "cmc:test"
 				type: "item"
 			}]
 			x: -6.0d

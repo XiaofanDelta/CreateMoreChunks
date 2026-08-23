@@ -170,6 +170,6 @@ ServerEvents.recipes((event) => {
 			.jeiBuild()
 			.recipe.block_in(Block.getBlock(`compressium:${block}_${i}`))			
 		}
-	})		
+	})
 
 })

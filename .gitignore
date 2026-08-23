@@ -1,0 +1,101 @@
+# 个人数据
+/saves/
+/screenshots/
+/CustomSkinLoader/
+/backups/
+/data/
+/patchouli_books/
+/local/
+/defaultconfigs/
+/resourcepacks/
+/config/
+
+/hotbar.nbt
+/options.txt
+
+
+# 游戏启动数据
+/PCL/
+/mods/
+/CMC-Alpha1.1-natives/
+
+/CMC-Alpha1.1.json
+
+
+# 开发数据
+/logs/
+/icon-exports-*/
+/新建文件夹/
+/.idea/
+/.vscode/
+/fancymenu_data/buddy/buddy_leveling.json
+/fancymenu_data/buddy/buddy_save.json
+/fancymenu_data/action_favorites.json
+/fancymenu_data/last_world.fmdata
+/moonlight-global-datapacks/
+/kubejs/probe/
+/kubejs/assets/ponderjs_generated/
+
+/heracles_options.json
+/rhino.local.properties
+
+/kubejs/jsconfig.json
+/kubejs/README.txt
+/kubejs/config/probejs.json
+
+
+# 缓存数据
+/oei/
+/oeb/
+
+/patchouli_data.json
+/usercache.json
+/usernamecache.json
+
+
+# 二进制文件
+*.jar
+*.jar.disabled
+# *.nbt
+
+
+# 允许的文件
+!/ldlib/mbd2/
+!/kubejs/probe/docs/
+
+!/defaultconfigs/chunkbychunk.toml
+!/defaultconfigs/cobblefordays-server.toml
+!/defaultconfigs/fluxnetworks-server.toml
+
+!resourcepacks/Better Chunk by Chunk v1.4.zip
+
+
+# 提交的配置
+!/config/compressiumblocks.json
+!/config/cucumber-client.toml
+!/config/extendedcrafting-client.toml
+!/config/extendedcrafting-common.toml
+!/config/modularrouters-common.toml
+!/config/moonlight-client.toml
+!/config/moonlight-common.toml
+!/config/thermal_integration-common.toml
+!/config/thermal_parallel-common.toml
+
+!/config/inventoryprofilesnext/inventoryprofiles.json
+!/config/Mekanism/client.toml
+!/config/Mekanism/common.toml
+
+!/config/nebula/
+!/config/openloader/
+!/config/ae2/
+!/config/drippyloadingscreen/
+!/config/extendedcrafting/
+!/config/fancymenu/
+!/config/ftbquests/
+
+
+# 临时文件
+/kubejs/assets/cmc/textures/gui/container/test.png
+/kubejs/assets/cmc/textures/gui/container/test2.png
+/kubejs/assets/cmc/textures/gui/container/test3.png
+/kubejs/assets/cmc/textures/gui/container/test4.png

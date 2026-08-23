@@ -298,3 +298,27 @@ Mod:
  - `meinfinitycell`的创造模式标签页
 
 ---
+
+# Alpha 1.6.0 (`26/__/__`)
+
+## 添加内容
+
+Mod:
+
+ - Create: Cooling Fan
+ - 几个优化模组
+ - Fancy Toasts | Better Advancements
+ - Crafting Station: J/EMI Edition Updated
+ - AuraTip
+ - Custom Window Title
+ - MekaGenJei (Mekanism Generator addon)
+ - Mekanism Pipez Fix
+ - Pipez Optimizer
+ - Quick Pack
+<!-- 狠狠从 CMI 进了一波货，额 -->
+
+## 更改内容
+
+## 删除内容
+
+---
