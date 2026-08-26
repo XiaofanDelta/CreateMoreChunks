@@ -26,7 +26,8 @@ StartupEvents.registry("creative_mode_tab", (event) => {
 			"cmc:unbreakable_sandpaper",
 			"cmc:creative_physics_staff",
 			"cmc:unbreakable_soap",
-			"cmc:infinity_lava_cell"
+			"cmc:infinity_lava_cell",
+			"cmc:teleporter"
 	]).displayName(Component.translatable("itemGroup.cmc.tools"))
 
 	// 流体

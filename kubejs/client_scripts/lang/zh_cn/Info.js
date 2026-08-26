@@ -11,6 +11,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addCommonTooltipLang("cmc:sun_oneshot_item", "一颗灯泡，那是太阳……")
 	addCommonTooltipLang("cmc:chunk_spawner", "§c随机模块出现错误…已重置。")
 	addCommonTooltipLang("cmc:empty_schematic", "可堆叠")
+	addCommonTooltipLang("cmc:press_shift", "§b需要按下 Shift 键")
+	addCommonTooltipLang("cmc:teleporter", "目之所及，皆可传送!")
 
 	// JEIInfo
 	addJEIInfoLang("cmc:test", "对这是个测试的物品\n如果你在合成配方中看见了这个，请一定要报告这个bug！")

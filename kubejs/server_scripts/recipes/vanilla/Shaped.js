@@ -262,7 +262,7 @@ ServerEvents.recipes((event) => {
 		"MRM",
 		"WM "
 	], {
-		M: "#forge:ingots/gold",
+		M: "#forge:ingots/copper",
 		U: "pipez:basic_upgrade",
 		W: "#forge:wires/gold",
 		R: "#forge:dusts/redstone"
@@ -272,7 +272,7 @@ ServerEvents.recipes((event) => {
 		"MRM",
 		"WM "
 	], {
-		M: "#forge:gems/diamond",
+		M: "#forge:ingots/gold",
 		U: "pipez:improved_upgrade",
 		W: "#forge:wires/gold",
 		R: "#forge:storage_blocks/redstone"
@@ -282,18 +282,48 @@ ServerEvents.recipes((event) => {
 		"MRM",
 		"WM "
 	], {
-		M: "#forge:ingots/netherite",
+		M: "#forge:ingots/redstone",
 		U: "pipez:advanced_upgrade",
 		W: "#forge:wires/gold",
 		R: "compressium:redstone_1"
 	}).id("pipez:ultimate_upgrade")
+	kubejs.shaped("pipez_optimizer:atm_upgrade", [
+		" MU",
+		"MRM",
+		"WM "
+	], {
+		M: "#forge:ingots/refined_glowstone",
+		U: "pipez:ultimate_upgrade",
+		W: "#forge:wires/gold",
+		R: "compressium:redstone_2"
+	}).id("pipez_optimizer:atm_upgrade")
+	kubejs.shaped("pipez_optimizer:vibranium_upgrade", [
+		" MU",
+		"MRM",
+		"WM "
+	], {
+		M: "#forge:ingots/netherite",
+		U: "pipez_optimizer:atm_upgrade",
+		W: "#forge:wires/gold",
+		R: "compressium:redstone_3"
+	}).id("pipez_optimizer:vibranium_upgrade")
+	kubejs.shaped("pipez_optimizer:unobtainium_upgrade", [
+		" MU",
+		"MRM",
+		"WM "
+	], {
+		M: "#forge:ingots/quantum",
+		U: "pipez_optimizer:vibranium_upgrade",
+		W: "#forge:wires/gold",
+		R: "compressium:redstone_4"
+	}).id("pipez_optimizer:unobtainium_upgrade")
 	kubejs.shaped("pipez:infinity_upgrade", [
 		" MU",
 		"MRM",
 		"WM "
 	], {
 		M: "#forge:ingots/world_matter",
-		U: "pipez:ultimate_upgrade",
+		U: "pipez_optimizer:unobtainium_upgrade",
 		W: "#forge:wires/gold",
 		R: "#cmc:infinity_source/redstone"
 	}).id("pipez:infinity_upgrade")
@@ -446,10 +476,11 @@ ServerEvents.recipes((event) => {
 	// 木质齿轮
 	kubejs.shaped("cmc:wooden_gear", [
 		" A ",
-		"A A",
+		"ABA",
 		" A "
 	], {
-		A: "#minecraft:planks"
+		A: "#minecraft:planks",
+		B: "#forge:rods/wooden"
 	}).id("cmc:wooden_gear")
 
 	// 石质齿轮
@@ -635,5 +666,14 @@ ServerEvents.recipes((event) => {
 		A: "thermal:saw_blade",
 		B: "#forge:stone"
 	}).id("minecraft:stonecutter")
+	
+	// 示例方块
+	kubejs.shaped("cmc:example_block", [
+		"AAA",
+		"AAA",
+		"AAA"
+	], {
+		A: "cmc:example_item"
+	}).id("cmc:example_block")
 
 })

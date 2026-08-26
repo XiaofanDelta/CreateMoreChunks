@@ -14,8 +14,8 @@ ServerEvents.recipes((event) => {
 		"cmc:empty_planet",
 	).id("cmc:test/114514")
 
-	MekanismHelper.asGasStack().getRaw()
+	// MekanismHelper.asGasStack().getRaw()
 
-	mekanism.crystallizing("gas", "cmc:test", {amount: 1, gas: "cmc:world_matter"})
+	// mekanism.crystallizing("gas", "cmc:test", {amount: 1, gas: "cmc:world_matter"})
 
 })

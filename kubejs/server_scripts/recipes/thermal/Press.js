@@ -127,4 +127,58 @@ ServerEvents.recipes((event) => {
 		"functionalstorage:copper_upgrade"
 	]).id("functionalstorage:thermal/press/gold_upgrade")
 
+	// 组件基板
+	thermal.press("2x cmc:augment_base", [
+		"#forge:plates/tin",
+		"#forge:plates/silver"
+	]).id("cmc:thermal/press/augment_base")
+
+	// 过滤组件基板
+	thermal.press("cmc:filter_augment_base", [
+		"#cmc:filters",
+		"cmc:augment_base"
+	]).id("cmc:thermal/press/filter_augment_base")
+
+	// 机器组件基板
+	thermal.press("cmc:machine_augment_base", [
+		"#forge:plates/invar",
+		"cmc:augment_base"
+	]).id("cmc:thermal/press/machine_augment_base")
+
+	// 过滤规则
+	thermal.press("thermal:item_filter_augment", [
+		"2x #forge:gears/wooden",
+		"cmc:filter_augment_base"
+	]).id("thermal:press/item_filter_augment")
+	thermal.press("thermal:fluid_filter_augment", [
+		"#forge:gears/copper",
+		"cmc:filter_augment_base"
+	]).id("thermal:press/fluid_filter_augment")
+
+	// 机器组件['', '', '', '', '', '']
+	thermal.press("thermal:xp_storage_augment", [
+		"thermal:xp_crystal",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/xp_storage_augment")
+	thermal.press("thermal:side_config_augment", [
+		"6x minecraft:hopper",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/side_config_augment")
+	thermal.press("thermal:machine_null_augment", [
+		"minecraft:cactus",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/machine_null_augment")
+	thermal.press("thermal:machine_cycle_augment", [
+		"2x thermal:redstone_servo",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/machine_cycle_augment")
+	thermal.press("thermal:dynamo_throttle_augment", [
+		"2x #forge:gears/electrum",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/dynamo_throttle_augment")
+	thermal.press("thermal:rs_control_augment", [
+		"functionalstorage:redstone_upgrade",
+		"cmc:machine_augment_base"
+	]).id("thermal:press/rs_control_augment")
+
 })

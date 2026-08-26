@@ -6,12 +6,5 @@
 				"stream": true
 			}
 		]
-	},
-	"chunk_spawn": {
-		"sounds": [
-			{
-				"name": "chunkbychunk:radar1"
-			}
-		]
 	}
 }

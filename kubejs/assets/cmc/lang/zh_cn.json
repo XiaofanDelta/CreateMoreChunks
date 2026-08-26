@@ -10,17 +10,29 @@
 
 	"message.cmc.creative_physics_staff": "对，我确实把 神秘吊塔: 航空学 迁移到了 1.20.1 Forge",
 
+	"message.cmc.hotbar": "\n快捷栏物品:",
+	"message.cmc.copy": "§e[点击复制到剪贴板]§r",
+	"message.cmc.tag": "\n物品标签:",
+
 	"display.cmc.chunk_spawner.dim": "似乎除了主世界的其他维度无法正常启动它……",
 	"display.cmc.chunk_spawner.item": "它对这个物品没有反应……尝试一下其他物品？",
+	"display.cmc.copy": "复制快捷栏物品列表",
 
 	"recipe.jei.recipeType.cmc.test": "测试！",
 	
 	"cmc.advanced_component_assemble": "高级部件装配",
 	"cmc.hammer_crush": "锤击粉碎",
+	"cmc.left_click": "左键点击",
+	"cmc.right_click": "右键点击",
+	"thermal.hive_hopper": "蜂箱漏斗",
 
 	"info.cmc.information": "信息",
 	"info.cmc.aca": "用一些液体和物品制作高级物品。\n \n一些配方可能留下需要处理的废液。\n \n不是高级(AE)反应仓。",
 	"info.cmc.db": "能源炉但不能输入任何东西。\n \n只能存储能量的基础能源炉。\n \n能量会自动输入输出。",
+	"info.cmc.unknown": "未知",
+	"info.cmc.left_click": "按下左键",
+	"info.cmc.right_click": "按下右键",
+	"info.thermal.hive_hopper.jei": "要求：\n蜂箱需要充满蜂蜜。",
 
 	"block.thermal_extra.abyssal": "熔融深渊"
 }

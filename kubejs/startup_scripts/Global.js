@@ -20,7 +20,7 @@ global.NowDate = {
  */
 global.Dev = {
 	testing41: false,
-	recipesMaking: false,
+	recipesMaking: true,
 	logRegisters: false
 }
 

@@ -8,8 +8,14 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("chunk_machine_base", "区块机器基底")
 	addBlockLang("creative_casing", "创造机壳")
 
+	addBlockLang("smithing_iron_block", "锻造铁块")
+	addBlockLang("anvil_metal_block", "铁砧金属块")
+
 	// 太阳
 	addBlockLang("sun_oneshot", "太阳")
+
+	// 不知道
+	addBlockLang("example_block", "示例方块")
 
 	// 机器
 	addBlockLang("advanced_component_assembly", "高级部件装配机")

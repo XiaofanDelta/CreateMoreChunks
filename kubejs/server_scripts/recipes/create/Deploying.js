@@ -59,7 +59,7 @@ ServerEvents.recipes((event) => {
 
 	// 辅助仙人掌
 	create.deploying("thermal:machine_null_augment", [
-		"cmc:augment_base",
+		"cmc:machine_augment_base",
 		"minecraft:cactus"
 	]).id("thermal:create/deploying/machine_null_augment")
 

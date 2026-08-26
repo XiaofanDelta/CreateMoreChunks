@@ -10,6 +10,8 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmc:sun_oneshot_item")
 	addCommonTooltip("cmc:chunk_spawner")
 	addCommonTooltip("cmc:empty_schematic")
+	addCommonTooltip("cmc:press_shift")
+	addCommonTooltip("cmc:teleporter")
 
 	/** 
 	 * @param {Internal.Ingredient_} ingredient 

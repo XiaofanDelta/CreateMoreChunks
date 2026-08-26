@@ -155,7 +155,7 @@ ServerEvents.recipes((event) => {
 
 	new HammerCrushRecipe("#forge:stone", 1)
 		.addHammerDamage()
-		.addDropItemPost("minecraft:cobblestone")
+		.addDropItemPost("minecraft:cobblestone", 1)
 		.build("minecraft:hammer/stone")
 		.jeiBuild()
 

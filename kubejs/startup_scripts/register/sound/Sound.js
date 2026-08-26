@@ -10,6 +10,5 @@ StartupEvents.registry("sound_event", (event) => {
 	}
 
 	addSoundEvent("creative_physics_staff")
-	addSoundEvent("chunk_spawn")
 
 })

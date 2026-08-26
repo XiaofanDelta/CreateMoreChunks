@@ -70,6 +70,7 @@ ServerEvents.recipes((event) => {
 		"thermal:wrench",
 		"minecraft:stonecutter",
 		"create:cogwheel",
+		"#thermal:augments",
 		//"#thermal:machines"
 	]
 

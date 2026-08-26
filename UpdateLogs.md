@@ -305,7 +305,6 @@ Mod:
 
 Mod:
 
- - Create: Cooling Fan
  - 几个优化模组
  - Fancy Toasts | Better Advancements
  - Crafting Station: J/EMI Edition Updated
@@ -318,6 +317,8 @@ Mod:
 <!-- 狠狠从 CMI 进了一波货，额 -->
 
 ## 更改内容
+
+ - 升级 JEI
 
 ## 删除内容
 

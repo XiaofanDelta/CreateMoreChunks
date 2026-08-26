@@ -100,7 +100,7 @@ BlockEvents.rightClicked("cmc:chunk_spawner",(event) => {
 				player.x,
 				player.y,
 				player.z,
-				"cmc:chunk_spawn",
+				"chunkbychunk:spawnchunkevent",
 				"blocks",
 				1.0,
 				1.0

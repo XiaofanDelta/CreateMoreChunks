@@ -1,5 +1,13 @@
 ServerEvents.highPriorityData((event) => {
 
+	let cropsList = ["potato", "carrot", "beetroot"]
+
+	cropsList.forEach((crop) => {
+		addUnification(`${crop}_crate`, [
+			`#forge:storage_blocks/${crop}`
+		], `farmersdelight:${crop}_crate`)
+	})
+
 	/**
 	 * 
 	 * @example 	addUnification("potato_crate", [ "#forge:storage_blocks/potato" ], "farmersdelight:potato_crate")

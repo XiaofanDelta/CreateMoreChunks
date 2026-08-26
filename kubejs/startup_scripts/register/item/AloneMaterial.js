@@ -15,6 +15,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("configuration_tool_base") // 配置工具基板
 	addMaterial("linking_tool_base") // 链接工具基板
 	addMaterial("augment_base") // 升级组件基板
+	addMaterial("machine_augment_base") // 机器组件基底
 	addMaterial("creative_augment_base") // 创造组件基板
 	addMaterial("filter_augment_base") // 过滤组件基板
 	addMaterial("precision_core") // 精密核心

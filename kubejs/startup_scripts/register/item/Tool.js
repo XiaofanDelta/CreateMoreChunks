@@ -15,6 +15,9 @@ StartupEvents.registry("item", (event) => {
 			"parent": "cmc:item/creative_physics_staff"
 		}).rarity("epic")
 
+	// 传送器
+	addBasicTool("teleporter", true)
+
 	// 无限熔岩元件
 	addMEInfinityCell("infinity_lava_cell", "fluid", "minecraft:lava").rarity("uncommon")
 

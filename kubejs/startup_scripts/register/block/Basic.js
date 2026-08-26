@@ -146,5 +146,36 @@ StartupEvents.registry("block", (event) => {
 		.requiresTool(true)
 		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock(global.ToolType["pickaxe"])
+
+	// example
+	addBlock("example_block")
+		.textureAll("cmc:block/example")
+		.hardness(1)
+		.requiresTool(true)
+		.soundType(SoundType.STONE)
+		.tagBoth("forge:storage_blocks")
+		.tagBoth("forge:storage_blocks/example")
+		.tagBlock(global.MiningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+
+	// 锻造铁块
+	addBlock("smithing_iron_block")
+		.textureAll("cmc:block/smithing_iron")
+		.hardness(1)
+		.requiresTool(true)
+		.soundType(SoundType.METAL)
+		.tagBoth("forge:storage_blocks")
+		.tagBoth("forge:storage_blocks/smithing_iron")
+		.tagBlock(global.MiningLevel["iron"])
+		.tagBlock(global.ToolType["pickaxe"])
+
+	// 铁砧金属块
+	addBlock("anvil_metal_block")
+		.textureAll("cmc:block/anvil_metal")
+		.hardness(1)
+		.requiresTool(true)
+		.soundType(SoundType.METAL)
+		.tagBlock(global.MiningLevel["iron"])
+		.tagBlock(global.ToolType["pickaxe"])
 	
 })

@@ -56,6 +56,8 @@
 	"cmc.advanced_component_assemble": "Advanced Component Assemble",
 	"cmc.hammer_crush": "Hammer Crushing",
 
+	"thermal.hive_hopper": "Hive Hopper",
+
 	"info.cmc.information": "Information",
 	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
 	"info.cmc.db": "Dynamo but nothing can input.\n \nThe basic dynamo that can only store energy.\n \nEnergy will be auto IO.",

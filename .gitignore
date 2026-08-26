@@ -24,6 +24,7 @@
 
 # 开发数据
 /logs/
+/crash-reports/
 /icon-exports-*/
 /新建文件夹/
 /.idea/
@@ -56,12 +57,16 @@
 # 二进制文件
 *.jar
 *.jar.disabled
+*.rar
 # *.nbt
 
 
 # 允许的文件
 !/ldlib/mbd2/
 !/kubejs/probe/docs/
+
+!*.rt
+!*.sm
 
 !/defaultconfigs/chunkbychunk.toml
 !/defaultconfigs/cobblefordays-server.toml
@@ -85,8 +90,10 @@
 !/config/Mekanism/client.toml
 !/config/Mekanism/common.toml
 
+!/config/openloader/advanced_options.json
+
 !/config/nebula/
-!/config/openloader/
+!/config/openloader/resources/CMCResources/
 !/config/ae2/
 !/config/drippyloadingscreen/
 !/config/extendedcrafting/

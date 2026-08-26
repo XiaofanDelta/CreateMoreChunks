@@ -22,6 +22,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("configuration_tool_base", "配置工具基板")
 	addItemLang("linking_tool_base", "链接工具基板")
 	addItemLang("augment_base", "组件基板")
+	addItemLang("machine_augment_base", "机器组件基板")
 	addItemLang("creative_augment_base", "创造组件基板")
 	addItemLang("filter_augment_base", "过滤组件基板")
 	addItemLang("precision_core", "精密核心")
@@ -36,6 +37,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("stone_gear", "石齿轮")
 	addItemLang("null_mechanism","%s 构件")
 
+	// 不知道
+	addItemLang("press_shift", "按下 Shift")
+	addItemLang("example_item", "示例物品")
+
 	// 测试
 	addItemLang("test", "测试")
 
@@ -45,6 +50,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("sun_oneshot_item", "太阳")
 	addItemLang("unbreakable_soap", "不毁肥皂")
 	addItemLang("infinity_lava_cell", "无限熔岩元件")
+	addItemLang("teleporter", "传送器")
 
 	// 锤子
 	addHammerLang("copper", "铜")

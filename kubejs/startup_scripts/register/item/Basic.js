@@ -1,7 +1,7 @@
 StartupEvents.registry("item", (event) => {
 
 	// %null%
-	addItem("null", "basic").texture("cmc:item/missing/missingno")
+	addItem("null").texture("cmc:item/missing/missingno")
 	addItem("null_mechanism").texture("cmc:item/missing/mechanism")
 	addItem("empty").texture("cmc:item/missing/empty")
 
@@ -15,6 +15,23 @@ StartupEvents.registry("item", (event) => {
 			.tag("cmc:planets")
 			.tag(`cmc:planets/${planets}`)
 	})
+
+	// Shift
+	addItem("press_shift")
+		.modelJson({
+			"parent": "minecraft:item/generated",
+			"textures": {
+				"layer0": "cmc:item/shift"
+			},
+			"display": {
+				"gui": {
+					"scale": [1.5625, 1.5625, 1]
+				},
+			}
+		})
+
+	// example
+	addItem("example_item").texture("cmc:item/example")
 
 	/**
 	 * 

@@ -12,7 +12,11 @@ ServerEvents.tags("block", (event) => {
 
 	event.get("create:wrench_pickup")
 		.add([
-			"thermal:dynamos"
+			"#thermal:dynamos",
+			"#thermal:machines",
+			"#thermal:devices",
+			"thermal:machine_frame",
+			"supplementaries:cog_block"
 	])
 
 	addAloneBlockTag("thermal:dynamos", "thermal_extra:dynamo_frost")

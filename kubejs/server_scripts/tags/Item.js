@@ -2,9 +2,11 @@
 
 ServerEvents.tags("item", (event) => {
 	
+	// 钥匙
 	event.get("supplementaries:keys")
 		.add("functionalstorage:configuration_tool")
 
+	// 球型物
 	event.get("cmc:balls")
 		.add([
 		"minecraft:fire_charge",
@@ -32,6 +34,7 @@ ServerEvents.tags("item", (event) => {
 		"#cmc:planets"
 	])
 
+	// 压印模版
 	event.get("ae2:inscriber_presses")
 		.add([
 			"ae2:name_press",
@@ -40,6 +43,7 @@ ServerEvents.tags("item", (event) => {
 			"advanced_ae:quantum_processor_press"
 	])
 
+	// 板
 	event.get("forge:plates")
 		.add([
 			"createdeco:zinc_sheet",
@@ -51,6 +55,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:world_matter_plate"
 	])
 
+	// 齿轮
 	event.get("forge:gears")
 		.add([
 			"cmc:brass_gear",
@@ -58,6 +63,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:wooden_gear"
 	])
 
+	// 锭
 	event.get("forge:ingots")
 		.add([
 			"createdeco:industrial_iron_ingot",
@@ -65,6 +71,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:world_matter_ingot"
 	])
 
+	// 粒
 	event.get("forge:nuggets")
 		.add([
 			"createdeco:industrial_iron_nugget",
@@ -72,6 +79,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:world_matter_nugget"
 	])
 
+	// 宝石
 	event.get("forge:gems")
 		.add([
 			"create:polished_rose_quartz",
@@ -79,6 +87,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:world_gem"
 	])
 
+	// 粉
 	event.get("forge:dusts")
 		.add([
 			"thermal_extra:soul_sand_dust",
@@ -86,6 +95,7 @@ ServerEvents.tags("item", (event) => {
 			"fluxnetworks:flux_dust"
 	])
 
+	// Mek 升级
 	event.get("mekanism:upgrades")
 		.add([
 			"mekanism:upgrade_speed",
@@ -97,6 +107,7 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:upgrade_stone_generator"
 	])
 
+	// Mek 工厂升级
 	event.get("mekanism:tier_installers")
 		.add([
 			"mekanism:basic_tier_installer",
@@ -105,7 +116,7 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:ultimate_tier_installer"
 	])
 
-	
+	// 终极锭合成原料
 	event.get("cmc:ultimate_ingot_ingredients")
 		.add([
 			"#forge:alloys",
@@ -120,6 +131,7 @@ ServerEvents.tags("item", (event) => {
 		"extendedcrafting:the_ultimate_ingot"
 	])
 
+	// 区块机器
 	event.get("chunkbychunk:chunk_machines")
 		.add([
 			"chunkbychunk:worldmender",
@@ -127,6 +139,7 @@ ServerEvents.tags("item", (event) => {
 			"chunkbychunk:worldscanner"
 	])
 
+	// 硬币
 	event.get("forge:coins")
 		.add([
 			"createdeco:copper_coin",
@@ -134,9 +147,11 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:zinc_coin",
 			"createdeco:brass_coin",
 			"createdeco:iron_coin",
-			"createdeco:gold_coin"
+			"createdeco:gold_coin",
+			"createdeco:netherite_coin"
 	])
 
+	// 热力机器
 	event.get("thermal:machines")
 		.add([
 			"thermal_extra:nitratic_igniter",
@@ -167,6 +182,7 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:shellite_hammer",
 	])
 
+	// 抽屉升级
 	event.get("functionalstorage:upgrades")
 		.add([
 			"functionalstorage:copper_upgrade", 
@@ -183,6 +199,53 @@ ServerEvents.tags("item", (event) => {
 			"functionalstorage:creative_vending_upgrade"
 	])
 
+	// Pipez 升级
+	event.get("pipez:upgrades")
+		.add([
+			"pipez_optimizer:atm_upgrade",
+			"pipez_optimizer:vibranium_upgrade",
+			"pipez_optimizer:unobtainium_upgrade"
+		])
+	
+	// 过滤器
+	event.get("create:filters")
+		.add([
+			"create:filter",
+			"create:attribute_filter",
+			"create:package_filter"
+		])
+
+	event.get("cmc:filters")
+		.add([
+			"#itemfilters:filters",
+			"#modularrouters:filters",
+			"#create:filters"
+		])
+
+	// 组件
+	event.get("thermal:filter_augments")
+		.add([
+			"thermal:fluid_filter_augment",
+			"thermal:item_filter_augment",
+			"thermal_extra:av_item_filter_augment"
+		])
+
+	event.get("thermal:machine_augments")
+		.add([
+			"thermal:xp_storage_augment", 
+			"thermal:side_config_augment", 
+			"thermal:machine_null_augment", 
+			"thermal:machine_cycle_augment", 
+			"thermal:dynamo_throttle_augment", 
+			"thermal:rs_control_augment"
+		])
+	
+	event.get("thermal:augments")
+		.add([
+			"#thermal:filter_augments",
+			"#thermal:machine_augments"
+		])
+
 	addAloneItemTag("forge:plates/andesite_alloy", "createdeco:andesite_sheet")
 	addAloneItemTag("forge:plates/zinc", "createdeco:zinc_sheet")
 	addAloneItemTag("forge:plates/netherite", "createdeco:netherite_sheet")
@@ -196,7 +259,9 @@ ServerEvents.tags("item", (event) => {
 	addAloneItemTag("forge:coins/brass", "createdeco:brass_coin")
 	addAloneItemTag("forge:coins/iron", "createdeco:iron_coin")
 	addAloneItemTag("forge:coins/gold", "createdeco:gold_coin")
+	addAloneItemTag("forge:coins/netherite", "createdeco:netherite_coin")
 	addAloneItemTag("forge:plates/black_iron", "extendedcrafting:black_iron_slate")
+	addAloneItemTag("forge:ingots/quantum", "advanced_ae:quantum_alloy")
 	addAloneItemTag("thermal:dynamos", "thermal_extra:dynamo_frost")
 	addAloneItemTag("forge:gears/brass", "cmc:brass_gear")
 	addAloneItemTag("forge:gears/stone", "cmc:stone_gear")

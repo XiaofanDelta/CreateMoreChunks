@@ -87,4 +87,7 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/wooden"
 	]).id("create:cogwheel")
 
+	// 示例物品 
+	kubejs.shapeless("9x cmc:example_item", "cmc:example_block").id("cmc:example_item")
+
 })
