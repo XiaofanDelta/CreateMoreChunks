@@ -11,12 +11,15 @@
 	"message.cmc.creative_physics_staff": "对，我确实把 神秘吊塔: 航空学 迁移到了 1.20.1 Forge",
 
 	"message.cmc.hotbar": "\n快捷栏物品:",
+	"message.cmc.hotbar.no_item": "§c你的快捷栏里没有物品!",
 	"message.cmc.copy": "§e[点击复制到剪贴板]§r",
 	"message.cmc.tag": "\n物品标签:",
+	"message.cmc.tag.no_item": "§c你没有手持一个物品!",
+	"message.cmc.tag.empty": "§c该物品没有物品标签!",
 
 	"display.cmc.chunk_spawner.dim": "似乎除了主世界的其他维度无法正常启动它……",
 	"display.cmc.chunk_spawner.item": "它对这个物品没有反应……尝试一下其他物品？",
-	"display.cmc.copy": "复制快捷栏物品列表",
+	"display.cmc.copy": "点击复制文本",
 
 	"recipe.jei.recipeType.cmc.test": "测试！",
 	

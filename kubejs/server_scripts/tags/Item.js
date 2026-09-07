@@ -1,7 +1,7 @@
 // priority: 1145
 
 ServerEvents.tags("item", (event) => {
-	
+
 	// 钥匙
 	event.get("supplementaries:keys")
 		.add("functionalstorage:configuration_tool")
@@ -9,30 +9,30 @@ ServerEvents.tags("item", (event) => {
 	// 球型物
 	event.get("cmc:balls")
 		.add([
-		"minecraft:fire_charge",
-		"minecraft:ender_pearl",
-		"minecraft:ender_eye",
-		"minecraft:snowball",
-		"amendments:dragon_charge",
-		"minecraft:egg",
-		"minecraft:heart_of_the_sea",
-		"minecraft:slime_ball",
-		"minecraft:clay_ball",
-		"supplementaries:cannonball",
-		"minecraft:sniffer_egg",
-		"minecraft:turtle_egg",
-		"minecraft:magma_cream",
-		"minecraft:firework_star",
-		"thermal_extra:paraffin_wax",
-		"ae2:fluix_pearl",
-		"thermal_extra:sticky_ball",
-		"thermal:tar",
-		"thermal:florb",
-		"thermal:earth_charge",
-		"thermal:ice_charge",
-		"thermal:lightning_charge",
-		"#cmc:planets"
-	])
+			"minecraft:fire_charge",
+			"minecraft:ender_pearl",
+			"minecraft:ender_eye",
+			"minecraft:snowball",
+			"amendments:dragon_charge",
+			"minecraft:egg",
+			"minecraft:heart_of_the_sea",
+			"minecraft:slime_ball",
+			"minecraft:clay_ball",
+			"supplementaries:cannonball",
+			"minecraft:sniffer_egg",
+			"minecraft:turtle_egg",
+			"minecraft:magma_cream",
+			"minecraft:firework_star",
+			"thermal_extra:paraffin_wax",
+			"ae2:fluix_pearl",
+			"thermal_extra:sticky_ball",
+			"thermal:tar",
+			"thermal:florb",
+			"thermal:earth_charge",
+			"thermal:ice_charge",
+			"thermal:lightning_charge",
+			"#cmc:planets"
+		])
 
 	// 压印模版
 	event.get("ae2:inscriber_presses")
@@ -40,8 +40,158 @@ ServerEvents.tags("item", (event) => {
 			"ae2:name_press",
 			"appflux:energy_processor_press",
 			"megacells:accumulation_processor_press",
-			"advanced_ae:quantum_processor_press"
-	])
+			"advanced_ae:quantum_processor_press",
+			"cmc:blank_print_press"
+		])
+
+	// 抽屉
+	event.get("functionalstorage:drawer")
+		.add([
+			"#functionalstorage:fluid_drawer",
+			"#functionalstorage:item_drawer",
+			"functionalstorage:ender_drawer"
+		])
+
+	event.get("functionalstorage:item_drawer")
+		.add([
+			"#functionalstorage:drawer/wood",
+			"#functionalstorage:compacting_drawer",
+			"functionalstorage:framed_1",
+			"functionalstorage:framed_2",
+			"functionalstorage:framed_4"
+		])
+
+	event.get("functionalstorage:fluid_drawer")
+		.add([
+			"functionalstorage:fluid_1",
+			"functionalstorage:fluid_2",
+			"functionalstorage:fluid_4"
+		])
+
+	event.get("functionalstorage:compacting_drawer")
+		.add([
+			"functionalstorage:compacting_drawer",
+			"functionalstorage:simple_compacting_drawer",
+			"functionalstorage:compacting_framed_drawer",
+			"functionalstorage:framed_simple_compacting_drawer"
+		])
+
+	let drawerMaterialWoods = [
+		"oak",
+		"spruce",
+		"birch",
+		"jungle",
+		"acacia",
+		"dark_oak",
+		"cherry",
+		"mangrove",
+		"crimson",
+		"warped",
+	]
+	drawerMaterialWoods.forEach((woodName) => {
+		let woodId =
+			woodName.includes(":") ? woodName : `functionalstorage:${woodName}`
+
+		let woodType = woodName.split(":").pop()
+
+		let drawerType = [1, 2, 4]
+
+		drawerType.forEach((type) => {
+			let drawerId = `${woodId}_${type}`
+			event.get(`functionalstorage:drawers/${woodType}/${type}`)
+				.add(drawerId)
+
+			event.get("functionalstorage:drawer/wood")
+				.add(drawerId)
+		})
+	})
+
+	// 伪装方块
+	event.get("create:copycats")
+		.add([
+			"create:copycat_panel",
+			"copycats:copycat_flat_pane",
+			"copycats:copycat_vertical_slice",
+			"copycats:copycat_vertical_stairs",
+			"copycats:copycat_vertical_step",
+			"create_connected:copycat_vertical_step",
+			"copycats:copycat_vertical_half_layer",
+			"copycats:copycat_half_layer",
+			"copycats:copycat_half_panel",
+			"create_connected:copycat_block",
+			"copycats:copycat_block",
+			"copycats:copycat_large_cogwheel",
+			"copycats:copycat_cogwheel",
+			"copycats:copycat_shaft",
+			"copycats:copycat_layer",
+			"create_connected:copycat_board",
+			"copycats:copycat_board",
+			"create:copycat_step",
+			"copycats:copycat_wooden_button",
+			"create_connected:copycat_stairs",
+			"copycats:copycat_stairs",
+			"copycats:copycat_fluid_pipe",
+			"copycats:copycat_beam",
+			"create_connected:copycat_beam",
+			"copycats:copycat_stacked_half_layer",
+			"copycats:copycat_board",
+			"create_connected:copycat_board",
+			"copycats:copycat_wooden_pressure_plate",
+			"copycats:copycat_pane",
+			"copycats:copycat_wall",
+			"create_connected:copycat_wall",
+			"copycats:copycat_corner_slice",
+			"copycats:copycat_slice",
+			"copycats:copycat_light_weighted_pressure_plate",
+			"copycats:copycat_stone_button",
+			"copycats:copycat_stone_pressure_plate",
+			"create_connected:copycat_slab",
+			"copycats:copycat_slab",
+			"copycats:copycat_ladder",
+			"copycats:copycat_iron_trapdoor",
+			"copycats:copycat_board",
+			"create_connected:copycat_board",
+			"copycats:copycat_byte",
+			"copycats:copycat_byte_panel",
+			"copycats:copycat_ghost_block",
+			"create_connected:copycat_fence",
+			"copycats:copycat_fence",
+			"create_connected:copycat_fence_gate",
+			"copycats:copycat_fence_gate",
+			"copycats:copycat_heavy_weighted_pressure_plate",
+			"copycats:copycat_iron_door",
+			"copycats:copycat_door",
+			"copycats:copycat_trapdoor",
+			"copycats:copycat_vertical_slope",
+			"copycats:copycat_slope_layer",
+			"copycats:copycat_folding_door",
+			"copycats:copycat_sliding_door",
+			"copycats:copycat_slope",
+			"railways:copycat_headstock_split_knuckle_coupler",
+			"railways:copycat_headstock_buffer",
+			"railways:copycat_headstock_link_and_pin",
+			"railways:copycat_headstock_link_and_pin_linkless",
+			"railways:copycat_headstock_knuckle_coupler",
+			"railways:copycat_headstock_screwlink_coupler"
+		])
+
+	// mek 化学品储罐
+	event.get("mekanism:chemical_tanks")
+		.add([
+			"mekanism:basic_chemical_tank",
+			"mekanism:elite_chemical_tank",
+			"mekanism:ultimate_chemical_tank",
+			"mekanism:creative_chemical_tank"
+		])
+
+	// 建筑手杖
+	event.get("constructionwand:wand")
+		.add([
+			"constructionwand:stone_wand",
+			"constructionwand:iron_wand",
+			"constructionwand:diamond_wand",
+			"constructionwand:infinity_wand"
+		])
 
 	// 板
 	event.get("forge:plates")
@@ -53,7 +203,7 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:hdpe_sheet",
 			"thermal_extra:polyolefin_plate",
 			"cmc:world_matter_plate"
-	])
+		])
 
 	// 齿轮
 	event.get("forge:gears")
@@ -61,7 +211,7 @@ ServerEvents.tags("item", (event) => {
 			"cmc:brass_gear",
 			"cmc:stone_gear",
 			"cmc:wooden_gear"
-	])
+		])
 
 	// 锭
 	event.get("forge:ingots")
@@ -69,7 +219,7 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:industrial_iron_ingot",
 			"megacells:sky_steel_ingot",
 			"cmc:world_matter_ingot"
-	])
+		])
 
 	// 粒
 	event.get("forge:nuggets")
@@ -77,7 +227,7 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:industrial_iron_nugget",
 			"createdeco:netherite_nugget",
 			"cmc:world_matter_nugget"
-	])
+		])
 
 	// 宝石
 	event.get("forge:gems")
@@ -85,7 +235,7 @@ ServerEvents.tags("item", (event) => {
 			"create:polished_rose_quartz",
 			"create:rose_quartz",
 			"cmc:world_gem"
-	])
+		])
 
 	// 粉
 	event.get("forge:dusts")
@@ -93,7 +243,7 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:soul_sand_dust",
 			"cmc:world_matter_dust",
 			"fluxnetworks:flux_dust"
-	])
+		])
 
 	// Mek 升级
 	event.get("mekanism:upgrades")
@@ -105,7 +255,7 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:upgrade_gas",
 			"mekanism:upgrade_anchor",
 			"mekanism:upgrade_stone_generator"
-	])
+		])
 
 	// Mek 工厂升级
 	event.get("mekanism:tier_installers")
@@ -114,7 +264,7 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:advanced_tier_installer",
 			"mekanism:elite_tier_installer",
 			"mekanism:ultimate_tier_installer"
-	])
+		])
 
 	// 终极锭合成原料
 	event.get("cmc:ultimate_ingot_ingredients")
@@ -125,7 +275,7 @@ ServerEvents.tags("item", (event) => {
 			"create:shadow_steel",
 			"create:polished_rose_quartz",
 			"#forge:ingots"
-	])
+		])
 
 	event.get("cmc:ultimate_ingot_ingredients").remove([
 		"extendedcrafting:the_ultimate_ingot"
@@ -137,7 +287,7 @@ ServerEvents.tags("item", (event) => {
 			"chunkbychunk:worldmender",
 			"chunkbychunk:worldforge",
 			"chunkbychunk:worldscanner"
-	])
+		])
 
 	// 硬币
 	event.get("forge:coins")
@@ -149,7 +299,7 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:iron_coin",
 			"createdeco:gold_coin",
 			"createdeco:netherite_coin"
-	])
+		])
 
 	// 热力机器
 	event.get("thermal:machines")
@@ -160,7 +310,7 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:component_assembly",
 			"thermal_extra:advanced_refinery",
 			"cmc:advanced_component_assembly"
-	])
+		])
 
 	addAloneItemTag("cmc:hammer_tier1", "#cmc:hammer_tier2")
 	addAloneItemTag("cmc:hammer_tier2", "#cmc:hammer_tier3")
@@ -172,7 +322,7 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:enderium_hammer",
 			"thermal_extra:soul_infused_hammer",
 			"#cmc:hammer_tier4"
-	])
+		])
 
 	event.get("cmc:hammer_tier4")
 		.add([
@@ -180,24 +330,24 @@ ServerEvents.tags("item", (event) => {
 			"thermal_extra:abyssal_hammer",
 			"thermal_extra:twinite_hammer",
 			"thermal_extra:shellite_hammer",
-	])
+		])
 
 	// 抽屉升级
 	event.get("functionalstorage:upgrades")
 		.add([
-			"functionalstorage:copper_upgrade", 
-			"functionalstorage:gold_upgrade", 
-			"functionalstorage:diamond_upgrade", 
-			"functionalstorage:netherite_upgrade", 
-			"functionalstorage:iron_downgrade", 
-			"functionalstorage:pusher_upgrade", 
-			"functionalstorage:max_storage_upgrade", 
-			"functionalstorage:collector_upgrade", 
+			"functionalstorage:copper_upgrade",
+			"functionalstorage:gold_upgrade",
+			"functionalstorage:diamond_upgrade",
+			"functionalstorage:netherite_upgrade",
+			"functionalstorage:iron_downgrade",
+			"functionalstorage:pusher_upgrade",
+			"functionalstorage:max_storage_upgrade",
+			"functionalstorage:collector_upgrade",
 			"functionalstorage:puller_upgrade",
 			"functionalstorage:void_upgrade",
 			"functionalstorage:redstone_upgrade",
 			"functionalstorage:creative_vending_upgrade"
-	])
+		])
 
 	// Pipez 升级
 	event.get("pipez:upgrades")
@@ -206,7 +356,7 @@ ServerEvents.tags("item", (event) => {
 			"pipez_optimizer:vibranium_upgrade",
 			"pipez_optimizer:unobtainium_upgrade"
 		])
-	
+
 	// 过滤器
 	event.get("create:filters")
 		.add([
@@ -232,14 +382,14 @@ ServerEvents.tags("item", (event) => {
 
 	event.get("thermal:machine_augments")
 		.add([
-			"thermal:xp_storage_augment", 
-			"thermal:side_config_augment", 
-			"thermal:machine_null_augment", 
-			"thermal:machine_cycle_augment", 
-			"thermal:dynamo_throttle_augment", 
+			"thermal:xp_storage_augment",
+			"thermal:side_config_augment",
+			"thermal:machine_null_augment",
+			"thermal:machine_cycle_augment",
+			"thermal:dynamo_throttle_augment",
 			"thermal:rs_control_augment"
 		])
-	
+
 	event.get("thermal:augments")
 		.add([
 			"#thermal:filter_augments",
@@ -283,6 +433,50 @@ ServerEvents.tags("item", (event) => {
 		addAloneItemTag(`ae2:paint_balls/${color}`, `ae2:${color}_paint_ball`)
 	})
 
+	// 削皮木
+	event.get("forge:stripped_logs")
+		.add("thermal:stripped_rubberwood_log")
+
+	event.get("forge:stripped_logs/rubberwood")
+		.add("thermal:stripped_rubberwood_wood")
+		.add("thermal:stripped_rubberwood_log")
+
+	// 遍历粗矿粒
+	let rawNuggetMetals = [
+		"copper",
+		"iron",
+		"gold",
+		"tin",
+		"lead",
+		"silver",
+		"nickel",
+		"aluminum",
+		"uranium",
+		"osmium",
+		"zinc"
+	]
+	rawNuggetMetals.forEach((metal) => {
+		event.get(`forge:raw_nuggets/${metal}`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+
+		event.get(`forge:raw_nuggets`)
+			.add(`thermal_extra:${metal}_ore_chunk`)
+	})
+
+	// 遍历装备
+	let armorTypes = [
+		{ armor: "helmet", tag: "helmets" },
+		{ armor: "chestplate", tag: "chestplates" },
+		{ armor: "leggings", tag: "leggings" },
+		{ armor: "boots", tag: "boots" },
+	]
+	armorTypes.forEach((armorType) => {
+		let { armor, tag } = armorType
+		// 锁链装备
+		event.get("minecraft:armors/chainmail")
+			.add(`minecraft:chainmail_${armor}`)
+	})
+
 	/**
 	 * 
 	 * @param {string} tag 标签
@@ -294,17 +488,3 @@ ServerEvents.tags("item", (event) => {
 	}
 
 })
-
-/*
-就是怎么说呢，在下午第一节课下课之后，天色突然灰了下来…
-空气有些闷，我感觉有细微的小雨点，我觉得要下雨了
-就在第二节上课！
-那雨啊，哗啦啦就下开了！
-课上到一半雨有点小了，我没当回事，但是…
-没几分钟，雨又大了起来。
-下课时，雨非常的大
-怎么回家？！
-“我现在在男生女生向前冲挑战现场，这里是现场记者 Delta，我会随机采访几位挑战者”
-嗯对就是我太无聊了…
-我不管了！我直接骑上车赶回家，眼镜湿了就不带
-*/

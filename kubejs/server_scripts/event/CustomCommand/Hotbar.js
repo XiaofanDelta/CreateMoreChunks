@@ -19,15 +19,25 @@ ServerEvents.customCommand("hotbar_get", (event) => {
 	// 获取快捷栏物品列表
 	let hotbarList = Utils.newList()
 
+	// 初始化快捷栏无物品数量
+	let hotbarNoItemCount = 0
+
 	// 分别获取从 0~8 号格子的物品 ID
 	for (let i = 0; i <= 8; i++) {
 		let ID = player.getSlot(i).get().getId()
 		// 如果是空气则跳过
 		if (ID === "minecraft:air") {
+			hotbarNoItemCount ++
 			continue
 		}
 		// 将 ID 加入列表里
 		hotbarList.push(`\n    "${ID}"`)
+	}
+
+	// 检测快捷栏是否全空
+	if (hotbarNoItemCount === 9) {
+		player.sendSystemMessage(Component.translatable("message.cmc.hotbar.no_item"))
+		return
 	}
 
 	// 初始快捷栏列表字符串
@@ -50,13 +60,13 @@ ServerEvents.customCommand("hotbar_get", (event) => {
 		.append(
 			Component.translatable("message.cmc.copy")
 				.setStyle($Style.EMPTY
+					.withHoverEvent(
+					new $HoverEvent($HoverEvent$Action.SHOW_TEXT, Component.translatable("display.cmc.copy"))
+					) // 悬停展示文字事件
 					.withClickEvent(
 						new $ClickEvent($ClickEvent$Action.COPY_TO_CLIPBOARD, hotbarCopy)
 					) // 点击复制事件
-					.withHoverEvent(
-							new $HoverEvent($HoverEvent$Action.SHOW_TEXT, Component.translatable("display.cmc.copy"))
-					) // 悬停展示文字事件
-			)
+				)
 		)
 	)
 

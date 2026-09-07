@@ -2,7 +2,7 @@
 
 # `Create: More Chunks` 更新日志
 
-Alpha / Beta / R + b.m.s (完成日期)
+Alpha / Beta / R b.m.s (完成日期) XXX Update
 
 </div>
 
@@ -166,7 +166,7 @@ Mod:
 
 ---
 
-## Alpha 1.3.0 (`26/05/03`)
+## Alpha 1.3.0 (`26/05/03`) GUI Update
 
 ### 添加内容
 
@@ -195,7 +195,7 @@ Mod:
 
 ---
 
-## Alpha 1.4.0 (`26/06/07`)
+## Alpha 1.4.0 (`26/06/07`) ??? Update
 
 ### 添加内容
 
@@ -255,7 +255,7 @@ Mod:
 
 ---
 
-## Alpha 1.5.0 (`26/08/02`)
+## Alpha 1.5.0 (`26/08/02`) Machine Update
 
 ### 添加内容
 
@@ -299,7 +299,7 @@ Mod:
 
 ---
 
-# Alpha 1.6.0 (`26/__/__`)
+# Alpha 1.6.0 (`26/__/__`) Code Update
 
 ## 添加内容
 
@@ -314,11 +314,14 @@ Mod:
  - Mekanism Pipez Fix
  - Pipez Optimizer
  - Quick Pack
+ - Create: Dragon Plus
+ - Cable Facades
+ - CMC Core *我CMC也是有Core的包辣!*
 <!-- 狠狠从 CMI 进了一波货，额 -->
 
 ## 更改内容
 
- - 升级 JEI
+ - 升级一些 mod
 
 ## 删除内容
 

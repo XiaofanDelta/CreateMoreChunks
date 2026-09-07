@@ -5,7 +5,7 @@ ItemEvents.rightClicked("create:wrench",(event) => {
 	let { player, hand } = event
 	if (hand === "OFF_HAND" && deving) {
 		if (player.mainHandItem !== "minecraft:air" && player.crouching) {
-			player.runCommand("/bookshelf hand ID")
+			player.runCommand("bookshelf hand ID")
 		}
 	}
 })
@@ -15,7 +15,7 @@ ItemEvents.rightClicked("minecraft:name_tag",(event) => {
 	let { player, hand } = event
 	if (hand === "OFF_HAND" && deving) {
 		if (player.mainHandItem !== "minecraft:air" && player.crouching) {
-			player.runCommand("/bookshelf hand TAGS")
+			player.runCommand("kjs custom_command item_tags_get")
 		}
 	}
 })
@@ -25,7 +25,7 @@ ItemEvents.rightClicked("minecraft:purple_dye",(event) => {
 	let { player, hand } = event
 	if (hand === "OFF_HAND" && deving) {
 		if (player.mainHandItem !== "minecraft:air" && player.crouching) {
-			player.runCommandSilent("/kjs hand")
+			player.runCommandSilent("kjs hand")
 		}
 	}
 })

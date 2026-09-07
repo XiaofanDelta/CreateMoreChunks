@@ -4,6 +4,7 @@ JEIEvents.hideItems((event) => {
 	}
 	hideItemFromJEI("ae2:facade")
 	hideItemFromJEI("cmc:andesite_upgrade_smithing_template")
+	hideItemFromJEI("cmc:press_shift")
 
 	let example = [
 		"delta",

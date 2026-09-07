@@ -12,6 +12,7 @@
 
 /hotbar.nbt
 /options.txt
+/jade_handlers.md
 
 
 # 游戏启动数据
@@ -62,8 +63,8 @@
 
 
 # 允许的文件
-!/ldlib/mbd2/
-!/kubejs/probe/docs/
+!/ldlib/mbd2/*
+!/kubejs/probe/docs/*
 
 !*.rt
 !*.sm
@@ -73,6 +74,8 @@
 !/defaultconfigs/fluxnetworks-server.toml
 
 !resourcepacks/Better Chunk by Chunk v1.4.zip
+
+!/mods/cmc*.jar
 
 
 # 提交的配置
@@ -92,13 +95,15 @@
 
 !/config/openloader/advanced_options.json
 
-!/config/nebula/
-!/config/openloader/resources/CMCResources/
-!/config/ae2/
-!/config/drippyloadingscreen/
-!/config/extendedcrafting/
-!/config/fancymenu/
-!/config/ftbquests/
+!/config/jei/*
+/config/jei/world/*
+!/config/nebula/*
+!/config/openloader/resources/CMCResources/*
+!/config/ae2/*
+!/config/drippyloadingscreen/*
+!/config/extendedcrafting/*
+!/config/fancymenu/*
+!/config/ftbquests/*
 
 
 # 临时文件
@@ -106,3 +111,5 @@
 /kubejs/assets/cmc/textures/gui/container/test2.png
 /kubejs/assets/cmc/textures/gui/container/test3.png
 /kubejs/assets/cmc/textures/gui/container/test4.png
+kubejs/assets/cmc/textures/o.webp
+

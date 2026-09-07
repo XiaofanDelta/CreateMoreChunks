@@ -10,5 +10,7 @@ JEIEvents.information((event) => {
 	addJEIInfo("cmc:test")
 	addJEIInfo("cmc:chunk_spawner")
 	addJEIInfo("cmc:creative_physics_staff")
+	addJEIInfo("#forge:buckets/dye")
+	addJEIInfo("#railways:filled_paint_pitchers")
 
 })

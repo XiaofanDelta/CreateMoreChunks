@@ -27,6 +27,17 @@ new Material("polished_quartz", "wooden")
 	.color(0xAE9E7F, 0xFFFFFF)
 	.prism()
 
+// 械金
+new Material("michan", "iron")
+	.color(0x7B8686, 0x667373)
+	.isMetal()
+	.ingot()
+	.nugget()
+	.block()
+	.gear()
+	.dust()
+	.plate()
+
 /* 我屈服了，还是用cmi的轮子吧😭😭😭
 let example = [[
 	"注册名", 

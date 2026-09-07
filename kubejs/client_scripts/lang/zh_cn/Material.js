@@ -5,6 +5,7 @@ ClientEvents.lang("zh_cn", (event) => {
     addMaterialLang("polished_quartz", "磨制石英")
 	addMaterialLang("refined_radiance", "光辉石")
 	addMaterialLang("andesite_alloy", "安山合金")
+	addMaterialLang("michan", "械金")
 
     /**
 	 * 

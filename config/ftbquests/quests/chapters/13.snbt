@@ -256,7 +256,7 @@
 			rewards: [{
 				count: 4
 				id: "29E99C06C5DE5398"
-				item: "mekanism:ingot_steel"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [{

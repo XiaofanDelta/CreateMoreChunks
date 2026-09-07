@@ -32,6 +32,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("coal_chunk", "煤炭碎块")
 	addItemLang("iron_chunk", "铁碎块")
 	addItemLang("ultimate_card", "终极卡")
+	addItemLang("parallel_card", "并行卡")
+	addItemLang("blank_print_press", "空白压印模板")
 	addItemLang("tier_installer_base", "工厂升级器基板")
 	addItemLang("wooden_gear", "木齿轮")
 	addItemLang("stone_gear", "石齿轮")
@@ -51,6 +53,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("unbreakable_soap", "不毁肥皂")
 	addItemLang("infinity_lava_cell", "无限熔岩元件")
 	addItemLang("teleporter", "传送器")
+	addItemLang("channel_x2_card", "频道x2卡")
+	addItemLang("channel_x3_card", "频道x3卡")
+	addItemLang("channel_x4_card", "频道x4卡")
+	addItemLang("channel_infinite_card", "频道无限卡")
+	addItemLang("channel_default_card", "频道默认卡")
 
 	// 锤子
 	addHammerLang("copper", "铜")

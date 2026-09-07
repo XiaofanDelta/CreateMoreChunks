@@ -12,6 +12,13 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmc:empty_schematic")
 	addCommonTooltip("cmc:press_shift")
 	addCommonTooltip("cmc:teleporter")
+	addCommonTooltip("cmc:channel_x2_card")
+	addCommonTooltip("cmc:channel_x3_card")
+	addCommonTooltip("cmc:channel_x4_card")
+	addCommonTooltip("cmc:channel_infinite_card")
+	addCommonTooltip("cmc:channel_default_card")
+	addCommonTooltip("#forge:buckets/dye")
+	addCommonTooltip("#railways:filled_paint_pitchers")
 
 	/** 
 	 * @param {Internal.Ingredient_} ingredient 

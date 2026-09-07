@@ -23,6 +23,8 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("mek_upgrade_base") // mek 升级基板
 	addMaterial("circuit_component") // 电路板组件
 	addMaterial("ultimate_card") // 终极卡
+	addMaterial("parallel_card") // 并行卡
+	addMaterial("blank_print_press") // 空白压印模板
 	addMaterial("precision_mechanism_base") // 精密构件基底
 	addMaterial("wooden_mechanism") // 木质构件
 	addMaterial("mechanism_part") // 构件零件

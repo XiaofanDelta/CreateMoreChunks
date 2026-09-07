@@ -3,6 +3,14 @@ let $Tiers =
 
 StartupEvents.registry("item", (event) => {
 
+	// 频道卡
+	let channelCardList = ["x2", "x3", "x4", "infinite", "default"]
+	channelCardList.forEach((channelCard) => {
+		addBasicTool(`channel_${channelCard}_card`, false)
+			.texture(`cmc:item/tool/channel_card/${channelCard}`)
+			.tag("cmc:channel_card")
+	})
+
 	// 不毁砂纸
 	addTool("unbreakable_sandpaper", true, "create:sandpaper")
 		.tag("create:sandpaper")

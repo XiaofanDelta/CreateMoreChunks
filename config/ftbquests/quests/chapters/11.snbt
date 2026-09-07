@@ -97,7 +97,7 @@
 			id: "6665351C3FE38033"
 			rewards: [{
 				id: "3503D6DBE7BAD860"
-				item: "create:dough"
+				item: "farmersdelight:wheat_dough"
 				type: "item"
 			}]
 			subtitle: "想想有营火后给你面团有什么用"
