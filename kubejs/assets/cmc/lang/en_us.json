@@ -52,15 +52,19 @@
 	"block.cmc.sun_oneshot": "Sun",
 	"block.cmc.advanced_component_assembly": "Advanced Component Assembly",
 	"block.cmc.dynamo_base": "Dynamo Base",
+	"block.cmc.biomass_machine": "Biomass Maker",
+	"block.cmc.biomass_machine_io": "Biomass Maker IO Porter",
 	
 	"cmc.advanced_component_assemble": "Advanced Component Assemble",
 	"cmc.hammer_crush": "Hammer Crushing",
+	"cmc.biomass_create": "Biomass Making",
 
 	"thermal.hive_hopper": "Hive Hopper",
 
 	"info.cmc.information": "Information",
 	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
 	"info.cmc.db": "Dynamo but nothing can input.\n \nThe basic dynamo that can only store energy.\n \nEnergy will be auto IO.",
+	"info.cmc.mb.biomass_machine_io": "At least 1 in multiblock",
 
 	"block.thermal_extra.abyssal": "Molten Abyssal"
 

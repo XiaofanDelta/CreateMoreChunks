@@ -1,7 +1,7 @@
 {
 	"parent": "minecraft:block/cube_column",
 	"textures": {
-		"side": "cmc:block/biomass_machine/front",
+		"side": "cmc:block/biomass_machine/io",
 		"particle": "#end",
 		"end": "cmc:block/biomass_machine/end"
 	}

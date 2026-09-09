@@ -17,7 +17,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmc:channel_x4_card")
 	addCommonTooltip("cmc:channel_infinite_card")
 	addCommonTooltip("cmc:channel_default_card")
-	addCommonTooltip("#forge:buckets/dye")
 	addCommonTooltip("#railways:filled_paint_pitchers")
 
 	/** 

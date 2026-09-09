@@ -20,6 +20,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 机器
 	addBlockLang("advanced_component_assembly", "高级部件装配机")
 	addBlockLang("dynamo_base", "能源炉基底")
+	addBlockLang("biomass_machine", "生物质制造机")
+	addBlockLang("biomass_machine_io", "生物质制造机IO端口")
 
 	// %null%
 	addBlockLang("chunk_spawner", "%s 区块生成器")

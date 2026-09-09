@@ -27,6 +27,8 @@
 	"cmc.hammer_crush": "锤击粉碎",
 	"cmc.left_click": "左键点击",
 	"cmc.right_click": "右键点击",
+	"cmc.biomass_create": "生物质制作",
+
 	"thermal.hive_hopper": "蜂箱漏斗",
 
 	"info.cmc.information": "信息",
@@ -36,6 +38,7 @@
 	"info.cmc.left_click": "按下左键",
 	"info.cmc.right_click": "按下右键",
 	"info.thermal.hive_hopper.jei": "要求：\n蜂箱需要充满蜂蜜。",
+	"info.cmc.mb.biomass_machine_io": "在多方块中至少一个",
 
 	"block.thermal_extra.abyssal": "熔融深渊"
 }

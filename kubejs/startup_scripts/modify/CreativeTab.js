@@ -49,7 +49,9 @@ StartupEvents.modifyCreativeTab("thermal_extra:machines", (event) => {
 
 StartupEvents.modifyCreativeTab("minecraft:tools_and_utilities", (event) => {
 	event.remove([
-		"@mekanism"
+		"@mekanism",
+		"@chunkbychunk",
+		"@mekanismtools"
 	])
 
 	event.add([
@@ -60,18 +62,30 @@ StartupEvents.modifyCreativeTab("minecraft:redstone_blocks", (event) => {
 	event.remove([
 		"@mekanism",
 		"@mekanismgenerators",
+		"@mekanismadditions",
 		"mbd2:mbd_gadgets"
 	])
 })
 StartupEvents.modifyCreativeTab("minecraft:functional_blocks", (event) => {
 	event.remove([
-		"@mekanism"
+		"@mekanism",
+		"@mekanismadditions",
+		"@mekanismgenerators"
 	])
 })
 StartupEvents.modifyCreativeTab("minecraft:ingredients", (event) => {
 	event.remove([
 		"@mekanism",
+		"@mekanismadditions",
+		"@mekanismtools",
 		"@create",
 		"@thermal"
+	])
+})
+StartupEvents.modifyCreativeTab("minecraft:combat", (event) => {
+	event.remove([
+		"@mekanism",
+		"@mekanismadditions",
+		"@mekanismtools"
 	])
 })
