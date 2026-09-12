@@ -235,18 +235,10 @@
 			dependencies: ["7EA06E237097AEBA"]
 			id: "5B496AA276EBCEBA"
 			tasks: [{
-				id: "2FB1494D70B1497F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:dusts/steel"
-					}
-				}
-				title: "Any #forge:dusts/steel"
+				id: "74E2AADDD35677BF"
+				item: "cmc:michan_dust"
 				type: "item"
 			}]
-			title: "钢粉"
 			x: 0.0d
 			y: -8.0d
 		}
@@ -256,22 +248,14 @@
 			rewards: [{
 				count: 4
 				id: "29E99C06C5DE5398"
-				item: "thermal:steel_ingot"
+				item: "cmc:michan_ingot"
 				type: "item"
 			}]
 			tasks: [{
-				id: "0DC12A92B347A475"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-				title: "Any #forge:ingots/steel"
+				id: "09E219FAF39E01A2"
+				item: "cmc:michan_ingot"
 				type: "item"
 			}]
-			title: "钢锭"
 			x: -2.0d
 			y: -8.0d
 		}
@@ -279,18 +263,10 @@
 			dependencies: ["1F8E0EFA98BD37BD"]
 			id: "4EC229A2EE474B4B"
 			tasks: [{
-				id: "25A004CB5ED3B4FA"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:storage_blocks/steel"
-					}
-				}
-				title: "Any #forge:storage_blocks/steel"
+				id: "17569AC102D969C9"
+				item: "cmc:michan_block"
 				type: "item"
 			}]
-			title: "钢块"
 			x: -4.0d
 			y: -8.0d
 		}

@@ -49,7 +49,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {string} value 本地化
 	 */
 	function addCommonJadeTipLang(key, value) {
-		event.add(`jade.info.cmi.${key}`.replace(":", "."), `${value}`)
+		event.add(`jade.info.cmc.${key}`.replace(":", "."), `${value}`)
 	}
 
 })

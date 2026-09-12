@@ -7,12 +7,6 @@ ServerEvents.recipes((event) => {
 		"cmc:basic_smithing_template"
 	).energy(global.EnergyStage[1]).id("thermal_extra:thermal/press/augment_smiting_upgrade")
 
-	// 世界物质板
-	thermal.press(
-		"cmc:world_matter_plate",
-		"cmc:world_matter_ingot"
-	).energy(global.EnergyStage[1]).id("cmc:thermal/press/world_matter_plate")
-
 	// 精密构件基底
 	thermal.press("cmc:precision_mechanism_base",
 		"create:brass_ingot"
@@ -44,11 +38,6 @@ ServerEvents.recipes((event) => {
 		"#forge:storage_blocks/iron",
 		"#forge:storage_blocks/michan"
 	]).energy(global.EnergyStage[1]).id("thermal:press/machine_frame")
-
-	// 黑铁板
-	thermal.press("extendedcrafting:black_iron_slate", 
-		"extendedcrafting:black_iron_ingot"
-	).energy(global.EnergyStage[1]).id("extendedcrafting:thermal/press/black_ingot_slate")
 	
 	// 精密核心
 	thermal.press("cmc:incomplete_precision_core", [
@@ -155,7 +144,7 @@ ServerEvents.recipes((event) => {
 		"cmc:filter_augment_base"
 	]).id("thermal:press/fluid_filter_augment")
 
-	// 机器组件['', '', '', '', '', '']
+	// 机器组件
 	thermal.press("thermal:xp_storage_augment", [
 		"thermal:xp_crystal",
 		"cmc:machine_augment_base"

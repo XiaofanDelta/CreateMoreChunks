@@ -202,7 +202,8 @@ ServerEvents.tags("item", (event) => {
 			"createdeco:industrial_iron_sheet",
 			"mekanism:hdpe_sheet",
 			"thermal_extra:polyolefin_plate",
-			"cmc:world_matter_plate"
+			"cmc:world_matter_plate",
+			"extendedcrafting:black_iron_slate"
 		])
 
 	// 齿轮
@@ -267,19 +268,31 @@ ServerEvents.tags("item", (event) => {
 		])
 
 	// 终极锭合成原料
+	let ingotSet = Ingredient.of("#forge:ingots").itemIds
+	let iterator = ingotSet.iterator()
+	let result = []
+
+	while (iterator.hasNext()) {
+		let id = iterator.next()
+		if (id === "extendedcrafting:the_ultimate_ingot") {
+			continue
+		}
+
+		if (result.indexOf(id) !== -1) {
+			continue
+		}
+		
+		result.push(id)
+	}
+
 	event.get("cmc:ultimate_ingot_ingredients")
-		.add([
+		.add(result.concat([
 			"#forge:alloys",
 			"create:chromatic_compound",
 			"create:refined_radiance",
 			"create:shadow_steel",
-			"create:polished_rose_quartz",
-			"#forge:ingots"
-		])
-
-	event.get("cmc:ultimate_ingot_ingredients").remove([
-		"extendedcrafting:the_ultimate_ingot"
-	])
+			"create:polished_rose_quartz"
+		]))
 
 	// 区块机器
 	event.get("chunkbychunk:chunk_machines")
@@ -397,6 +410,7 @@ ServerEvents.tags("item", (event) => {
 		])
 
 	addAloneItemTag("forge:plates/andesite_alloy", "createdeco:andesite_sheet")
+	addAloneItemTag("forge:ingots/andesite_alloy", "create:andesite_alloy")
 	addAloneItemTag("forge:plates/zinc", "createdeco:zinc_sheet")
 	addAloneItemTag("forge:plates/netherite", "createdeco:netherite_sheet")
 	addAloneItemTag("forge:plates/industrial_iron", "createdeco:industrial_iron_sheet")

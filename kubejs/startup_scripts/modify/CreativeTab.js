@@ -28,6 +28,17 @@ StartupEvents.modifyCreativeTab("thermal:thermal.devices", (event) => {
 
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
 	event.setDisplayName(Component.translatable("itemGroup.cmc.all"))
+	
+	event.remove([
+		"cmc:press_shift",
+		"cmc:null",
+		"cmc:null_mechanism",
+		"cmc:empty",
+		"cmc:test",
+		"#cmc:example",
+		"#cmc:incomplete_items",
+		"#cmc:materials"
+	])
 })
 
 StartupEvents.modifyCreativeTab("meinfinitycell:mic_tab", (event) => {

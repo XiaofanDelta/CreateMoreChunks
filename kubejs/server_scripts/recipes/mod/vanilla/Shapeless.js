@@ -16,18 +16,6 @@ ServerEvents.recipes((event) => {
 			"#forge:sand"
 	]).id("cmc:quartz_seed")
 
-	// 世界物质粒
-	kubejs.shapeless(
-		Item.of("cmc:world_matter_nugget", 9),
-			"cmc:world_matter_ingot"
-	).id("cmc:world_nugget")
-
-	// 世界物质锭
-	kubejs.shapeless(
-		"cmc:world_matter_ingot",
-		Item.of("cmc:world_matter_nugget", 9)
-	).id("cmc:world_ingot_from_nuggets")
-
 	// 地球仪
 	kubejs.shapeless(
 		"supplementaries:globe",[
@@ -70,16 +58,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:book",
 		"#forge:ingots"
 	]).id("mekanism:dictionary")
-
-	// 安山合金粒
-	kubejs.shapeless("9x cmc:andesite_alloy_nugget", "create:andesite_alloy").id("cmc:andesite_alloy_nugget")
-	kubejs.shapeless("create:andesite_alloy", "9x cmc:andesite_alloy_nugget").id("create:andesite_alloy_from_nuggets")
-
-	// 高级合金
-	kubejs.shapeless("cmc:advanced_alloy_ingot", "9x cmc:advanced_alloy_nugget").id("cmc:advanced_alloy_ingot_from_nuggets")
-	kubejs.shapeless("9x cmc:advanced_alloy_nugget", "cmc:advanced_alloy_ingot").id("cmc:advanced_alloy_nugget")
-	kubejs.shapeless("cmc:advanced_alloy_block", "9x cmc:advanced_alloy_ingot").id("cmc:advanced_alloy_block")
-	kubejs.shapeless("9x cmc:advanced_alloy_ingot", "cmc:advanced_alloy_block").id("cmc:advanced_alloy_ingot_from_block")
 	
 	// 齿轮
 	kubejs.shapeless("create:cogwheel", [
@@ -89,5 +67,11 @@ ServerEvents.recipes((event) => {
 
 	// 示例物品 
 	kubejs.shapeless("9x cmc:example_item", "cmc:example_block").id("cmc:example_item")
+
+	// 生物质制造机IO端口
+	kubejs.shapeless("cmc:biomass_machine_io", [
+		"cmc:biomass_machine",
+		"minecraft:barrel"
+	]).id("cmc:biomass_machine_io").keepIngredient("cmc:biomass_machine")
 
 })

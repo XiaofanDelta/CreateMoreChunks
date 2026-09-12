@@ -54,11 +54,15 @@
 	quests: [
 		{
 			description: [
-				"CMC，全称 &eCreate: More Chunks"
-				"是以 &aChunk By Chunk&r 模组为内核的整合包"
-				"特点是&c开局只有一个区块"
-				"可以通过制作&2区块生成器&r恢复区块"
-				"同时也可以选择恢复区块的生物群系"
+				"这里是 &eCreate: More Chunks&r。"
+				""
+				"它的心脏是 &aChunk By Chunk&r——一个把世界拆开、再一块块放回去的模组。"
+				""
+				"你出生时，世界只剩一块。这不是意外，是它的规则。"
+				""
+				"用 &2区块生成器&r，把世界要回来。"
+				""
+				"森林、沙漠、雪原——你想让它变成什么，它就会变成什么"
 			]
 			icon: {
 				Count: 1
@@ -188,9 +192,11 @@
 		{
 			dependencies: ["0D44313CB54C6DD5"]
 			description: [
-				"区块生成器不会吞方块，只会替换空气"
-				"且本整合包有&7工业平台&r(用法见jei信息)模组"
-				"也可以自行通过搭建建筑方块来搭建工业园区"
+				"区块生成器是温柔的。"
+				""
+				"它只替换空气和流体。你建好的东西，它不碰。"
+				""
+				"想搭一座工业园区？用 &7工业平台&r（JEI 里有说明），或者，用你自己的手。"
 			]
 			hide_until_deps_complete: true
 			icon: "industrial_platform:industrial_platform"
@@ -223,5 +229,5 @@
 			y: 1.5d
 		}
 	]
-	title: "0.1 关于CMC"
+	title: "{quests.ch0p1.title}"
 }

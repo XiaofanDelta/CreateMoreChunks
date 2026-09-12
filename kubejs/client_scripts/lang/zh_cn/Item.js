@@ -49,7 +49,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 工具
 	addItemLang("unbreakable_sandpaper", "不毁砂纸")
 	addItemLang("creative_physics_staff", "创造模式物理手杖")
-	addItemLang("sun_oneshot_item", "太阳")
 	addItemLang("unbreakable_soap", "不毁肥皂")
 	addItemLang("infinity_lava_cell", "无限熔岩元件")
 	addItemLang("teleporter", "传送器")

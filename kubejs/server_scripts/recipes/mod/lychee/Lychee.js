@@ -70,4 +70,12 @@ ServerEvents.recipes((event) => {
 		Post.damage_item(0)
 	]).id("supplementaries:lychee/globe")
 
+	lychee.block_interacting(
+		"chunkbychunk:worldfragment",
+		"supplementaries:globe_sepia"
+	).post([
+		Post.place("supplementaries:globe"),
+		Post.place("minecraft:air")
+	]).id("supplementaries:lychee/globe/2")
+
 })

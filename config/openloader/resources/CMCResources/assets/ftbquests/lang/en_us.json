@@ -1,12 +1,31 @@
 {
-    "quests.all.attention": "§cPlease read the description of this quest!!!",
+    "quests.all.attention": "§cSee this quest's description for important notes",
 
-    "quests.ch0.title": "0 - Intro",
-    "quests.ch_.title": "* - [NO TANS]",
-    "quests.ch1.title": "1 - [NO TANS]",
-    "quests.ch2.title": "2 - [NO TANS]",
-    "quests.ch3.title": "3 - [NO TANS]",
+    "quests.ch0.title": "0 - Prologue",
+    "quests.ch_.title": "* - General",
+    "quests.ch1.title": "1 - First Steps",
+    "quests.ch2.title": "2 - Industrial Revolution",
+    "quests.ch3.title": "3 - Within Reach",
     "quests.ch4.title": "4 - Creative!!",
 
-    "quests.ch3p2.spawn_chunk.title": "Spawn §k????? §rchunk"
+    "quests.ch0p1.title": "0.1 About CMC",
+    "quests.ch0p2.title": "0.2 About Quests",
+    "quests.ch0p3.title": "0.3 Tech Tree",
+    "quests.ch_p1.title": "*.1 Resources",
+    "quests.ch_p2.title": "*.2 World Restoration",
+    "quests.ch_p3.title": "*.3 Utilities",
+    "quests.ch1p1.title": "1.1 Time to Explore",
+    "quests.ch1p2.title": "1.2 Andesite Age",
+    "quests.ch1p3.title": "1.3 Brass Age",
+    "quests.ch2p1.title": "2.1 Thermal Age",
+    "quests.ch2p2.title": "2.2 Bigger Chests",
+    "quests.ch2p3.title": "2.3 One Step Further",
+    "quests.ch2p4.title": "2.4 High Technology",
+    "quests.ch3p1.title": "3.1 Bigger Crafting Table",
+    "quests.ch3p2.title": "3.2 &kERROR",
+    "quests.ch3p3.title": "3.3 &cInf&eini&bte!",
+    "quests.ch4p1.title": "4.1 Almost There",
+    "quests.ch4p2.title": "4.2 Complete!!",
+
+    "quests.ch3p2.spawn_chunk.title": "Generate §k??§r Chunk"
 }

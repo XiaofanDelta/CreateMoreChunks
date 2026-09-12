@@ -44,13 +44,6 @@ ServerEvents.recipes((event) => {
 		"minecraft:apple"
 	]).id("cmc:create/deploying/ringo_mechanism")
 
-	// 空星球
-	create.deploying("cmc:empty_planet", [
-		"#forge:glass",
-		"thermal:chiller_ball_cast"
-	]).keepHeldItem()
-		.id("cmc:create/deploying/empty_planet")
-
 	// 矿典转换器
 	create.deploying("mekanism:oredictionificator", [
 		"thermal:machine_frame",
