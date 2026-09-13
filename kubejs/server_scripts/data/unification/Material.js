@@ -17,7 +17,7 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	/**
-	 * 内部方法：执行注册，并防重复
+	 * 内部方法: 执行注册，并防重复
 	 * @param {string} name - 文件名
 	 * @param {string} match - 要匹配的标签
 	 * @param {Internal.Item_} item - 替换为的物品
@@ -173,7 +173,7 @@ ServerEvents.highPriorityData((event) => {
 	 * })
 	 */
 	MaterialUnification.prototype.registerAll = function (items) {
-		// 类型映射表：键 -> { suffix, tag }
+		// 类型映射表: 键 -> { suffix, tag }
 		const typeMap = {
 			ingot: { suffix: "ingot", tag: "ingots" },
 			nugget: { suffix: "nugget", tag: "nuggets" },

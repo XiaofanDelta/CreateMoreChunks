@@ -11,9 +11,18 @@ ServerEvents.recipes((event) => {
 		4: "#cmc:hammer_tier4"
 	}
 
+	kubejs.shaped("cmc:drop_hammer", [
+		"XOX",
+		"IXI",
+		"XOX"
+	], {
+		X: "minecraft:flint",
+		O: "minecraft:gravel",
+		I: "minecraft:cobblestone"
+	}).id("cmc:drop_hammer")
+
 	// 安山合金
-	kubejs.shaped(
-		"create:andesite_alloy", [
+	kubejs.shaped("create:andesite_alloy", [
 		"BA",
 		"AB"
 	], {
@@ -35,8 +44,7 @@ ServerEvents.recipes((event) => {
 	}).id("create:brass_hand").damageIngredient(H[2])
 
 	// 电子管
-	kubejs.shaped(
-		"create:electron_tube", [
+	kubejs.shaped("create:electron_tube", [
 		"AH",
 		"B ",
 		"C "

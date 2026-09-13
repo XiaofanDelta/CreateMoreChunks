@@ -139,7 +139,7 @@ Mod
  - 未完成物品 (序列组装半成品)
  - 世界宝石
  - README.md
- - 创造模式标签页：
+ - 创造模式标签页: 
     - AE 物品
     - Chunk By Chunk
     - 普通物品
@@ -180,7 +180,7 @@ Mod:
  - 创造物理手杖 (?)
  - 世界物质相关材料
  - 世界物质奇点
- - 创造模式标签页：
+ - 创造模式标签页: 
     - 工具
     - 一些 AE 物品
 
@@ -222,7 +222,7 @@ Mod:
  - `OreUI For Chunk by Chunk & Modular Routers`
  - `OreUI For JER & Cucumber & Pipez`
  - `Cu Again`
- - 创造模式标签页：
+ - 创造模式标签页: 
     - 资源
     - 特殊物品
     - Null
@@ -239,12 +239,12 @@ Mod:
  - 代码彻底规范，格式参考 [**CMI 开发规范**](https://github.com/Eternal-Snowstorm/CodeNameCIM2/blob/main/CONTRIBUTING.md)
  - 修改了`extendedcrafting`的配方速率及部分原料
  - 锻造模板的物品类型从`basic`改为`smithing_template`
- - 创造模式标签页：
+ - 创造模式标签页: 
     - 普通方块 → 方块
 
 ### 删除内容
 
- - 创造模式标签页：
+ - 创造模式标签页: 
     - 一些 AE 物品
     - AE 物品
     - 普通物品
@@ -303,6 +303,10 @@ Mod:
 
 ## 添加内容
 
+ - `cmc:drop_hammer` 落锤及其配方
+ - CMC 代码规范 [CONTRIBUTING.md](CONTRIBUTING.md)
+ - 任务书世界观文案
+
 Mod:
 
  - 几个优化模组
@@ -322,7 +326,12 @@ Mod:
 ## 更改内容
 
  - 升级一些 mod
+ - Extended Crafting 奇点催化剂改为湮灭奇点
+ - [`.gitignore`](.gitignore)的完善
 
 ## 删除内容
+
+ - 篝火烤粗铁配方
+ - FTBQ 部分冗余任务描述
 
 ---

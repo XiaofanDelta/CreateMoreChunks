@@ -4,7 +4,7 @@ StartupEvents.registry("block", (event) => {
 	 * 
 	 * @param {string} name 注册id
 	 * @param {string} [type] 类型
-	 * @returns
+	 * @returns {Internal.BasicBlockJS$Builder | Internal.FallingBlockBuilder}
 	 */
 	function addBlock(name, type) {
 		if (global.Dev["logRegisters"]) {
@@ -13,7 +13,7 @@ StartupEvents.registry("block", (event) => {
 		if (type === undefined) {
 			return event.create(`cmc:${name}`)
 		}
-		
+
 		return event.create(`cmc:${name}`, type)
 	}
 
@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.soundType(SoundType.METAL)
-	
+
 	// 创造版条箱
 	addBlock("creative_create")
 		.model("cmc:block/creative_create")
@@ -37,7 +37,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.soundType(SoundType.METAL)
-	
+
 	// 创造机壳
 	addBlock("creative_casing")
 		.textureAll("cmc:block/casing/creative/side")
@@ -137,7 +137,7 @@ StartupEvents.registry("block", (event) => {
 		.requiresTool(true)
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["diamond"])
-	
+
 	// 区块机器基底
 	addBlock("chunk_machine_base")
 		.model("cmc:block/chunk_machine_base")
@@ -177,5 +177,15 @@ StartupEvents.registry("block", (event) => {
 		.soundType(SoundType.METAL)
 		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock(global.ToolType["pickaxe"])
-	
+
+	// 落锤
+	addBlock("drop_hammer", "falling")
+		.textureAll("cmc:block/drop_hammer")
+		.hardness(2)
+		.resistance(6)
+		.soundType(SoundType.STONE)
+		.requiresTool(true)
+		.tagBlock(global.MiningLevel["stone"])
+		.tagBlock(global.ToolType["pickaxe"])
+
 })

@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
 	HammerCrushRecipe.prototype.jeiBuild = function (id) {
 
 		/**
-		 * @type {Special.Recipes.CMc}
+		 * @type {Special.Recipes.HammerCrushCmc}
 		 */
 		this.jeiRecipe = cmc.hammer_crush()
 			.inputItems(this.inputBlock)

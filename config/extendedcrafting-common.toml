@@ -14,7 +14,7 @@
 	#Should the Singularities be enabled?
 	enabled = true
 	#The item to use as the Catalyst in default Singularity recipes.
-	defaultCatalyst = "cmc:test"
+	defaultCatalyst = "extendedae_plus:oblivion_singularity"
 
 #Settings for the Crafting Core.
 ["Combination Crafting"]

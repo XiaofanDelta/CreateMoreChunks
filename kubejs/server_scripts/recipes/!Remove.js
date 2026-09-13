@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
 	})
 
 	/*
-	一些技巧：
+	一些技巧: 
 	event.remove([{id: "114"}, {id:"514"}])
 	移除id为114或id为514的
 	event.remove({id:"114", output:"te:st"})

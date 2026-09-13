@@ -11,6 +11,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("smithing_iron_block", "锻造铁块")
 	addBlockLang("anvil_metal_block", "铁砧金属块")
 
+	addBlockLang("drop_hammer", "落锤")
+
 	// 太阳
 	addBlockLang("sun_oneshot", "太阳")
 
