@@ -7,39 +7,73 @@
 ## 文件夹结构
 
 Developer
+
 ├── [assets/](assets/) : 未使用 / 测试素材
+
 │---├── [textures/](assets/textures/) : 未使用贴图
+
 │---└── *.bbmodel : Blockbench 工程文件
+
 ├── [docs/](docs/) : 设计文档
+
 │---├── [Gameflow.md](docs/Gameflow.md) : 任务线
+
 │---├── [InfinitySource.md](docs/InfinitySource.md) : 源质矩阵
+
 │---├── [ModsList.md](docs/ModsList.md) : 模组列表
+
 │---├── [Planet.md](docs/Planet.md) : 星球列表
+
 │---├── [QuestsStyle.md](docs/QuestsStyle.md) : 任务书文风
+
 │---└── [Worldview.md](docs/Worldview.md) : 世界观
+
 ├── [export/](export/) : 导出配置
+
 │---└── [config.txt](export/config.txt)
+
 ├── [icon/](icon/) : CMC 图标
+
 │---├── [black_16x16.png](icon/black_16x16.png)
+
 │---├── [black_600x600.png](icon/black_600x600.png)
+
 │---├── [transparent_16x16.png](icon/transparent_16x16.png)
+
 │---├── [transparent_32x32.png](icon/transparent_32x32.png)
+
 │---└── [transparent_256x256.png](icon/transparent_256x256.png)
+
 ├── [images/](images/) : 图片素材
+
 │---├── [reference/](images/reference/) : 参考图
+
 │---│---└── [material.webp](images/reference/material.webp)
+
 │---├── [resourcepacks/](images/resourcepacks/) : 资源包图标
+
 │---│---├── [bcc.png](images/resourcepacks/bcc.png)
+
 │---│---└── [ouid.png](images/resourcepacks/ouid.png)
+
 │---├── [title.png](images/title.png) : CMC 标题文字
+
 │---├── [cover.png](images/cover.png) : 整合包封面
+
 │---├── [loading.png](images/loading.png) : 加载界面
+
 │---├── [random_thing.png](images/random_thing.png) : 待定
+
 │---└── [by_delta.png](images/by_delta.png)
+
 ├── [todo/](todo/) : 待办
+
 │---├── [Done.md](todo/Done.md)
+
 │---└── [Main.md](todo/Main.md)
+
 └── [tools/](tools/) : 工具脚本
+
 -----└── [Convert.py](tools/Convert.py) : 文件哈希校验生成
 
 
