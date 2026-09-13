@@ -4,11 +4,7 @@
 	"Show Enchantment Descriptions" = true
 	#If TRUE, Items will be associated with various keywords which assist with searching in various menus such as JEI.
 	"Show Item Descriptions" = true
-<<<<<<< HEAD
 	#If TRUE and Advanced Tooltips are enabled (F3+H), Tags will be will be added to item tooltips if possible.
-=======
-	#If TRUE and Advanced Tooltips are enabled (F3+H), Tags will be added to item tooltips if possible.
->>>>>>> 340af8337bb180d2930cd343e84d656bc4858913
 	"Show Item Tags" = true
 	#If TRUE, CoFH Items will always show full details (charge state, etc.) and will not require Shift to be held down.
 	"Always Show Item Details" = false

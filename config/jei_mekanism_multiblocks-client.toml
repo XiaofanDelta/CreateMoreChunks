@@ -38,11 +38,7 @@
 		#JEI 'Building [Industrial Turbine]' page configuration
 		[multiblocks.mekanismgenerators.turbine]
 			#Set page visibility
-<<<<<<< HEAD
 			visible = false
-=======
-			visible = true
->>>>>>> 340af8337bb180d2930cd343e84d656bc4858913
 
 		#JEI 'Building [Fission Reactor]' page configuration
 		[multiblocks.mekanismgenerators.fission_reactor]
