@@ -6,22 +6,22 @@
 /data/
 /patchouli_books/
 /local/
-/defaultconfigs/
-/resourcepacks/
-/config/
+/defaultconfigs/*
+/resourcepacks/*
+/config/*
 
 /hotbar.nbt
 /options.txt
 /jade_handlers.md
-
+# ==========
 
 # 游戏启动数据
 /PCL/
-/mods/
+/mods/*
 /CMC-Alpha1.1-natives/
 
 /CMC-Alpha1.1.json
-
+# ==========
 
 # 开发数据
 /logs/
@@ -35,7 +35,7 @@
 /fancymenu_data/action_favorites.json
 /fancymenu_data/last_world.fmdata
 /moonlight-global-datapacks/
-/kubejs/probe/
+/kubejs/probe/*
 /kubejs/assets/ponderjs_generated/
 
 /heracles_options.json
@@ -44,7 +44,7 @@
 /kubejs/jsconfig.json
 /kubejs/README.txt
 /kubejs/config/probejs.json
-
+# ==========
 
 # 缓存数据
 /oei/
@@ -53,14 +53,14 @@
 /patchouli_data.json
 /usercache.json
 /usernamecache.json
-
+# ==========
 
 # 二进制文件
 *.jar
 *.jar.disabled
 *.rar
 # *.nbt
-
+# ==========
 
 # 允许的文件
 !/ldlib/mbd2/*
@@ -76,7 +76,7 @@
 !resourcepacks/Better Chunk by Chunk v1.4.zip
 
 !/mods/cmc*.jar
-
+# ==========
 
 # 提交的配置
 !/config/compressiumblocks.json
@@ -88,23 +88,70 @@
 !/config/moonlight-common.toml
 !/config/thermal_integration-common.toml
 !/config/thermal_parallel-common.toml
+!/config/cable_facades-common.toml
+!/config/appflux-common.toml
+!/config/amendments-common.toml
+!/config/amendments-client.toml
+!/config/cofh_core-client.toml
+!/config/cofh_core-common.toml
+!/config/create-client.toml
+!/config/cucumber-common.toml
+!/config/ding.toml
+!/config/expatternprovider-common.toml
+!/config/extendedae_plus.yaml
+!/config/fluxnetworks-common.toml
+!/config/forgivingvoid-common.toml
+!/config/jei_mekanism_multiblocks-client.toml
+!/config/scannable-client.toml
+!/config/scannable-common.toml
+!/config/supplementaries-client.toml
+!/config/supplementaries-common.toml
+!/config/untranslateditems-client.toml
 
+!/config/oelib
+/config/oelib/*
+!/config/oelib/oelib_festivals.toml
+
+!/config/functionalstorage
+/config/functionalstorage/*
+!/config/functionalstorage/functionalstorage-common.toml
+
+!/config/inventoryprofilesnext
+/config/inventoryprofilesnext/*
 !/config/inventoryprofilesnext/inventoryprofiles.json
+
+!/config/Mekanism
+/config/Mekanism/*
 !/config/Mekanism/client.toml
 !/config/Mekanism/common.toml
 
+!/config/titanium
+/config/titanium/*
+!/config/titanium/titanium-tags.toml
+
+!/config/jei/
+/config/jei/*
+!/config/jei/ingredient-list-mod-sort-order.ini
+!/config/jei/ingredient-list-type-sort-order.ini
+!/config/jei/jei-client.ini
+!/config/jei/recipe-category-sort-order.ini
+
+!/config/jade/
+!/config/nebula/
+!/config/ae2/
+!/config/drippyloadingscreen/
+!/config/extendedcrafting/
+!/config/fancymenu/
+!/config/ftbquests/
+!/config/heracles/
+
+!/config/openloader/
+/config/openloader/*
 !/config/openloader/advanced_options.json
-
-!/config/jei/*
-/config/jei/world/*
-!/config/nebula/*
-!/config/openloader/resources/CMCResources/*
-!/config/ae2/*
-!/config/drippyloadingscreen/*
-!/config/extendedcrafting/*
-!/config/fancymenu/*
-!/config/ftbquests/*
-
+!/config/openloader/resources/
+/config/openloader/resources/*
+!/config/openloader/resources/CMCResources/
+# ==========
 
 # 临时文件
 /kubejs/assets/cmc/textures/gui/container/test.png
@@ -112,4 +159,4 @@
 /kubejs/assets/cmc/textures/gui/container/test3.png
 /kubejs/assets/cmc/textures/gui/container/test4.png
 kubejs/assets/cmc/textures/o.webp
-
+# ==========

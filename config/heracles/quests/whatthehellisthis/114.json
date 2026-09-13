@@ -1,0 +1,52 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "1": {
+      "title": "131",
+      "icon": {
+        "item": {
+          "id": "minecraft:mangrove_planks",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "113"
+    },
+    "description": [
+      "> 1__213__23~~415tyu~~1rfffs"
+    ],
+    "groups": {
+      "What_the_hell_is_this": {
+        "position": [
+          -171,
+          -127
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "114"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}
