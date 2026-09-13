@@ -152,11 +152,3 @@
 /config/openloader/resources/*
 !/config/openloader/resources/CMCResources/
 # ==========
-
-# 临时文件
-/kubejs/assets/cmc/textures/gui/container/test.png
-/kubejs/assets/cmc/textures/gui/container/test2.png
-/kubejs/assets/cmc/textures/gui/container/test3.png
-/kubejs/assets/cmc/textures/gui/container/test4.png
-kubejs/assets/cmc/textures/o.webp
-# ==========
