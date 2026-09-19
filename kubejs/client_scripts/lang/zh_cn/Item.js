@@ -37,6 +37,7 @@ addItemLang("high_pure_quartz", "高纯石英")
 	addItemLang("blank_print_press", "空白压印模板")
 	addItemLang("tier_installer_base", "工厂升级器基板")
 	addItemLang("null_mechanism","%s 构件")
+	addItemLang("andesite_mixture", "安山混合物")
 
 	// 不知道
 	addItemLang("press_shift", "按下 Shift")
