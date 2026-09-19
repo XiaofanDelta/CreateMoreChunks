@@ -49,6 +49,7 @@
 # 缓存数据
 /oei/
 /oeb/
+/bivrik/*
 
 /patchouli_data.json
 /usercache.json
@@ -151,4 +152,8 @@
 !/config/openloader/resources/
 /config/openloader/resources/*
 !/config/openloader/resources/CMCResources/
+# ==========
+
+# 临时文件
+Developer/MBD2代码注册文档/*
 # ==========

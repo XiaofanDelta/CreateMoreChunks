@@ -304,7 +304,7 @@ Mod:
 ## 添加内容
 
  - `cmc:drop_hammer` 落锤及其配方
- - CMC 代码规范 [CONTRIBUTING.md](CONTRIBUTING.md)
+ - CMC 代码规范 [CONTRIBUTING.md](./CONTRIBUTING.md)
  - 任务书世界观文案
 
 Mod:
@@ -327,7 +327,7 @@ Mod:
 
  - 升级一些 mod
  - Extended Crafting 奇点催化剂改为湮灭奇点
- - [`.gitignore`](.gitignore)的完善
+ - [`.gitignore`](./.gitignore)的完善
 
 ## 删除内容
 

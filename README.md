@@ -36,10 +36,10 @@
  - **resourcepacks**
  - **schematics**
  - **icon.png**
- - [**LICENSE**](LICENSE)
- - [**License.md**](License.md)
- - [**README.md**](README.md)
- - [**UpdateLogs.md**](UpdateLogs.md)
- - [**CONTRIBUTING.md**](CONTRIBUTING.md)
+ - [**LICENSE**](./LICENSE)
+ - [**License.md**](./License.md)
+ - [**README.md**](./README.md)
+ - [**UpdateLogs.md**](./UpdateLogs.md)
+ - [**CONTRIBUTING.md**](./CONTRIBUTING.md)
 
 ---

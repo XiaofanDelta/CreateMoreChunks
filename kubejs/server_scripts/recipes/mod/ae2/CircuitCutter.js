@@ -1,41 +1,65 @@
 ServerEvents.recipes((event) => {
-	event.custom({
-		"type": "expatternprovider:circuit_cutter",
-		"fluid_input": {
-			"amount": 1000,
-			"ingredient": {
-				"fluid": "minecraft:water"
-			}
-		},
-		"item_input": {
-			"amount": 1,
-			"ingredient": {
-				"item": "create:andesite_alloy_block"
-			}
-		},
-		"output": {
-			"count": 9,
-			"item": "appliedcreate:stress_circuit_board"
+		/**
+	 * @constructor
+	 * @param {Internal.ItemStack_} output
+	 */
+	function CircuitCutterRecipe(output) {
+		this.recipe = {
+			type: "expatternprovider:circuit_cutter",
+			output: Item.of(output).toJson()
 		}
-	}).id("appliedcreate:expatternprovider/circuit_cutter/stress_circuit_board")
+	}
 
-	event.custom({
-		"type": "expatternprovider:circuit_cutter",
-		"fluid_input": {
-			"amount": 1000,
-			"ingredient": {
-				"fluid": "minecraft:water"
-			}
-		},
-		"item_input": {
-			"amount": 1,
-			"ingredient": {
-				"item": "create:brass_block"
-			}
-		},
-		"output": {
-			"count": 9,
-			"item": "appliedcreate:advanced_stress_circuit_board"
+	/**
+	 * @param {Internal.Ingredient_} ingredient
+	 * @param {number} [amount]
+	 * @returns {CircuitCutterRecipe}
+	 */
+	CircuitCutterRecipe.prototype.item = function (ingredient, amount) {
+		this.recipe.item_input = {
+			amount: amount || 1,
+			ingredient: Ingredient.of(ingredient).toJson()
 		}
-	}).id("appliedcreate:expatternprovider/circuit_cutter/advanced_stress_circuit_board")
+		return this
+	}
+
+	/**
+	 * @param {Internal.FluidStackJS_} fluid
+	 * @param {number} amount
+	 * @returns {CircuitCutterRecipe}
+	 */
+	CircuitCutterRecipe.prototype.fluid = function (fluid, amount) {
+		this.recipe.fluid_input = {
+			amount: amount,
+			ingredient: {
+				fluid: Fluid.of(fluid).id
+			}
+		}
+		return this
+	}
+
+	/**
+	 * @param {ResourceLocation_} [id]
+	 * @returns
+	 */
+	CircuitCutterRecipe.prototype.build = function (id) {
+		let recipe = event.custom(this.recipe)
+
+		if (id) {
+			recipe.id(id)
+		}
+
+		return recipe
+	}
+
+	new CircuitCutterRecipe(Item.of("appliedcreate:stress_circuit_board", 9))
+		.item("create:andesite_alloy_block")
+		.fluid("minecraft:water", 1000)
+		.build("appliedcreate:expatternprovider/circuit_cutter/stress_circuit_board")
+
+	new CircuitCutterRecipe(Item.of("appliedcreate:advanced_stress_circuit_board", 9))
+		.item("create:brass_block")
+		.fluid("minecraft:water", 1000)
+		.build("appliedcreate:expatternprovider/circuit_cutter/advanced_stress_circuit_board")
+
 })

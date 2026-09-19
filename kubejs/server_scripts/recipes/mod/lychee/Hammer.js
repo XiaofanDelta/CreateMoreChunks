@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {Internal.Block} block 锤子砸的方块
-	 * @param {number_} hTier 锤子的等级（1、2、3、4）
+	 * @param {number_} hTier 锤子的等级 (1、2、3、4) 
 	 */
 	function HammerCrushRecipe(block, hTier) {
 
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 
-	 * @param {number_} [damage] 默认 1，必须是正整数
+	 * @param {number_} [damage] 默认 1, 必须是正整数
 	 * 生成 Post
 	 */
 	HammerCrushRecipe.prototype.addHammerDamage = function (damage) {
@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
 	/**
 	 * 
 	 * @param {ResourceLocation_} [id] 配方id
-	 * @param {boolean} [hideJEI] 是否在 JEI 中隐藏，默认 true
+	 * @param {boolean} [hideJEI] 是否在 JEI 中隐藏, 默认 true
 	 * @returns 
 	 */
 	HammerCrushRecipe.prototype.build = function (id, hideJEI) {

@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
 		[ "world_matter" ],
 		{ block: "chunkbychunk:chunkspawner" },
 		[
-			Item.of("cmc:crushed_world_matter").withChance(0.8).withRolls(1, 2)
+			Item.of("cmc:world_matter_ingot").withChance(0.8).withRolls(1, 2)
 		],
 		20*100,
 		1

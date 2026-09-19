@@ -17,9 +17,4 @@ ServerEvents.recipes((event) => {
 		],"minecraft:iron_ingot"
 	).id("cmc:create/crushing/iron_chunk")
 
-	// 粉碎世界物质
-	create.crushing("cmc:crushed_world_matter",
-		"cmc:world_matter_ingot"
-	).id("cmc:create/crusing/crushed_world_matter")
-	
 })

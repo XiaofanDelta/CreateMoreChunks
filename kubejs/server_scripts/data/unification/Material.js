@@ -11,13 +11,13 @@ ServerEvents.highPriorityData((event) => {
 		this.materialName = name
 
 		/** 
-		 * @type {string[]} 已注册的 unification 名称列表（用于防重复） 
+		 * @type {string[]} 已注册的 unification 名称列表 (用于防重复)  
 		 */
 		this.registered = []
 	}
 
 	/**
-	 * 内部方法: 执行注册，并防重复
+	 * 内部方法: 执行注册, 并防重复
 	 * @param {string} name - 文件名
 	 * @param {string} match - 要匹配的标签
 	 * @param {Internal.Item_} item - 替换为的物品
@@ -25,7 +25,7 @@ ServerEvents.highPriorityData((event) => {
 	 */
 	MaterialUnification.prototype._addUnification = function (name, match, item) {
 		if (this.registered.includes(name)) {
-			console.warn(`[MaterialUnification] 已存在: ${name}，跳过重复注册。`)
+			console.warn(`[MaterialUnification] 已存在: ${name}, 跳过重复注册`)
 			return
 		}
 		addUnification(name, match, item)
@@ -35,7 +35,7 @@ ServerEvents.highPriorityData((event) => {
 	/**
 	 * 替换锭
 	 * @param {Internal.Item_} ingotId - 替换为的锭物品
-	 * @returns {MaterialUnification} 返回自身，支持链式调用
+	 * @returns {MaterialUnification} 返回自身, 支持链式调用
 	 */
 	MaterialUnification.prototype.replaceIngot = function (ingotId) {
 		this._addUnification(
@@ -145,9 +145,9 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	/**
-	 * 通用替换方法，支持自定义类型
-	 * @param {string} suffix - 文件名后缀（如 "foil"）
-	 * @param {string} tagSuffix - Forge 标签后缀（如 "foils"），将拼接为 "#forge:{tagSuffix}/{name}"
+	 * 通用替换方法, 支持自定义类型
+	 * @param {string} suffix - 文件名后缀 (如 "foil") 
+	 * @param {string} tagSuffix - Forge 标签后缀 (如 "foils") , 将拼接为 "#forge:{tagSuffix}/{name}"
 	 * @param {Internal.Item_} itemId - 替换为的物品
 	 * @returns {MaterialUnification}
 	 */
@@ -161,8 +161,8 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	/**
-	 * 批量注册常见类型（锭、粒、块、板、粉、杆）
-	 * @param {Object} items - 键值对，键为类型名（ingot|nugget|block|plate|dust|rod），值为物品ID
+	 * 批量注册常见类型 (锭、粒、块、板、粉、杆) 
+	 * @param {Object} items - 键值对, 键为类型名 (ingot|nugget|block|plate|dust|rod) , 值为物品ID
 	 * @returns {MaterialUnification}
 	 * @example
 	 * new MaterialUnification("iron").registerAll({
@@ -189,7 +189,7 @@ ServerEvents.highPriorityData((event) => {
 				// 调用通用替换方法
 				this.replaceType(config.suffix, config.tag, itemId)
 			} else {
-				console.warn(`[MaterialUnification] 未知类型 "${type}"，已跳过。`)
+				console.warn(`[MaterialUnification] 未知类型 "${type}", 已跳过`)
 			}
 		}
 		return this
@@ -267,10 +267,10 @@ ServerEvents.highPriorityData((event) => {
 		.replaceBlock("thermal:tin_block")
 	
 	new MaterialUnification("steel")
-		.replaceBlock("thermal:steel_block")
-		.replaceIngot("thermal:steel_ingot")
-		.replaceNugget("thermal:steel_nugget")
-		.replaceDust("thermal:steel_dust")
+		.replaceBlock("cmc:steel_block")
+		.replaceIngot("cmc:steel_ingot")
+		.replaceNugget("cmc:steel_nugget")
+		.replaceDust("cmc:steel_dust")
 
 	new MaterialUnification("electrum")
 		.replaceIngot("thermal:electrum_ingot")

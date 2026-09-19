@@ -31,8 +31,8 @@ ServerEvents.recipes((event) => {
 		let recipe =
 			lychee.block_crushing(
 				[input],
-				BlockPredicate.of("cmc:drop_hammer"),
-				BlockPredicate.of("minecraft:stone")
+				"cmc:drop_hammer",
+				"#forge:stone"
 			).post(postList).id(id)
 
 		return recipe

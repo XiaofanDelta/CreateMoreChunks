@@ -1,19 +1,20 @@
 // priority: 1225
 
 ClientEvents.lang("zh_cn", (event) => {
-  
+
+	// 宝石
+addItemLang("world_gem", "世界宝石")
+addItemLang("high_pure_quartz", "高纯石英")
+
 	// 材料
 	addItemLang("drive_part", "驱动器组件")
-	addItemLang("world_gem", "世界宝石")
 	addItemLang("creative_cell", "创造ME组件")
 	addItemLang("imperfect_creative_cell", "不完美的创造ME组件")
-	addItemLang("high_pure_quartz", "高纯石英")
 	addItemLang("quartz_seed", "石英种子")
 	addItemLang("mechanism_part", "构件零件")
 	addItemLang("ringo_mechanism", "林檎 (苹果) 构件")
 	addItemLang("wooden_mechanism", "木质构件")
 	addItemLang("precision_mechanism_base", "精密构件基底")
-	addItemLang("brass_gear", "黄铜齿轮")
 	addItemLang("steel_casing_part", "钢质机壳部件")
 	addItemLang("small_rf_coil", "小型红石通量线圈")
 	addItemLang("globe_frame", "地球仪框架")
@@ -35,8 +36,6 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("parallel_card", "并行卡")
 	addItemLang("blank_print_press", "空白压印模板")
 	addItemLang("tier_installer_base", "工厂升级器基板")
-	addItemLang("wooden_gear", "木齿轮")
-	addItemLang("stone_gear", "石齿轮")
 	addItemLang("null_mechanism","%s 构件")
 
 	// 不知道
@@ -168,10 +167,10 @@ ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
 	 * @param {string} key 未完成物品id
-	 * @param {string} value 本地化，无需加上“半成品”“未完成”等字样
+	 * @param {string} value 本地化, 无需加上“半成品”“未完成”等字样
 	 */
 	function addIncompleteItemLang(key, value) {
-		event.add(`item.cmc.incomplete_${key}`, `${value} （半成品）`)
+		event.add(`item.cmc.incomplete_${key}`, `${value}  (半成品) `)
 	}
 
 	/**

@@ -1,11 +1,6 @@
 StartupEvents.registry("item", (event) => {
 
-	addMaterial("brass_gear") // 黄铜齿轮
-	addMaterial("wooden_gear") // 木齿轮
-	addMaterial("stone_gear") // 石齿轮
 	addMaterial("quartz_seed") // 石英种子
-	addMaterial("high_pure_quartz") // 高纯石英
-	addMaterial("world_gem") // 世界宝石
 	addMaterial("coal_chunk").burnTime(20*10*2) // 煤炭碎块
 	addMaterial("iron_chunk") // 铁碎块
 	addMaterial("steel_casing_part") // 钢质机壳部件
@@ -33,11 +28,6 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("creative_cell").rarity("epic").tag("cmc:cells") // 创造组件
 	addMaterial("unstable_singularity").maxStackSize(4) // 不稳奇点
 	addMaterial("tier_installer_base") // 工厂安装器基板
-	addMaterial("world_matter_ingot", "world_matter") // 世界物质锭
-	addMaterial("world_matter_nugget", "world_matter") // 世界物质粒
-	addMaterial("world_matter_plate", "world_matter") // 世界物质板
-	addMaterial("world_matter_dust", "world_matter") // 世界物质粉
-	addMaterial("crushed_world_matter", "world_matter") // 粉碎世界物质
 
 	/**
 	 * 

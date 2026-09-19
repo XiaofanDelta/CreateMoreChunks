@@ -1,0 +1,25 @@
+[
+	/*
+	 * 部分Mod更新后会导致各种大大小小的问题
+	 * 因此这个json用于记录不能更新的Mods
+	 * 请各位更新Mods前对照着该json5内的内容
+	 */
+	{
+		name: "Moonlight Lib",
+		modid: "moonlight",
+		reserved_version: "2.16.32",
+		reason: "据社区网友所说: 当你发现你的Moonlight Lib突然变得十分稳定, 最好一段时间内不要动它, 因为你不知道它的下一次更新是修复BUG还是带来更多BUG"
+	},
+	{
+		name: "Amendments",
+		modid: "amendments",
+		reserved_version: "2.2.5",
+		reason: "Moonlight Lib是它的前置, 别更新了这个又不兼容了"
+	},
+	{
+		name: "Farmer's Delight",
+		modid: "farmersdelight",
+		reserved_version: "1.2.11",
+		reason: "新版改了很多类名, 和附属不兼容"
+	}
+]

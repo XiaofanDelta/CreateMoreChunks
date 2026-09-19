@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
 	
 	// 区块生成器
 	const CHUNK_SPAWNER_LIST = [
-		["unstable", "cmc:world_matter_plate", "cmc:crushed_world_matter"],
+		["unstable", "cmc:world_matter_plate", "cmc:world_matter_dust"],
 		["badlands", "minecraft:red_sand", "minecraft:clay"],
 		["desert", "minecraft:sand", "#forge:sandstone"],
 		["forest", "minecraft:grass_block", "#minecraft:logs"],

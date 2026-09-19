@@ -84,4 +84,13 @@ ServerEvents.recipes((event) => {
 			.id(`cmc:thermal/centrifuge/${name}`)
 	})
 
+	// 离心世界物质粉
+	thermal.centrifuge([
+		Item.of("minecraft:blaze_powder").withChance(0.99),
+		Item.of("thermal:basalz_powder").withChance(0.85),
+		Item.of("thermal:blitz_powder").withChance(0.6),
+		Item.of("thermal:blizz_powder").withChance(0.45)
+	], "#forge:dusts/world_matter").energy(global.EnergyStage[2])
+		.id("cmc:thermal/centrifuge/world_matter_dust")
+
 })

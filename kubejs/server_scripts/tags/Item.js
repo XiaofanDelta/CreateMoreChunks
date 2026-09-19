@@ -209,40 +209,33 @@ ServerEvents.tags("item", (event) => {
 	// 齿轮
 	event.get("forge:gears")
 		.add([
-			"cmc:brass_gear",
-			"cmc:stone_gear",
-			"cmc:wooden_gear"
 		])
 
 	// 锭
 	event.get("forge:ingots")
 		.add([
 			"createdeco:industrial_iron_ingot",
-			"megacells:sky_steel_ingot",
-			"cmc:world_matter_ingot"
+			"megacells:sky_steel_ingot"
 		])
 
 	// 粒
 	event.get("forge:nuggets")
 		.add([
 			"createdeco:industrial_iron_nugget",
-			"createdeco:netherite_nugget",
-			"cmc:world_matter_nugget"
+			"createdeco:netherite_nugget"
 		])
 
 	// 宝石
 	event.get("forge:gems")
 		.add([
 			"create:polished_rose_quartz",
-			"create:rose_quartz",
-			"cmc:world_gem"
+			"create:rose_quartz"
 		])
 
 	// 粉
 	event.get("forge:dusts")
 		.add([
 			"thermal_extra:soul_sand_dust",
-			"cmc:world_matter_dust",
 			"fluxnetworks:flux_dust"
 		])
 
@@ -434,7 +427,6 @@ ServerEvents.tags("item", (event) => {
 	addAloneItemTag("forge:plates/world_matter", "cmc:world_matter_plate")
 	addAloneItemTag("forge:dusts/world_matter", "cmc:world_matter_dust")
 	addAloneItemTag("forge:nuggets/world_matter", "cmc:world_matter_nugget")
-	addAloneItemTag("create:crushed_raw_materials", "cmc:crushed_world_matter")
 	addAloneItemTag("forge:ingots/redstone", "extendedcrafting:redstone_ingot")
 	addAloneItemTag("forge:storage_blocks/redstone", "extendedcrafting:redstone_ingot_block")
 	addAloneItemTag("forge:nuggets/redstone", "extendedcrafting:redstone_nugget")

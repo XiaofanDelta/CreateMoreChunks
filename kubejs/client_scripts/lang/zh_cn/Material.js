@@ -3,9 +3,18 @@ ClientEvents.lang("zh_cn", (event) => {
     addMaterialLang("world_matter", "世界物质")
     addMaterialLang("advanced_alloy", "高级合金")
     addMaterialLang("polished_quartz", "磨制石英")
+	addMaterialLang("michan", "械金")
+
 	addMaterialLang("refined_radiance", "光辉石")
 	addMaterialLang("andesite_alloy", "安山合金")
-	addMaterialLang("michan", "械金")
+	addMaterialLang("shadow_steel", "暗影钢")
+	addMaterialLang("brass", "黄铜")
+
+	addMaterialLang("steel", "钢")
+	addMaterialLang("cast_iron", "铸铁")
+
+	addMaterialLang("wooden", "木质")
+	addMaterialLang("stone", "石头")
 
     /**
 	 * 
