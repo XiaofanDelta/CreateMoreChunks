@@ -80,4 +80,20 @@ ServerEvents.recipes((event) => {
 		"#forge:gears/diamond"
 	]).id("functionalstorage:thermal_extra/component_assembly/diamond_upgrade")
 
+
+	thermal_extra.component_assembly("2x cmc:test", [
+		"2x cmc:test"
+	])
+
+	event.custom({
+		"type": "thermal_extra:component_assembly",
+		"energy": 1145,
+		"ingredients": [
+			Item.of("minecraft:iron_ingot", 2).toJson()
+		],
+		"result": [
+			Item.of("minecraft:gold_ingot").toJson()
+		]
+	})
+
 })
