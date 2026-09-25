@@ -108,6 +108,7 @@
 !/config/supplementaries-client.toml
 !/config/supplementaries-common.toml
 !/config/untranslateditems-client.toml
+!/config/akashictome-common.toml
 
 !/config/oelib
 /config/oelib/*

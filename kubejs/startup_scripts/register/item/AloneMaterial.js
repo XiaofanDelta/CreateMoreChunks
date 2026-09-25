@@ -28,8 +28,11 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("creative_cell").rarity("epic").tag("cmc:cells") // 创造组件
 	addMaterial("unstable_singularity").maxStackSize(4) // 不稳奇点
 	addMaterial("tier_installer_base") // 工厂安装器基板
-
-	addMaterial("concurrent_processor").texture("expatternprovider:item/concurrent_processor")
+	addMaterial("entro_alloy").texture("expatternprovider:item/entro_ingot") // 恩特罗合金
+	addMaterial("entro_crystal").texture("expatternprovider:item/entro_crystal").tag("forge:gems/entro").tag("forge:gems") // 恩特罗水晶
+	addMaterial("concurrent_processor").texture("expatternprovider:item/concurrent_processor") // 并发处理器
+	addMaterial("printed_concurrent_processor").texture("expatternprovider:item/concurrent_processor_print") // 并发电路板
+	addMaterial("concurrent_processor_press").texture("expatternprovider:item/concurrent_processor_press") // 并发压印模板
 
 	/**
 	 * 

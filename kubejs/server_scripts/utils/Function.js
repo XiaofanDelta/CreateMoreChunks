@@ -87,7 +87,7 @@ function getHighPriorityItem(tag) {
 		})
 		return outputId
 	}
-	return "cmi:cmi_icon"
+	return "cmc:test"
 }
 
 /**
@@ -106,7 +106,7 @@ function highPriorityItem(ingredient, count) {
 /**
  * @param {"slurry" | "gas" | "infuse_type" | "pigment"} type
  * @param {Internal.ResourceKey<Internal.Registry>} registryName
- * @param {*} clazz
+ * @param {any_} clazz
  */
 function makeType(type, registryName, clazz) {
 	let of = makeOf(type)

@@ -1,0 +1,7 @@
+"Allow all items to be added" = false
+"Whitelisted Items" = []
+"Whitelisted Names" = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "dictionary", "journal"]
+"Blacklisted Mods" = []
+"Mod Aliases" = ["thermalexpansion=thermalfoundation", "thermaldynamics=thermalfoundation", "thermalcultivation=thermalfoundation", "redstonearsenal=thermalfoundation", "mekanismgenerators=mekanism", "mekanismtools=mekanism"]
+"Hide Book Render" = false
+

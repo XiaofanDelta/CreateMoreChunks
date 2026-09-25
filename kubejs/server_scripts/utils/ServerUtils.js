@@ -5,14 +5,19 @@ let Print = Object.freeze({
 	LOGIC: "ae2:printed_logic_processor",
 	CALCULATION: "ae2:printed_calculation_processor",
 	ENGINEERING: "ae2:printed_engineering_processor",
-	CONCURRENT: "cmi:printed_concurrent_processor"
+	ENERGY: "appflux:printed_energy_processor",
+	CONCURRENT: "cmc:printed_concurrent_processor",
+	ACCUMULATION: "megacells:printed_accumulation_processor"
 })
 
 let Processor = Object.freeze({
 	CONTROL: "create_connected:control_chip",
 	LOGIC: "ae2:logic_processor",
 	CALCULATION: "ae2:calculation_processor",
-	ENGINEERING: "ae2:engineering_processor"
+	ENGINEERING: "ae2:engineering_processor",
+	ENERGY: "appflux:energy_processor",
+	CONCURRENT: "cmc:concurrent_processor",
+	ACCUMULATION: "megacells:accumulation_processor"
 })
 
 // 机壳系列
@@ -22,7 +27,7 @@ let Casing = Object.freeze({
 	BRASS: "create:brass_casing",
 	RAILWAY: "create:railway_casing",
 	THERMAL: "thermal:machine_frame",
-	STAINLESS_STEEL: "mekanism:steel_casing",
+	STEEL: "mekanism:steel_casing",
 })
 
 // 木材系列
@@ -148,8 +153,5 @@ let WoodMaterials = [
 	Wood.DARK_OAK,
 	Wood.MANGROVE,
 	Wood.CHERRY,
-	Wood.RUBBERWOOD,
-	Wood.GREENHEART,
-	Wood.SKYROOT,
-	Wood.ENDERBARK
+	Wood.RUBBERWOOD
 ]
