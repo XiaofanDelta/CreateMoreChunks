@@ -10,49 +10,6 @@ JEIEvents.removeRecipes((event) => {
 		event.remove(type, id)
 	}
 
-	global.dyeColorGroup.forEach((color) => {
-		if (color === "white") {
-			return
-		}
-		removeRecipeFromJEI("create:mixing", [
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/create/crafting/kinetics/${color}_seat_from_other_seat_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/create/crafting/kinetics/${color}_valve_handle_from_other_valve_handle_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/create/crafting/logistics/${color}_postbox_from_other_postbox_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/create/crafting/logistics/${color}_table_cloth_from_other_table_cloth_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/dye_${color}_bed_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/dye_${color}_carpet_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/dye_${color}_wool_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/railways/dying_existing_cap_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/${color}_candle_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/farmersdelight/${color}_canvas_sign_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/farmersdelight/${color}_hanging_canvas_sign_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/createdeco/${color}_placard_from_dyeing_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/createdeco/${color}_shipping_container_from_dyeing_vaults_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/${color}_stained_glass_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/${color}_stained_glass_pane_from_glass_pane_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/minecraft/${color}_terracotta_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/network/cables/covered_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/network/cables/dense_smart_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/network/cables/glass_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/network/cables/smart_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/alexscaves/radon_lamp_${color}_dye_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/alexscaves/rock_candy_${color}_dye_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/thermal/rockwool/${color}_rockwool_from_dye_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/tools/paintballs_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/ae2/network/cables/dense_covered_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/mekanismadditions/balloon/recolor/${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/mekanismadditions/plastic/slab/transparent/recolor/${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/mekanismadditions/plastic/stairs/transparent/recolor/${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/mekanismadditions/plastic/transparent/recolor/${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/mekanismadditions/plastic/transparent/${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/supplementaries/bunting/bunting_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/supplementaries/awnings/awning_${color}_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/supplementaries/candle_holders/candle_holder_${color}_dye_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/cookingforblockheads/dye_${color}_oven_as_coloring`,
-			`create_dragons_plus:dye_fluid_coloring/minecraft/${color}/cookingforblockheads/${color}_kitchen_floor_as_coloring`
-		])
-	})
-
 	const RAILWAYS_COLOR_GROUP =
 		global.dyeColorGroup.concat([
 			"chartreuse",

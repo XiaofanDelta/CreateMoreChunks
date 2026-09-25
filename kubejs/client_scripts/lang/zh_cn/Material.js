@@ -15,6 +15,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	addMaterialLang("wooden", "木质")
 	addMaterialLang("stone", "石头")
+	addMaterialLang("andesite", "安山岩")
 
     /**
 	 * 

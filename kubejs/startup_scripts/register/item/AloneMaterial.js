@@ -29,17 +29,16 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("unstable_singularity").maxStackSize(4) // 不稳奇点
 	addMaterial("tier_installer_base") // 工厂安装器基板
 
+	addMaterial("concurrent_processor").texture("expatternprovider:item/concurrent_processor")
+
 	/**
 	 * 
 	 * @param {string} name 注册id
-	 * @param {string} [tex] 使用 item/material/${tex}/ 文件夹下的图片
 	 * @returns 
 	 */
-	function addMaterial(name, tex) {
+	function addMaterial(name) {
 		let builder = event.create(`cmc:${name}`, "basic")
-		
-		tex ?
-		builder.texture(`cmc:item/material/${tex}/${name}`) :
+	
 		builder.texture(`cmc:item/material/${name}`)
 		builder.tag("cmc:materials")
 		if (global.Dev["logRegisters"]) {
@@ -49,30 +48,4 @@ StartupEvents.registry("item", (event) => {
 		return builder
 	}
 
-	/* *
-	 * 
-	 * @param {string} name 注册id
-	 * @returns 
-	 */
-	/* function addMaterial(name) {
-		event.create(`cmc:crushed_${name}`, "basic")
-			.texture(`cmc:item/material/${name}/crushed`)
-			.tag("create:crushed_raw_materials")
-			.tag(`create:crushed_raw_materials/${name}`)
-
-		let material_list = [
-			"ingot",
-			"plate",
-			"dust",
-			"nugget"
-		]
-
-		material_list.forEach((material) => {
-			event.create(`cmc:${name}_${material}`, "basic")
-				.texture(`cmc:item/material/${name}/${material}`)
-				.tag(`forge:${material}s/${name}`)
-				.tag(`forge:${material}s`)
-		})
-	}
-	*/
 })

@@ -215,7 +215,9 @@ ServerEvents.tags("item", (event) => {
 	event.get("forge:ingots")
 		.add([
 			"createdeco:industrial_iron_ingot",
-			"megacells:sky_steel_ingot"
+			"megacells:sky_steel_ingot",
+			"thermal_extra:raw_meat_ingot",
+			"thermal_extra:cooked_meat_ingot"
 		])
 
 	// 粒
@@ -249,6 +251,12 @@ ServerEvents.tags("item", (event) => {
 			"mekanism:upgrade_gas",
 			"mekanism:upgrade_anchor",
 			"mekanism:upgrade_stone_generator"
+		])
+
+	// 史莱姆球
+	event.get("forge:slimeballs")
+		.add([
+			"thermal_extra:sticky_ball"
 		])
 
 	// Mek 工厂升级

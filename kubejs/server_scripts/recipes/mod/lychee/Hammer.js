@@ -51,17 +51,17 @@ ServerEvents.recipes((event) => {
 
 	/**
 	 * 
-	 * @param {Internal.ItemStack} itemStack 
+	 * @param {OutputItem_} item
 	 * @param {number_} [count] 1~64
 	 * @param {number_} [chance] >0 && <=1 
 	 * @returns
 	 */
-	HammerCrushRecipe.prototype.addDropItemPost = function (itemStack, count, chance) {
+	HammerCrushRecipe.prototype.addDropItemPost = function (item, count, chance) {
 		this.defaultPost.push(
-			Post.drop_item(Item.of(itemStack, count ?? 1))
+			Post.drop_item(Item.of(item, count ?? 1))
 				.contextual([Contextual.chance(chance ?? 1)]))
 
-		this.outputItems.push(Item.of(itemStack, count ?? 1).withChance(chance ?? 1))
+		this.outputItems.push(Item.of(item, count ?? 1).withChance(chance ?? 1))
 
 		return this
 	}
@@ -152,11 +152,18 @@ ServerEvents.recipes((event) => {
 		.addDropItemPost("minecraft:redstone", 9)
 		.build("minecraft:hammer/redstone")
 		.jeiBuild()
-
-	new HammerCrushRecipe("#forge:stone", 1)
-		.addHammerDamage()
-		.addDropItemPost("minecraft:cobblestone", 1)
-		.build("minecraft:hammer/stone")
+	
+	new HammerCrushRecipe("cmc:stone", 4)
+		.addHammerDamage(Math.floor(Math.random() * 20) + 1)
+		.addDropItemPost("cmc:stone", 1)
+		.build("cmc:hammer/stone")
+		.jeiBuild()
+	
+	new HammerCrushRecipe("minecraft:andesite", 1)
+		.addHammerDamage(1)
+		.addDropItemPost("cmc:andesite_dust", 1)
+		.addDropItemPost("cmc:andesite_dust", 1, 0.2)
+		.build("cmc:hammer/andesite")
 		.jeiBuild()
 
 	let compressBlockHammerCrushRecipeList = [["stone", "cobblestone"], ["cobblestone", "gravel"], ["gravel", "sand"]]

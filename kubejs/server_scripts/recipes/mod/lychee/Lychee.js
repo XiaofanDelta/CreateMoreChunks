@@ -75,7 +75,15 @@ ServerEvents.recipes((event) => {
 		"supplementaries:globe_sepia"
 	).post([
 		Post.place("supplementaries:globe"),
-		Post.place("minecraft:air")
-	]).id("supplementaries:lychee/globe/2")
+		Post.damage_item(1)
+	]).id("supplementaries:lychee/globe2")
+
+	// 安山合金粉
+	lychee.item_inside([
+		Item.of("cmc:andesite_mixture", 4),
+		"chunkbychunk:worldfragment"
+	], "minecraft:water").post([
+		Post.drop_item("4x cmc:andesite_alloy_dust")
+	]).id("cmc:lychee/andesite_alloy_dust")
 
 })

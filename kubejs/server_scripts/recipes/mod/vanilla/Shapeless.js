@@ -2,12 +2,19 @@ ServerEvents.recipes((event) => {
 	
 	let { kubejs } = event.recipes
 
-	// 安山合金
+	// 安山岩
 	kubejs.shapeless(
 		Item.of("minecraft:andesite", 8),[
 			"8x #forge:stone",
 			"chunkbychunk:worldfragment"
 	]).id("minecraft:andesite_from_cobblestone")
+
+	// 安山混合物
+	kubejs.shapeless(
+		"cmc:andesite_mixture", [
+			"cmc:andesite_dust",
+			"2x #forge:nuggets/iron"
+	]).id("cmc:andesite_mixture")
 
 	// 石英种子
 	kubejs.shapeless(
