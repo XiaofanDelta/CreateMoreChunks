@@ -24,6 +24,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("dynamo_base", "能源炉基底")
 	addBlockLang("biomass_machine", "生物质制造机")
 	addBlockLang("biomass_machine_io", "生物质制造机IO端口")
+	addBlockLang("monworld_separator", "界子分离器")
 
 	// %null%
 	addBlockLang("chunk_spawner", "%s 区块生成器")

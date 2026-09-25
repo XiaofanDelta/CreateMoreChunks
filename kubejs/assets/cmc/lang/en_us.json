@@ -54,10 +54,12 @@
 	"block.cmc.dynamo_base": "Dynamo Base",
 	"block.cmc.biomass_machine": "Biomass Maker",
 	"block.cmc.biomass_machine_io": "Biomass Maker IO Porter",
+	"block.cmc.monworld_separator": "Monworld Separator",
 	
 	"cmc.advanced_component_assemble": "Advanced Component Assemble",
 	"cmc.hammer_crush": "Hammer Crushing",
 	"cmc.biomass_create": "Biomass Making",
+	"cmc.monworld_separate": "Monworld Separate",
 
 	"thermal.hive_hopper": "Hive Hopper",
 
