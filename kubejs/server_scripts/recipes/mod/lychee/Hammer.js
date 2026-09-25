@@ -58,8 +58,8 @@ ServerEvents.recipes((event) => {
 	 */
 	HammerCrushRecipe.prototype.addDropItemPost = function (item, count, chance) {
 		this.defaultPost.push(
-			Post.drop_item(Item.of(item, count ?? 1))
-				.contextual([Contextual.chance(chance ?? 1)]))
+			Post.drop_item(Item.of(item, count ?? 1)).withChance(chance ?? 1)
+		)
 
 		this.outputItems.push(Item.of(item, count ?? 1).withChance(chance ?? 1))
 
@@ -154,9 +154,9 @@ ServerEvents.recipes((event) => {
 		.jeiBuild()
 	
 	new HammerCrushRecipe("cmc:stone", 4)
-		.addHammerDamage(Math.floor(Math.random() * 20) + 1)
+		.addHammerDamage()
 		.addDropItemPost("cmc:stone", 1)
-		.build("cmc:hammer/stone")
+		.build("cmc:hammer/stone", false)
 		.jeiBuild()
 	
 	new HammerCrushRecipe("minecraft:andesite", 1)

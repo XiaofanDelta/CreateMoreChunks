@@ -56,7 +56,7 @@
 	stone_fuel_value = 1
 	#The value of fuel provided by more valuable materials (none by default, this is for modpacks and extensions)
 	#Range: 0 ~ 256
-	strong_fuel_value = 0
+	strong_fuel_value = 1
 	#The cost in fuel to produce a single world fragment
 	#Range: 1 ~ 256
 	fragment_fuel_cost = 256

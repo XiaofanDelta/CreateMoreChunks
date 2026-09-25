@@ -15,11 +15,5 @@
 		modid: "amendments",
 		reserved_version: "2.2.5",
 		reason: "Moonlight Lib是它的前置, 别更新了这个又不兼容了"
-	},
-	{
-		name: "Farmer's Delight",
-		modid: "farmersdelight",
-		reserved_version: "1.2.11",
-		reason: "新版改了很多类名, 和附属不兼容"
 	}
 ]

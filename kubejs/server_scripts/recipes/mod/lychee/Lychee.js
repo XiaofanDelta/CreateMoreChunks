@@ -80,10 +80,11 @@ ServerEvents.recipes((event) => {
 
 	// 安山合金粉
 	lychee.item_inside([
-		Item.of("cmc:andesite_mixture", 4),
+		"cmc:andesite_mixture",
 		"chunkbychunk:worldfragment"
 	], "minecraft:water").post([
-		Post.drop_item("4x cmc:andesite_alloy_dust")
+		Post.drop_item("cmc:andesite_alloy_dust"),
+		Post.drop_item("chunkbychunk:worldfragment")
 	]).id("cmc:lychee/andesite_alloy_dust")
 
 })
