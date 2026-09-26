@@ -3,8 +3,8 @@
 ClientEvents.lang("zh_cn", (event) => {
 
 	// 宝石
-addItemLang("world_gem", "世界宝石")
-addItemLang("high_pure_quartz", "高纯石英")
+	addItemLang("world_gem", "世界宝石")
+	addItemLang("high_pure_quartz", "高纯石英")
 
 	// 材料
 	addItemLang("drive_part", "驱动器组件")
@@ -38,6 +38,11 @@ addItemLang("high_pure_quartz", "高纯石英")
 	addItemLang("tier_installer_base", "工厂升级器基板")
 	addItemLang("null_mechanism","%s 构件")
 	addItemLang("andesite_mixture", "安山混合物")
+	addItemLang("entro_alloy", "恩特罗合金")
+	addItemLang("entro_crystal", "恩特罗合金")
+	addItemLang("concurrent_processor", "并发处理器")
+	addItemLang("printed_concurrent_processor", "并发处理器safagjkabgbk")
+	addItemLang("concurrent_processor_print", "并发压印模板")
 
 	// 不知道
 	addItemLang("press_shift", "按下 Shift")
