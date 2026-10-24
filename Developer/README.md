@@ -18,7 +18,7 @@ Developer
 
 │---├── [Gameflow.md](./docs/Gameflow.md) : 任务线
 
-│---├── [InfinitySource.md](./docs/InfinitySource.md) : 源质矩阵
+│---├── [InfinitySource.md](./docs/InfinitySource.md) : 无限源质
 
 │---├── [ModsList.md](./docs/ModsList.md) : 模组列表
 

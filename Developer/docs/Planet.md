@@ -1,11 +1,15 @@
 # CMC 星球列表
 
 > 共 **9 种**（含太阳），按离太阳从近到远排列。
+> 
 > 物品 id 前缀统一 `cmc:`，列表同步在 `global.planetList`（[Global.js](../../kubejs/startup_scripts/Global.js)）。
 >
 > 实现位置：
+> 
 > - 交互配方：[Planet.js](../../kubejs/server_scripts/recipes/mod/lychee/Planet.js)（Lychee）
+> 
 > - 地球的搅拌配方：[Mixing.js](../../kubejs/server_scripts/recipes/mod/create/Mixing.js) L74~88
+> 
 > - 空星球 `cmc:empty_planet` 是所有星球配方的基底
 
 ---

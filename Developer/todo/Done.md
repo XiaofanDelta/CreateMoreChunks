@@ -1,6 +1,7 @@
 # CMC 完成记录
 
 > 记录已经完成的待办。按版本归档。
+> 
 > 最后复核：2026-10-24（对照 `mods/`、`kubejs/` 与 `docs/` 实际文件）
 
 ---
@@ -12,7 +13,7 @@
 - [x] `docs/Worldview.md`: 世界观
 - [x] `docs/Gameflow.md`: 任务线 (替代 ChapterStructure + CraftingChains) 
 - [x] `docs/QuestsStyle.md`: 任务书文风指南
-- [x] `docs/InfinitySource.md`: 11 种源质矩阵
+- [x] `docs/InfinitySource.md`: 11 种无限源质
 - [x] `docs/ModsList.md`: 模组列表
 - [x] `CONTRIBUTING.md`: 代码规范
 - [x] `LICENSE.md`: 用户使用条款

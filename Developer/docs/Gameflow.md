@@ -352,7 +352,7 @@ cmc:empty 在 EC 9×9 终极工作台摆出 ∞ 形状
 对应材料的无限源质
 ```
 
-**11 种无限源质**: 配方、代表物与用途矩阵见 [InfinitySource.md](./InfinitySource.md)。
+**11 种无限源质**: 配方、代表物与用途见 [InfinitySource.md](./InfinitySource.md)。
 本章只关心顺序——红石是第 4 章的切入点，"空"是终点。
 
 **未来可能加入**: 铀 (辐射) 、镍 (？) 、颜色 (染色) 。

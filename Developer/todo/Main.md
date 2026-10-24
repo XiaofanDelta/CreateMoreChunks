@@ -1,7 +1,9 @@
 # CMC 待办清单
 
 > 所有待办集中在这里。完成后移到 `Done.md`。
+> 
 > 最后核对：2026-10-24（对照 `kubejs/` 实际脚本与 `mods/` 目录 172 个 jar）
+> 
 > *和 ds 讨论了很长时间得到的东西*
 
 ---
@@ -11,7 +13,7 @@
 - [x] **`docs/Worldview.md`**: 把世界观写完整
 - [x] **`docs/ChapterStructure.md`**: 整理 0~4 章的完整流程
 - [x] **`docs/CraftingChains.md`**: 整理所有关键合成链
-- [x] **`docs/InfinitySource.md`**: 11 种源质的用途矩阵
+- [x] **`docs/InfinitySource.md`**: 11 种源质的用途
 - [x] **任务书文风指南**: 已写入 `docs/QuestsStyle.md`（条目名曾误写为 `NarrativeStyle.md`，2026-10-24 核对）
 
 ---
