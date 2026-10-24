@@ -5,7 +5,7 @@
     1. kubejs/startup_scripts/Global.js
        modpackState / modpackNumberVersion / isHotfix  -> 唯一版本来源
     2. UpdateLogs.md 最后一条 "## Alpha x.y.z (日期)" 标题
-    3. Developer/export/config.txt 的 Version 字段
+    3. Developer/export/config.txt 的 Version 字段（支持 1.6.0 / Alpha-1.6.0 两种写法）
 
 用法:
     python CheckVersion.py                 # 默认以脚本所在整合包为根目录
@@ -32,6 +32,8 @@ NUMBER_RE = re.compile(r"modpackNumberVersion\s*=\s*\"([^\"]+)\"")
 HOTFIX_RE = re.compile(r"isHotfix\s*=\s*(true|false)")
 LOG_HEADING_RE = re.compile(r"^#{1,3}\s+(Alpha|Beta|R)\s+(\d+\.\d+\.\d+)(?:\s*\(([^)]*)\))?", re.MULTILINE)
 CONFIG_VERSION_RE = re.compile(r"^Version:(.*)$", re.MULTILINE)
+# 允许: 1.6.0 / Alpha-1.6.0 / Alpha 1.6.0 / Alpha_1.6.0
+PACK_VERSION_RE = re.compile(r"^(?:(Alpha|Beta|R)[\s\-_]*)?(\d+\.\d+\.\d+)$")
 
 
 def read_text(path):
@@ -136,13 +138,24 @@ def main():
     if not config_version:
         problems.append("Developer/export/config.txt 的 Version 为空")
     elif version:
-        # 允许 "1.6.0" 或 "Alpha-1.6.0" 两种写法
-        normalized = config_version.split("-")[-1]
-        if normalized != version["number"]:
+        match = PACK_VERSION_RE.match(config_version)
+        if not match:
             problems.append(
-                f"export/config.txt 的 Version 是 {config_version}，"
-                f"与 Global.js 的 {version['number']} 不一致"
+                f"export/config.txt 的 Version 无法识别: {config_version}"
+                f"（应形如 1.6.0 或 Alpha-1.6.0）"
             )
+        else:
+            config_state, config_number = match.group(1), match.group(2)
+            if config_number != version["number"]:
+                problems.append(
+                    f"export/config.txt 的 Version 是 {config_version}，"
+                    f"与 Global.js 的 {version['number']} 不一致"
+                )
+            elif config_state and config_state != version["state"]:
+                problems.append(
+                    f"export/config.txt 的 Version 状态是 {config_state}，"
+                    f"与 Global.js 的 {version['state']} 不一致"
+                )
 
     print()
     for warning in warnings:

@@ -352,21 +352,8 @@ cmc:empty 在 EC 9×9 终极工作台摆出 ∞ 形状
 对应材料的无限源质
 ```
 
-**11 种无限源质**: 
-
-| 源质 | 代表物 | 用途 |
-|---|---|---|
-| 红石 | `appflux:charged_redstone` ×5 | 无限 RF |
-| 铁 | `#minecraft:anvil` | 抗性提升 / 召唤铁傀儡 |
-| 铜 | `create:copper_casing` ×5 | 无限流体设备 |
-| 金 | `minecraft:enchanted_golden_apple` ×2 | 附魔金苹果生成 |
-| 煤 | `create:blaze_burner` | 无限燃料 |
-| 青金石 | `thermal:xp_crystal` | 无限经验 |
-| 钻石 | `scannable:rare_ores_module` | 点石成金 / 钻石矿 |
-| 绿宝石 | `#forge:coins` ×5 | 永久村庄英雄 |
-| 铅 | 待定 | 清除辐射 |
-| 荧石 | 待定 | 防光源方块 / 夜视 |
-| 空 | 无 | 创造本身 |
+**11 种无限源质**: 配方、代表物与用途矩阵见 [InfinitySource.md](./InfinitySource.md)。
+本章只关心顺序——红石是第 4 章的切入点，"空"是终点。
 
 **未来可能加入**: 铀 (辐射) 、镍 (？) 、颜色 (染色) 。
 

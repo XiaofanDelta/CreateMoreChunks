@@ -26,6 +26,8 @@ Developer
 
 │---├── [QuestsStyle.md](./docs/QuestsStyle.md) : 任务书文风
 
+│---├── [README.md](./docs/README.md) : 文档索引
+
 │---└── [Worldview.md](./docs/Worldview.md) : 世界观
 
 ├── [export/](./export/) : 导出配置与发布流程
@@ -44,7 +46,9 @@ Developer
 
 │---├── [transparent_32x32.png](./icon/transparent_32x32.png)
 
-│---└── [transparent_256x256.png](./icon/transparent_256x256.png)
+│---├── [transparent_256x256.png](./icon/transparent_256x256.png)
+
+│---└── [README.md](./icon/README.md) : 源文件 → 纹理对照
 
 ├── [images/](./images/) : 图片素材
 
@@ -66,7 +70,9 @@ Developer
 
 │---├── [random_thing.png](./images/random_thing.png) : 待定
 
-│---└── [by_delta.png](./images/by_delta.png)
+│---├── [by_delta.png](./images/by_delta.png)
+
+│---└── [README.md](./images/README.md) : 源文件 → 纹理对照
 
 ├── [todo/](./todo/) : 待办
 
@@ -159,8 +165,7 @@ python CheckVersion.py
 ## 注意事项
 
 - `Developer/` **不随整合包发布**, 这是开发工作区
-- 一些大文件不建议上传
-- `icon/` 和 `images/` 的素材是**源文件**，改了要同步到对应的模组 / 资源包
+- `icon/` 和 `images/` 的素材是**源文件**，改了要同步到对应的模组 / 资源包（对照表见各自的 README）
 - `docs/` 里所有文档都是**设计参考**，不是运行时文件
 
 ---
