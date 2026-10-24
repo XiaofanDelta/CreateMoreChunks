@@ -9,6 +9,7 @@
 /defaultconfigs/*
 /resourcepacks/*
 /config/*
+/.hmcl/
 
 /hotbar.nbt
 /options.txt

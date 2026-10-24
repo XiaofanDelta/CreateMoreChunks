@@ -32,6 +32,11 @@ ServerEvents.recipes((event) => {
 		this.hammerTag = `#cmc:hammer_tier${hTier}`
 
 		/**
+		 * @type {number} 消耗耐久
+		 */
+		this.itemDamage = 1
+
+		/**
 		 * @type {Special.Recipes.BlockClickingLychee} Lychee 配方本体
 		 */
 		this.recipe = lychee.block_clicking(this.hammerTag, this.inputBlock)
@@ -44,7 +49,9 @@ ServerEvents.recipes((event) => {
 	 * 生成 Post
 	 */
 	HammerCrushRecipe.prototype.addHammerDamage = function (damage) {
-		this.defaultPost.unshift(Post.damage_item(damage ?? 1))
+		this.itemDamage = damage ?? 1
+		
+		this.defaultPost.unshift(Post.damage_item(this.itemDamage))
 
 		return this
 	}
@@ -98,7 +105,7 @@ ServerEvents.recipes((event) => {
 		 */
 		this.jeiRecipe = cmc.hammer_crush()
 			.inputItems(this.inputBlock)
-			.inputItemsDurability(this.hammerTag)
+			.inputItemsDurability(`${this.itemDamage}x ${this.hammerTag}`)
 			.outputItems(this.outputItems)
 
 		if (this.recipeID) {
