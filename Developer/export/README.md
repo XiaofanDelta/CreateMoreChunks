@@ -25,8 +25,9 @@ python CheckVersion.py
 脚本会同时读 `UpdateLogs.md` 最后一条标题和 `config.txt` 的 `Version`，
 三者不一致时以退出码 `1` 结束，必须先修再打包。
 
-`export/config.txt` 的 `Version` 填**纯数字**（`1.6.0`），不要带 `Alpha` 前缀——
-Modrinth 的 `versionId` 需要 semver，带前缀会传不上去。
+`export/config.txt` 的 `Version` 写 `Alpha-1.6.0`——与 `Global.js` 拼出来的版本号同源
+（游戏内显示会多一个颜色代码 `§0`）。当前是 Alpha 内测、不上 Modrinth，所以保留 `Alpha-` 前缀；
+将来要传 Modrinth 时再改成纯 `x.y.z`，`CheckVersion.py` 两种写法都认。
 
 ---
 
@@ -36,7 +37,7 @@ Modrinth 的 `versionId` 需要 semver，带前缀会传不上去。
 
 - [ ] `Global.js` 版本号已改，`python CheckVersion.py` 退出码为 0
 - [ ] `UpdateLogs.md` 已加本版本条目，并填**真实日期**（当前 1.6.0 仍是 `26/__/__`）
-- [ ] `docs/ModsList.md` 已按当前 `mods/` 刷新（当前严重过期，见待办）
+- [ ] `docs/ModsList.md` 已停止维护（2026-10-25 起交给 packwiz），不再需要人工刷新
 - [ ] 打包清单与根 `README.md` 的"整合包打包所需文件"一致
 - [ ] `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` 未被包进去（`config.txt` 已排除）
 - [ ] `resourcepacks/` 里的实际文件名与 `config.txt` 中写死的那一行一致
