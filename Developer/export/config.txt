@@ -1,5 +1,5 @@
 Name:Create More Chunks
-Version:
+Version:1.6.0
 
 # 是否打包正式版 PCL，以便没有启动器的玩家安装整合包。
 IncludeLauncher:False
@@ -43,6 +43,8 @@ kubejs/
 README.md
 UpdateLogs.md
 LICENSE.md
+LICENSE
+CONTRIBUTING.md
 ldlib/
 
 # Mod 设置

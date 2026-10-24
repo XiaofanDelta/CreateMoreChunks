@@ -58,7 +58,7 @@ let modpackState = "Alpha"
 let isHotfix = false
 
 // 版本数字号
-let modpackNumberVersion = "1.5.0"
+let modpackNumberVersion = "1.6.0"
 
 /* 
  * Modpack总版本

@@ -1,6 +1,7 @@
 # CMC 完成记录
 
 > 记录已经完成的待办。按版本归档。
+> 最后复核：2026-10-24（对照 `mods/`、`kubejs/` 与 `docs/` 实际文件）
 
 ---
 
@@ -16,9 +17,10 @@
 - [x] `CONTRIBUTING.md`: 代码规范
 - [x] `LICENSE.md`: 用户使用条款
 - [x] `UpdateLogs.md`: 1.6.0 更新日志
-- [x] `Developer/README.md`: 待补
-- [x] `Developer/icon/README.md`: 待补
-- [x] `docs/README.md`: 文档索引
+- [x] `Developer/README.md`: 文件夹用途说明
+
+> 勘误（2026-10-24）：`Developer/icon/README.md` 与 `docs/README.md` 此前被误标为已完成，
+> 实际从未创建，已退回 `Main.md` 的"打磨"区，不再计入完成项。
 
 ### 配方 / 内容
 

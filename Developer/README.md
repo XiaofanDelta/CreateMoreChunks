@@ -28,9 +28,11 @@ Developer
 
 │---└── [Worldview.md](./docs/Worldview.md) : 世界观
 
-├── [export/](./export/) : 导出配置
+├── [export/](./export/) : 导出配置与发布流程
 
-│---└── [config.txt](./export/config.txt)
+│---├── [config.txt](./export/config.txt)
+
+│---└── [README.md](./export/README.md) : 发布流程与核对清单
 
 ├── [icon/](./icon/) : CMC 图标
 
@@ -74,7 +76,9 @@ Developer
 
 ├── [tools/](./tools/) : 工具脚本
 
-│---└── [Convert.py](./tools/Convert.py) : 文件哈希校验生成
+│---├── [Convert.py](./tools/Convert.py) : 文件哈希校验生成
+
+│---└── [CheckVersion.py](./tools/CheckVersion.py) : 发版前版本号核对
 
 ├── [README.md](./README.md) : 本文件
 
@@ -93,7 +97,7 @@ Developer
 | `icon/` | CMC 图标 (黑底 / 透明底，多尺寸)  |
 | `images/` | 素材 (封面、标题、标识、参考图)  |
 | `todo/` | 待办清单 (`Main.md`) 和完成记录 (`Done.md`)  |
-| `tools/` | 本地脚本 (文件校验、图片转换等)  |
+| `tools/` | 本地脚本 (完整性清单、版本号核对)  |
 
 ---
 
@@ -101,7 +105,7 @@ Developer
 
 ### `tools/Convert.py`
 
-生成文件校验哈希 JSON，用于整合包完整性检测。
+生成文件校验哈希 JSON (schema 1) ，用于整合包完整性检测。
 
 **用法**: 
 
@@ -113,7 +117,7 @@ python Convert.py --root <整合包根目录> --targets <文件夹1> <文件夹2
 **示例**: 
 
 ```bash
-python Convert.py --root "D:/.minecraft/versions/CMC-Alpha" --targets kubejs config --output integrity.json
+python Convert.py --root "D:/PCL/.minecraft/versions/CMC-Alpha1.1" --targets kubejs config defaultconfigs --output integrity.json
 ```
 
 **参数说明**: 
@@ -123,10 +127,32 @@ python Convert.py --root "D:/.minecraft/versions/CMC-Alpha" --targets kubejs con
 | `--root` | 整合包根目录 |
 | `--targets` | 需要扫描的文件夹 (可多个，空格分隔)  |
 | `--output` | 输出 JSON 文件名 |
-| `--severity-missing` | 文件缺失时的严重级别 (`INFO` / `WARNING` / `ERROR` / `CRITICAL`)  |
-| `--severity-changed` | 哈希不匹配时的严重级别 |
-| `--required` | 默认将所有文件设为必需 |
-| `--ignore` | 额外忽略模式 |
+| `--severity-missing` | 文件缺失时的严重级别，默认 `ERROR` |
+| `--severity-changed` | 哈希不匹配时的严重级别，默认 `ERROR` |
+| `--required` / `--no-required` | 是否把所有文件标为必需，默认开启 |
+| `--ignore` | 额外忽略模式，可多个 |
+
+**输出约定**: `{"schema": 1, "files": [{path, sha256, required, severityIfMissing, severityIfChanged, ...}]}`，
+条目按路径升序、路径统一用正斜杠，同一棵文件树每次生成的结果完全一致。
+
+**默认忽略**: `*.tmp`、`*.log`、`__pycache__`、`.git`、`logs`、`cache`，
+以及 `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` (与 PCL 导出配置一致) 。
+
+### `tools/CheckVersion.py`
+
+发版前核对版本号：以 `kubejs/startup_scripts/Global.js` 为唯一来源，
+比对 `UpdateLogs.md` 最后一条标题与 `export/config.txt` 的 `Version`。
+
+**用法**: 
+
+```bash
+cd Developer/tools
+python CheckVersion.py
+```
+
+一致时退出码 `0`, 不一致时列出差异并以 `1` 退出;
+`UpdateLogs.md` 的日期仍是 `26/__/__` 这类占位符时给出警告.
+完整发布流程见 [`export/README.md`](./export/README.md) .
 
 ---
 

@@ -1,6 +1,7 @@
 # CMC 待办清单
 
 > 所有待办集中在这里。完成后移到 `Done.md`。
+> 最后核对：2026-10-24（对照 `kubejs/` 实际脚本与 `mods/` 目录 172 个 jar）
 > *和 ds 讨论了很长时间得到的东西*
 
 ---
@@ -11,7 +12,7 @@
 - [x] **`docs/ChapterStructure.md`**: 整理 0~4 章的完整流程
 - [x] **`docs/CraftingChains.md`**: 整理所有关键合成链
 - [x] **`docs/InfinitySource.md`**: 11 种源质的用途矩阵
-- [ ] **`docs/NarrativeStyle.md`**: 任务书文风指南
+- [x] **任务书文风指南**: 已写入 `docs/QuestsStyle.md`（条目名曾误写为 `NarrativeStyle.md`，2026-10-24 核对）
 
 ---
 
@@ -60,8 +61,8 @@
 ## 🔵 打磨 (体验优化) 
 
 - [ ] 安山合金的叙事包装 (配方保留，任务描述改) 
-- [ ] `Developer/README.md`: 说明每个文件夹的用途
-- [ ] `Developer/icon/README.md`: 说明每个图标的用途
+- [ ] `Developer/docs/README.md`: 文档索引（Done.md 曾误标完成）
+- [ ] `Developer/icon/README.md`: 图标用途 + "源文件 → 包内纹理"对照表
 
 ---
 
