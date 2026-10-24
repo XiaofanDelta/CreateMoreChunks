@@ -299,9 +299,9 @@ Mod:
 
 ---
 
-# Alpha 1.6.0 (`26/__/__`) Code Update
+## Alpha 1.6.0 (`26/__/__`) Code Update
 
-## 添加内容
+### 添加内容
 
  - `cmc:drop_hammer` 落锤及其配方
  - CMC 代码规范 [CONTRIBUTING.md](./CONTRIBUTING.md)
@@ -323,13 +323,13 @@ Mod:
  - CMC Core *我CMC也是有Core的包辣!*
 <!-- 狠狠从 CMI 进了一波货，额 -->
 
-## 更改内容
+### 更改内容
 
  - 升级一些 mod
  - Extended Crafting 奇点催化剂改为湮灭奇点
  - [`.gitignore`](./.gitignore)的完善
 
-## 删除内容
+### 删除内容
 
  - 篝火烤粗铁配方
  - FTBQ 部分冗余任务描述

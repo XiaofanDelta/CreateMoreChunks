@@ -35,7 +35,7 @@
 
 ### 配方层
 
-- [ ] null 四种方块的破坏配方 (草方块 / 泥土 / 石头 / 基岩) 
+- [x] null 四种方块的破坏配方 (草方块 / 泥土 / 石头 / 基岩；草方块在 `register/block/Null.js` 的 randomTick 里，2026-10-25 核对) 
 - [ ] `null 构件` 右键特殊方块 (更快捷分离) 
 - [ ] 创造物品的合成链 (创造马达 → 发电机 → 通量线圈 → 通量提效 → 储罐 → 板条箱) 
 - [ ] 山寨创造物品的"乐子"配方
@@ -43,8 +43,7 @@
 
 ### 机器层 (MBD2) 
 
-- [ ] `energy_slot` 抽能量逻辑
-- [ ] `advanced_component_assembly` 的 2.4 配方
+- [ ] `energy_slot` 抽能量逻辑（代码已有 `event/mbd/ACAEnergySlot.js`，待游戏内验证）
 
 ### 事件层
 
@@ -61,8 +60,6 @@
 ## 🔵 打磨 (体验优化) 
 
 - [ ] 安山合金的叙事包装 (配方保留，任务描述改) 
-- [ ] `Developer/docs/README.md`: 文档索引（Done.md 曾误标完成）
-- [ ] `Developer/icon/README.md`: 图标用途 + "源文件 → 包内纹理"对照表
 
 ---
 
