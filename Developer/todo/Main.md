@@ -1,8 +1,8 @@
 # CMC 待办清单
 
-> 所有待办集中在这里。完成后移到 `Done.md`。
+> 所有待办集中在这里. 完成后移到 `Done.md`.
 > 
-> 最后核对：2026-10-24（对照 `kubejs/` 实际脚本与 `mods/` 目录 172 个 jar）
+> 最后核对: 2026-10-24 (对照 `kubejs/` 实际脚本与 `mods/` 目录 172 个 jar)
 > 
 > *和 ds 讨论了很长时间得到的东西*
 
@@ -14,7 +14,7 @@
 - [x] **`docs/ChapterStructure.md`**: 整理 0~4 章的完整流程
 - [x] **`docs/CraftingChains.md`**: 整理所有关键合成链
 - [x] **`docs/InfinitySource.md`**: 11 种源质的用途
-- [x] **任务书文风指南**: 已写入 `docs/QuestsStyle.md`（条目名曾误写为 `NarrativeStyle.md`，2026-10-24 核对）
+- [x] **任务书文风指南**: 已写入 `docs/QuestsStyle.md` (条目名曾误写为 `NarrativeStyle.md`, 2026-10-24 核对)
 
 ---
 
@@ -25,7 +25,7 @@
 - [ ] 4 章的完整物品清单和顺序
 - [ ] 彩蛋任务线的完整剧本 (音乐、字幕、结构、触发流程) 
 - [ ] 3.3 无限源质的"无限"程度 (自动机 / 合成表 / 高级材料) 
-- [ ] 无限源质的"复用" (拆回来切换材料？) 
+- [ ] 无限源质的"复用" (拆回来切换材料?) 
 - [x] `energy_slot` 从物品槽抽能量的逻辑
 - [ ] `biomass_machine` 的 Create 支线定位
 - [ ] 2.2 / 2.3 的长度平衡
@@ -36,7 +36,7 @@
 
 ### 配方层
 
-- [x] null 四种方块的破坏配方 (草方块 / 泥土 / 石头 / 基岩；草方块在 `register/block/Null.js` 的 randomTick 里，2026-10-25 核对) 
+- [x] null 四种方块的破坏配方 (草方块 / 泥土 / 石头 / 基岩; 草方块在 `register/block/Null.js` 的 randomTick 里, 2026-10-25 核对) 
 - [ ] `null 构件` 右键特殊方块 (更快捷分离) 
 - [ ] 创造物品的合成链 (创造马达 → 发电机 → 通量线圈 → 通量提效 → 储罐 → 板条箱) 
 - [ ] 山寨创造物品的"乐子"配方
@@ -44,7 +44,7 @@
 
 ### 机器层 (MBD2) 
 
-- [x] `energy_slot` 抽能量逻辑（`event/mbd/ACAEnergySlot.js`，能量 trait 名已修正为 `forge_energy_storage`）
+- [x] `energy_slot` 抽能量逻辑 (`event/mbd/ACAEnergySlot.js`, 能量 trait 名已修正为 `forge_energy_storage`)
 
 ### 事件层
 
@@ -60,7 +60,7 @@
 
 ## 🔵 打磨 (体验优化) 
 
-- [ ] 安山合金的叙事包装 (配方保留，任务描述改) 
+- [ ] 安山合金的叙事包装 (配方保留, 任务描述改) 
 
 ---
 

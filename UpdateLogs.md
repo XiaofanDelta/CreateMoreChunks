@@ -59,7 +59,7 @@ Mod
  - Mekanism
  - *详见此版本模组列表*
 
-*由于时间久远，无法记录完善*
+*由于时间久远, 无法记录完善*
 
 ---
 
@@ -122,7 +122,7 @@ Mod
  - 扩展存储
  - Compressium
 
-*撰写此日志时时间间隔较长，可靠记录缺少，不完善*
+*撰写此日志时时间间隔较长, 可靠记录缺少, 不完善*
 
 ---
 
@@ -162,7 +162,7 @@ Mod:
 
  - 世界锻造器的速率
 
-*撰写此日志时时间间隔较长，不完善*
+*撰写此日志时时间间隔较长, 不完善*
 
 ---
 
@@ -190,7 +190,7 @@ Mod:
 
 ### 修改内容
 
- -  `FancyMemu` 更改了标题界面，`.gif`选中动画
+ -  `FancyMemu` 更改了标题界面, `.gif`选中动画
  - 初步规范代码格式
 
 ---
@@ -236,7 +236,7 @@ Mod:
 ### 更改内容
 
  - 世界物质奇点 id
- - 代码彻底规范，格式参考 [**CMI 开发规范**](https://github.com/Eternal-Snowstorm/CodeNameCIM2/blob/main/CONTRIBUTING.md)
+ - 代码彻底规范, 格式参考 [**CMI 开发规范**](https://github.com/Eternal-Snowstorm/CodeNameCIM2/blob/main/CONTRIBUTING.md)
  - 修改了`extendedcrafting`的配方速率及部分原料
  - 锻造模板的物品类型从`basic`改为`smithing_template`
  - 创造模式标签页: 
@@ -251,7 +251,7 @@ Mod:
 
 Mod:
 
- - All the Compressed (会产生大量无效配方，且无配置文件)
+ - All the Compressed (会产生大量无效配方, 且无配置文件)
 
 ---
 
@@ -322,7 +322,7 @@ Mod:
  - Create: Dragon Plus
  - Cable Facades
  - CMC Core *我CMC也是有Core的包辣!*
-<!-- 狠狠从 CMI 进了一波货，额 -->
+<!-- 狠狠从 CMI 进了一波货, 额 -->
 
 ### 更改内容
 

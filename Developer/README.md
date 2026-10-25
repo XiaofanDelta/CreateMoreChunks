@@ -1,6 +1,6 @@
 # Developer 文件夹 README
 
-> 在这里查看 Developer 里所有文件的用途。
+> 在这里查看 Developer 里所有文件的用途.
 
 ---
 
@@ -100,7 +100,7 @@ Developer
 | `assets/` | 测试 / 未实装的贴图和模型工程文件 |
 | `docs/` | 所有设计文档 (世界观、任务线、源质等)  |
 | `export/` | PCL2 导出配置和发布流程 |
-| `icon/` | CMC 图标 (黑底 / 透明底，多尺寸)  |
+| `icon/` | CMC 图标 (黑底 / 透明底, 多尺寸)  |
 | `images/` | 素材 (封面、标题、标识、参考图)  |
 | `todo/` | 待办清单 (`Main.md`) 和完成记录 (`Done.md`)  |
 | `tools/` | 本地脚本 (完整性清单、版本号核对)  |
@@ -111,7 +111,7 @@ Developer
 
 ### `tools/Convert.py`
 
-生成文件校验哈希 JSON (schema 1) ，用于整合包完整性检测。
+生成文件校验哈希 JSON (schema 1), 用于整合包完整性检测.
 
 **用法**: 
 
@@ -131,23 +131,23 @@ python Convert.py --root "D:/PCL/.minecraft/versions/CMC-Alpha1.1" --targets kub
 | 参数 | 说明 |
 |---|---|
 | `--root` | 整合包根目录 |
-| `--targets` | 需要扫描的文件夹 (可多个，空格分隔)  |
+| `--targets` | 需要扫描的文件夹 (可多个, 空格分隔)  |
 | `--output` | 输出 JSON 文件名 |
-| `--severity-missing` | 文件缺失时的严重级别，默认 `ERROR` |
-| `--severity-changed` | 哈希不匹配时的严重级别，默认 `ERROR` |
-| `--required` / `--no-required` | 是否把所有文件标为必需，默认开启 |
-| `--ignore` | 额外忽略模式，可多个 |
+| `--severity-missing` | 文件缺失时的严重级别, 默认 `ERROR` |
+| `--severity-changed` | 哈希不匹配时的严重级别, 默认 `ERROR` |
+| `--required` / `--no-required` | 是否把所有文件标为必需, 默认开启 |
+| `--ignore` | 额外忽略模式, 可多个 |
 
-**输出约定**: `{"schema": 1, "files": [{path, sha256, required, severityIfMissing, severityIfChanged, ...}]}`，
-条目按路径升序、路径统一用正斜杠，同一棵文件树每次生成的结果完全一致。
+**输出约定**: `{"schema": 1, "files": [{path, sha256, required, severityIfMissing, severityIfChanged, ...}]}`,
+条目按路径升序、路径统一用正斜杠, 同一棵文件树每次生成的结果完全一致.
 
-**默认忽略**: `*.tmp`、`*.log`、`__pycache__`、`.git`、`logs`、`cache`，
-以及 `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` (与 PCL 导出配置一致) 。
+**默认忽略**: `*.tmp`、`*.log`、`__pycache__`、`.git`、`logs`、`cache`,
+以及 `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` (与 PCL 导出配置一致).
 
 ### `tools/CheckVersion.py`
 
-发版前核对版本号：以 `kubejs/startup_scripts/Global.js` 为唯一来源，
-比对 `UpdateLogs.md` 最后一条标题、`export/config.txt` 的 `Version` 与 `pack.toml` 的 `version`。
+发版前核对版本号: 以 `kubejs/startup_scripts/Global.js` 为唯一来源,
+比对 `UpdateLogs.md` 最后一条标题、`export/config.txt` 的 `Version` 与 `pack.toml` 的 `version`.
 
 **用法**: 
 
@@ -165,7 +165,7 @@ python CheckVersion.py
 ## 注意事项
 
 - `Developer/` **不随整合包发布**, 这是开发工作区
-- `icon/` 和 `images/` 的素材是**源文件**，改了要同步到对应的模组 / 资源包（对照表见各自的 README）
-- `docs/` 里所有文档都是**设计参考**，不是运行时文件
+- `icon/` 和 `images/` 的素材是**源文件**, 改了要同步到对应的模组 / 资源包 (对照表见各自的 README)
+- `docs/` 里所有文档都是**设计参考**, 不是运行时文件
 
 ---
