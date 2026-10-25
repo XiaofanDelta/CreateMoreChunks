@@ -117,6 +117,20 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	/**
+	 * 替换杆
+	 * @param {Internal.Item_} gearId - 替换为的齿轮物品
+	 * @returns {MaterialUnification}
+	 */
+	MaterialUnification.prototype.replaceGear = function (gearId) {
+		this._addUnification(
+			`${this.materialName}_gear`,
+			`#forge:gears/${this.materialName}`,
+			gearId
+		)
+		return this
+	}
+
+	/**
 	 * 替换粗矿
 	 * @param {Internal.Item_} rawOreId - 替换为的粗矿物品
 	 * @returns {MaterialUnification}
@@ -271,6 +285,7 @@ ServerEvents.highPriorityData((event) => {
 		.replaceIngot("cmc:steel_ingot")
 		.replaceNugget("cmc:steel_nugget")
 		.replaceDust("cmc:steel_dust")
+		.replaceGear("cmc:steel_gear")
 
 	new MaterialUnification("electrum")
 		.replaceIngot("thermal:electrum_ingot")

@@ -49,6 +49,7 @@ new Material("steel", "iron")
 	.gear()
 	.block()
 	.isMetal()
+	.rod()
 
 // 铸铁
 new Material("cast_iron", "iron")
