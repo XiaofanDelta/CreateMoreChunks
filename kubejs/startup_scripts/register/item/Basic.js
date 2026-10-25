@@ -11,7 +11,7 @@ StartupEvents.registry("item", (event) => {
 	
 	addItem("empty")
 		.texture("cmc:item/missing/empty")
-		.displayName("")
+		.displayName(" ")
 
 	// 星球
 	addItem("empty_planet").texture("cmc:item/planet/empty")
