@@ -48,6 +48,7 @@
 ### 机器 / MBD2
 
 - [x] `biomass_machine` 多方块完整功能
+- [x] `advanced_component_assembly` 能量槽抽能（能量 trait 名 `item_slot_energy` → `forge_energy_storage`，2026-10-25 修复）
 
 ### 清理 / 修复
 
@@ -76,10 +77,12 @@
 
 ### 流程 / 工具
 
-- [x] `tools/CheckVersion.py`: 以 `Global.js` 为唯一来源核对三处版本号
+- [x] `tools/CheckVersion.py`: 以 `Global.js` 为唯一来源核对版本号（含 packwiz 的 `pack.toml`）
 - [x] `tools/Convert.py`: 修 `--required` 空参数、忽略规则误伤、条目排序、输出契约
 - [x] `export/README.md`: 发布流程与核对清单
 - [x] `export/config.txt`: 补 `LICENSE` / `CONTRIBUTING.md`，`Version` 与 `Global.js` 同源
+- [x] packwiz 接入：`pack.toml` 的 `version` 纳入 `CheckVersion.py` 核对
+- [x] `.packwizignore`: 排除 `/Developer/`（原先会被打进包，`packwiz refresh` 后生效）
 
 ### 待办卫生
 

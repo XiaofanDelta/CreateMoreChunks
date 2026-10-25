@@ -44,7 +44,7 @@
 
 ### 机器层 (MBD2) 
 
-- [x] `energy_slot` 抽能量逻辑（代码已有 `event/mbd/ACAEnergySlot.js`，待游戏内验证）
+- [x] `energy_slot` 抽能量逻辑（`event/mbd/ACAEnergySlot.js`，能量 trait 名已修正为 `forge_energy_storage`）
 
 ### 事件层
 

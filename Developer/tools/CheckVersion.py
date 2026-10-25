@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""发布前版本号核对：以 `Global.js` 为唯一来源，检查另外两处是否跟上。
+"""发布前版本号核对：以 `Global.js` 为唯一来源，检查其余三处是否跟上。
 
 核对对象:
     1. kubejs/startup_scripts/Global.js
        modpackState / modpackNumberVersion / isHotfix  -> 唯一版本来源
     2. UpdateLogs.md 最后一条 "## Alpha x.y.z (日期)" 标题
     3. Developer/export/config.txt 的 Version 字段（支持 1.6.0 / Alpha-1.6.0 两种写法）
+    4. pack.toml 的 version 字段（packwiz 启用后才有；没有则跳过）
 
 用法:
     python CheckVersion.py                 # 默认以脚本所在整合包为根目录
     python CheckVersion.py --root <根目录>
 
 退出码:
-    0 = 三处一致（或仅有警告）
+    0 = 各处一致（或仅有警告）
     1 = 存在不一致，需要先修再发版
 """
 
@@ -34,11 +35,13 @@ LOG_HEADING_RE = re.compile(r"^#{1,3}\s+(Alpha|Beta|R)\s+(\d+\.\d+\.\d+)(?:\s*\(
 CONFIG_VERSION_RE = re.compile(r"^Version:(.*)$", re.MULTILINE)
 # 允许: 1.6.0 / Alpha-1.6.0 / Alpha 1.6.0 / Alpha_1.6.0
 PACK_VERSION_RE = re.compile(r"^(?:(Alpha|Beta|R)[\s\-_]*)?(\d+\.\d+\.\d+)$")
+PACK_TOML_VERSION_RE = re.compile(r'^version\s*=\s*"([^"]+)"', re.MULTILINE)
 
 
 def read_text(path):
     try:
-        return path.read_text(encoding="utf-8")
+        # utf-8-sig: 兼容被记事本 / Windows PowerShell 5.1 写成带 BOM 的文件
+        return path.read_text(encoding="utf-8-sig")
     except OSError as error:
         return None
 
@@ -86,6 +89,18 @@ def parse_config_version(path):
         return None
 
     match = CONFIG_VERSION_RE.search(text)
+    if not match:
+        return None
+
+    return match.group(1).strip()
+
+
+def parse_pack_toml_version(path):
+    text = read_text(path)
+    if text is None:
+        return None
+
+    match = PACK_TOML_VERSION_RE.search(text)
     if not match:
         return None
 
@@ -155,6 +170,22 @@ def main():
                 problems.append(
                     f"export/config.txt 的 Version 状态是 {config_state}，"
                     f"与 Global.js 的 {version['state']} 不一致"
+                )
+
+    pack_path = root / "pack.toml"
+    if not pack_path.exists():
+        print("[INFO] pack.toml          未找到（packwiz 未启用），跳过")
+    else:
+        pack_version = parse_pack_toml_version(pack_path)
+        print(f"[INFO] pack.toml          version = {pack_version if pack_version is not None else '<缺失>'}")
+        if pack_version is None:
+            problems.append(f"无法从 {pack_path} 解析 version")
+        elif version:
+            expected_pack = version["number"] + ("-hf" if version["hotfix"] else "")
+            if pack_version != expected_pack:
+                problems.append(
+                    f"pack.toml 的 version 是 {pack_version}，"
+                    f"与 Global.js 的 {expected_pack} 不一致"
                 )
 
     print()

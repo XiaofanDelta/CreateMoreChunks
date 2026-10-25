@@ -22,12 +22,15 @@ cd Developer/tools
 python CheckVersion.py
 ```
 
-脚本会同时读 `UpdateLogs.md` 最后一条标题和 `config.txt` 的 `Version`，
-三者不一致时以退出码 `1` 结束，必须先修再打包。
+脚本会同时读 `UpdateLogs.md` 最后一条标题、`config.txt` 的 `Version`
+和 `pack.toml` 的 `version`（packwiz 启用后），
+四处不一致时以退出码 `1` 结束，必须先修再打包。
 
 `export/config.txt` 的 `Version` 写 `Alpha-1.6.0`——与 `Global.js` 拼出来的版本号同源
 （游戏内显示会多一个颜色代码 `§0`）。当前是 Alpha 内测、不上 Modrinth，所以保留 `Alpha-` 前缀；
 将来要传 Modrinth 时再改成纯 `x.y.z`，`CheckVersion.py` 两种写法都认。
+
+`pack.toml` 的 `version` 写**纯数字**（`1.6.0`），因为 packwiz 会拿它做版本比较。
 
 ---
 
@@ -37,6 +40,9 @@ python CheckVersion.py
 
 - [ ] `Global.js` 版本号已改，`python CheckVersion.py` 退出码为 0
 - [ ] `UpdateLogs.md` 已加本版本条目，并填**真实日期**（当前 1.6.0 仍是 `26/__/__`）
+- [ ] `pack.toml` 的 `version` 已同步（packwiz 发布用，脚本会一起核对）
+- [ ] packwiz：`packwiz refresh` 已跑，`pack.toml` 的 `[index] hash` 与 `index.toml` 实际 sha256 一致
+- [ ] `index.toml` 里没有 `Developer/` 条目（`.packwizignore` 已排除，refresh 后生效）
 - [ ] `docs/ModsList.md` 已停止维护（2026-10-25 起交给 packwiz），不再需要人工刷新
 - [ ] 打包清单与根 `README.md` 的"整合包打包所需文件"一致
 - [ ] `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` 未被包进去（`config.txt` 已排除）
@@ -72,3 +78,19 @@ python CheckVersion.py
    如果 `ldlib` 里将来出现别的目录，会被一起带走。
 3. `Version:` 从 1.6.0 起由 `Global.js` 同步，但两者没有自动联动，
    全靠 `CheckVersion.py` 在发版前拦一道。
+
+---
+
+## 五、packwiz（2026-10-25 引入）
+
+| 文件 | 作用 |
+|---|---|
+| `pack.toml` | 包元数据：name / author / version / forge / minecraft；`version` 由 `CheckVersion.py` 一起核对 |
+| `index.toml` | 由 `packwiz refresh` 生成，记录每个收录文件的 sha256；`pack.toml` 的 `[index] hash` 就是它的校验值 |
+| `.packwizignore` | 与 `.gitignore` 基本一致（少一行 `/index.toml`），额外排除 `/Developer/` |
+
+**发版**：改完文件 → `packwiz refresh` → `python CheckVersion.py` → 分发。
+`refresh` 之后 `index.toml` 会变化，记得和当次改动一起提交。
+
+**现状**：packwiz 只收录了 `mods/cmc-1.0.0.jar` 与 `jei.pw.toml`，其余 170+ 模组尚未迁移；
+在迁移完成前，PCL 导出（`config.txt`）仍是完整的发布路径。

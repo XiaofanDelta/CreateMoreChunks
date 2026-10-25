@@ -147,7 +147,7 @@ python Convert.py --root "D:/PCL/.minecraft/versions/CMC-Alpha1.1" --targets kub
 ### `tools/CheckVersion.py`
 
 发版前核对版本号：以 `kubejs/startup_scripts/Global.js` 为唯一来源，
-比对 `UpdateLogs.md` 最后一条标题与 `export/config.txt` 的 `Version`。
+比对 `UpdateLogs.md` 最后一条标题、`export/config.txt` 的 `Version` 与 `pack.toml` 的 `version`。
 
 **用法**: 
 
