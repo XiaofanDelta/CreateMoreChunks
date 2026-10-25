@@ -20,6 +20,7 @@ StartupEvents.registry("item", (event) => {
 	 */
 	function addSmithingTemplate(id, isUpgrade) {
 		let itemID = isUpgrade? `${id}_upgrade_smithing_template` : `${id}_smithing_template`
+		let itemName = isUpgrade? `${Utils.toTitleCase(id)} Upgrade` : Utils.toTitleCase(id)
 
 		let builder = event.create(`cmc:${itemID}`, "smithing_template")
 
@@ -27,6 +28,7 @@ StartupEvents.registry("item", (event) => {
 		builder.appliesToText = Component.translatable(`item.cmc.smithing_template.${id}.applies_to`)
 		builder.ingredientSlotDescriptionText = Component.translatable(`item.cmc.smithing_template.${id}.ingredients_slot`)
 		builder.appliesToSlotDescriptionText = Component.translatable(`item.cmc.smithing_template.${id}.applies_to_slot`)
+		builder.displayName(itemName)
 
 		if (global.Dev["logRegisters"]) {
 			console.log(`锻造模版 cmc:${itemID} 已注册!`)

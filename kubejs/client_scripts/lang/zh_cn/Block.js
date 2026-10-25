@@ -18,6 +18,7 @@ ClientEvents.lang("zh_cn", (event) => {
 
 	// 不知道
 	addBlockLang("example_block", "示例方块")
+	addBlockLang("dummy_hive_hopper", "虚设蜂箱漏斗")
 
 	// 机器
 	addBlockLang("advanced_component_assembly", "高级部件装配机")
@@ -32,6 +33,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("dirt", "§m§o泥土§r")
 	addBlockLang("stone", "§m§o石头§r")
 	addBlockLang("bedrock", "§m§o基岩§r")
+	addBlockLang("null_block", "§kNULL§r块")
 
 	/**
 	 * 

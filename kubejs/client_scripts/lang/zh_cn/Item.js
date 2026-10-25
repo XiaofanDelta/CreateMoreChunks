@@ -189,8 +189,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	 * @param {string} applies_to_slot 应用格描述
 	 */
 	function addSmithingTemplateLang(key, value, ingredients, applies_to, ingredients_slot, applies_to_slot) {
-		event.add(`item.cmc.${key}_smithing_template`, `${value}锻造模版`)
-		event.add(`item.cmc.${key}_upgrade_smithing_template`, `${value}锻造模版`)
+		event.add(`item.cmc.${key}_smithing_template`, value)
+		event.add(`item.cmc.${key}_upgrade_smithing_template`, `${value}升级`)
 		event.add(`item.cmc.smithing_template.${key}.applies_to`, applies_to)
 		event.add(`item.cmc.smithing_template.${key}.ingredients`, ingredients)
 		event.add(`item.cmc.smithing_template.${key}.applies_to_slot`, applies_to_slot)

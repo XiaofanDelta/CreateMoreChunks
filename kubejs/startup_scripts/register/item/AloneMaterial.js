@@ -32,7 +32,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("entro_crystal").texture("expatternprovider:item/entro_crystal").tag("forge:gems/entro").tag("forge:gems") // 恩特罗水晶
 	addMaterial("concurrent_processor").texture("expatternprovider:item/concurrent_processor") // 并发处理器
 	addMaterial("printed_concurrent_processor").texture("expatternprovider:item/concurrent_processor_print").displayName("Printed Concurrent Circuit") // 并发电路板
-	addMaterial("concurrent_processor_press").texture("expatternprovider:item/concurrent_processor_press") // 并发压印模板
+	addMaterial("concurrent_processor_press").texture("expatternprovider:item/concurrent_processor_press").displayName("Inscriber Concurrent Press") // 并发压印模板
 
 	/**
 	 * 

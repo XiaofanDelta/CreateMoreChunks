@@ -26,7 +26,7 @@ StartupEvents.registry("item", (event) => {
 	addExampleItem("rc", "Re_Construction")
 	addExampleItem("cmi", "Create: Mechanism and Innovation")
 	addExampleItem("nopai")
-	addExampleItem("c5", "create0501")
+	addExampleItem("c5", "create50131")
 	addExampleItem("ticks")
 	addExampleItem("cmc", "Create: More Chunks")
 	addExampleItem("cmc_icon", "Icon of Create: More Chunks")

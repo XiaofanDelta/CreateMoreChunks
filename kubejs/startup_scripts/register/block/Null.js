@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["stone"])
 
-	addNullBlock("null_block", "Block of §kNULL§r")
+	addNullBlock("null_block", "§kNULL§r Block")
 		.textureAll("cmc:block/missing/missingno")
 		.soundType(SoundType.GLOW_LICHEN)
 		.hardness(0.05)
