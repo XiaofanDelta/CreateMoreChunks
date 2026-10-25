@@ -11,5 +11,11 @@
 		modid: "moonlight",
 		reserved_version: "2.16.32",
 		reason: "据社区网友所说: 当你发现你的Moonlight Lib突然变得十分稳定, 最好一段时间内不要动它, 因为你不知道它的下一次更新是修复BUG还是带来更多BUG"
+	},
+	{
+		name: "Just Enough Items",
+		modid: "jei",
+		reserved_version: "15.59.0.212",
+		reason: "新版jei的mezz已经魔了用ai给所有附属创飞了"
 	}
 ]
