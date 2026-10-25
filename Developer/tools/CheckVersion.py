@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""发布前版本号核对：以 `Global.js` 为唯一来源，检查其余三处是否跟上。
+"""发布前版本号核对: 以 `Global.js` 为唯一来源, 检查其余三处是否跟上.
 
 核对对象:
     1. kubejs/startup_scripts/Global.js
        modpackState / modpackNumberVersion / isHotfix  -> 唯一版本来源
     2. UpdateLogs.md 最后一条 "## Alpha x.y.z (日期)" 标题
-    3. Developer/export/config.txt 的 Version 字段（支持 1.6.0 / Alpha-1.6.0 两种写法）
-    4. pack.toml 的 version 字段（packwiz 启用后才有；没有则跳过）
+    3. Developer/export/config.txt 的 Version 字段 (支持 1.6.0 / Alpha-1.6.0 两种写法)
+    4. pack.toml 的 version 字段 (packwiz 启用后才有; 没有则跳过)
 
 用法:
     python CheckVersion.py                 # 默认以脚本所在整合包为根目录
     python CheckVersion.py --root <根目录>
 
 退出码:
-    0 = 各处一致（或仅有警告）
-    1 = 存在不一致，需要先修再发版
+    0 = 各处一致 (或仅有警告)
+    1 = 存在不一致, 需要先修再发版
 """
 
 import argparse
@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 try:
-    # 非中文控制台（cp1252 等）下避免编码异常导致中断，无法编码的字符以 ? 代替
+    # 非中文控制台 (cp1252 等) 下避免编码异常导致中断, 无法编码的字符以 ? 代替
     sys.stdout.reconfigure(errors="replace")
 except (AttributeError, ValueError):
     pass
@@ -108,8 +108,8 @@ def parse_pack_toml_version(path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="发布前版本号核对（以 Global.js 为唯一来源）")
-    parser.add_argument("--root", default=None, help="整合包根目录（默认取脚本所在整合包）")
+    parser = argparse.ArgumentParser(description="发布前版本号核对 (以 Global.js 为唯一来源)")
+    parser.add_argument("--root", default=None, help="整合包根目录 (默认取脚本所在整合包)")
     args = parser.parse_args()
 
     root = Path(args.root).resolve() if args.root else Path(__file__).resolve().parents[2]
@@ -142,11 +142,11 @@ def main():
         if version:
             if (logs["state"], logs["number"]) != (version["state"], version["number"]):
                 problems.append(
-                    f"UpdateLogs.md 最新条目是 {logs['state']} {logs['number']}，"
+                    f"UpdateLogs.md 最新条目是 {logs['state']} {logs['number']},"
                     f"但 Global.js 是 {version['state']}-{version['number']}"
                 )
         if not logs["date"] or "?" in logs["date"] or "_" in logs["date"]:
-            warnings.append(f"UpdateLogs.md 最新条目缺少确定日期（当前: {logs['date'] or '空'}）")
+            warnings.append(f"UpdateLogs.md 最新条目缺少确定日期 (当前: {logs['date'] or '空'})")
 
     config_version = parse_config_version(config_path)
     print(f"[INFO] export/config.txt   Version:{config_version if config_version is not None else '<缺失>'}")
@@ -157,24 +157,24 @@ def main():
         if not match:
             problems.append(
                 f"export/config.txt 的 Version 无法识别: {config_version}"
-                f"（应形如 1.6.0 或 Alpha-1.6.0）"
+                f"(应形如 1.6.0 或 Alpha-1.6.0)"
             )
         else:
             config_state, config_number = match.group(1), match.group(2)
             if config_number != version["number"]:
                 problems.append(
-                    f"export/config.txt 的 Version 是 {config_version}，"
+                    f"export/config.txt 的 Version 是 {config_version},"
                     f"与 Global.js 的 {version['number']} 不一致"
                 )
             elif config_state and config_state != version["state"]:
                 problems.append(
-                    f"export/config.txt 的 Version 状态是 {config_state}，"
+                    f"export/config.txt 的 Version 状态是 {config_state},"
                     f"与 Global.js 的 {version['state']} 不一致"
                 )
 
     pack_path = root / "pack.toml"
     if not pack_path.exists():
-        print("[INFO] pack.toml          未找到（packwiz 未启用），跳过")
+        print("[INFO] pack.toml          未找到 (packwiz 未启用), 跳过")
     else:
         pack_version = parse_pack_toml_version(pack_path)
         print(f"[INFO] pack.toml          version = {pack_version if pack_version is not None else '<缺失>'}")
@@ -184,7 +184,7 @@ def main():
             expected_pack = version["number"] + ("-hf" if version["hotfix"] else "")
             if pack_version != expected_pack:
                 problems.append(
-                    f"pack.toml 的 version 是 {pack_version}，"
+                    f"pack.toml 的 version 是 {pack_version},"
                     f"与 Global.js 的 {expected_pack} 不一致"
                 )
 
@@ -195,10 +195,10 @@ def main():
     if problems:
         for problem in problems:
             print(f"[FAIL] {problem}")
-        print(f"\n[RESULT] 发现 {len(problems)} 处不一致，先修再发版。")
+        print(f"\n[RESULT] 发现 {len(problems)} 处不一致, 先修再发版.")
         raise SystemExit(1)
 
-    print("[RESULT] 版本号一致，可以继续打包。")
+    print("[RESULT] 版本号一致, 可以继续打包.")
 
 
 if __name__ == "__main__":

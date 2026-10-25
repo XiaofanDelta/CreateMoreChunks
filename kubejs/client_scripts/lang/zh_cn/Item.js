@@ -173,7 +173,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	/**
 	 * 
 	 * @param {string} key 未完成物品id
-	 * @param {string} value 本地化, 无需加上“半成品”“未完成”等字样
+	 * @param {string} value 本地化, 无需加上"半成品""未完成"等字样
 	 */
 	function addIncompleteItemLang(key, value) {
 		event.add(`item.cmc.incomplete_${key}`, `${value}  (半成品) `)

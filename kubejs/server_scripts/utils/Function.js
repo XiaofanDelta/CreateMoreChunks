@@ -361,7 +361,7 @@ let MBDUtils = {
 		let ingredient = $FluidIngredient["of(net.minecraft.tags.TagKey,long)"](tagKey, amount)
 
 		if (nbt != null) {
-			console.warn(`[MBDUtils] withFluidTag 暂不支持 nbt，已忽略: ${tag}`)
+			console.warn(`[MBDUtils] withFluidTag 暂不支持 nbt, 已忽略: ${tag}`)
 		}
 
 		return ingredient
