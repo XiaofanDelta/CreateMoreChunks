@@ -145,7 +145,7 @@ addBlock("creative_casing")
     .soundType(SoundType.METAL)
 ```
 
-**第十六条** **严格禁止** 使用 `.displayName()` 方法，所有命名前往 lang 文件下处理
+**第十六条** **严格禁止** 使用 `.displayName()` 方法编码中文名，所有命名前往[中文本地化脚本](./kubejs/client_scripts/lang/zh_cn/)下处理，特殊英文名例外。
 
 **第十七条** 所有注册 id 统一使用 `cmc:` 命名空间。
 
@@ -290,24 +290,24 @@ BlockEvents.rightClicked((event) => {
     let { level, item, player, facing, block, hand } = event
 
     // 取消无效右键事件
-    if (level.clientSide) {
+    if (!level.clientSide) {
         return
     }
 
-    // 判断玩家手持物品为自然构件
-    if (item === "cmc:nature_mechanism") {
+    // 判断玩家手持物品
+    if (item === "cmc:teleporter") {
         // ...
     }
 })
 ```
 
-**第二十六条** 建议复杂配方块使用 **段落注释**: 
+**第二十六条** 建议在同一个文件内包含多种不同分类的代码时，使用 **注释**: 
 
 ```js
-// 1.1 落锤配方
+// 落锤配方
 addRawOreCrushRecipe("minecraft:raw_iron", "minecraft:iron_nugget", "cmc:crush/iron", true)
 
-// 1.2 鼓风机配方
+// 鼓风机配方
 // ...
 ```
 
@@ -359,7 +359,7 @@ global.Dev = {
 }
 ```
 
-**第三十三条** 正式发布时 `logRegisters` 必须为 `false`。
+**第三十三条** 正式发布时`global.Dev`内的三项都必须为 `false`。
 
 ---
 
@@ -464,8 +464,8 @@ git push origin v1.2.0
 
 | 颜色 | 语义 |
 |---|---|
-| `§a` 绿 | 正面、建议 |
-| `§c` 红 | 警告、危险 |
-| `§e` 黄 | 强调数值 |
-| `§7` 灰 | 提示、参考 |
-| `§k` 混淆 | NULL、错误 |
+| `&a` 绿 | 正面、建议 |
+| `&c` 红 | 警告、危险 |
+| `&e` 黄 | 强调数值 |
+| `&7` 灰 | 提示、参考 |
+| `&k` 混淆 | NULL、错误 |
