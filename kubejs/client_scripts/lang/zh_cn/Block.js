@@ -19,6 +19,9 @@ ClientEvents.lang("zh_cn", (event) => {
 	// 不知道
 	addBlockLang("example_block", "示例方块")
 	addBlockLang("dummy_hive_hopper", "虚设蜂箱漏斗")
+	addBlockLang("dummy_hive_hopper_base", "虚设蜂箱漏斗 - 基础")
+	addBlockLang("dummy_hive_hopper_bee_nest", "虚设蜂箱漏斗 - 蜂巢")
+	addBlockLang("dummy_hive_hopper_beehive", "虚设蜂箱漏斗 - 蜂箱")
 
 	// 机器
 	addBlockLang("advanced_component_assembly", "高级部件装配机")

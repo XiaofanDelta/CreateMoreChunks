@@ -44,6 +44,9 @@ ClientEvents.lang("en_us", (event) => {
 	addBlockLang("biomass_machine", "Biomass Maker")
 	addBlockLang("biomass_machine_io", "Biomass Maker IO Porter")
 	addBlockLang("monworld_separator", "Monworld Separator")
+	addBlockLang("dummy_hive_hopper_base", "Dummy Hive Hopper - Base")
+	addBlockLang("dummy_hive_hopper_bee_nest", "Dummy Hive Hopper - Bee Nest")
+	addBlockLang("dummy_hive_hopper_beehive", "Dummy Hive Hopper - Beehive")
 
 	// 配方类型
 	addRecipeTypeLang("thermal:hive_hopper", "Hive Hopper")
