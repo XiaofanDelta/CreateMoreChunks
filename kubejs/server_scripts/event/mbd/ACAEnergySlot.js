@@ -22,7 +22,7 @@ MBDMachineEvents.onTick("cmc:advanced_component_assembly", ($) => {
 	}
 
 	// 拿到机器的能量 trait
-	let energyTrait = machine.getTraitByName($ForgeEnergyCapabilityTrait, "item_slot_energy")
+	let energyTrait = machine.getTraitByName($ForgeEnergyCapabilityTrait, "forge_energy_storage")
 
 	if (energyTrait == null) {
 		return
