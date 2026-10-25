@@ -321,6 +321,8 @@ Mod:
  - Quick Pack
  - Create: Dragon Plus
  - Cable Facades
+ - Create Heat JS
+ - File JS
  - CMC Core *我CMC也是有Core的包辣!*
 <!-- 狠狠从 CMI 进了一波货, 额 -->
 
