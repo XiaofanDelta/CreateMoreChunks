@@ -144,4 +144,12 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["stone"])
 		.tagBlock(global.ToolType["pickaxe"])
 
+	// 虚设蜂箱漏斗
+	addBlock("dummy_hive_hopper", "basic")
+		.model("cmc:block/dummy_hive_hopper")
+		.unbreakable()
+		.soundType(SoundType.WOOD)
+		.box(0, 0, 0, 16, 32, 16, true)
+		.noDrops()
+
 })

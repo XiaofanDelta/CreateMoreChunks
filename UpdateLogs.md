@@ -306,6 +306,7 @@ Mod:
  - `cmc:drop_hammer` 落锤及其配方
  - CMC 代码规范 [CONTRIBUTING.md](./CONTRIBUTING.md)
  - 任务书世界观文案
+ - 蜂箱漏斗jei
 
 Mod:
 
