@@ -3,4 +3,5 @@
 "Whitelisted Names" = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "dictionary", "journal"]
 "Blacklisted Mods" = []
 "Mod Aliases" = ["thermalexpansion=thermalfoundation", "mekanismgenerators=mekanism", "mekanismtools=mekanism"]
+"Hide Book Render" = false
 
