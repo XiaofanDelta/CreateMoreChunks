@@ -4,7 +4,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("coal_chunk").burnTime(20*10*2) // 煤炭碎块
 	addMaterial("iron_chunk") // 铁碎块
 	addMaterial("steel_casing_part") // 钢质机壳部件
-	addMaterial("small_rf_coil") // 小型红石通量线圈
+	addMaterial("small_rf_coil").displayName("Small Redstone Flux Coil") // 小型红石通量线圈
 	addMaterial("globe_frame") // 地球仪框架
 	addMaterial("drawer_upgrade_base") // 抽屉升级基板
 	addMaterial("configuration_tool_base") // 配置工具基板
@@ -31,7 +31,7 @@ StartupEvents.registry("item", (event) => {
 	addMaterial("entro_alloy").texture("expatternprovider:item/entro_ingot") // 恩特罗合金
 	addMaterial("entro_crystal").texture("expatternprovider:item/entro_crystal").tag("forge:gems/entro").tag("forge:gems") // 恩特罗水晶
 	addMaterial("concurrent_processor").texture("expatternprovider:item/concurrent_processor") // 并发处理器
-	addMaterial("printed_concurrent_processor").texture("expatternprovider:item/concurrent_processor_print") // 并发电路板
+	addMaterial("printed_concurrent_processor").texture("expatternprovider:item/concurrent_processor_print").displayName("Printed Concurrent Circuit") // 并发电路板
 	addMaterial("concurrent_processor_press").texture("expatternprovider:item/concurrent_processor_press") // 并发压印模板
 
 	/**

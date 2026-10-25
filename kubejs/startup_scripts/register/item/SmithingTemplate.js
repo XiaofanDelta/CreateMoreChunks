@@ -10,7 +10,7 @@ StartupEvents.registry("item", (event) => {
 
 	addSmithingTemplate("null", false)
 		.texture("cmc:item/missing/smithing_template")
-
+		.displayName("§kNULL§r")
 
 	/**
 	 * 
@@ -34,5 +34,4 @@ StartupEvents.registry("item", (event) => {
 
 		return builder
 	}
-
 })

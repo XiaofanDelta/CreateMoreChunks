@@ -33,6 +33,4 @@ StartupEvents.registry("item", (event) => {
 	addInfinitySource("lapis_lazuli", 0x345EC3)
 	addInfinitySource("lead", 0x323562)
 	addInfinitySource("glow_stone", 0xFFD38F)
-
-	"#ffd38f"
 })

@@ -5,10 +5,11 @@ StartupEvents.registry("item", (event) => {
 
 	// 频道卡
 	let channelCardList = ["x2", "x3", "x4", "infinite", "default"]
-	channelCardList.forEach((channelCard) => {
-		addBasicTool(`channel_${channelCard}_card`, false)
-			.texture(`cmc:item/tool/channel_card/${channelCard}`)
+	channelCardList.forEach((type) => {
+		addBasicTool(`channel_${type}_card`, false)
+			.texture(`cmc:item/tool/channel_card/${type}`)
 			.tag("cmc:channel_card")
+			.displayName(`Channel Card(${type})`)
 	})
 
 	// 不毁砂纸

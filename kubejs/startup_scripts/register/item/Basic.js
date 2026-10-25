@@ -1,9 +1,17 @@
 StartupEvents.registry("item", (event) => {
 
 	// %null%
-	addItem("null").texture("cmc:item/missing/missingno")
-	addItem("null_mechanism").texture("cmc:item/missing/mechanism")
-	addItem("empty").texture("cmc:item/missing/empty")
+	addItem("null")
+		.texture("cmc:item/missing/missingno")
+		.displayName("§kNULL§r")
+	
+	addItem("null_mechanism")
+		.texture("cmc:item/missing/mechanism")
+		.displayName("§kNULL§r Mechanism")
+	
+	addItem("empty")
+		.texture("cmc:item/missing/empty")
+		.displayName("")
 
 	// 星球
 	addItem("empty_planet").texture("cmc:item/planet/empty")

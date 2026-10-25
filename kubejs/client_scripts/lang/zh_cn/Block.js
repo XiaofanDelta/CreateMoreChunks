@@ -27,11 +27,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addBlockLang("monworld_separator", "界子分离器")
 
 	// %null%
-	addBlockLang("chunk_spawner", "%s 区块生成器")
-	addBlockLang("grass_block", "§m§o草方块")
-	addBlockLang("dirt", "§m§o泥土")
-	addBlockLang("stone", "§m§o石头")
-	addBlockLang("bedrock", "§m§o基岩")
+	addBlockLang("chunk_spawner", "§kNULL§r区块生成器")
+	addBlockLang("grass_block", "§m§o草方块§r")
+	addBlockLang("dirt", "§m§o泥土§r")
+	addBlockLang("stone", "§m§o石头§r")
+	addBlockLang("bedrock", "§m§o基岩§r")
 
 	/**
 	 * 

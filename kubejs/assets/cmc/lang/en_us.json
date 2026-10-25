@@ -1,4 +1,4 @@
-{	
+{
 	"itemGroup.cmc.resources": "CMC | Resources",
 	"itemGroup.cmc.special_items": "CMC | Special Items",
 	"itemGroup.cmc.tools": "CMC | Tools",
@@ -13,61 +13,26 @@
 
 	"message.cmc.creative_physics_staff": "Yeah, I moved Deleta: Aeronautics to 1.20.1 Forge truely",
 
-	"item.cmc.cmc": "Create: More Chunks",
-    "item.cmc.cmc_icon": "Icon of Create: More Chunks",
-    "item.cmc.rc": "Re_Construction",
-    "item.cmc.c5": "create0501",
-    "item.cmc.cmi": "Create: Mechanism and Innovation",
-    "item.cmc.cmc_icon_black": "Icon with Black Background of Create: More Chunk",
-	"item.cmc.symbol_cmi": "Symbol in CMI Icon",
-	"item.cmc.sun_cmc": "Sun",
+	"message.cmc.hotbar": "\nHotbar Items:",
+	"message.cmc.hotbar.no_item": "§cYou have no items in your hotbar!§r",
+	"message.cmc.copy": "§e[Click to copy to clipboard]§r",
+	"message.cmc.tag": "\nItem Tags:",
+	"message.cmc.tag.no_item": "§cYou are not holding an item!§r",
+	"message.cmc.tag.empty": "§cThis item has no item tags!§r",
 
-	"item.cmc.sun_oneshot_item": "Sun",
-	"item.cmc.small_rf_coil": "Small Redstone Flux Coil",
+	"display.cmc.chunk_spawner.dim": "It seems it cannot be started normally in dimensions other than the Overworld...",
+	"display.cmc.chunk_spawner.item": "It doesn't respond to this item... Try another item?",
+	"display.cmc.copy": "Click to copy text",
 
-	"item.cmc.c_8f8f8f_with_ore": "Letter C Colored #8f8f8f (With Ore)",
-	"item.cmc.m_b9855c_with_water": "Letter M Colored #b9855c (With Water)",
-	"item.cmc.c_7cd520": "Letter C Colored #7cd520",
-	"item.cmc.c_8f8f8f": "Letter C Colored #8f8f8f",
-	"item.cmc.c_82ff00": "Letter C Colored #82ff00",
-	"item.cmc.c_d2d2d2": "Letter C Colored #d2d2d2",
-	"item.cmc.c_fdaf40": "Letter C Colored #fdaf40",
-	"item.cmc.i_5be9b7": "Letter I Colored #5be9b7",
-	"item.cmc.m_b9855c": "Letter M Colored #b9855c",
-	"item.cmc.m_ff81fa": "Letter M Colored #ff81fa",
-	"item.cmc.m_ffb13d": "Letter M Colored #ffb13d",
-
-	"item.cmc.null": "%s",
-	"item.cmc.smithing_template": "%s Smithing Template",
-	"item.cmc.mechanism": "%s Mechanism",
-	"item.cmc.empty": " ",
-	
-	"block.cmc.null_block": "%s",
-	"block.cmc.chunk_spawner": "%s Chunk Spawner",
-	"block.cmc.grass_block": "§m§oGrass Block",
-	"block.cmc.dirt": "§m§oDirt",
-	"block.cmc.stone": "§m§oStone",
-	"block.cmc.bedrock": "§m§oBedrock",
-
-	"block.cmc.sun_oneshot": "Sun",
-	"block.cmc.advanced_component_assembly": "Advanced Component Assembly",
-	"block.cmc.dynamo_base": "Dynamo Base",
-	"block.cmc.biomass_machine": "Biomass Maker",
-	"block.cmc.biomass_machine_io": "Biomass Maker IO Porter",
-	"block.cmc.monworld_separator": "Monworld Separator",
-	
-	"cmc.advanced_component_assemble": "Advanced Component Assemble",
-	"cmc.hammer_crush": "Hammer Crushing",
-	"cmc.biomass_create": "Biomass Making",
-	"cmc.monworld_separate": "Monworld Separate",
-
-	"thermal.hive_hopper": "Hive Hopper",
+	"recipe.jei.recipeType.cmc.test": "Test!",
 
 	"info.cmc.information": "Information",
 	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
 	"info.cmc.db": "Dynamo but nothing can input.\n \nThe basic dynamo that can only store energy.\n \nEnergy will be auto IO.",
+	"info.cmc.unknown": "Unknown",
+	"info.cmc.left_click": "Left Click",
+	"info.cmc.right_click": "Right Click",
 	"info.cmc.mb.biomass_machine_io": "At least 1 in multiblock",
 
 	"block.thermal_extra.abyssal": "Molten Abyssal"
-
 }

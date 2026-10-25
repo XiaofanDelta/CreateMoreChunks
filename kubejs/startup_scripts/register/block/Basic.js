@@ -57,6 +57,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.soundType(SoundType.METAL)
+		.displayName("ME Device Casing")
 
 	// ME 机器外壳
 	addBlock("me_machine_casing")
@@ -67,6 +68,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["iron"])
 		.tagBlock(global.ToolType["pickaxe"])
 		.soundType(SoundType.METAL)
+		.displayName("ME Machine Casing")
 
 	// 太阳
 	addBlock("sun_oneshot")
@@ -92,7 +94,9 @@ StartupEvents.registry("block", (event) => {
 					"layer0": "cmc:item/tool/sun"
 				}
 			})
+			item.displayName("Sun")
 		})
+		.displayName("Sun")
 
 	// 区块机器基底
 	addBlock("chunk_machine_base")

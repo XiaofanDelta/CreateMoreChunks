@@ -3,9 +3,10 @@ StartupEvents.registry("block", (event) => {
 	/**
 	 * 
 	 * @param {string} name 注册id
+	 * @param {string} display 显示名称
 	 * @returns
 	 */
-	function addNullBlock(name) {
+	function addNullBlock(name, display) {
 		let builder = 
 			event.create(`cmc:${name}`)
 				.resistance(404404)
@@ -17,7 +18,7 @@ StartupEvents.registry("block", (event) => {
 		return builder
 	}
 
-	addNullBlock("chunk_spawner")
+	addNullBlock("chunk_spawner", "§kNULL§r Chunk Spawner")
 		.model("cmc:block/missing/chunk_spawner")
 		.tagBoth("chunkbychunk:chunkspawners")
 		.soundType(SoundType.STONE)
@@ -26,13 +27,13 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["pickaxe"])
 		.tagBlock(global.MiningLevel["stone"])
 
-	addNullBlock("null_block")
+	addNullBlock("null_block", "Block of §kNULL§r")
 		.textureAll("cmc:block/missing/missingno")
 		.soundType(SoundType.GLOW_LICHEN)
 		.hardness(0.05)
 		.requiresTool(false)
 	
-	addNullBlock("grass_block")
+	addNullBlock("grass_block", "§m§oGrass Block§r")
 		.model("cmc:block/missing/grass_block")
 		.soundType(SoundType.GRASS)
 		.hardness(1)
@@ -52,7 +53,7 @@ StartupEvents.registry("block", (event) => {
 
 		})
 
-	addNullBlock("dirt")
+	addNullBlock("dirt", "§m§oDirt§r")
 		.textureAll("cmc:block/missing/dirt")
 		.soundType(SoundType.GRAVEL)
 		.hardness(1)
@@ -60,7 +61,7 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.ToolType["shovel"])
 		.tagBoth("minecraft:dirt")
 
-	addNullBlock("stone")
+	addNullBlock("stone", "§m§oStonr§r")
 		.textureAll("cmc:block/missing/stone")
 		.soundType(SoundType.STONE)
 		.hardness(2)
@@ -69,9 +70,8 @@ StartupEvents.registry("block", (event) => {
 		.tagBlock(global.MiningLevel["wooden"])
 		.tagBoth("forge:stone")
 
-	addNullBlock("bedrock")
+	addNullBlock("bedrock", "§m§oBedrock§r")
 		.textureAll("cmc:block/missing/bedrock")
 		.soundType(SoundType.STONE)
 		.unbreakable()
-
 })

@@ -41,8 +41,8 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("entro_alloy", "恩特罗合金")
 	addItemLang("entro_crystal", "恩特罗合金")
 	addItemLang("concurrent_processor", "并发处理器")
-	addItemLang("printed_concurrent_processor", "并发处理器safagjkabgbk")
-	addItemLang("concurrent_processor_print", "并发压印模板")
+	addItemLang("printed_concurrent_processor", "并发电路板")
+	addItemLang("concurrent_processor_press", "并发压印模板")
 
 	// 不知道
 	addItemLang("press_shift", "按下 Shift")
@@ -57,11 +57,11 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("unbreakable_soap", "不毁肥皂")
 	addItemLang("infinity_lava_cell", "无限熔岩元件")
 	addItemLang("teleporter", "传送器")
-	addItemLang("channel_x2_card", "频道x2卡")
-	addItemLang("channel_x3_card", "频道x3卡")
-	addItemLang("channel_x4_card", "频道x4卡")
-	addItemLang("channel_infinite_card", "频道无限卡")
-	addItemLang("channel_default_card", "频道默认卡")
+	addItemLang("channel_x2_card", "频道卡(x2)")
+	addItemLang("channel_x3_card", "频道卡(x3)")
+	addItemLang("channel_x4_card", "频道卡(x4)")
+	addItemLang("channel_infinite_card", "频道卡(infinite)")
+	addItemLang("channel_default_card", "频道卡(default)")
 
 	// 锤子
 	addHammerLang("copper", "铜")
@@ -111,7 +111,7 @@ ClientEvents.lang("zh_cn", (event) => {
 		"放入安山机器所需原料",
 		"放入安山机壳")
 	addSmithingTemplateLang("null", 
-		"%s", 
+		"§kNULL§r", 
 		" ", 
 		"???",
 		"放入 ",
