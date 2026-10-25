@@ -1,0 +1,13 @@
+name = "Create More Chunks"
+author = "XiaofanDelta"
+version = "1.6.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "cd5a829fe21a00aaf545028836673a546c3921be15bf0a4e99f8f7e24adb601f"
+
+[versions]
+forge = "47.4.10"
+minecraft = "1.20.1"
