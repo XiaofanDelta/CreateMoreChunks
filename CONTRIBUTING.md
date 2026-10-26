@@ -26,7 +26,8 @@
 2. 函数 / 变量采用小驼峰式 (**camelCase**), 例: `addRawOreCrushRecipe`、`chanceOutput`
 3. 常量采用全大写蛇形命名 (**SNAKE_CASE**), 例: `CHUNK_SPAWNER_LIST`、`PRESS_DIE`
 4. **严格禁止** 使用 `var` 声明变量与常量, 只能使用 `let` 或 `const`
-5. 全局变量 / 工具对象挂载到 `global` 下, 例: `global.Dev`、`global.EnergyStage`
+5. `const`只用于声明常量, 类似`player = event.player`这样的明显非常量的量应该用`let`声明而不是`const`
+6. 全局变量 / 工具对象挂载到 `global` 下, 例: `global.Dev`、`global.EnergyStage`
 
 ---
 
@@ -53,9 +54,13 @@ ServerEvents.recipes((event) => {
 
 ### 4.2 格式
 
-**第七条** 在非必要时刻禁止写分号 `;` 在代码行末.
+**第七条** `javascript`脚本文件必须使用`4格tab`(`\t`).
 
-**第八条** `if` 或 `else` 语句禁止单行结束, 或者单行 `return`: 
+**第八条** 所有`javascript`16进制数必须用`0x`开头, 后面如果有字母用大写字母, 如`0xF42CBE`.
+
+**第九条** 在非必要时刻禁止写分号 `;` 在代码行末.
+
+**第十条** `if` 或 `else` 语句禁止单行结束, 或者单行 `return`: 
 
 ```js
 if (a === b) return // X
@@ -65,9 +70,9 @@ if (a === b) {
 } // √
 ```
 
-**第九条** 若无特殊情况, 所有条件判断只能使用三等号强等于 `===`, 禁止使用双等号弱等于 `==`.
+**第十一条** 若无特殊情况, 所有条件判断只能使用三等号强等于 `===`, 禁止使用双等号弱等于 `==`.
 
-**第十条** 所有的 lambda (箭头函数) 必须加上小括号 `()`, 且必须在末尾加上大括号 `{}`: 
+**第十二条** 所有的 lambda (箭头函数) 必须加上小括号 `()`, 且必须在末尾加上大括号 `{}`: 
 
 ```js
 xxx.forEach((value) => {
@@ -79,9 +84,9 @@ ServerEvents.recipes((event) => {
 })
 ```
 
-**第十一条** 禁止使用单引号 `''`, 只能使用反引号 `` ` `` 或双引号 `""`. 全角符号尽量少使用, 任务描述例外.
+**第十三条** 禁止使用单引号 `''`, 只能使用反引号 `` ` `` 或双引号 `""`. 全角符号尽量少使用, 任务描述例外.
 
-**第十二条** 所有对象 `{}` 和数组 `[]` 内必须换行 (数组内的数组随意) : 
+**第十四条** 所有对象 `{}` 和数组 `[]` 内必须换行 (数组内的数组随意) : 
 
 ```js
 {
@@ -94,7 +99,7 @@ ServerEvents.recipes((event) => {
 ]
 ```
 
-**第十三条** 方法或构造函数参数列表换行规范: 
+**第十五条** 方法或构造函数参数列表换行规范: 
 
 当长度过长需要换行时, 必须每个参数都换行, 要么就一路到底: 
 
@@ -114,7 +119,7 @@ function name(
 
 ## 第五章 注册规范
 
-**第十四条** 注册时使用 `addXxx` 函数封装, 尽量不使用 `event.create`: 
+**第十六条** 注册时使用 `addXxx` 函数封装, 尽量不使用 `event.create`: 
 
 ```js
 StartupEvents.registry("item", (event) => {
@@ -134,7 +139,7 @@ StartupEvents.registry("item", (event) => {
 })
 ```
 
-**第十五条** 调用链式方法时 **必须** 换行: 
+**第十七条** 调用链式方法时 **必须** 换行: 
 
 ```js
 addBlock("creative_casing")
@@ -145,17 +150,17 @@ addBlock("creative_casing")
     .soundType(SoundType.METAL)
 ```
 
-**第十六条** **严格禁止** 使用 `.displayName()` 方法编码中文名, 所有命名前往[中文本地化脚本](./kubejs/client_scripts/lang/zh_cn/)下处理, 特殊英文名例外.
+**第十八条** **严格禁止** 使用 `.displayName()` 方法编码中文名, 所有命名前往[中文本地化脚本](./kubejs/client_scripts/lang/zh_cn/)下处理, 特殊英文名例外.
 
-**第十七条** 所有注册 id 统一使用 `cmc:` 命名空间.
+**第十九条** 所有注册 id 统一使用 `cmc:` 命名空间.
 
 ---
 
 ## 第六章 配方规范
 
-**第十八条** 在正式发布的版本中, 所有 KJS 添加的配方必须有 id.
+**第二十条** 在正式发布的版本中, 所有 KJS 添加的配方必须有 id.
 
-**第十九条** 普通配方的 id 遵循以下格式: 
+**第二十一条** 普通配方的 id 遵循以下格式: 
 
 ```
 <namespace>:[<recipeNamespace>/]<recipeType>/<outputItem>
@@ -179,7 +184,7 @@ addBlock("creative_casing")
 .id("chunkbychunk:create/mixing/worldshard") // 产物 chunkbychunk:worldshard,用 create:mixing
 ```
 
-**第二十条** 有序配方必须使用标准模板: 
+**第二十二条** 有序配方必须使用标准模板: 
 
 ```js
 kubejs.shaped("minecraft:stone", [
@@ -193,7 +198,7 @@ kubejs.shaped("minecraft:stone", [
 }).id("cmc:crafting/stone")
 ```
 
-**第二十一条** 无序配方或 Create / Thermal 等 Mod 的配方必须使用标准模板, 以下模板任选其一 (无序合成请严格遵守前两个) : 
+**第二十三条** 无序配方或 Create / Thermal 等 Mod 的配方必须使用标准模板, 以下模板任选其一 (无序合成请严格遵守前两个) : 
 
 ```js
 // 无序
@@ -222,29 +227,29 @@ thermal.centrifuge([
 ]).energy(global.EnergyStage[1])
 ```
 
-**第二十二条** **Create 序列合成规范**: 
+**第二十四条** **Create 序列合成规范**: 
 
 - `TransitionalItem` 必须为**不涉及其他配方**的 `create:sequenced_assembly` 物品类
 - 所有 `incomplete_*` 物品统一在 `register/item/Incomplete.js` 中注册
 
 ```js
-const incomplete_machine_frame = "cmc:incomplete_machine_frame"
+const INCOMPLETE_MACHINE_FRAME = "cmc:incomplete_machine_frame"
 
 create.sequenced_assembly(
     "thermal:machine_frame",
     "#forge:storage_blocks/michan", [
-        create.cutting(incomplete_machine_frame, incomplete_machine_frame),
-        create.deploying(incomplete_machine_frame, [
-            incomplete_machine_frame,
+        create.cutting(INCOMPLETE_MACHINE_FRAME, INCOMPLETE_MACHINE_FRAME),
+        create.deploying(INCOMPLETE_MACHINE_FRAME, [
+            INCOMPLETE_MACHINE_FRAME,
             "#forge:storage_blocks/iron"
         ]),
-        create.pressing(incomplete_machine_frame, incomplete_machine_frame)
-    ]).transitionalItem(incomplete_machine_frame)
+        create.pressing(INCOMPLETE_MACHINE_FRAME, INCOMPLETE_MACHINE_FRAME)
+    ]).transitionalItem(INCOMPLETE_MACHINE_FRAME)
         .loops(1)
         .id("thermal:create/sequenced_assembly/machine_frame")
 ```
 
-**第二十三条** 配方类封装使用**原型链**风格, `this.recipe` 保存配方本体: 
+**第二十四条** 配方类封装使用**原型链**风格, `this.recipe` 保存配方本体: 
 
 ```js
 function MaterialRecipe(namespace, material, type) {
@@ -266,7 +271,7 @@ MaterialRecipe.prototype.blockIngotConvert = function (options) {
 
 > **本章为强烈建议性规范, 非强制要求.** 建议按下述方式书写, 以便于后期维护与他人阅读.
 
-**第二十四条** 建议所有**函数 / 类 / 原型方法**都有 JSDoc 注释: 
+**第二十六条** 建议所有**函数 / 类 / 原型方法**都有 JSDoc 注释: 
 
 ```js
 /**
@@ -282,7 +287,7 @@ function addCrushRecipe(input, result, id, chanceOutput) {
 }
 ```
 
-**第二十五条** 建议在撰写物品逻辑时注释逻辑实现的功能, 并分步注释该步骤实现的内容: 
+**第二十七条** 建议在撰写物品逻辑时注释逻辑实现的功能, 并分步注释该步骤实现的内容: 
 
 ```js
 // 自然构件右键运行骨粉逻辑
@@ -301,7 +306,7 @@ BlockEvents.rightClicked((event) => {
 })
 ```
 
-**第二十六条** 建议在同一个文件内包含多种不同分类的代码时, 使用 **注释**: 
+**第二十八条** 建议在同一个文件内包含多种不同分类的代码时, 使用 **注释**: 
 
 ```js
 // 落锤配方
@@ -315,7 +320,7 @@ addRawOreCrushRecipe("minecraft:raw_iron", "minecraft:iron_nugget", "cmc:crush/i
 
 ## 第八章 导入 Java 包
 
-**第二十七条** 在脚本中导入 Java 类时, 应统一使用 `Java.loadClass("package.ClassName")`: 
+**第二十九条** 在脚本中导入 Java 类时, 应统一使用 `Java.loadClass("package.ClassName")`: 
 
 - 必须用 `let` 定义变量
 - 变量名统一采用 **`$` + 类名** 形式
@@ -327,21 +332,21 @@ let $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties"
 let $IPLogic = Java.loadClass("dev.celestiacraft.industrialplatform.api.IPLogic")
 ```
 
-**第二十八条** 导入语句放在文件顶部, 位于 `// priority: xxx` 之后.
+**第三十条** 导入语句放在文件顶部, 位于 `// priority: xxx` 之后.
 
 ---
 
 ## 第九章 文件组织
 
-**第二十九条** `kubejs` 文件夹内所有文件夹名采用类似 Java 包名的命名方式, `js` 文件名采用类似 Java 类名的命名方式.
+**第三十一条** `kubejs` 文件夹内所有文件夹名采用类似 Java 包名的命名方式, `js` 文件名采用类似 Java 类名的命名方式.
 
-**第三十条** `!` 前缀表示**高优先级 / 最先执行**, `@` 前缀表示**全局前置 / 被引用**.
+**第三十二条** `!` 前缀表示**高优先级 / 最先执行**, `@` 前缀表示**全局前置 / 被引用**.
 
 ---
 
 ## 第十章 开发规范 (Dev 模式) 
 
-**第三十一条** 所有注册相关日志通过 `global.Dev.logRegisters` 控制: 
+**第三十三条** 所有注册相关日志通过 `global.Dev.logRegisters` 控制: 
 
 ```js
 if (global.Dev["logRegisters"]) {
@@ -349,7 +354,7 @@ if (global.Dev["logRegisters"]) {
 }
 ```
 
-**第三十二条** `global.Dev` 中的开关: 
+**第三十四条** `global.Dev` 中的开关: 
 
 ```js
 global.Dev = {
@@ -359,13 +364,13 @@ global.Dev = {
 }
 ```
 
-**第三十三条** 正式发布时`global.Dev`内的三项都必须为 `false`.
+**第三十五条** 正式发布时`global.Dev`内的三项都必须为 `false`.
 
 ---
 
 ## 第十一章 代码管理
 
-**第三十四条** 知识产权条款: 
+**第三十六条** 知识产权条款: 
 
 1. 贡献者保留其提交代码的著作权
 2. 项目核心团队拥有代码架构的最终优化权
@@ -374,13 +379,13 @@ global.Dev = {
 
 ## 第十二章 Git 提交规范
 
-> **本章为强烈建议的要求.** 为了使 CMC 的提交历史清晰可追溯, 所有代码提交须遵循 Conventional Commits (约定式提交) 规范.
+> **本章为强烈建议的要求.** 为了使 CMC 的提交历史清晰可追溯, 所有代码提交强烈建议遵循 Conventional Commits (约定式提交) 规范.
 
-**第三十五条** 提交信息的基本格式须遵循以下结构:
+**第三十七条** 提交信息的基本格式遵循以下结构:
 `<类型>(<可选的作用域>): <简短描述>`
 示例: `feat(machine): 添加地热发电机基础逻辑`
 
-**第三十六条** 提交类型须从以下列表中选择:
+**第三十八条** 提交类型从以下列表中选择:
 - ✨ `feat`: 新功能 (Feature). 如增加新物品、新机器、新 KubeJS 机制.
 - 🐛 `fix`: 修复 Bug. 如修复崩溃、贴图丢失、配方冲突.
 - 📝 `docs`: 文档修改. 仅限 `.md` 说明文件.
@@ -391,18 +396,18 @@ global.Dev = {
 - 🚀 `build`: 构建系统或外部依赖修改. 如升级 Forge 版本、引入前置模组.
 - 🧪 `test`: 测试相关.
 
-**第三十七条** 作用域 (Scope) 为选填项, 但推荐填写以精确定位修改位置:
+**第三十九条** 作用域 (Scope) 为选填项, 但推荐填写以精确定位修改位置:
 - 模块层级: `(item)`、`(block)`、`(recipe)`、`(machine)`、`(kubejs)`
 - 资源层级: `(texture)`、`(model)`、`(ui)`、`(lang)`
 - 配置层级: `(packwiz)`
 
-**第三十八条** 简短描述 (Description) 的书写原则:
+**第四十条** 简短描述 (Description) 的书写原则:
 1. 使用祈使句/动词开头 (写"添加"、"修复", 不写"我添加了"、"修复了").
 2. 英文首字母小写, 结尾不加句号.
 3. 尽量控制在 50 个字符内, 保持精炼.
 4. **严格禁止** 情绪化或无意义的描述 (如"emm"、"差不多做好了"、"先提交").
 
-**第三十九条** 版本发布与 Tag 规范:
+**第四十一条** 版本发布与 Tag 规范:
 当整合包准备发布新版本时, 不要使用无意义信息 (如"1.2.0更新") 直接提交.
 须使用 Git Tag (标签) 标记发布节点, 并在 GitHub Releases 页面发布 `.jar` 文件, **严禁**将编译产物直接提交至仓库内.
 ```bash
@@ -414,7 +419,7 @@ git push origin v1.2.0
 
 ## 第十三章 更新日志
 
-**第四十条** 每次做出一个修改 (看情况区分) 需要在 `UpdateLogs.md` 中写上记录, 格式如下 (每一行的 `-` 前后请记得空一个空格) : 
+**第四十二条** 每次做出一个修改 (看情况区分) 需要在 `UpdateLogs.md` 中写上记录, 格式如下 (每一行的 `-` 前后请记得空一个空格) : 
 
 ```markdown
 ## Alpha 1.6.0 Code Update
@@ -440,9 +445,9 @@ git push origin v1.2.0
 
 > **本章为建议性规范, 非强制要求.** 为了 CMC 整体叙事风格的一致性, 建议按下述方式书写.
 
-**第四十一条** 建议任务书文案遵循 **"先问题, 后答案"** 原则, 不建议在第一个任务里透露后续内容.
+**第四十三条** 建议任务书文案遵循 **"先问题, 后答案"** 原则, 不建议在第一个任务里透露后续内容.
 
-**第四十二条** 建议任务书文案风格: 
+**第四十四条** 建议任务书文案风格: 
 
 - **短** —— 不写大段说明文
 - **留白** —— 让玩家自己发现
@@ -460,7 +465,7 @@ git push origin v1.2.0
 >
 > 它们都还在. 只是不在这里.
 
-**第四十三条** 建议颜色代码保留在文案中, 颜色与语义对应: 
+**第四十五条** 建议颜色代码保留在文案中, 颜色与语义对应: 
 
 | 颜色 | 语义 |
 |---|---|
