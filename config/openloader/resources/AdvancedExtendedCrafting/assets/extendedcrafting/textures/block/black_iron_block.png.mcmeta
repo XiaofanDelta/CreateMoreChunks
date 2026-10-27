@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "extendedcrafting:block/black_iron_block_ctm"
+        ]
+    }
+}

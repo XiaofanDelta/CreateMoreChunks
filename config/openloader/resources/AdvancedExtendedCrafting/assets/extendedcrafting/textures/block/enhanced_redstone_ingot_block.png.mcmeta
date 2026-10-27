@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "extendedcrafting:block/enhanced_redstone_ingot_block_ctm"
+        ]
+    }
+}
