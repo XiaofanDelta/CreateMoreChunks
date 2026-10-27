@@ -33,8 +33,8 @@
 	"thermal.hive_hopper": "蜂箱漏斗",
 
 	"info.cmc.information": "信息",
-	"info.cmc.aca": "用一些液体和物品制作高级物品.\n \n一些配方可能留下需要处理的废液.\n \n不是高级(AE)反应仓.",
-	"info.cmc.db": "能源炉但不能输入任何东西.\n \n只能存储能量的基础能源炉.\n \n能量会自动输入输出.",
+	"info.cmc.aca": "用一些液体和物品制作高级物品。\n \n一些配方可能留下需要处理的废液。\n \n不是高级(AE)反应仓。",
+	"info.cmc.db": "能源炉但不能输入任何东西。\n \n只能存储能量的基础能源炉。\n \n能量会自动输入输出。",
 	"info.cmc.unknown": "未知",
 	"info.cmc.left_click": "按下左键",
 	"info.cmc.right_click": "按下右键",

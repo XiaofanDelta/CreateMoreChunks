@@ -155,6 +155,7 @@
 !/config/openloader/resources/
 /config/openloader/resources/*
 !/config/openloader/resources/CMCResources/
+!/config/openloader/resources/AdvancedExtendedCrafting/
 # ==========
 
 # 临时文件
