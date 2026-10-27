@@ -76,7 +76,13 @@ Developer
 
 │---├── [Done.md](./todo/Done.md)
 
-│---└── [Main.md](./todo/Main.md)
+│---├── [Main.md](./todo/Main.md)
+
+│---├── [Plan.md](./todo/Plan.md)
+
+│---├── [README.md](./todo/README.md) : 待办导航
+
+│---└── [Setting.md](./todo/Setting.md)
 
 ├── [tools/](./tools/) : 工具脚本
 
@@ -104,7 +110,7 @@ Developer
 | `export/` | PCL2 导出配置和发布流程 |
 | `icon/` | CMC 图标 (黑底 / 透明底, 多尺寸)  |
 | `images/` | 素材 (封面、标题、标识、参考图)  |
-| `todo/` | 待办清单 (`Main.md`) 和完成记录 (`Done.md`)  |
+| `todo/` | 待办 (Main / Setting / Plan) 与完成记录 (Done), 导航见 `README.md`  |
 | `tools/` | 本地脚本 (完整性清单、版本号核对、模组清单校验)  |
 
 ---
