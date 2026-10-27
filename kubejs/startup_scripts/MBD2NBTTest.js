@@ -1,3 +1,4 @@
+// ignored: true
 let CompoundTag = Java.loadClass("net.minecraft.nbt.CompoundTag")
 let ListTag = Java.loadClass("net.minecraft.nbt.ListTag")
 let StringTag = Java.loadClass("net.minecraft.nbt.StringTag")
