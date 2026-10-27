@@ -4,6 +4,8 @@
 > 
 > 本目录只放**设计参考**, 不是运行时文件——改文档不会影响游戏, 改代码才会.
 > 
+> 模组清单不在本目录: 见 [`../ModsList.csv`](../ModsList.csv) (PCL2 CE 导出, 由 `tools/CheckModsList.py` 校验).
+> 
 > 新人建议阅读顺序: Worldview → Gameflow → 其余按需.
 
 ---
@@ -23,14 +25,6 @@
 
 - **事实源**: 无限源质以本篇为准 (Worldview / Gameflow 只做概述并链接到这里)
 - 什么时候改: 源质种类、代表物、用途、"无限"的实现方式变化
-
-### [ModsList.md](./ModsList.md)
-
-模组清单 (文件名 / 显示名 / modid / 版本).
-
-- **已停止维护 (2026-10-25)**: 后续由 `packwiz` 生成, 本文件待其上线后删除
-- 现存数据来自一次崩溃报告的 Mod List, 包含 jar-in-jar, 与实际 `mods/` 目录不完全一致
-- 什么时候改: **不再维护**, 请勿基于它做依赖判断
 
 ### [Planet.md](./Planet.md)
 

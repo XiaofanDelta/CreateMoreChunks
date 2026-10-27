@@ -72,7 +72,7 @@
 - [x] `docs/InfinitySource.md` / `docs/QuestsStyle.md`: 内容互换归位 (文件名与内容一致)
 - [x] `docs/Planet.md`: 补全 9 种星球的获取方式与实现状态 (含海王星未定稿说明)
 - [x] 无限源质描述收敛到 `InfinitySource.md`, Worldview / Gameflow 改为概述 + 链接
-- [x] `ModsList.md`: 标注停止维护 (后续交给 packwiz)
+- [x] `ModsList.md`: 标注停止维护; 2026-10-27 改为 PCL2 CE 导出的 `Developer/ModsList.csv`, 原 md 已删除
 - [x] `ModUpdateBlacklist.json5`: 移除已解禁的 Amendments, 写明"保留版本, 升级/回退都不允许" 
 
 ### 流程 / 工具

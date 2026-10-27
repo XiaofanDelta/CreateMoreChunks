@@ -20,8 +20,6 @@ Developer
 
 │---├── [InfinitySource.md](./docs/InfinitySource.md) : 无限源质
 
-│---├── [ModsList.md](./docs/ModsList.md) : 模组列表
-
 │---├── [Planet.md](./docs/Planet.md) : 星球列表
 
 │---├── [QuestsStyle.md](./docs/QuestsStyle.md) : 任务书文风
@@ -84,7 +82,11 @@ Developer
 
 │---├── [Convert.py](./tools/Convert.py) : 文件哈希校验生成
 
+│---├── [CheckModsList.py](./tools/CheckModsList.py) : 模组清单校验 / 补全
+
 │---└── [CheckVersion.py](./tools/CheckVersion.py) : 发版前版本号核对
+
+├── [ModsList.csv](./ModsList.csv) : 模组清单 (PCL2 CE 导出)
 
 ├── [README.md](./README.md) : 本文件
 
@@ -103,7 +105,7 @@ Developer
 | `icon/` | CMC 图标 (黑底 / 透明底, 多尺寸)  |
 | `images/` | 素材 (封面、标题、标识、参考图)  |
 | `todo/` | 待办清单 (`Main.md`) 和完成记录 (`Done.md`)  |
-| `tools/` | 本地脚本 (完整性清单、版本号核对)  |
+| `tools/` | 本地脚本 (完整性清单、版本号核对、模组清单校验)  |
 
 ---
 
@@ -159,6 +161,31 @@ python CheckVersion.py
 一致时退出码 `0`, 不一致时列出差异并以 `1` 退出;
 `UpdateLogs.md` 的日期仍是 `26/__/__` 这类占位符时给出警告.
 完整发布流程见 [`export/README.md`](./export/README.md) .
+
+### `tools/CheckModsList.py`
+
+校验并补全 [`ModsList.csv`](./ModsList.csv): 列出空字段, 交互式询问缺失内容,
+并删除 `Mod 文件路径` 列 (绝对路径只对本机有意义).
+
+**用法**: 
+
+```bash
+cd Developer/tools
+python CheckModsList.py            # 报告 + 交互补全
+python CheckModsList.py --check    # 只检查, 有缺失时退出码 1
+```
+
+**规则**:
+
+| 项目 | 行为 |
+|---|---|
+| 空字段 | 逐行询问; 直接回车或输入 `-` 表示"确实没有", 记为 `-` |
+| `-` 占位 | 视为已确认, 不再重复询问 |
+| 路径列 | 每次运行都会删除 `Mod 文件路径` 列 (首次之后不再提示) |
+| 写回 | 保留 UTF-8 BOM 与原换行符, 其余列顺序不变 |
+
+`ModsList.csv` 来自 PCL2 CE 的"导出模组信息"功能, 是**平铺清单**, 不含分类;
+装 / 删模组后重新导出, 再跑一次本脚本补全即可.
 
 ---
 

@@ -43,7 +43,7 @@ python CheckVersion.py
 - [ ] `pack.toml` 的 `version` 已同步 (packwiz 发布用, 脚本会一起核对)
 - [ ] packwiz: `packwiz refresh` 已跑, `pack.toml` 的 `[index] hash` 与 `index.toml` 实际 sha256 一致
 - [ ] `index.toml` 里没有 `Developer/` 条目 (`.packwizignore` 已排除, refresh 后生效)
-- [ ] `docs/ModsList.md` 已停止维护 (2026-10-25 起交给 packwiz), 不再需要人工刷新
+- [ ] 模组清单 `Developer/ModsList.csv` 已用 PCL2 CE 重新导出, 并跑过 `python CheckModsList.py --check`
 - [ ] 打包清单与根 `README.md` 的"整合包打包所需文件"一致
 - [ ] `kubejs/probe`、`kubejs/jsconfig.json`、`kubejs/README.txt` 未被包进去 (`config.txt` 已排除)
 - [ ] `resourcepacks/` 里的实际文件名与 `config.txt` 中写死的那一行一致
