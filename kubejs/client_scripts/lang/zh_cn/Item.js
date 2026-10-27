@@ -39,7 +39,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addItemLang("null_mechanism","%s 构件")
 	addItemLang("andesite_mixture", "安山混合物")
 	addItemLang("entro_alloy", "恩特罗合金")
-	addItemLang("entro_crystal", "恩特罗合金")
+	addItemLang("entro_crystal", "恩特罗水晶")
 	addItemLang("concurrent_processor", "并发处理器")
 	addItemLang("printed_concurrent_processor", "并发电路板")
 	addItemLang("concurrent_processor_press", "并发压印模板")
@@ -96,6 +96,7 @@ ClientEvents.lang("zh_cn", (event) => {
 	addInfinitySourceLang("coal", "煤炭")
 	addInfinitySourceLang("lapis_lazuli", "青金石")
 	addInfinitySourceLang("lead", "铅")
+	addInfinitySourceLang("glow_stone", "荧石")
 
 	// 锻造模板
 	addSmithingTemplateLang("basic", 

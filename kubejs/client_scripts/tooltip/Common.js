@@ -7,7 +7,6 @@ ItemEvents.tooltip((event) => {
 	addCommonTooltip("cmc:wooden_mechanism")
 	addCommonTooltip("cmc:glue_bucket")
 	addCommonTooltip("cmc:sun_oneshot")
-	addCommonTooltip("cmc:sun_oneshot_item")
 	addCommonTooltip("cmc:chunk_spawner")
 	addCommonTooltip("cmc:empty_schematic")
 	addCommonTooltip("cmc:press_shift")
