@@ -27,13 +27,6 @@ ServerEvents.recipes((event) => {
 	]).heated()
 		.id("create:mixing/brass_ingot")
 
-	// 安山合金
-	create.mixing(
-		"create:andesite_alloy", [
-		"minecraft:andesite",
-		"chunkbychunk:worldfragment"
-	]).id("create:mixing/andesite_alloy")
-
 	// 世界宝石
 	create.mixing(
 		"cmc:world_gem", [

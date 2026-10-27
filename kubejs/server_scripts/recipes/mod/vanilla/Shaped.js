@@ -21,15 +21,6 @@ ServerEvents.recipes((event) => {
 		I: "minecraft:cobblestone"
 	}).id("cmc:drop_hammer")
 
-	// 安山合金
-	kubejs.shaped("create:andesite_alloy", [
-		"BA",
-		"AB"
-	], {
-		A: "minecraft:andesite",
-		B: "chunkbychunk:worldfragment"
-	}).id("create:andesite_alloy")
-
 	// 黄铜手
 	kubejs.shaped(
 		"create:brass_hand", [

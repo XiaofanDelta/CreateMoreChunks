@@ -135,7 +135,5 @@ ServerEvents.recipes((event) => {
 			"create:andesite_casing",
 			"#forge:storage_blocks/iron"
 		).id("cmc:hyw/41/7")
-
 	}
-
 })
