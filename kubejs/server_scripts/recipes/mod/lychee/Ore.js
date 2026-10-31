@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
 	 */
 	function addCrushRecipe(input, result, id, chanceOutput) {
 
-		let postList = (chanceOutput ?? true) ?
+		let postList = !(chanceOutput === false) ?
 			[
 				Post.drop_item(Item.of(result, 5)),
 				Post.drop_item(Item.of(result)).withChance(0.3)

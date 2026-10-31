@@ -49,8 +49,8 @@ ServerEvents.recipes((event) => {
 	 * 生成 Post
 	 */
 	HammerCrushRecipe.prototype.addHammerDamage = function (damage) {
-		this.itemDamage = damage ?? 1
-		
+		this.itemDamage = damage || 1
+
 		this.defaultPost.unshift(Post.damage_item(this.itemDamage))
 
 		return this
@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
 	 * @returns 
 	 */
 	HammerCrushRecipe.prototype.build = function (id, hideJEI) {
-		this.recipe.post(this.defaultPost).hide_in_viewer(hideJEI ?? true)
+		this.recipe.post(this.defaultPost).hide_in_viewer((hideJEI === false) ? false : true)
 
 		if (id) {
 			this.recipe.id(id)
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
 			.outputItems(this.outputItems)
 
 		if (this.recipeID) {
-			this.jeiId = id ?? this.recipeID + "_jei"
+			this.jeiId = id || this.recipeID + "_jei"
 			this.jeiRecipe.id(this.jeiId)
 		}
 

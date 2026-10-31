@@ -259,7 +259,7 @@ function MaterialRecipe(namespace, material, type) {
 }
 
 MaterialRecipe.prototype.blockIngotConvert = function (options) {
-    options = options ?? {}
+    options = (options === undefined) ? {} : options
     // ...
     return this
 }

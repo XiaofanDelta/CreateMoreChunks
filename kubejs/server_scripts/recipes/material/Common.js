@@ -193,8 +193,7 @@ ServerEvents.recipes((event) => {
 	 * @returns {MaterialRecipe}
 	 */
 	MaterialRecipe.prototype.blockIngotConvert = function (options) {
-
-		options = options ?? {}
+		options = (options === undefined || options === null) ? {} : options
 
 		// 合成: 锭 -> 块
 		this.recipes.ingotToBlock.crafting = kubejs.shaped(
@@ -210,7 +209,7 @@ ServerEvents.recipes((event) => {
 		).id(`${this.namespace}:${this.material}_ingot_from_block`)
 
 		// 压缩/解压
-		if (options["registerPress"] ?? true) {
+		if (options["registerPress"] !== false) {
 			// 压缩: 锭 -> 块
 			this.recipes.ingotToBlock.press = thermal.press(
 				this.ingredients.block.first,
@@ -243,8 +242,7 @@ ServerEvents.recipes((event) => {
 	 * @returns {MaterialRecipe}
 	 */
 	MaterialRecipe.prototype.ingotNuggetConvert = function (options) {
-
-		options = options ?? {}
+		options = (options === undefined || options === null) ? {} : options
 
 		// 合成: 锭 -> 粒
 		this.recipes.ingotToNugget.crafting = kubejs.shapeless(
@@ -253,7 +251,7 @@ ServerEvents.recipes((event) => {
 		).id(`${this.namespace}:${this.material}_nugget_from_ingot`)
 
 		// 合成: 粒 -> 锭
-		if (options["registerShapeless"] ?? true) {
+		if (options["registerShapeless"] !== false) {
 			this.recipes.nuggetToIngot.crafting = kubejs.shaped(
 				this.ingredients.item,
 				PATTERNS["3x3"],
@@ -262,7 +260,7 @@ ServerEvents.recipes((event) => {
 		}
 
 		// 压缩/解压
-		if (options["registerPress"] ?? true) {
+		if (options["registerPress"] !== false) {
 			// 压缩: 粒 -> 锭
 			this.recipes.nuggetToIngot.press = thermal.press(
 				this.ingredients.item.first,
@@ -295,11 +293,10 @@ ServerEvents.recipes((event) => {
 	 * @returns {MaterialRecipe}
 	 */
 	MaterialRecipe.prototype.plateConvert = function (options) {
-
-		options = options ?? {}
+		options = (options === undefined || options === null) ? {} : options
 
 		// 机械动力压板
-		if (options["registerCreate"] ?? true) {
+		if (options["registerCreate"] !== false) {
 			this.recipes.plate.create = create.pressing(
 				this.ingredients.plate.first,
 				this.itemTag
@@ -307,14 +304,13 @@ ServerEvents.recipes((event) => {
 		}
 
 		// 热力压板
-		if (options["registerThermal"] ?? true) {
+		if (options["registerThermal"] !== false) {
 			this.recipes.plate.press = thermal.press(
 				this.ingredients.plate.first,
 				this.itemTag
 			).id(`${this.namespace}:thermal/press/${this.material}_plate`)
 		}
 		
-
 		return this
 	}
 
@@ -336,5 +332,4 @@ ServerEvents.recipes((event) => {
 
 	new MaterialRecipe("extendedcrafting", "black_iron")
 		.plateConvert()
-
 })
