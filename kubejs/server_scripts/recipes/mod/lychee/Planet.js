@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
 		EMPTY_PLANET,
 		"minecraft:water"
 	).post([
-		Post.if([
+		Post.drop_item("cmc:neptune").contextual(
 			Contextual.and([
 				Contextual.execute("execute if block ~1 ~ ~1 minecraft:water"),
 				Contextual.execute("execute if block ~ ~ ~1 minecraft:water"),
@@ -104,9 +104,8 @@ ServerEvents.recipes((event) => {
 				Contextual.execute("execute if block ~1 ~ ~-1 minecraft:water"),
 				Contextual.execute("execute if block ~ ~ ~-1 minecraft:water"),
 				Contextual.execute("execute if block ~-1 ~ ~-1 minecraft:water")
-			]),
-			Post.drop_item("cmc:neptune")
-		],[])
+			])
+		)
 	]).id("cmc:lychee/neptune")
 
 	// 火星 (燃烧)
