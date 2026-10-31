@@ -19,8 +19,8 @@
 			linked_quest: "1413838D06EDBC0F"
 			shape: "pentagon"
 			size: 1.5d
-			x: -3.5d
-			y: 3.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			id: "486F960E4BC9BE6F"
@@ -191,6 +191,7 @@
 				"0B63583975CC0B3F"
 				"4AB1CF1639DF14EC"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"在泥土深处，有什么东西还在跳动。"
 				""
@@ -249,6 +250,7 @@
 			dependencies: [
 				"0B63583975CC0B3F"
 				"2A99214568956498"
+				"078F58CB54DF1D23"
 			]
 			id: "5C254364EA99CB16"
 			rewards: [{
@@ -262,8 +264,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -377,6 +379,7 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 5.0d
@@ -403,6 +406,17 @@
 			}]
 			x: 6.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7C01270C06610614"]
+			id: "078F58CB54DF1D23"
+			tasks: [{
+				id: "4AF527BAE31DE709"
+				item: "cmc:andesite_mixture"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
 		}
 	]
 	title: "1.1 探索的时光"
