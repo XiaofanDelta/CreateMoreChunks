@@ -307,6 +307,16 @@ Mod:
  - CMC 代码规范 [CONTRIBUTING.md](./CONTRIBUTING.md)
  - 任务书世界观文案
  - 蜂箱漏斗jei
+ - 安山合金粉的熔炼 / 高炉配方
+ - 界子分离器配方: 世界物质粉 + 四根元素棒 → 四元素粉
+ - 界子分离器燃料配方: 世界碎片 (100t)
+ - 世界亲和热量等级 `cmc:world_affinity` (热源 `chunkbychunk:worldcore`)
+ - 海王星配方 (3×1×3 水坑判定)
+ - JEI 流体别名: `cmc:world_fluid` → `World Matter`
+ - 世界物质块的模型与纹理 (方块注册待补)
+ - FTBQ 1.1 章: 安山混合物任务与依赖调整
+ - 待办文档拆分: `Main` / `Setting` / `Plan` / `Done` + 导航
+ - `Developer/ModsList.csv` 与 `tools/CheckModsList.py`
 
 Mod:
 
@@ -331,10 +341,26 @@ Mod:
  - 升级一些 mod
  - Extended Crafting 奇点催化剂改为湮灭奇点
  - [`.gitignore`](./.gitignore)的完善
+ - `Material` 系统迁移至 Nebula Libs (`NebulaEvents.registerMaterial`)
+ - Nebula Libs 2.5.5 → 2.6.10, 改为 `cmc-1.0.0.jar` 内嵌
+ - 全工程移除 `??` 运算符 (Rhino 不支持), 改用显式判空
+ - 1.1 章安山合金链路: 锤砸安山岩 → 粉 → 混合物 → 加水 → 合金粉 → 烧制
+ - MBD2 机器与配方类型的物品格背景统一为空白
+ - 海王星判定改用 `Post.contextual`, 修正八格坐标
+ - 合成拓展资源包从 `CMCResources` 拆分为 `AdvancedExtendedCrafting`
+ - 补全 AE2 压印模板与热力燃料的配方 id
+ - 修正 `entro_crystal` 中文名, 补充荧石源质中文
 
 ### 删除内容
 
  - 篝火烤粗铁配方
  - FTBQ 部分冗余任务描述
+ - 安山岩 + 世界碎片 → 安山合金 (工作台 / 搅拌)
+ - 世界流体作为 Create Addition 液体燃料的配方
+ - 组件装配的两条无 id 测试配方
+ - `MBD2NBTTest.js` 暂时停用 (`// ignored: true`)
+ - `cmc:sun_oneshot_item` 的 tooltip 与 `Waste.js` 空壳
+ - `docs/ModsList.md` (改用 PCL2 CE 导出的模组清单)
+ - `ldlib:slot.png` 贴图覆盖与未使用的 `advanced_card` / `basic_card`
 
 ---
