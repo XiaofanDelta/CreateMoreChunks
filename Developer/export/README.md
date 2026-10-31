@@ -22,9 +22,15 @@ cd Developer/tools
 python CheckVersion.py
 ```
 
-脚本会同时读 `UpdateLogs.md` 最后一条标题、`config.txt` 的 `Version`
-和 `pack.toml` 的 `version` (packwiz 启用后),
-四处不一致时以退出码 `1` 结束, 必须先修再打包.
+脚本会同时读 `UpdateLogs.md` 最后一条标题、`config.txt` 的 `Version`、`pack.toml` 的 `version`
+(packwiz 启用后), 以及三处界面配置:
+
+- `config/fancymenu/customization/title_screen_layout.txt` — 标题界面上的版本文字
+- `config/fancymenu/options.txt` — `custom_window_title`
+- `config/customwindowtitle-client.toml` — `title`
+
+任何一处不一致都会以退出码 `1` 结束, 必须先修再打包.
+后三处是本地界面配置, 文件缺失时只记警告.
 
 `export/config.txt` 的 `Version` 写 `Alpha-1.6.0`——与 `Global.js` 拼出来的版本号同源
 (游戏内显示会多一个颜色代码 `§0`). 当前是 Alpha 内测、不上 Modrinth, 所以保留 `Alpha-` 前缀;
@@ -40,6 +46,7 @@ python CheckVersion.py
 
 - [ ] `Global.js` 版本号已改, `python CheckVersion.py` 退出码为 0
 - [ ] `UpdateLogs.md` 已加本版本条目, 并填**真实日期** (当前 1.6.0 仍是 `26/__/__`)
+- [ ] 三处界面版本已同步: 标题界面 / `custom_window_title` / `customwindowtitle` (脚本会核对)
 - [ ] `pack.toml` 的 `version` 已同步 (packwiz 发布用, 脚本会一起核对)
 - [ ] packwiz: `packwiz refresh` 已跑, `pack.toml` 的 `[index] hash` 与 `index.toml` 实际 sha256 一致
 - [ ] `index.toml` 里没有 `Developer/` 条目 (`.packwizignore` 已排除, refresh 后生效)

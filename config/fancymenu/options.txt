@@ -28,7 +28,7 @@ S:custom_game_intro_skip_text = '';
 B:show_custom_window_icon = 'false';
 S:custom_window_icon_macos = '';
 S:custom_window_icon_32 = '';
-S:custom_window_title = 'Create:More Chunk Alpha 1.5.0';
+S:custom_window_title = 'Create:More Chunk Alpha 1.6.0';
 S:custom_window_icon_16 = '';
 
 
