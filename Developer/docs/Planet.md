@@ -26,7 +26,7 @@
 | 6 | Jupiter 木星 | `cmc:jupiter` | 任意原木右键空星球 | 已实现 |
 | 7 | Saturn 土星 | `cmc:saturn` | 任意泥土右键空星球 | 已实现 |
 | 8 | Uranus 天王星 | `cmc:uranus` | 空星球丢入空气 (`item_inside`), 延迟 3 tick | 已实现 |
-| 9 | Neptune 海王星 | `cmc:neptune` | **临时**: 水星配方 10% 概率附带 | **待重做**, 见第三节 |
+| 9 | Neptune 海王星 | `cmc:neptune` | 空星球丢入水中, 且中心周围 8 格全是水 | 已实现 |
 
 ---
 
@@ -45,14 +45,19 @@ Create 搅拌: 太阳 + 8 颗行星 + 空星球 → **1 地球 + 8 空星球**.
 
 ---
 
-## 三、海王星 (未定稿)
+## 三、海王星 (3×1×3 水坑)
 
-当前实现是**水星配方的附带掉落**: 往空星球里灌水, 必出水星, 10% 概率额外给海王星.
-这是临时兜底, 不是最终设计.
+与水星共用 `item_inside` 的水触发, 但海王星额外要求**中心周围 8 格全是水**:
 
-目标逻辑是检测 **3×1×3 的水坑**: 8 个 `execute if block ~ ~ ~ water` 判定围住中心,
-满足才给海王星. 这段代码以注释形式保留在 [Planet.js:92-110](../../kubejs/server_scripts/recipes/mod/lychee/Planet.js#L92-L110),
-等重写时再启用——注意注释里 `~-1 ~ ~1` 出现了两次, 最后一行应该是 `~-1 ~ ~-1`, 别直接抄.
+```
+~1 ~ ~1    ~ ~ ~1    ~-1 ~ ~1
+~1 ~ ~     [中心]    ~-1 ~ ~
+~1 ~ ~-1   ~ ~ ~-1   ~-1 ~ ~-1
+```
+
+实现是 8 个 `Contextual.execute("execute if block … minecraft:water")` 用 `Contextual.and` 串联,
+全部成立才掉落 (见 [Planet.js](../../kubejs/server_scripts/recipes/mod/lychee/Planet.js) 的 `// 海王星` 段).
+不满足时只有水星, 不会给海王星.
 
 ---
 

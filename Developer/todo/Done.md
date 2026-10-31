@@ -2,7 +2,7 @@
 
 > 记录已经完成的待办. 按版本归档.
 > 
-> 最后复核: 2026-10-24 (对照 `mods/`、`kubejs/` 与 `docs/` 实际文件)
+> 最后复核: 2026-11-01 (对照 `docs/`、`Planet.js` 与 todo 中的勾选状态)
 
 ---
 
@@ -87,6 +87,16 @@
 ### 待办卫生
 
 - [x] `Main.md` / `Done.md`: 修正误标完成项、补复核日期、同步 null 方块完成状态
+
+---
+
+## 待办归档 (2026-11-01)
+
+> 以下条目此前已完成, 本次从 `Main.md` / `Setting.md` 移入.
+
+- [x] 海王星: 3×1×3 水坑检测方案 + 配方实现 (`Planet.js`, 周围 8 格全为水才掉落)
+- [x] `energy_slot` 抽能量逻辑 (`event/mbd/ACAEnergySlot.js`, 能量 trait 名 `forge_energy_storage`)
+- [x] `FluidFuel.js`: 世界流体燃烧时间降低
 
 ---
 
