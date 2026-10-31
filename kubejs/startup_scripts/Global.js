@@ -1,6 +1,6 @@
 // priority: 100
 
-let $LocalDateTime 
+let $LocalDateTime
 	= Java.loadClass("java.time.LocalDateTime")
 
 let month = $LocalDateTime.now().getMonthValue()
@@ -136,15 +136,15 @@ global.dyeColorGroup = [
  * @type {string[]}
  */
 global.planetList = [
-		"sun",
-		"mercury",
-		"venus",
-		"earth",
-		"mars",
-		"jupiter",
-		"saturn",
-		"uranus",
-		"neptune",
+	"sun",
+	"mercury",
+	"venus",
+	"earth",
+	"mars",
+	"jupiter",
+	"saturn",
+	"uranus",
+	"neptune",
 ]
 
 /**

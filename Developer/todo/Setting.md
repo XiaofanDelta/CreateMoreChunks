@@ -23,11 +23,11 @@
 
 ## 三、星球
 
-- [ ] **海王星: 3×1×3 水坑检测方案**
+- [x] **海王星: 3×1×3 水坑检测方案**
   - 候选: Lychee `block_interacting` / Create 混合 / `item_inside`
   - 现状: 临时用"灌水 10% 概率"兜底, 真正的 8 格判定以注释保留在
     [`Planet.js`](../../kubejs/server_scripts/recipes/mod/lychee/Planet.js)
-- [ ] **海王星配方实现** (依赖上面的方案定稿)
+- [x] **海王星配方实现** (依赖上面的方案定稿)
 
 ---
 
