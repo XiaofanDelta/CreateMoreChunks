@@ -39,30 +39,39 @@ ServerEvents.recipes((event) => {
 		return this
 	}
 
-	InscriberRecipe.prototype.press = function () {
+	/**
+	 * 
+	 * @param {ResourceLocation_} [id] 
+	 * @returns 
+	 */
+	InscriberRecipe.prototype.press = function (id) {
 		this.recipe.mode = "press"
-		return event.custom(this.recipe)
+		return id ? event.custom(this.recipe).id(id) : event.custom(this.recipe)
 	}
 
-	InscriberRecipe.prototype.inscribe = function () {
+	/**
+	 * 
+	 * @param {ResourceLocation_} [id] 
+	 * @returns 
+	 */
+	InscriberRecipe.prototype.inscribe = function (id) {
 		this.recipe.mode = "inscribe"
-		return event.custom(this.recipe)
+		return id ? event.custom(this.recipe).id(id) : event.custom(this.recipe)
 	}
 
 	// 压印模板	
 	new InscriberRecipe("ae2:silicon_press")
 		.top("ae2:silicon_press")
 		.middle("#forge:plates/iron")
-		.inscribe()
+		.inscribe("ae2:inscriber/silicon_press")
 
 	new InscriberRecipe("ae2:logic_processor_press")
 		.top("ae2:logic_processor_press")
 		.middle("#forge:plates/iron")
-		.inscribe()
+		.inscribe("ae2:inscriber/logic_processor_press")
 
 	new InscriberRecipe("ae2:calculation_processor_press")
 		.top("ae2:calculation_processor_press")
 		.middle("#forge:plates/iron")
-		.inscribe()
-
+		.inscribe("ae2:inscriber/calculation_processor_press")
 })

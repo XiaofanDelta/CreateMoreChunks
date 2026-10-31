@@ -65,10 +65,10 @@ ServerEvents.recipes((event) => {
 	 */
 	HammerCrushRecipe.prototype.addDropItemPost = function (item, count, chance) {
 		this.defaultPost.push(
-			Post.drop_item(Item.of(item, count ?? 1)).withChance(chance ?? 1)
+			Post.drop_item(Item.of(item, count || 1)).withChance(chance || 1)
 		)
 
-		this.outputItems.push(Item.of(item, count ?? 1).withChance(chance ?? 1))
+		this.outputItems.push(Item.of(item, count || 1).withChance(chance || 1))
 
 		return this
 	}
@@ -185,5 +185,4 @@ ServerEvents.recipes((event) => {
 			.recipe.block_in(Block.getBlock(`compressium:${block}_${i}`))			
 		}
 	})
-
 })
