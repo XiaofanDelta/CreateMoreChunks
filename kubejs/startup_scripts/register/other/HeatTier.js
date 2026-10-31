@@ -1,6 +1,7 @@
-// ignored: true
 CreateHeatJS.registerHeatEvent((event) => {
-	event.registerHeat("cmc:primordial_heat", 0xff8c00)
-		.addHeatSource("chunkbychunk:worldcore")
-		.register()
+	event.registerHeat("cmc:world_affinity", (builder) => {
+		builder.color(0x3333AA)
+			.addBlockHeatSource(Block.getBlock("chunkbychunk:worldcore")) 
+			.build()
+	})
 })

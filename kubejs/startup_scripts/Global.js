@@ -158,3 +158,7 @@ global.mekTiers = [
 	"elite",
 	"ultimate"
 ]
+
+global.heatLevel = {
+	WORLD_AFFINITY: "cmc:world_affinity"
+}
