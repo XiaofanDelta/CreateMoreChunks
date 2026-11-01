@@ -30,7 +30,7 @@
 /icon-exports-*/
 /新建文件夹/
 /.idea/
-/.vscode/
+/.vscode/*
 /fancymenu_data/buddy/buddy_leveling.json
 /fancymenu_data/buddy/buddy_save.json
 /fancymenu_data/action_favorites.json
@@ -66,6 +66,7 @@
 # ==========
 
 # 允许的文件
+!/.vscode/kubejs.code-snippets
 !/ldlib/mbd2/*
 !/kubejs/probe/docs/*
 
