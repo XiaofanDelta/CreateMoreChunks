@@ -1,4 +1,30 @@
 ServerEvents.highPriorityData((event) => {
+	const TYPE_MAP = {
+		ingot: {
+			suffix: "ingot",
+			tag: "ingots"
+		},
+		nugget: {
+			suffix: "nugget",
+			tag: "nuggets"
+		},
+		block: {
+			suffix: "block",
+			tag: "storage_blocks"
+		},
+		plate: {
+			suffix: "plate",
+			tag: "plates"
+		},
+		dust: {
+			suffix: "dust",
+			tag: "dusts"
+		},
+		rod: {
+			suffix: "rod",
+			tag: "rods"
+		}
+	}
 
 	/**
 	   *
@@ -117,7 +143,7 @@ ServerEvents.highPriorityData((event) => {
 	}
 
 	/**
-	 * 替换杆
+	 * 替换齿轮
 	 * @param {Internal.Item_} gearId - 替换为的齿轮物品
 	 * @returns {MaterialUnification}
 	 */
@@ -187,18 +213,8 @@ ServerEvents.highPriorityData((event) => {
 	 * })
 	 */
 	MaterialUnification.prototype.registerAll = function (items) {
-		// 类型映射表: 键 -> { suffix, tag }
-		const typeMap = {
-			ingot: { suffix: "ingot", tag: "ingots" },
-			nugget: { suffix: "nugget", tag: "nuggets" },
-			block: { suffix: "block", tag: "storage_blocks" },
-			plate: { suffix: "plate", tag: "plates" },
-			dust: { suffix: "dust", tag: "dusts" },
-			rod: { suffix: "rod", tag: "rods" }
-		}
-
-		for (const [type, itemId] of Object.entries(items)) {
-			const config = typeMap[type]
+		for (let [type, itemId] of Object.entries(items)) {
+			let config = TYPE_MAP[type]
 			if (config) {
 				// 调用通用替换方法
 				this.replaceType(config.suffix, config.tag, itemId)
@@ -246,10 +262,10 @@ ServerEvents.highPriorityData((event) => {
 		.replaceDust("thermal:lead_dust")
 		.replaceRawOre("thermal:raw_lead")
 		.replaceRawOreBlock("thermal:raw_lead_block")
-	
+
 	new MaterialUnification("ender_pearl")
 		.replaceDust("ae2:ender_dust")
-	
+
 	new MaterialUnification("gold")
 		.replaceDust("thermal:gold_dust")
 		.replacePlate("create:golden_sheet")
@@ -260,7 +276,7 @@ ServerEvents.highPriorityData((event) => {
 
 	new MaterialUnification("diamond")
 		.replaceDust("createaddition:diamond_grit")
-	
+
 	new MaterialUnification("copper")
 		.replaceNugget("thermal:copper_nugget")
 		.replacePlate("create:copper_sheet")
@@ -271,7 +287,7 @@ ServerEvents.highPriorityData((event) => {
 		.replacePlate("create:iron_sheet")
 		.replaceDust("thermal:iron_dust")
 		.replaceRod("thermal_extra:iron_rod")
-	
+
 	new MaterialUnification("tin")
 		.replaceRawOre("thermal:raw_tin")
 		.replaceRawOreBlock("thermal:raw_tin_block")
@@ -279,7 +295,7 @@ ServerEvents.highPriorityData((event) => {
 		.replaceIngot("thermal:tin_ingot")
 		.replaceNugget("thermal:tin_nugget")
 		.replaceBlock("thermal:tin_block")
-	
+
 	new MaterialUnification("steel")
 		.replaceBlock("cmc:steel_block")
 		.replaceIngot("cmc:steel_ingot")
@@ -302,24 +318,23 @@ ServerEvents.highPriorityData((event) => {
 
 	new MaterialUnification("charcoal")
 		.replaceBlock("thermal:charcoal_block")
-	
+
 	new MaterialUnification("zinc")
 		.replacePlate("createaddition:zinc_sheet")
 
 	new MaterialUnification("netherite")
 		.replacePlate("createdeco:netherite_sheet")
 		.replaceDust("thermal:netherite_dust")
-	
+
 	new MaterialUnification("wood")
 		.replaceDust("thermal:sawdust")
 
 	new MaterialUnification("quartz")
 		.replaceDust("thermal:quartz_dust")
-	
+
 	new MaterialUnification("lapis")
 		.replaceDust("thermal:lapis_dust")
-	
+
 	new MaterialUnification("emerald")
 		.replaceDust("thermal:emerald_dust")
-
 })

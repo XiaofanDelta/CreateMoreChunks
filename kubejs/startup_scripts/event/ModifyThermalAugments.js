@@ -1,13 +1,12 @@
 /* src
-// region VARIABLES
+// VARIABLES
 public static int deviceAugments = 3;
 public static int dynamoAugments = 4;
 public static int machineAugments = 4;
 public static int storageAugments = 3;
 public static int toolAugments = 4;
-// endregion
 
-// region CONFIG VARIABLES
+// CONFIG VARIABLES
 public static Supplier<Boolean> keepEnergy = TRUE;
 public static Supplier<Boolean> keepItems = FALSE;
 public static Supplier<Boolean> keepFluids = FALSE;

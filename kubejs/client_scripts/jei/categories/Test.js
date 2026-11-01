@@ -2,8 +2,8 @@ JEIAddedEvents.registerCategories((event) => {
 //    let { data: { jeiHelpers: { guiHelper } } } = event
     
     event.custom("cmc:test_category", (category) => {
-        const guiHelper = category.getJeiHelpers().getGuiHelper()
-        const jeiHelpers = category.getJeiHelpers()
+        let guiHelper = category.getJeiHelpers().getGuiHelper()
+        let jeiHelpers = category.getJeiHelpers()
         category
             .title(Component.translatable("recipe.jei.recipeType.cmc.test"))
             .background(guiHelper.createBlankDrawable(0, 0))

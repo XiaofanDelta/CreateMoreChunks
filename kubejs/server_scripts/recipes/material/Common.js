@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-	const { kubejs, thermal, create } = event.recipes
+	let { kubejs, thermal, create } = event.recipes
 
 	/**
 	 * 合成图案模板
