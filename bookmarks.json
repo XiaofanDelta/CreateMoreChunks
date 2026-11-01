@@ -1,0 +1,265 @@
+{
+  "version": "3.1.1",
+  "lastModified": "2026-11-01T15:59:06.840Z",
+  "folders": [
+    {
+      "id": "mvxzymdmw3o3crxpgu",
+      "name": "TODO",
+      "parentId": "mvxzzsiy7713kqb7suh",
+      "sortOrder": 2
+    },
+    {
+      "id": "mvxzzajmtucfzgvjq5h",
+      "name": "Lang",
+      "parentId": "mvy04t9gla38i59byi",
+      "sortOrder": 3
+    },
+    {
+      "id": "mvxzzsiy7713kqb7suh",
+      "name": "Docs",
+      "sortOrder": 2
+    },
+    {
+      "id": "mvy00977qeidd3q58ub",
+      "name": "Server",
+      "parentId": "mvy03u8kysvrqaz75dg",
+      "sortOrder": 2
+    },
+    {
+      "id": "mvy01d8ara8mq7q6v5",
+      "name": "Recipe",
+      "parentId": "mvy00977qeidd3q58ub",
+      "sortOrder": 2
+    },
+    {
+      "id": "mvy03u8kysvrqaz75dg",
+      "name": "Scripts",
+      "sortOrder": 5
+    },
+    {
+      "id": "mvy04t9gla38i59byi",
+      "name": "Client",
+      "parentId": "mvy03u8kysvrqaz75dg",
+      "sortOrder": 3
+    },
+    {
+      "id": "mvy0910abg3kum9t637",
+      "name": "Json",
+      "parentId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 7
+    },
+    {
+      "id": "mvy0d88g5n9n1eatrck",
+      "name": "Startup",
+      "parentId": "mvy03u8kysvrqaz75dg",
+      "sortOrder": 1
+    },
+    {
+      "id": "mvy0dhk5u3667ybsh88",
+      "name": "Register",
+      "parentId": "mvy0d88g5n9n1eatrck",
+      "sortOrder": 11
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "mvxzr09953c4hdmkoa4",
+      "name": "English",
+      "file": "kubejs/assets/cmc/lang/en_us.json",
+      "line": 0,
+      "character": 1,
+      "lineContent": "{",
+      "folderId": "mvy0910abg3kum9t637",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvxzr9zx629vqa2susp",
+      "name": "Chinese",
+      "file": "kubejs/assets/cmc/lang/zh_cn.json",
+      "line": 0,
+      "character": 1,
+      "lineContent": "{",
+      "folderId": "mvy0910abg3kum9t637",
+      "sortOrder": 1
+    },
+    {
+      "id": "mvxzripb0h54xyecsoxm",
+      "name": "Git Ignore",
+      "file": ".gitignore",
+      "line": 0,
+      "character": 2,
+      "lineContent": "# 个人数据",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvxzrvsk10bvc23nzbp",
+      "name": "Main",
+      "file": "Developer/todo/Main.md",
+      "line": 0,
+      "character": 1,
+      "lineContent": "# CMC 待办清单",
+      "folderId": "mvxzymdmw3o3crxpgu",
+      "sortOrder": 3
+    },
+    {
+      "id": "mvxzs2a6dec7cptvn2b",
+      "name": "Done",
+      "file": "Developer/todo/Done.md",
+      "line": 0,
+      "character": 2,
+      "lineContent": "# CMC 完成记录",
+      "folderId": "mvxzymdmw3o3crxpgu",
+      "sortOrder": 4
+    },
+    {
+      "id": "mvxzse95ipu65obezq",
+      "name": "Global",
+      "file": "kubejs/startup_scripts/Global.js",
+      "line": 0,
+      "character": 2,
+      "lineContent": "// priority: 100",
+      "folderId": "mvy03u8kysvrqaz75dg",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvxzsprmry0b7216uur",
+      "name": "Contributing",
+      "file": "CONTRIBUTING.md",
+      "line": 0,
+      "character": 3,
+      "lineContent": "# Create: More Chunks 代码规范",
+      "folderId": "mvxzzsiy7713kqb7suh",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvxzt6eyh89kr82193",
+      "name": "Update Logs",
+      "file": "UpdateLogs.md",
+      "line": 301,
+      "character": 6,
+      "lineContent": "## Alpha 1.6.0 (`26/__/__`) Code Update",
+      "folderId": "mvxzzsiy7713kqb7suh",
+      "sortOrder": 1
+    },
+    {
+      "id": "mvxzunth40jpgfrsllp",
+      "name": "Utils",
+      "file": "kubejs/server_scripts/utils/ServerUtils.js",
+      "line": 0,
+      "character": 7,
+      "lineContent": "// priority: 1997",
+      "folderId": "mvy00977qeidd3q58ub",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvy023u3hw2iaswp8h7",
+      "name": "Material",
+      "file": "kubejs/server_scripts/recipes/material/Common.js",
+      "line": 315,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvy01d8ara8mq7q6v5",
+      "sortOrder": 6
+    },
+    {
+      "id": "mvy07geery96lt6gnnm",
+      "name": "Hammer Crush",
+      "file": "kubejs/server_scripts/recipes/mod/lychee/Hammer.js",
+      "line": 118,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvy01d8ara8mq7q6v5",
+      "sortOrder": 8
+    },
+    {
+      "id": "mvy08qvzh3agf2d6vlg",
+      "name": "Block",
+      "file": "kubejs/client_scripts/lang/zh_cn/Block.js",
+      "line": 1,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 2
+    },
+    {
+      "id": "mvy09m6kx0i7npcu6zq",
+      "name": "Fluid",
+      "file": "kubejs/client_scripts/lang/zh_cn/Fluid.js",
+      "line": 1,
+      "character": 2,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 3
+    },
+    {
+      "id": "mvy09wq710ykm33ce9",
+      "name": "Gas",
+      "file": "kubejs/client_scripts/lang/zh_cn/Gas.js",
+      "line": 1,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 4
+    },
+    {
+      "id": "mvy0a4rmikwtl88gqve",
+      "name": "Info",
+      "file": "kubejs/client_scripts/lang/zh_cn/Info.js",
+      "line": 1,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 5
+    },
+    {
+      "id": "mvy0ab9m8a5ojcf28q9",
+      "name": "Material",
+      "file": "kubejs/client_scripts/lang/zh_cn/Material.js",
+      "line": 1,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 0
+    },
+    {
+      "id": "mvy0ahunge9v35kfp",
+      "name": "Item",
+      "file": "kubejs/client_scripts/lang/zh_cn/Item.js",
+      "line": 3,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 1
+    },
+    {
+      "id": "mvy0arnfaaemk9gwiy9",
+      "name": "English",
+      "file": "kubejs/client_scripts/lang/English.js",
+      "line": 1,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvxzzajmtucfzgvjq5h",
+      "sortOrder": 6
+    },
+    {
+      "id": "mvy0cetxvzc84gb7yp",
+      "name": "Material Unification",
+      "file": "kubejs/server_scripts/data/unification/Material.js",
+      "line": 256,
+      "character": 0,
+      "lineContent": "",
+      "folderId": "mvy00977qeidd3q58ub",
+      "sortOrder": 1
+    },
+    {
+      "id": "mvy0d1vyyv58u36axk",
+      "name": "Material",
+      "file": "kubejs/startup_scripts/register/material/Material.js",
+      "line": 72,
+      "character": 11,
+      "lineContent": ".nugget()",
+      "folderId": "mvy0dhk5u3667ybsh88",
+      "sortOrder": 9
+    }
+  ]
+}
