@@ -112,6 +112,7 @@
 !/config/supplementaries-common.toml
 !/config/untranslateditems-client.toml
 !/config/akashictome-common.toml
+!/config/customwindowtitle-client.toml
 
 !/config/oelib
 /config/oelib/*
