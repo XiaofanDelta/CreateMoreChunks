@@ -1,7 +1,7 @@
 NebulaEvents.registerMaterial((event) => {
 	event.namespace("cmc")
 
-	event.creativeTab("kubejs:tab")
+	event["setCreativeTab(net.minecraft.resources.ResourceLocation)"]("kubejs:tab")
 
 	// 高级合金
 	event.register("advanced_alloy", MiningLevels.DIAMOND)

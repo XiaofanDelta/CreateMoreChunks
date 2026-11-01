@@ -159,6 +159,11 @@ global.mekTiers = [
 	"ultimate"
 ]
 
+/**
+ * 热量等级
+ * 
+ * @property {string} WORLD_AFFINITY
+ */
 global.heatLevel = {
 	WORLD_AFFINITY: "cmc:world_affinity"
 }

@@ -18,13 +18,11 @@ ServerEvents.recipes((event) => {
 
 	// 黄铜锭
 	create.mixing([
-		Item.of("create:brass_ingot", 3),
-		Item.of("chunkbychunk:worldcrystal").withChance(0.1)
+		Item.of("create:brass_ingot", 2)
 	], [
 		"minecraft:copper_ingot",
-		"minecraft:gold_ingot",
-		"chunkbychunk:worldcore"
-	]).heated()
+		"minecraft:gold_ingot"
+	]).heatRequirement(global.heatLevel.WORLD_AFFINITY)
 		.id("create:mixing/brass_ingot")
 
 	// 世界宝石
