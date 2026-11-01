@@ -1,5 +1,5 @@
 ClientEvents.lang("zh_cn", (event) => {
-  
+
 	// tooltip
 	addCommonTooltipLang("cmc:test","对这是个测试的物品,如果你在合成配方中看见了这个,请一定要报告这个bug!")
 	addCommonTooltipLang("cmc:creative_physics_staff", "对的对的,我在 1.20.1 Forge 里弄出\"航空学\"了!真的!")

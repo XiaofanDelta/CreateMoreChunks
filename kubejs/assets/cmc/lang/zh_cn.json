@@ -22,6 +22,8 @@
 	"display.cmc.copy": "点击复制文本",
 
 	"recipe.jei.recipeType.cmc.test": "测试!",
+
+	"create.recipe.heat_requirement.cmc:world_affinity": "世界亲和",
 	
 	"cmc.advanced_component_assemble": "高级部件装配",
 	"cmc.hammer_crush": "锤击粉碎",

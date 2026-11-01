@@ -26,6 +26,8 @@
 
 	"recipe.jei.recipeType.cmc.test": "Test!",
 
+	"create.recipe.heat_requirement.cmc:world_affinity": "World Affinity",
+
 	"info.cmc.information": "Information",
 	"info.cmc.aca": "Use some fluids and items to make an advanced item.\n \nSome recipes may leave waste fluids to deal with. \n \nNot advanced (ae) reaction chamber.",
 	"info.cmc.db": "Dynamo but nothing can input.\n \nThe basic dynamo that can only store energy.\n \nEnergy will be auto IO.",

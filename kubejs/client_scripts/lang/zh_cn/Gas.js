@@ -1,5 +1,5 @@
 ClientEvents.lang("zh_cn", (event) => {
-  
+
 	// 气体
 	addGasLang("world_matter", "世界物质")
 	

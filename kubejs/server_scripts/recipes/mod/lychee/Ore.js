@@ -37,5 +37,4 @@ ServerEvents.recipes((event) => {
 
 		return recipe
 	}
-
 })

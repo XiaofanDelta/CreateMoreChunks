@@ -3,6 +3,7 @@ CreateHeatJS.registerHeatEvent((event) => {
 		builder.color(0x3333AA).build()
 			["addHeatSource(net.minecraft.world.level.block.Block[])"]([
 				Block.getBlock("chunkbychunk:worldcore")
-			])
+			]).setCatalystDisplayItem(Item.of("chunkbychunk:worldcore"))
+				.setHeatSourceDisplayItem(Item.of("chunkbychunk:worldcore"))
 	})
 })
