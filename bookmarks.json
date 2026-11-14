@@ -1,6 +1,6 @@
 {
   "version": "3.1.1",
-  "lastModified": "2026-11-01T15:59:06.840Z",
+  "lastModified": "2026-11-01T16:09:19.333Z",
   "folders": [
     {
       "id": "mvxzymdmw3o3crxpgu",
@@ -260,6 +260,16 @@
       "lineContent": ".nugget()",
       "folderId": "mvy0dhk5u3667ybsh88",
       "sortOrder": 9
+    },
+    {
+      "id": "mvy0z1hueydchdrnhb",
+      "name": "Remove",
+      "file": "kubejs/server_scripts/recipes/!Remove.js",
+      "line": 72,
+      "character": 18,
+      "lineContent": "\"#thermal:augments\",",
+      "folderId": "mvy01d8ara8mq7q6v5",
+      "sortOrder": 12
     }
   ]
 }
