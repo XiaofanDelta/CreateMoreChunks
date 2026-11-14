@@ -1,0 +1,29 @@
+filename = 'merequester-forge-1.20.1-1.2.1.jar'
+name = 'ME Requester'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.20.1-1.2.1+forge'
+
+[download]
+hash = '1a8ed595acc1a1bb8c3d0c918540fa6ca1cab69bc23d80476374d7dba6c4febd0ea0d4e5f0d3d52b0d22084b6e9d73ad34c3b286ff09caf1f227bee46a2f8969'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/E6BFl96N/versions/69N8Y7WD/merequester-forge-1.20.1-1.2.1.jar'
+
+[update.modrinth]
+mod-id = 'E6BFl96N'
+version = '69N8Y7WD'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'XxWD5pD3'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'nfn13YXA'
+type = 'OPTIONAL'

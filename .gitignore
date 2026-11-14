@@ -80,6 +80,7 @@
 !resourcepacks/Better Chunk by Chunk v1.4.zip
 
 !/mods/cmc*.jar
+!/mods/.index/
 # ==========
 
 # 提交的配置
@@ -158,8 +159,4 @@
 /config/openloader/resources/*
 !/config/openloader/resources/CMCResources/
 !/config/openloader/resources/AdvancedExtendedCrafting/
-# ==========
-
-# 临时文件
-Developer/MBD2代码注册文档/*
 # ==========

@@ -1,0 +1,25 @@
+filename = 'lycheejs-0.2.1-1.20.1.jar'
+name = 'LycheeJS'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'lycheejs-0.2.1-1.20.1.jar'
+
+[download]
+hash = 'abce49c0cc65082b20653b033f8f9e392c62abf4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8031347
+project-id = 1458225
+
+[[x-prismlauncher-dependencies]]
+addonId = '567403'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'

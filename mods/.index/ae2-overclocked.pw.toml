@@ -1,0 +1,21 @@
+filename = 'ae2_overclocked-1.2.3-fix3.jar'
+name = 'AE2 Overclocked'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.2.3-fix3'
+
+[download]
+hash = '182b152e0939f43d0a9b77004483215725bfaed7cadd51eba25e5e84d07ce3e4477e1aed98a283a10526e510db119e625ee551fa8f9cd135da38e5a93ac2dbb8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/qBNkenUy/versions/l4fFx5Re/ae2_overclocked-1.2.3-fix3.jar'
+
+[update.modrinth]
+mod-id = 'qBNkenUy'
+version = 'l4fFx5Re'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'XxWD5pD3'
+type = 'REQUIRED'

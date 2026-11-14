@@ -1,0 +1,18 @@
+filename = 'jecharacters-1.20.1-forge-4.6.12.jar'
+name = 'JustEnoughCharacters'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.6.12'
+
+[download]
+hash = '49263809e710bfd081d25b2a033894dccd7642a5f80300ab6ff7e2a8486722ede3acabb05526bf6c7bf9c1d149dae9311e4e227f898328a64375f3291508e327'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/I7k4B65h/versions/pdLyf9hN/jecharacters-1.20.1-forge-4.6.12.jar'
+
+[update.modrinth]
+mod-id = 'I7k4B65h'
+version = 'pdLyf9hN'

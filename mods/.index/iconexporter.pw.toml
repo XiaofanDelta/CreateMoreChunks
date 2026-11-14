@@ -1,0 +1,21 @@
+filename = 'IconExporter-1.20.1-1.4.0.jar'
+name = 'IconExporter'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'IconExporter-1.20.1-1.4.0.jar'
+
+[download]
+hash = 'c4a55bbc67e769aa7c64a9763343768f423d9289'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7210746
+project-id = 327048
+
+[[x-prismlauncher-dependencies]]
+addonId = '232758'
+type = 'REQUIRED'

@@ -1,0 +1,21 @@
+filename = 'ChunkByChunk-forge-1.20.1-2.2.3.jar'
+name = 'Chunk By Chunk'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.2.3'
+
+[download]
+hash = '5f8b7a016218bf88ab2a198322cf26e61b0bccf2e1aa1a2ff239a8710ab7dd2ee5a167339c9b552b8d9536ec31a259962c6397b87d651fd3cefd82e854550706'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/ZVZyInUU/versions/NT7NJaqE/ChunkByChunk-forge-1.20.1-2.2.3.jar'
+
+[update.modrinth]
+mod-id = 'ZVZyInUU'
+version = 'NT7NJaqE'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'

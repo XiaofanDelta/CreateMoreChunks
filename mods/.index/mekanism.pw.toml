@@ -1,0 +1,65 @@
+filename = 'Mekanism-1.20.1-10.4.16.80.jar'
+name = 'Mekanism'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '10.4.16.80'
+
+[download]
+hash = 'a838bb3fa5550ba3589a81005fde2ca04b5d33417ae65a8060bbc46ba948dec2d16ab0871a55e73e0ca39651b33814eb508b5b85d337e6ed8874b79383f3e6f0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Ce6I4WUE/versions/uxe1WQp4/Mekanism-1.20.1-10.4.16.80.jar'
+
+[update.modrinth]
+mod-id = 'Ce6I4WUE'
+version = 'uxe1WQp4'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'bcOsQHnC'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'gu7yAYhd'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'qXkLFB0L'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'uE1WpIAk'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Xg35A4rS'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'XxWD5pD3'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'nvQzSEkH'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'R2OftAxM'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'vvuO3ImH'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Eyw0UxEx'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '6AQIaxuO'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'EiEOyeoL'
+type = 'OPTIONAL'

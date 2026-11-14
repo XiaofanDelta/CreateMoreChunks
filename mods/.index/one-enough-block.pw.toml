@@ -1,0 +1,21 @@
+filename = 'OneEnoughBlock-1.1.3.1-hotfix.jar'
+name = 'One Enough Block'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.1.3.1-hotfix'
+
+[download]
+hash = '9776a4c79e19a09c3df1682670412386cf737f1423642ff73ee201f9e85e6666069041ee13f8f73ab8953b1064d073661675330f30515771acaa460d44a9bb9e'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/gP7RIb0Q/versions/Ach9Hi1C/OneEnoughBlock-1.1.3.1-hotfix.jar'
+
+[update.modrinth]
+mod-id = 'gP7RIb0Q'
+version = 'Ach9Hi1C'
+
+[[x-prismlauncher-dependencies]]
+addonId = '7pCNymxz'
+type = 'REQUIRED'

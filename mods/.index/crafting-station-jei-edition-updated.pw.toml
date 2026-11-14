@@ -1,0 +1,37 @@
+filename = 'craftingstationjei-1.20.1-Forge-2.2.1.jar'
+name = 'Crafting Station: J/EMI Edition Updated'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.2.1'
+
+[download]
+hash = 'df40766fddadc3ec659fc4e383c0a79c9e981212a3a5f48f457f5ccf33c31b931c1e8d89cf687375bf307c27434d4531fecfde37ff2850b45fff1ad803ed8200'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/rc8HlDUK/versions/6HnKGwNa/craftingstationjei-1.20.1-Forge-2.2.1.jar'
+
+[update.modrinth]
+mod-id = 'rc8HlDUK'
+version = '6HnKGwNa'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'cO40ZIg3'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'DMu0oBKf'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'fRiHVvU7'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'tagwiZkJ'
+type = 'OPTIONAL'

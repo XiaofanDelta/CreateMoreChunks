@@ -1,0 +1,18 @@
+filename = 'thermal_parallel-1.0.1-beta.2.jar'
+name = 'Thermal Parallel'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = '1.0.1-beta.2'
+
+[download]
+hash = 'f61ab2dff2cdba850425d8a88863415a51410b29d0761a7f506f1b3566700f89130f061f1770f42bf06df4a712d5814b3ccc71723eb43e4e62751653fcdebb1b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/qqphkhHK/versions/au9SVcXS/thermal_parallel-1.0.1-beta.2.jar'
+
+[update.modrinth]
+mod-id = 'qqphkhHK'
+version = 'au9SVcXS'

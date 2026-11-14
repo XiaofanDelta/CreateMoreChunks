@@ -1,0 +1,45 @@
+filename = 'appliedenergistics2-forge-15.4.12.jar'
+name = 'Applied Energistics 2'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '15.4.12'
+
+[download]
+hash = '16c00668c82fc77d166f2917e38e940ef85bb80b05307c0da5d8ecd9f1de9dfb01c7d8fab32da84df1707c4eb3b5993634e794143243694ab66ae59289530457'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XxWD5pD3/versions/QRpVsqDI/appliedenergistics2-forge-15.4.12.jar'
+
+[update.modrinth]
+mod-id = 'XxWD5pD3'
+version = 'QRpVsqDI'
+
+[[x-prismlauncher-dependencies]]
+addonId = '6AQIaxuO'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'nvQzSEkH'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Ck4E7v7R'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Eyw0UxEx'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'nfn13YXA'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'tq47Uqpn'
+type = 'INCOMPATIBLE'

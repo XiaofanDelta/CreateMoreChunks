@@ -1,0 +1,25 @@
+filename = 'kubejs-thermal-2001.1.10-build.5.jar'
+name = 'KubeJS Thermal'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2001.1.10-build.5'
+
+[download]
+hash = 'd192737a30e5ee823a6c51ab45638ec6174b9539834a60f4359a8e3d37d37ca566a14183556ca7e3ad877cf049aa31b869be0dd2026681e7d05777847b1eadf8'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/taN3HInZ/versions/rCUiMkUM/kubejs-thermal-2001.1.10-build.5.jar'
+
+[update.modrinth]
+mod-id = 'taN3HInZ'
+version = 'rCUiMkUM'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'umyGl7zF'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'hmD6rrUJ'
+type = 'REQUIRED'

@@ -1,0 +1,29 @@
+filename = 'MekanismPipezFix-1.20.1-1.0.1.jar'
+name = 'Mekanism Pipez Fix'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.1'
+
+[download]
+hash = '0ecbe2cd066dbc04a077d3a3dace6fcbb60f16e1859b4e49c189d0d1b8d76f5dba46459844f1f04c4cab14cb42c46696c4426790f0635b511e7aa35195318e6b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/TXcBL9V3/versions/WjsK3QoO/MekanismPipezFix-1.20.1-1.0.1.jar'
+
+[update.modrinth]
+mod-id = 'TXcBL9V3'
+version = 'WjsK3QoO'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'OFVYKsAk'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Ce6I4WUE'
+type = 'REQUIRED'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'iRmWy6ga'
+type = 'REQUIRED'
