@@ -156,4 +156,12 @@ StartupEvents.registry("block", (event) => {
 		.box(0, 0, 0, 16, 32, 16, true)
 		.noDrops()
 
+	// 世界物质块
+	addBlock("world_matter_block")
+		.model("cmc:block/world_matter_block")
+		.hardness(5)
+		.resistance(5)
+		.defaultTranslucent()
+		.tagBoth("forge:storage_blocks/world_matter")
+		.tagBoth("forge:storage_blocks")
 })
