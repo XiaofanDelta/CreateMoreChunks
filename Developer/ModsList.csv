@@ -4,13 +4,13 @@ ae2_overclocked-1.2.3-fix3.jar,AE2 Overclocked,1.2.3-fix3,2026/5/1 22:13:41,ae2_
 ae2ct-1.20.1-1.1.1.jar,合成树 (AE2: Crafting Tree),1.20.1-1.1.1,2025/11/3 22:17:59,ae2ct,1086241,242196
 ae2insertexportcard-1.20.1-1.3.0.jar,AE2 Import Export Card,1.20.1-1.3.0,2024/7/21 23:09:14,ae2insertexportcard,qelfSMnn,213744
 ae2wtlib-15.3.3-forge.jar,AE2无线终端 (Applied Energistics 2 Wireless Terminals),15.3.3-forge,2025/11/23 8:02:50,ae2wtlib,pNabrMMw,229518
-aeinfinitybooster-forge-2.1.0+mc1.20.1.jar,AEInfinityBooster,2.1.0,2026/10/23 15:17:39,aeinfinitybooster,VQhDBNs8,41898
+aeinfinitybooster-forge-2.1.2+mc1.20.1.jar,AEInfinityBooster,2.1.2,2026/11/7 7:27:18,aeinfinitybooster,VQhDBNs8,41907
 AkashicTome-1.7-27.jar,Akashic Tome,1.7-27,2024/8/8 2:15:28,akashictome,JBthPdnp,45653
 alphaskins-1.20-3.0.0.jar,AlphaSkins,1.20-3.0.0,2023/6/12 7:09:00,alphaskins,pkdHZGfL,6699
 amendments-1.20-2.2.6.jar,Amendments,1.20-2.2.6,2026/8/16 5:11:24,amendments,6iTJugQR,1315525
 appleskin-forge-mc1.20.1-2.5.1.jar,苹果皮 (AppleSkin),2.5.1+mc1.20.1,2023/9/27 13:07:37,appleskin,EsAfCjCV,47428
 appliedcreate-1.20.1-1.1.6.jar,Applied Create,1.1.6,2026/7/13 20:37:06,appliedcreate,1474758,365373
-appliedenergistics2-forge-15.4.11.jar,应用能源2 (Applied Energistics 2),15.4.11,2026/9/27 23:05:00,ae2,XxWD5pD3,8501309
+appliedenergistics2-forge-15.4.12.jar,应用能源2 (Applied Energistics 2),15.4.12,2026/10/29 6:43:24,ae2,XxWD5pD3,8501298
 AppliedFlux-1.20-1.3.7-forge.jar,Applied Flux,1.20-1.3.7-forge,2026/2/20 10:15:58,appflux,oMgZ004U,252283
 Applied-Mekanistics-1.4.3.jar,应用能源：通用机械附属 (Applied Mekanistics),1.4.3,2025/11/21 12:41:22,appmek,IiATswDj,185707
 architectury-9.2.14-forge.jar,Architectury API,9.2.14,2024/2/26 21:19:00,architectury,lhGA9TYQ,580602
@@ -26,12 +26,12 @@ BotanyTrees-Forge-1.20.1-9.0.20.jar,植树盆栽 (Botany Trees),9.0.20,2026/2/12
 cable_facades-1.20.1-Forge-2.1.3.jar,Cable Facades,2.1.3,2026/6/18 17:34:50,cable_facades,twipgzWx,922979
 ChunkByChunk-forge-1.20.1-2.2.3.jar,Chunk By Chunk,2.2.3,2024/3/9 11:03:04,chunkbychunk,ZVZyInUU,384127
 cloth-config-11.1.136-forge.jar,Cloth Config API,11.1.136,2024/9/17 1:13:50,cloth_config,9s6osm5g,1181413
-cmc-1.0.0.jar,Create More Chunks,1.0.0,-,cmc,-,811701
+cmc-1.0.0.jar,-,1.0.0,-,cmc,-,811701
 CobbleForDays-1.8.0.jar,CobbleForDays,1.8.0,2024/7/27 4:34:11,cobblefordays,hi71AUZ0,43309
 cofh_core-1.20.1-11.0.2.56.jar,CoFH核心 (CoFH Core),11.0.2,2024/5/27 1:49:13,cofh_core,OWSRM4vD,1509649
 Compressium-3.0.2-build.12+mc1.20.jar,Compressium,3.0.2-build.12+mc1.20,2023/6/13 23:26:11,compressium,342929,700324
 configured-forge-1.20.1-2.2.3.jar,配置界面 (Configured),2.2.3,2024/3/14 11:01:07,configured,457570,418929
-Connector-1.0.0-beta.49+1.20.1.jar,信雅互联 (Sinytra Connector),1.0.0-bete.49,2026/7/4 17:15:16,connectormod,890127,5046108
+Connector-1.0.0-beta.49+1.20.1.jar,信雅互联 (Sinytra Connector),1.0.0-beta.49+1.20.1,2026/7/4 17:15:16,connectormod,890127,5046108
 constructionwand-1.20.1-2.11.jar,建筑手杖 (Construction Wand),1.20.1-2.11,2023/8/6 4:03:02,constructionwand,bV2crgLh,210312
 Controlling-forge-1.20.1-12.0.2.jar,键位冲突显示 (Controlling),12.0.2,2023/7/16 12:39:22,controlling,250398,115280
 cookingforblockheads-forge-1.20.1-16.0.15.jar,傻瓜烹饪/懒人厨房 (Cooking for Blockheads),16.0.15,2026/1/13 21:00:11,cookingforblockheads,231484,837809
@@ -52,14 +52,14 @@ curios-forge-5.14.1+1.20.1.jar,Curios API,5.14.1+1.20.1,2025/4/13 21:09:30,curio
 curiotiab-1.20.1-2.0.2.jar,Time in a bottle Curio Support,1.20.1-2.0.2,2023/10/22 18:50:55,curiotiab,835981,42088
 CustomSkinLoader_Universal-15.1.jar,万用皮肤补丁 (CustomSkinLoader),15.1,2026/10/11 12:18:25,customskinloader-bootstrap,idMHQ4n2,222917
 CustomWindowTitle-Forge-1.20+v1.2.0.jar,Custom Window Title,1.2.0,2023/8/11 21:23:23,customwindowtitle,RGH5gtzF,15495
-CyclopsCore-1.20.1-1.22.3.jar,Cyclops Core,1.22.3,2026/9/5 18:45:18,cyclopscore,232758,922929
+CyclopsCore-1.20.1-1.22.4.jar,Cyclops Core,1.22.4,2026/11/6 23:30:54,cyclopscore,232758,923183
 Ding-1.20.1-Forge-1.5.0.jar,界面进入提醒 (Ding),1.5.0,2024/6/27 5:33:05,ding,UEtTD3gP,36827
 drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar,自定义游戏加载界面 (Drippy Loading Screen),3.1.5,2026/8/1 16:37:29,drippyloadingscreen,v3CYg2V9,281881
 embeddium-0.3.31+mc1.20.1.jar,Embeddium,0.3.31+mc1.20.1,2024/9/1 7:11:49,embeddium,sk9rgfiA,1320675
-entityculling-forge-1.11.3-mc1.20.1.jar,实体渲染机制优化 (Entity Culling),1.11.3,2026/10/9 0:51:39,entityculling,NNAgCjsB,1515076
+entityculling-forge-1.12.1-mc1.20.1.jar,实体渲染机制优化 (Entity Culling),1.12.1,2026/11/14 0:11:30,entityculling,NNAgCjsB,1528604
 EventJS-1.20.1-1.4.3.jar,EventJS,1.4.3,2025/10/24 12:12:29,eventjs,1132802,49143
 ExplorersCompass-1.20.1-1.4.0-forge.jar,探险者指南针 (Explorer's Compass),1.20.1-1.4.0-forge,2026/4/8 9:42:04,explorerscompass,RV1qfVQ8,174387
-extendedae_plus-1.6.3.jar,ExtendedAE-Plus,1.6.3,2026/9/28 16:38:48,extendedae_plus,xr109llC,2315478
+extendedae_plus-1.6.4.jar,ExtendedAE-Plus,1.6.4,2026/10/29 15:00:46,extendedae_plus,xr109llC,2525364
 ExtendedAE-1.20-1.4.22-forge.jar,AE2扩展 (ExtendedAE),1.20-1.4.22-forge,2026/10/24 11:01:11,expatternprovider,892005,2973223
 ExtendedCrafting-1.20.1-6.0.10.jar,合成拓展 (Extended Crafting),6.0.10,2025/8/13 6:58:05,extendedcrafting,5JMG1gql,657943
 extendedgears-2.1.1-1.20.1-0.5.1.f-forge.jar.disabled,机械动力：更多齿轮 (Create: Extended Cogwheels),2.1.1-1.20.1-0.5.1.f-forge,2024/4/2 22:50:39,extendedgears,qO4lsa4Y,229675
@@ -119,7 +119,7 @@ lycheejs-0.2.1-1.20.1.jar,LycheeJS,0.2.1-1.20.1,2026/5/3 17:16:14,lycheejs,14582
 me_beam_former-1.3.0.jar,ME-Beam-Former,1.3.0,2026/3/16 14:10:01,me_beam_former,wug9w09r,1097124
 megacells-forge-2.4.6-1.20.1.jar,MEGA存储单元 (MEGA Cells),2.4.6-1.20.1,2025/2/9 22:26:13,megacells,jjuIRIVr,387196
 meinfinitycell-1.20.1-5.0.0.jar,ME Infinity Cell,1.20.1-5.0.0,2025/11/30 17:13:22,meinfinitycell,1320551,46243
-mekagenjei-1.2.1-20.1.jar,MekaGenJei (Mekanism Generator addon),1.3-20.1,2026/5/23 3:01:48,mekagenjei,1347827,41045
+mekagenjei-1.2.1-20.1.jar,MekaGenJei (Mekanism Generator addon),1.3-20.1,2026/9/16 7:21:43,mekagenjei,cud5E6NM,41045
 Mekanism-1.20.1-10.4.16.80.jar,通用机械 (Mekanism),10.4.16,2025/5/21 21:09:52,mekanism,Ce6I4WUE,12558456
 MekanismAdditions-1.20.1-10.4.16.80.jar,通用机械附加 (Mekanism Additions),10.4.16,2025/5/21 21:10:03,mekanismadditions,a6F3uASn,1136805
 MekanismGenerators-1.20.1-10.4.16.80.jar,通用机械发电机 (Mekanism Generators),10.4.16,2025/5/21 21:09:59,mekanismgenerators,OFVYKsAk,1054586
@@ -136,13 +136,13 @@ MultiBuilderTool-1.20.1-1.0.28.jar,多方块构建工具 (Multi Builder Tool),1.
 NaturesCompass-1.20.1-1.12.0-forge.jar,自然罗盘/生物群系指南针 (Nature's Compass),1.20.1-1.12.0-forge,2026/4/8 9:45:51,naturescompass,fPetb5Kh,227495
 Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar,Not Enough Recipe Book [NERB],0.4.1,2024/9/27 7:46:19,nerb,bQh7xzFq,21667
 notenoughcrashes-4.4.9+1.20.1-forge.jar,崩溃优化 (Not Enough Crashes),4.4.9+1.20.1,2025/5/30 20:01:42,notenoughcrashes,yM94ont6,134885
-OctoLib-FORGE-0.5.0.1+1.20.1.jar,ShatterLib | OctoLib,0.5.0.1,2025/3/7 19:56:23,octolib,RH2KUdKJ,424035
+OctoLib-FORGE-0.5.0.2+1.20.1.jar,ShatterLib | OctoLib,0.5.0.2,2026/11/13 17:41:11,octolib,RH2KUdKJ,425388
 OELib-forge-1.20.1-0.2.4.1.jar,One Enough Lib,OELib-0.2.4.1,2026/5/9 22:38:52,oelib,7ODqOXka,891386
 OneEnoughBlock-1.1.3.1-hotfix.jar,One Enough Block,1.1.3.1-hotfix,2026/4/6 19:51:08,oneenoughblock,gP7RIb0Q,85082
 OneEnoughItem-1.0.8 (1).jar,One Enough Item,1.0.8,2026/4/17 17:26:41,oneenoughitem,7pCNymxz,263510
 OpenLoader-Forge-1.20.1-19.0.5.jar,开放式加载 (Open Loader),19.0.5,2026/2/12 15:33:59,openloader,KwWsINvD,23937
 Patchouli-1.20.1-85-FORGE.jar,帕秋莉手册 (Patchouli),1.20.1-85-FORGE,2026/3/9 5:08:44,patchouli,nU0bVIaL,642732
-pipez_optimizer-1.0.10-1.20.1.jar,Pipez Optimizer,1.0.10-1.20.1,2026/10/19 19:20:36,pipez_optimizer,HVAFkCTk,116079
+pipez_optimizer-1.0.11-1.20.1.jar,Pipez Optimizer,1.0.11-1.20.1,2026/11/9 19:55:43,pipez_optimizer,HVAFkCTk,116118
 pipez-forge-1.20.1-1.2.26.jar,Pipez,1.20.1-1.2.26,2025/8/30 23:58:36,pipez,iRmWy6ga,431616
 Placebo-1.20.1-8.6.3.jar,Placebo,8.6.3,2026/6/14 16:31:50,placebo,tCkE8p2N,282474
 polyeng-forge-0.1.1-1.20.1.jar,Polymorphic Energistics,0.1.1-1.20.1,2024/4/22 22:51:21,polyeng,VS1a14jA,15469
@@ -158,8 +158,8 @@ Searchables-forge-1.20.1-1.0.3.jar,Searchables,1.0.3,2024/4/23 14:56:49,searchab
 skinlayers3d-forge-1.11.4-mc1.20.1.jar,3D 皮肤层 (Skin Layers 3D),1.11.4,2026/10/19 1:14:38,skinlayers3d,zV5r3pPn,2096322
 sliceanddice-forge-3.6.0.jar,Create Slice & Dice,3.6.0,2025/11/4 17:24:07,sliceanddice,GmjmRQ0A,588268
 smoothboot(reloaded)-mc1.20.1-0.0.4.jar,流畅加载重置版 (Smooth Boot Reloaded),0.0.4,2024/1/8 9:33:07,smoothboot,z53V2L4P,41044
-sophisticatedbackpacks-1.20.1-3.26.0.2119.jar,精妙背包 (Sophisticated Backpacks),3.26.0.2119,2026/9/6 5:03:37,sophisticatedbackpacks,422301,1220316
-sophisticatedcore-1.20.1-1.5.0.2316.jar,精妙核心 (Sophisticated Core),1.5.0.2316,2026/9/6 0:23:26,sophisticatedcore,618298,1731870
+sophisticatedbackpacks-1.20.1-3.26.20.2248.jar,精妙背包 (Sophisticated Backpacks),3.26.20.2248,2026/11/9 18:49:08,sophisticatedbackpacks,422301,1233477
+sophisticatedcore-1.20.1-1.5.33.2475.jar,精妙核心 (Sophisticated Core),1.5.33.2475,2026/11/13 3:44:22,sophisticatedcore,618298,1783673
 Steam_Rails-1.7.3+forge-mc1.20.1.jar,机械动力：汽鸣铁道 (Create: Steam 'n' Rails),1.7.3+forge-mc1.20.1,2026/8/27 17:52:44,railways,ZzjhlDgM,17042037
 supplementaries-1.20-3.1.44-forge.jar,锦致装饰 (Supplementaries),1.20-3.1.44,2026/10/12 7:15:01,supplementaries,fFEIiSDQ,13686603
 thermal_expansion-1.20.1-11.0.1.29.jar,Thermal Expansion,11.0.1,2024/5/26 14:05:39,thermal_expansion,hmD6rrUJ,574141
@@ -169,8 +169,8 @@ thermal_integration-1.20.1-11.0.1.27.jar,热力集成 (Thermal Integration),11.0
 thermal_parallel-1.0.1-beta.2.jar,Thermal Parallel,1.0.1-beta.2,2026/5/6 22:10:58,thermal_parallel,qqphkhHK,26061
 ThermalExtra-3.3.3-1.20.1.jar,Thermal: Extra,3.3.3-1.20.1,2026/9/19 20:30:05,thermal_extra,QejnMYJo,1662524
 ticktweaks-forge-1.2.5.jar,Tick Tweaks,1.2.5,2025/9/10 0:22:48,ticktweaks,2d67N1yh,36316
-time-in-a-bottle-4.0.4-mc1.20.1.jar,时间之瓶 Fabric 版 (Time in a Bottle (Fabric)),4.0.4,2023/9/9 14:10:42,tiab,895919,56125
-titanium-1.20.1-3.8.35.jar,钛 (Titanium),3.8.35,2026/7/14 4:06:32,titanium,1Ro7m06l,622072
+time-in-a-bottle-4.1.1-mc1.20.1.jar,时间之瓶 Fabric 版 (Time in a Bottle (Fabric)),4.1.1-mc1.20.1,2026/9/27 17:48:43,tiab,895919,57462
+titanium-1.20.1-3.8.37.jar,钛 (Titanium),3.8.37,2026/11/5 5:49:06,titanium,1Ro7m06l,622121
 Torcherino-forge-1.20.1-20.0.0.jar,加速火把 (Torcherino),20.0.0,2023/8/26 15:13:02,torcherino,BUIMWY7q,120237
 UntranslatedItems-forge-1.20.1-1.21.jar,物品名称双语同屏 (Untranslated Items),1.20.1-1.21,2026/8/18 23:01:34,untranslateditems,401770,62765
-uti_afac-1.1.6+1.20.1-forge.jar,UntranslatedItems: AlsoFluidsAndChemicals,1.1.6+1.20.1-forge,2026/8/12 8:43:58,uti_afac,1071634,70486
+uti_afac-1.1.7-1.20.1-forge.jar,UntranslatedItems: AlsoFluidsAndChemicals,1.1.7+1.20.1-forge,2026/11/6 16:42:19,uti_afac,1071634,70518
