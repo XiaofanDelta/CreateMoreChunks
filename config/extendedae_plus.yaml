@@ -35,13 +35,18 @@ patternTerminalShowSlotsDefault: true
 # 开启后只会显示到最后一个有物品的槽位之后的一个空槽位（直到占满供应器所有槽位）
 patternTerminalMergeEmptySlotsDefault: true
 
-# JEI 中是否显示 AE2 网络库存与可合成状态
-# 可通过 JEI 左下角按钮即时切换
+# JEI / EMI 中是否显示 AE2 网络库存与可合成状态
+# 可通过 JEI / EMI 左下角按钮即时切换
 jeiNetworkOverlayEnabled: false
 
 # 扩展样板供应器是否显示倍率调整按钮
 # 可通过扩展样板供应器左侧工具栏即时切换
 extendedPatternProviderShowScalingControls: true
+
+# 编码后若供应器按搜索词唯一匹配，是否直接上传到该供应器
+# 优先于装配矩阵自动上传；处理样板只可能走供应器直传
+# 客户端偏好：在客户端判定，多人游戏中每个玩家各自生效
+uniqueProviderAutoUploadEnable: true
 
 # 实体加速器能量消耗基础值
 entityTickerCost: 512
